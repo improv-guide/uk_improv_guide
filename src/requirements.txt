@@ -1,3 +1,1 @@
-fastapi==0.6.4
-gitpython
-uvicorn==0.4.6
+Django
