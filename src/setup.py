@@ -5,10 +5,10 @@ from setuptools import setup
 
 PROJECT_ROOT, _ = os.path.split(__file__)
 REVISION = "0.0.0"
-PROJECT_NAME = "python_playground"
+PROJECT_NAME = "uk_improv_guide"
 PROJECT_AUTHORS = "Salim Fadhley"
 PROJECT_EMAILS = "salimfadhley@gmail.com"
-PROJECT_URL = "https://github.com/salimfadhley/python_hello_world_server"
+PROJECT_URL = "https://github.com/salimfadhley/uk_improv_guide"
 SHORT_DESCRIPTION = "Demonstration"
 
 try:
@@ -26,8 +26,7 @@ setup(
     version=REVISION,
     author=PROJECT_AUTHORS,
     author_email=PROJECT_EMAILS,
-    packages=["playground"],
-    package_dir={"": "main"},
+    packages=["uk_improv_guide"],
     zip_safe=True,
     include_package_data=False,
     install_requires=REQUIREMENTS,

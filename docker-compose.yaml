@@ -14,9 +14,8 @@ services:
       target: python
     volumes:
       - ./src:/src
-      - .:/project
-    working_dir: "/home/sal/workspace/uk_improv_guide"
-    entrypoint: ["/usr/local/bin/python", "manage.py", "runserver"]
+    working_dir: "/src/uk_improv_guide"
+    entrypoint: ["/usr/local/bin/python", "manage.py", "runserver", "0.0.0.0:8000"]
     ports:
       - "8000:8000"
 
@@ -28,7 +27,6 @@ services:
       target: python
     volumes:
       - ./src:/src
-      - .:/project
     entrypoint: ["/usr/local/bin/python"]
 
   db:
