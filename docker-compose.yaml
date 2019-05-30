@@ -43,7 +43,7 @@ services:
       MYSQL_USER: improv
       MYSQL_PASSWORD: changeme
     volumes:
-      - "./data/mysql:/var/lib/mysql"
+      - "mysql_data:/var/lib/mysql"
 
 
   adminer:
@@ -58,7 +58,6 @@ services:
 
 volumes:
   mysql_data:
-  build:
 
 
 
