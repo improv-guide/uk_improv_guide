@@ -5,4 +5,5 @@ RUN python -m pip install -r /src/requirements_dev.txt
 RUN python -m pip install -e /src
 WORKDIR /src/uk_improv_guide
 RUN chmod +x *.sh
+RUN chmod +x manage.py
 RUN useradd python

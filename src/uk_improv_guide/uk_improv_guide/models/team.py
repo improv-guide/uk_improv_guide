@@ -5,11 +5,11 @@ from uk_improv_guide.models.performer import Performer
 
 class Team(models.Model):
     name = models.CharField(max_length=100, primary_key=True)
-    facebook_link = models.CharField(max_length=100)
-    contact_email_address = models.CharField(max_length=100)
-    contact_person = venue = models.ForeignKey(
-        Performer,
-        on_delete=models.SET_NULL
-    )
+    facebook_link = models.CharField(max_length=100, null=True)
+    contact_email_address = models.CharField(max_length=100, null=True)
+    # contact_person = venue = models.ForeignKey(
+    #     Performer,
+    #     on_delete=models.SET_NULL
+    # )
     players = models.ManyToManyField(Performer, verbose_name="teams playing")
 

@@ -18,6 +18,6 @@ from django.urls import path
 from uk_improv_guide.views.main import main
 
 urlpatterns = [
-    path('/', main, name="main page"),
+    path('', main, name="main page"),
     path('admin/', admin.site.urls)
 ]
