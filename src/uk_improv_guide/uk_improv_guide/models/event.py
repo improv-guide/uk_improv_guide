@@ -1,7 +1,7 @@
 from django.db import models
 
-from uk_improv_guide.uk_improv_guide.models.team import Team
-from uk_improv_guide.uk_improv_guide.models.venue import Venue
+from uk_improv_guide.models.team import Team
+from uk_improv_guide.models.venue import Venue
 
 
 class Event(models.Model):
