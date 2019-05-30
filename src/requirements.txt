@@ -1,2 +1,3 @@
 mysqlclient
-Django
+django
+jinja2
