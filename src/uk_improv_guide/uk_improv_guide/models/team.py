@@ -13,3 +13,6 @@ class Team(models.Model):
     # )
     players = models.ManyToManyField(Performer, verbose_name="Team members", blank=True)
 
+    def ___str__(self):
+        return self.name
+

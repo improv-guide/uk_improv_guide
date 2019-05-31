@@ -1,6 +1,10 @@
 from django.contrib import admin
+from reversion.admin import VersionAdmin
 
 from uk_improv_guide.models import ALL_MODELS
 
 for m in ALL_MODELS:
-    admin.site.register(m)
+    @admin.register(m)
+    class YourModelAdmin(VersionAdmin):
+        pass
+

@@ -15,8 +15,8 @@ class Event(models.Model):
     name = models.CharField(max_length=100, primary_key=True)
     event_type = models.CharField(max_length=1, choices=EVENT_TYPES)
     start_time = models.DateTimeField()
-    facebook_link = models.CharField(max_length=256)
-    eventbrite_link = models.CharField(max_length=256)
+    facebook_link = models.CharField(max_length=256, blank=True)
+    eventbrite_link = models.CharField(max_length=256, blank=True)
     venue = models.ForeignKey(
         Venue,
         on_delete=models.CASCADE
