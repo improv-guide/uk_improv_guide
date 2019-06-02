@@ -1,3 +1,6 @@
+import datetime
+from typing import Sequence
+
 from django.db import models
 
 from uk_improv_guide.models.event_series import EventSeries
@@ -28,3 +31,7 @@ class Event(models.Model):
         on_delete=models.CASCADE
     )
     teams = models.ManyToManyField(Team, verbose_name="teams playing", blank=True)
+
+
+def get_events_after_datetime(dt:datetime.datetime)->Sequence[Event]:
+    return Event.objects.filter(start_time__gte=dt)

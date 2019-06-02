@@ -2,3 +2,4 @@ mysqlclient
 django
 jinja2
 django-reversion
+pytz
