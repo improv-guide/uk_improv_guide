@@ -1,5 +1,6 @@
 from django.db import models
 
+from uk_improv_guide.models.event_series import EventSeries
 from uk_improv_guide.models.team import Team
 from uk_improv_guide.models.venue import Venue
 
@@ -18,7 +19,12 @@ class Event(models.Model):
     facebook_link = models.CharField(max_length=256, blank=True)
     eventbrite_link = models.CharField(max_length=256, blank=True)
     venue = models.ForeignKey(
+        EventSeries,
+        on_delete=models.SET_NULL,
+        null=True
+    )
+    venue = models.ForeignKey(
         Venue,
         on_delete=models.CASCADE
     )
-    teams = models.ManyToManyField(Team, verbose_name="teams playing")
+    teams = models.ManyToManyField(Team, verbose_name="teams playing", blank=True)

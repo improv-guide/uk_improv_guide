@@ -5,4 +5,4 @@ from django.shortcuts import render
 
 
 def main(request):
-    return render(request, "main.html.j2", {"title":"The Main page"})
+    return render(request, "main.html", {"title":"The Main page"})
