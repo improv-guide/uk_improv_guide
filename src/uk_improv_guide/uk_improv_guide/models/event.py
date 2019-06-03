@@ -6,8 +6,10 @@ from django.db import models
 from uk_improv_guide.models.event_series import EventSeries
 from uk_improv_guide.models.team import Team
 from uk_improv_guide.models.venue import Venue
+import reversion
 
 
+@reversion.register
 class Event(models.Model):
     EVENT_TYPES = (
         ('S', 'Show'),

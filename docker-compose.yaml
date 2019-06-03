@@ -33,6 +33,18 @@ services:
     depends_on:
       - db
 
+  shell:
+    <<: *base-dev
+    image: salimfadhley/python_playground:latest
+    build:
+      context: .
+      target: python
+    volumes:
+      - ./src:/src
+    entrypoint: ["/bin/bash"]
+    depends_on:
+      - db
+
   db:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password

@@ -1,8 +1,10 @@
 from django.db import models
 
 from uk_improv_guide.models.performer import Performer
+import reversion
 
 
+@reversion.register
 class Team(models.Model):
     name = models.CharField(max_length=100, primary_key=True)
     facebook_link = models.CharField(max_length=100, blank=True, default="")

@@ -5,6 +5,14 @@
     <title>{{  title }}</title>
 </head>
 <body>
+{% block navigation %}
+    <nav>
+        <a href="/">Events</a> |
+        <a href="/venues/">Venues</a> |
+        <a href="/teams/">Teams</a> |
+    </nav>
+{% endblock %}
+
 {% block content %}
 
 {% endblock %}

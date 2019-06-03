@@ -1,6 +1,8 @@
 from django.db import models
+import reversion
 
 
+@reversion.register
 class Performer(models.Model):
     first_name = models.CharField(max_length=50, default="")
     family_name = models.CharField(max_length=50, default="")
