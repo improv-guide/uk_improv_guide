@@ -1,14 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <p>Add your contenent to our site..</p>
-
-    <ul>
-        <li><a href="/contribute/event">Add an event.</a> You can add a show, jam, workshop, class, forum. Any kind of event that might be of interest to the improv community.</li>
-        <li><a href="/contribute/team">Add a team</a>. If you perform in a group, you can list your team.</li>
-        <li><a href="/contribute/venue">Add a team</a>. Tell us about any location where improv-related events are held.</li>
-        <li><a href="/contribute/performer">Add a performer</a>. Tell us about yourself.</li>
-    </ul>
-
+{% include "content/contribute_menu.html" %}
 
 {% endblock %}

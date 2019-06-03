@@ -13,3 +13,6 @@ def contribute(request):
     return render(request, "contribute.html", {"title":"Contribute"})
 
 
+def contribute_item(request, model):
+    return render(request, "contribute_item.html", {"title":"Contribute"})
+
