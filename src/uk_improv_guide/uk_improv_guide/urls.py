@@ -15,13 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+
+from uk_improv_guide.views.contribute import contribute
 from uk_improv_guide.views.main import main
 from uk_improv_guide.views.teams import teams
 from uk_improv_guide.views.venues import venues
 
 urlpatterns = [
     path('', main, name="Events"),
-    path('venues/', teams, name="Venues"),
+    path('venues/', venues, name="Venues"),
     path('teams/', teams, name="Teams"),
+    path('contribute/', contribute, name="Contribute"),
     path('admin/', admin.site.urls)
 ]

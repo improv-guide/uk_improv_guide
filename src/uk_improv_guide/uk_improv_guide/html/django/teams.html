@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <p>Teams.</p>
+
+    <div class="grid-container">
+        {% for event in events %}
+        <div class="grid-item">{% include "content/event.html" %}</div>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}

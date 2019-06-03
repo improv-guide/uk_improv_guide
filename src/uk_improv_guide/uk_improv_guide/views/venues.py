@@ -12,6 +12,6 @@ from django.shortcuts import render
 def venues(request):
     now:datetime.datetime = datetime.datetime.now(tz=timezone("Europe/London"))
     events:Sequence[Event] = get_events_after_datetime(now)
-    return render(request, "main.html", {"title":"Venues", "events":events})
+    return render(request, "venues.html", {"title":"Venues", "events":events})
 
 
