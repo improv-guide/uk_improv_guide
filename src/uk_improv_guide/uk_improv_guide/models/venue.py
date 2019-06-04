@@ -4,7 +4,7 @@ import reversion
 
 @reversion.register
 class Venue(models.Model):
-    name = models.CharField(max_length=100, primary_key=True)
+    name = models.CharField(max_length=100)
     facebook_link = models.CharField(max_length=256, blank=True)
     website_link = models.CharField(max_length=256, blank=True)
     google_maps_link = models.CharField(max_length=256, blank=True)

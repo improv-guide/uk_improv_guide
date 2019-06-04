@@ -3,9 +3,9 @@
 
     <p>Teams.</p>
 
-    <div class="grid-container">
-        {% for event in events %}
-        <div class="grid-item">{% include "content/event.html" %}</div>
+    <div class="three_column_list">
+        {% for item in items %}
+        <li>{{ item }}</li>
         {% endfor %}
     </div>
 

@@ -18,9 +18,9 @@ class Event(models.Model):
         ('A', 'Audition')
     )
 
-    name = models.CharField(max_length=100, primary_key=True)
+    name = models.CharField(max_length=100)
     event_type = models.CharField(max_length=1, choices=EVENT_TYPES)
-    start_time = models.DateTimeField()
+    start_time = models.DateTimeField(verbose_name="Show start time")
     facebook_link = models.CharField(max_length=256, blank=True)
     eventbrite_link = models.CharField(max_length=256, blank=True)
     venue = models.ForeignKey(

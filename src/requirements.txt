@@ -3,3 +3,5 @@ django
 jinja2
 django-reversion
 pytz
+django-recaptcha
+social-auth-app-django
