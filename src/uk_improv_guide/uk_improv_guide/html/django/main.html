@@ -3,11 +3,12 @@
 
     <p>Events happening soon.</p>
 
-    <div class="grid-container">
-        {% for event in events %}
+
+    <div class="listings"></div>
+    {% for event in events %}
         <div class="grid-item">{% include "content/event.html" %}</div>
-        {% endfor %}
-    </div>
+    {% endfor %}
+
 
 
 {% endblock %}

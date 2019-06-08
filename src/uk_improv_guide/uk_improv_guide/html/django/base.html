@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-    <title>{{  title }}</title>
+    <title>{% block title %}{{  title }}{% endblock %}</title>
 </head>
 <body>
 {% include "nav.html" %}

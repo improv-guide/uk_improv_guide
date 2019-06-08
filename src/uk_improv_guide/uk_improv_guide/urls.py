@@ -19,13 +19,16 @@ from django.urls import path
 from uk_improv_guide.models import Event, Venue, Team, Performer
 from uk_improv_guide.views.contribute import contribute, contribute_item
 from uk_improv_guide.views.main import main
-from uk_improv_guide.views.teams import teams
+from uk_improv_guide.views.teams import teams, team
 from uk_improv_guide.views.venues import venues
 
 urlpatterns = [
     path('', main, name="Events"),
     path('venues/', venues, name="Venues"),
+    # path('venues/<int:id>', v, name="Team"),
+
     path('teams/', teams, name="Teams"),
+    path('teams/<int:id>', team, name="Team"),
 
     path('contribute/', contribute, name="Contribute"),
     path('contribute/event', contribute_item, name="Contribute an event", kwargs={"model":Event}),

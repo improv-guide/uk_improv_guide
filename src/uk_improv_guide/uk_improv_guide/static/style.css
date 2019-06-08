@@ -19,3 +19,8 @@ body {
 .event h1 {
     font-size: 50%;
 }
+
+.listings {
+    column-count: 3;
+    column-gap: 40px;
+}

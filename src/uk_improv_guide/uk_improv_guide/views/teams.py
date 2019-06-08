@@ -14,3 +14,8 @@ def teams(request):
     return render(request, "teams.html", {"title":"Teams", "items":teams})
 
 
+def team(request, id:int):
+    team = Team(id=id)
+    events = []
+    players = []
+    return render(request, "team.html", {"title":"Teams", "team":team, "events":events, "players":players})
