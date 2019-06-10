@@ -91,11 +91,11 @@ WSGI_APPLICATION = 'uk_improv_guide.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'improv',
-        'USER':'improv',
-        'PASSWORD':'changeme',
-        'HOST':'db',
-        'PORT': 3306
+        'NAME': os.environ["DATABASE_NAME"],
+        'USER': os.environ["DATABASE_USER"],
+        'PASSWORD': os.environ["DATABASE_PASSWORD"],
+        'HOST': os.environ["DATABASE_HOST"],
+        'PORT': os.environ["DATABASE_PORT"]
     }
 }
 

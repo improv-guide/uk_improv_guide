@@ -3,6 +3,14 @@ version: '3.7'
 x-base-dev: &base-dev
   restart: on-failure
 
+
+x-base-database: &base-database
+  DATABASE_NAME: 'improv'
+  DATABASE_USER: 'improv'
+  DATABASE_PASSWORD: 'changeme'
+  DATABASE_HOST: 'db'
+  DATABASE_PORT: '3306'
+
 services:
 
 
@@ -20,10 +28,12 @@ services:
       - "8000:8000"
     depends_on:
       - db
+    environment:
+      <<: *base-database
 
   python:
     <<: *base-dev
-    image: salimfadhley/python_playground:latest
+    image: salimfadhley/python_playground:0.1
     build:
       context: .
       target: python
@@ -32,6 +42,9 @@ services:
     entrypoint: ["/usr/local/bin/python"]
     depends_on:
       - db
+    environment:
+      <<: *base-database
+
 
   shell:
     <<: *base-dev
@@ -44,22 +57,21 @@ services:
     entrypoint: ["/bin/bash"]
     depends_on:
       - db
+    environment:
+      <<: *base-database
 
   db:
     image: mysql
     command: --default-authentication-plugin=mysql_native_password
     restart: always
-    environment:
-      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
-      MYSQL_DATABASE: improv
-      MYSQL_USER: improv
-      MYSQL_PASSWORD: changeme
     volumes:
       - "mysql_data:/var/lib/mysql"
+    environment:
+      <<: *base-database
 
 
   adminer:
-    image: adminer
+    image: adminer:latest
     restart: always
     ports:
       - 8080:8080
