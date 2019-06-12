@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-docker-compose run dev -m black /project/src/main /project/src/tests
+docker run -v `pwd`/uk_improv_guide:/src salimfadhley/cleaner:latest
+
