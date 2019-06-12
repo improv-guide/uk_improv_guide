@@ -1,13 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <p>Venues.</p>
+    <h1>Venues</h1>
 
-    <div class="grid-container">
-        {% for event in events %}
-        <div class="grid-item">{% include "content/event.html" %}</div>
+    <ul>
+        {% for venue in venues %}
+        <li>{{venue.name}}</li>
         {% endfor %}
-    </div>
+    </ul>
+
+
 
 
 {% endblock %}

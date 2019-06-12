@@ -17,7 +17,7 @@ def team(request, id:int):
     team:Team = Team(id=id)
 
     events = team.event_set.all()
-    players = team.players()
+    players = team.players.all()
 
     return render(request, "team.html", {
         "title":"XXXXX",

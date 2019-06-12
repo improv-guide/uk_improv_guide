@@ -1,4 +1,5 @@
 from django.db import models
+from typing import List
 import reversion
 
 
@@ -15,3 +16,6 @@ class Venue(models.Model):
     def __str__(self)->str:
         return f"{self.name}, {self.address}"
 
+
+def get_all_venues()->List[Venue]:
+    return []
