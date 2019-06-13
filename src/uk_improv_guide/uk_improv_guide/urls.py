@@ -20,6 +20,7 @@ from uk_improv_guide.models import Event, Venue, Team, Performer
 from uk_improv_guide.views.contribute import contribute, contribute_item
 from uk_improv_guide.views.main import main
 from uk_improv_guide.views.teams import teams, team
+from uk_improv_guide.views.performers import performer, performers
 from uk_improv_guide.views.venues import venues
 
 urlpatterns = [
@@ -29,6 +30,9 @@ urlpatterns = [
 
     path('teams/', teams, name="Teams"),
     path('teams/<int:id>', team, name="Team"),
+
+    path('performers', performers, name="Performer"),
+    path('performers/<int:it>', performer, name="Performer"),
 
     path('contribute/', contribute, name="Contribute"),
     path('contribute/event', contribute_item, name="Contribute an event", kwargs={"model":Event}),

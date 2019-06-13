@@ -34,6 +34,9 @@ class Event(models.Model):
     )
     teams = models.ManyToManyField(Team, verbose_name="teams playing", blank=True)
 
+    def __str__(self):
+        return f"{self.name} - @ {self.start_time} - {self.venue.name}"
+
 
 def get_events_after_datetime(dt:datetime.datetime)->Sequence[Event]:
     return Event.objects.filter(start_time__gte=dt)
