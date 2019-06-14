@@ -8,7 +8,7 @@
 
     <ul>
         {% for player in players %}
-        <li><a href="/performer/{{player.id}}">{{ player.first_name }} {{ player.family_name }}</a></li>
+        <li><a href="/performers/{{player.id}}">{{ player.first_name }} {{ player.family_name }}</a></li>
         {%  endfor %}
     </ul>
 
@@ -16,7 +16,7 @@
 
     <ul>
         {% for show in shows %}
-        <li><a href="/event/{{show.id}}">{{ show.name }} @ {{ show.start_time }}</a></li>
+        <li><a href="/events/{{show.id}}">{{ show.name }} @ {{ show.start_time }}</a></li>
         {%  endfor %}
     </ul>
 

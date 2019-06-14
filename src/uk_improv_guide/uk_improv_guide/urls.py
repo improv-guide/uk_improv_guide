@@ -32,7 +32,7 @@ urlpatterns = [
     path('teams/<int:id>', team, name="Team"),
 
     path('performers', performers, name="Performer"),
-    path('performers/<int:it>', performer, name="Performer"),
+    path('performers/<int:id>', performer, name="Performer"),
 
     path('contribute/', contribute, name="Contribute"),
     path('contribute/event', contribute_item, name="Contribute an event", kwargs={"model":Event}),

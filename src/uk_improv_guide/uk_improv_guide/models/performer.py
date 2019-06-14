@@ -1,7 +1,11 @@
-from typing import Sequence
+import pprint
+from typing import Sequence, List
 
 from django.db import models
 import reversion
+import logging
+
+log = logging.getLogger(__name__)
 
 
 @reversion.register
@@ -19,9 +23,15 @@ class Performer(models.Model):
         return "%s %s" % (self.first_name, self.family_name)
 
 
+
 def get_all_performers()->Sequence[Performer]:
     return Performer.objects.all()
 
 
 def get_performer_by_id(id:int)->Performer:
-    return Performer(id=id)
+    p:Performer = Performer(id=id)
+    print("XXXXXXX")
+    log.warning("YYYYY")
+    pprint.pprint(p)
+    return p
+
