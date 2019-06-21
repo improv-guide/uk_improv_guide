@@ -17,7 +17,7 @@ def performer(request, id:int):
     teams:Sequence[Team] = []
 
     return render(request, "performer.html", {
-        "title": f"{this_performer.first_name} rrrr",
+        "title": f"{this_performer.full_name()}",
         "performer":this_performer,
         "teams":teams,
     })

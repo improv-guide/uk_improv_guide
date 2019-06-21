@@ -25,3 +25,6 @@ class Team(models.Model):
 def get_all_teams()->Sequence[Team]:
     return Team.objects.all()
 
+
+def get_team_by_id(id:int)->Team:
+    return Team.objects.get(id=id)

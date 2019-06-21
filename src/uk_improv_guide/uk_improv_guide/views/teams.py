@@ -12,16 +12,3 @@ def teams(request):
     return render(request, "teams.html", {"title":"Teams", "items":teams})
 
 
-def team(request, id:int):
-    now:datetime.datetime = datetime.datetime.now(tz=timezone("Europe/London"))
-    team:Team = Team(id=id)
-
-    events = team.event_set.all()
-    players = team.players.all()
-
-    return render(request, "team.html", {
-        "title":"XXXXX",
-        "team":team,
-        "events":events,
-        "players":players
-    })
