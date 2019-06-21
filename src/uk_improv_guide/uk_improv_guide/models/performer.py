@@ -19,19 +19,23 @@ class Performer(models.Model):
     imdb_link = models.CharField(max_length=100, blank=True, default="", verbose_name="IMDB Link")
     contact_email_address = models.CharField(max_length=100, blank=True, default="")
 
+
+
+    def full_name(self)->str:
+        middle_names:str = self.middle_names or ""
+        return " ".join([self.first_name] + middle_names.split() + [self.family_name])
+
     def __str__(self)->str:
-        return "%s %s" % (self.first_name, self.family_name)
-
-
+        return self.full_name()
 
 def get_all_performers()->Sequence[Performer]:
     return Performer.objects.all()
 
-
 def get_performer_by_id(id:int)->Performer:
-    p:Performer = Performer(id=id)
+    p:Performer = Performer.objects.get(id=id)
+    log.warning(f"Performer: ->>{p}<<-")
+    log.warning(f"Performer first name: ->>{p.first_name}<<-")
     print("XXXXXXX")
     log.warning("YYYYY")
     pprint.pprint(p)
     return p
-
