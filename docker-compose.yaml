@@ -16,10 +16,10 @@ services:
 
   dev:
     <<: *base-dev
-    image: salimfadhley/python_playground:latest
+    image: salimfadhley/uk_improv_guide:${UK_IMPROV_GUIDE_VERSION}
     build:
       context: .
-      target: python
+      target: uk_improv_guide
     volumes:
       - ./src:/src
     working_dir: "/src/uk_improv_guide"
@@ -33,10 +33,10 @@ services:
 
   python:
     <<: *base-dev
-    image: salimfadhley/python_playground:0.1
+    image: salimfadhley/uk_improv_guide:${UK_IMPROV_GUIDE_VERSION}
     build:
       context: .
-      target: python
+      target: uk_improv_guide
     volumes:
       - ./src:/src
     entrypoint: ["/usr/local/bin/python"]
@@ -48,10 +48,10 @@ services:
 
   shell:
     <<: *base-dev
-    image: salimfadhley/python_playground:latest
+    image: salimfadhley/uk_improv_guide:${UK_IMPROV_GUIDE_VERSION}
     build:
       context: .
-      target: python
+      target: uk_improv_guide
     volumes:
       - ./src:/src
     entrypoint: ["/bin/bash"]

@@ -3,7 +3,6 @@ import os
 
 from setuptools import setup
 
-
 PROJECT_ROOT, _ = os.path.split(__file__)
 REVISION = "0.0.0"
 PROJECT_NAME = "uk_improv_guide"

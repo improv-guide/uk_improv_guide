@@ -1,6 +1,7 @@
-from django.db import models
 from typing import List
+
 import reversion
+from django.db import models
 
 
 @reversion.register
@@ -13,9 +14,9 @@ class Venue(models.Model):
     city = models.CharField(max_length=256, default="London")
     postcode = models.CharField(max_length=10, verbose_name="Post Code")
 
-    def __str__(self)->str:
+    def __str__(self) -> str:
         return f"{self.name}, {self.address}"
 
 
-def get_all_venues()->List[Venue]:
+def get_all_venues() -> List[Venue]:
     return []

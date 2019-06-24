@@ -15,31 +15,46 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
-from uk_improv_guide.models import Event, Venue, Team, Performer
+from uk_improv_guide.models import Event, Performer, Team, Venue
 from uk_improv_guide.views.contribute import contribute, contribute_item
 from uk_improv_guide.views.main import main
-from uk_improv_guide.views.teams import teams, team
 from uk_improv_guide.views.performers import performer, performers
+from uk_improv_guide.views.teams import teams
+from uk_improv_guide.views.team import team
 from uk_improv_guide.views.venues import venues
 
 urlpatterns = [
-    path('', main, name="Events"),
-    path('venues/', venues, name="Venues"),
+    path("", main, name="Events"),
+    path("venues/", venues, name="Venues"),
     # path('venues/<int:id>', v, name="Team"),
-
-    path('teams/', teams, name="Teams"),
-    path('teams/<int:id>', team, name="Team"),
-
-    path('performers', performers, name="Performer"),
-    path('performers/<int:id>', performer, name="Performer"),
-
-    path('contribute/', contribute, name="Contribute"),
-    path('contribute/event', contribute_item, name="Contribute an event", kwargs={"model":Event}),
-    path('contribute/venue', contribute_item, name="Contribute a venue", kwargs={"model":Venue}),
-    path('contribute/team', contribute_item, name="Contribute a team", kwargs={"model":Team}),
-    path('contribute/performer', contribute_item, name="Contribute a performer", kwargs={"model":Performer}),
-
-
-    path('admin/', admin.site.urls)
+    path("teams/", teams, name="Teams"),
+    path("teams/<int:id>", team, name="Team"),
+    path("performers", performers, name="Performer"),
+    path("performers/<int:id>", performer, name="Performer"),
+    path("contribute/", contribute, name="Contribute"),
+    path(
+        "contribute/event",
+        contribute_item,
+        name="Contribute an event",
+        kwargs={"model": Event},
+    ),
+    path(
+        "contribute/venue",
+        contribute_item,
+        name="Contribute a venue",
+        kwargs={"model": Venue},
+    ),
+    path(
+        "contribute/team",
+        contribute_item,
+        name="Contribute a team",
+        kwargs={"model": Team},
+    ),
+    path(
+        "contribute/performer",
+        contribute_item,
+        name="Contribute a performer",
+        kwargs={"model": Performer},
+    ),
+    path("admin/", admin.site.urls),
 ]
