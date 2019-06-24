@@ -8,9 +8,9 @@ from uk_improv_guide.models.performer import (
 
 
 def performers(request):
-    performers: Sequence[Performer] = get_all_performers()
+    all_performers: Sequence[Performer] = get_all_performers()
     return render(
-        request, "performer.html", {"title": "Performers", "items": performers}
+        request, "performer_index.html", {"title": "Performers", "performers": all_performers}
     )
 
 
