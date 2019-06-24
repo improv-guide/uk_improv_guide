@@ -18,10 +18,10 @@ from django.urls import path
 from uk_improv_guide.models import Event, Performer, Team, Venue
 from uk_improv_guide.views.contribute import contribute, contribute_item
 from uk_improv_guide.views.main import main
-from uk_improv_guide.views.performers import performers
 from uk_improv_guide.views.performer import performer
-from uk_improv_guide.views.teams import teams
+from uk_improv_guide.views.performers import performers
 from uk_improv_guide.views.team import team
+from uk_improv_guide.views.teams import teams
 from uk_improv_guide.views.venues import venues
 
 urlpatterns = [
