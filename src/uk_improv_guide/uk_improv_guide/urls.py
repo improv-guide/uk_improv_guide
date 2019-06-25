@@ -22,12 +22,15 @@ from uk_improv_guide.views.performer import performer
 from uk_improv_guide.views.performers import performers
 from uk_improv_guide.views.team import team
 from uk_improv_guide.views.teams import teams
+from uk_improv_guide.views.venue import venue
 from uk_improv_guide.views.venues import venues
 
 urlpatterns = [
     path("", events, name="Events"),
+    path("events/", events, name="Events"),
+    path("events/", events, name="Events"),
     path("venues/", venues, name="Venues"),
-    # path('venues/<int:id>', v, name="Team"),
+    path("venues/<int:id>", venue, name="Venues"),
     path("teams/", teams, name="Teams"),
     path("teams/<int:id>", team, name="Team"),
     path("performers/", performers, name="Performer"),

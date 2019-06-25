@@ -19,4 +19,8 @@ class Venue(models.Model):
 
 
 def get_all_venues() -> List[Venue]:
-    return []
+    return Venue.objects.all()
+
+
+def get_venue_by_id(id: int) -> Venue:
+    return Venue.objects.get(id=id)

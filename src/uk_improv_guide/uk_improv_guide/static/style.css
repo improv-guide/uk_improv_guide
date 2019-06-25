@@ -24,3 +24,10 @@ body {
     column-count: 3;
     column-gap: 40px;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: aqua;
+}

@@ -5,7 +5,7 @@
 
     <ul>
         {% for venue in venues %}
-        <li>{{venue.name}}</li>
+            <li><a href="/venues/{{ venue.id }}">{{venue.name}}</a></li>
         {% endfor %}
     </ul>
 
