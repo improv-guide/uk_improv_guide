@@ -19,6 +19,9 @@ class Performer(models.Model):
     facebook_link = models.CharField(
         max_length=100, blank=True, default="", verbose_name="Facebook Link"
     )
+    instagram_link = models.CharField(
+        max_length=100, blank=True, default="", verbose_name="Instagram Link"
+    )
     twitter_link = models.CharField(
         max_length=100, blank=True, default="", verbose_name="Twitter Link"
     )

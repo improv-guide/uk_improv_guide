@@ -89,6 +89,11 @@
     app_label: uk_improv_guide
     model: event
 - model: sessions.session
+  pk: 2bc7f6ihmzo68mh37easan9jea0p8zll
+  fields:
+    session_data: ZWZmZmQ1NzcwZjIwMTcwYzFlOGY5YmIxNDRkNDViMjUzOWI3YTRlNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhMTEyNGZkOTYyZjA1MGRkM2I4YjM0NDU1ZmYyZGRjNDgwOWY1YjcwIn0=
+    expire_date: 2019-07-09 21:50:21.909074+00:00
+- model: sessions.session
   pk: njomq97i0ywoegl4s0rza1oj5oicjqts
   fields:
     session_data: ZWZmZmQ1NzcwZjIwMTcwYzFlOGY5YmIxNDRkNDViMjUzOWI3YTRlNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhMTEyNGZkOTYyZjA1MGRkM2I4YjM0NDU1ZmYyZGRjNDgwOWY1YjcwIn0=
@@ -101,6 +106,7 @@
     family_name: Salmon
     alias: ''
     facebook_link: ''
+    instagram_link: ''
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
@@ -112,6 +118,7 @@
     family_name: Fadhley
     alias: ''
     facebook_link: https://www.facebook.com/salimfadhley
+    instagram_link: ''
     twitter_link: ''
     imdb_link: ''
     contact_email_address: salimfadhley@gmail.com
@@ -123,6 +130,7 @@
     family_name: Hoerr
     alias: ''
     facebook_link: ''
+    instagram_link: ''
     twitter_link: ''
     imdb_link: ''
     contact_email_address: brookeroberthoerr@hotmail.com
@@ -134,6 +142,7 @@
     family_name: Craig
     alias: ''
     facebook_link: https://www.facebook.com/miriam.craig.50
+    instagram_link: ''
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
@@ -145,6 +154,7 @@
     family_name: Cohn
     alias: ''
     facebook_link: https://www.facebook.com/eli.cohn.7
+    instagram_link: ''
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
@@ -156,6 +166,7 @@
     family_name: Rothwell
     alias: ''
     facebook_link: https://www.facebook.com/colin.rothwell
+    instagram_link: ''
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
@@ -167,6 +178,7 @@
     family_name: Hadalska
     alias: ''
     facebook_link: https://www.facebook.com/monika.hadalska
+    instagram_link: ''
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
@@ -178,6 +190,7 @@
     family_name: Handley
     alias: ''
     facebook_link: https://www.facebook.com/katie.handley.92
+    instagram_link: ''
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
@@ -189,6 +202,7 @@
     family_name: Jarrett
     alias: ''
     facebook_link: https://www.facebook.com/al.jarrett.988
+    instagram_link: ''
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
@@ -200,6 +214,7 @@
     family_name: Andrew
     alias: ''
     facebook_link: https://www.facebook.com/michaelandrew.me
+    instagram_link: ''
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
@@ -211,6 +226,7 @@
     family_name: Simpson
     alias: ''
     facebook_link: https://www.facebook.com/fiona.richmondpark
+    instagram_link: ''
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
@@ -222,6 +238,7 @@
     family_name: Wood
     alias: ''
     facebook_link: https://www.facebook.com/rosanna.thomaswood.9
+    instagram_link: ''
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
@@ -233,8 +250,81 @@
     family_name: Vaughn
     alias: ''
     facebook_link: ''
+    instagram_link: ''
     twitter_link: ''
     imdb_link: https://www.imdb.com/name/nm0891049/
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 14
+  fields:
+    first_name: Simon
+    middle_names: ''
+    family_name: Fazey
+    alias: ''
+    facebook_link: ''
+    instagram_link: https://www.instagram.com/simonfazey/
+    twitter_link: https://twitter.com/SimonFazey
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 15
+  fields:
+    first_name: Samuel
+    middle_names: Geronimo
+    family_name: Deschamps
+    alias: ''
+    facebook_link: https://www.facebook.com/samuel.deschamps.12
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 16
+  fields:
+    first_name: Monica
+    middle_names: ''
+    family_name: Gaga
+    alias: ''
+    facebook_link: https://www.facebook.com/msmonicagaga
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 17
+  fields:
+    first_name: Michael
+    middle_names: ''
+    family_name: Kunze
+    alias: ''
+    facebook_link: https://www.facebook.com/michael.kunze.9
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 18
+  fields:
+    first_name: Mimi
+    middle_names: ''
+    family_name: Bauer
+    alias: ''
+    facebook_link: https://www.facebook.com/events/457990218346091/
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 19
+  fields:
+    first_name: Alex
+    middle_names: ''
+    family_name: Bradbury
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
     contact_email_address: ''
 - model: uk_improv_guide.team
   pk: 1
@@ -279,6 +369,41 @@
     facebook_link: ''
     contact_email_address: ''
     players: []
+- model: uk_improv_guide.team
+  pk: 5
+  fields:
+    name: Lester City
+    facebook_link: https://www.facebook.com/lestercityimprov/
+    contact_email_address: ''
+    players:
+    - 14
+    - 15
+- model: uk_improv_guide.team
+  pk: 6
+  fields:
+    name: Do The Right Scene
+    facebook_link: https://www.facebook.com/DoTheRightScene/
+    contact_email_address: ''
+    players:
+    - 16
+- model: uk_improv_guide.team
+  pk: 7
+  fields:
+    name: Just Friends
+    facebook_link: https://www.facebook.com/justfriendsimpro/
+    contact_email_address: ''
+    players:
+    - 17
+    - 18
+- model: uk_improv_guide.team
+  pk: 8
+  fields:
+    name: Amorphous Horse
+    facebook_link: https://www.facebook.com/amorphoushorse/
+    contact_email_address: ''
+    players:
+    - 4
+    - 19
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -309,6 +434,16 @@
     address: 29 Catherine St
     city: London
     postcode: WC2B 5JS
+- model: uk_improv_guide.venue
+  pk: 4
+  fields:
+    name: 'The Canvas: Cafe & Creative Venue'
+    facebook_link: https://www.facebook.com/TheCanvasCafeE1/
+    website_link: https://www.thecanvascafe.org/vegan-cafe
+    google_maps_link: https://g.page/TheCanvasCafe
+    address: 42 Hanbury St, Spitalfields
+    city: London
+    postcode: E1 5JL
 - model: uk_improv_guide.event
   pk: 1
   fields:
@@ -322,6 +457,31 @@
     - 2
     - 3
     - 4
+- model: uk_improv_guide.event
+  pk: 2
+  fields:
+    name: 'Moop Presents: The Caretakers'
+    event_type: S
+    start_time: 2019-07-22 20:00:00+00:00
+    facebook_link: ''
+    eventbrite_link: ''
+    venue: 3
+    teams:
+    - 1
+    - 2
+- model: uk_improv_guide.event
+  pk: 3
+  fields:
+    name: Lester City Super Sunday
+    event_type: S
+    start_time: 2019-06-23 19:30:00+00:00
+    facebook_link: https://www.facebook.com/events/463709171045195/
+    eventbrite_link: ''
+    venue: 1
+    teams:
+    - 1
+    - 5
+    - 8
 - model: auth.permission
   pk: 1
   fields:
@@ -1058,11 +1218,179 @@
       "MOOP Inaugural", "event_type": "S", "start_time": "2019-06-24T20:00:00Z", "facebook_link":
       "", "eventbrite_link": "", "venue": 3, "teams": [2, 3, 4]}}]'
     object_repr: Event object (1)
+- model: reversion.version
+  pk: 26
+  fields:
+    revision: 26
+    object_id: '14'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 14, "fields":
+      {"first_name": "Simon", "middle_names": "", "family_name": "Fazey", "alias":
+      "", "facebook_link": "", "instagram_link": "https://www.instagram.com/simonfazey/",
+      "twitter_link": "https://twitter.com/SimonFazey", "imdb_link": "", "contact_email_address":
+      ""}}]'
+    object_repr: Simon Fazey
+- model: reversion.version
+  pk: 27
+  fields:
+    revision: 27
+    object_id: '15'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 15, "fields":
+      {"first_name": "Samuel", "middle_names": "Geronimo", "family_name": "Deschamps",
+      "alias": "", "facebook_link": "https://www.facebook.com/samuel.deschamps.12",
+      "instagram_link": "", "twitter_link": "", "imdb_link": "", "contact_email_address":
+      ""}}]'
+    object_repr: Samuel Geronimo Deschamps
+- model: reversion.version
+  pk: 28
+  fields:
+    revision: 28
+    object_id: '5'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 5, "fields": {"name":
+      "Lester City", "facebook_link": "https://www.facebook.com/lestercityimprov/",
+      "contact_email_address": "", "players": [14, 15]}}]'
+    object_repr: Lester City
+- model: reversion.version
+  pk: 29
+  fields:
+    revision: 29
+    object_id: '16'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 16, "fields":
+      {"first_name": "Monica", "middle_names": "", "family_name": "Gaga", "alias":
+      "", "facebook_link": "https://www.facebook.com/msmonicagaga", "instagram_link":
+      "", "twitter_link": "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Monica Gaga
+- model: reversion.version
+  pk: 30
+  fields:
+    revision: 30
+    object_id: '6'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 6, "fields": {"name":
+      "Do The Right Scene", "facebook_link": "https://www.facebook.com/DoTheRightScene/",
+      "contact_email_address": "", "players": [16]}}]'
+    object_repr: Do The Right Scene
+- model: reversion.version
+  pk: 31
+  fields:
+    revision: 31
+    object_id: '4'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 4, "fields": {"name":
+      "The Canvas: Cafe & Creative Venue", "facebook_link": "https://www.facebook.com/TheCanvasCafeE1/",
+      "website_link": "https://www.thecanvascafe.org/vegan-cafe", "google_maps_link":
+      "https://g.page/TheCanvasCafe", "address": "42 Hanbury St, Spitalfields", "city":
+      "London", "postcode": "E1 5JL"}}]'
+    object_repr: 'The Canvas: Cafe & Creative Venue, 42 Hanbury St, Spitalfields'
+- model: reversion.version
+  pk: 32
+  fields:
+    revision: 32
+    object_id: '17'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 17, "fields":
+      {"first_name": "Michael", "middle_names": "", "family_name": "Kunze", "alias":
+      "", "facebook_link": "https://www.facebook.com/michael.kunze.9", "instagram_link":
+      "", "twitter_link": "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Michael Kunze
+- model: reversion.version
+  pk: 33
+  fields:
+    revision: 33
+    object_id: '18'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 18, "fields":
+      {"first_name": "Mimi", "middle_names": "", "family_name": "Bauer", "alias":
+      "", "facebook_link": "https://www.facebook.com/events/457990218346091/", "instagram_link":
+      "", "twitter_link": "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Mimi Bauer
+- model: reversion.version
+  pk: 34
+  fields:
+    revision: 34
+    object_id: '7'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 7, "fields": {"name":
+      "Just Friends", "facebook_link": "https://www.facebook.com/justfriendsimpro/",
+      "contact_email_address": "", "players": [17, 18]}}]'
+    object_repr: Just Friends
+- model: reversion.version
+  pk: 35
+  fields:
+    revision: 35
+    object_id: '2'
+    content_type: 18
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.event", "pk": 2, "fields": {"name":
+      "Moop Presents: The Caretakers", "event_type": "S", "start_time": "2019-07-22T20:00:00Z",
+      "facebook_link": "", "eventbrite_link": "", "venue": 3, "teams": [1, 2]}}]'
+    object_repr: 'Moop Presents: The Caretakers - @ 2019-07-22 20:00:00+00:00 - Nell
+      of Old Drury'
+- model: reversion.version
+  pk: 36
+  fields:
+    revision: 36
+    object_id: '19'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 19, "fields":
+      {"first_name": "Alex", "middle_names": "", "family_name": "Bradbury", "alias":
+      "", "facebook_link": "", "instagram_link": "", "twitter_link": "", "imdb_link":
+      "", "contact_email_address": ""}}]'
+    object_repr: Alex Bradbury
+- model: reversion.version
+  pk: 37
+  fields:
+    revision: 37
+    object_id: '8'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 8, "fields": {"name":
+      "Amorphous Horse", "facebook_link": "https://www.facebook.com/amorphoushorse/",
+      "contact_email_address": "", "players": [4, 19]}}]'
+    object_repr: Amorphous Horse
+- model: reversion.version
+  pk: 38
+  fields:
+    revision: 38
+    object_id: '3'
+    content_type: 18
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.event", "pk": 3, "fields": {"name":
+      "Lester City Super Sunday", "event_type": "S", "start_time": "2019-06-23T19:30:00Z",
+      "facebook_link": "https://www.facebook.com/events/463709171045195/", "eventbrite_link":
+      "", "venue": 1, "teams": [1, 5, 8]}}]'
+    object_repr: Lester City Super Sunday - @ 2019-06-23 19:30:00+00:00 - Free Association
 - model: auth.user
   pk: 1
   fields:
     password: pbkdf2_sha256$150000$NJN6PvxDrDXj$z/e4TbvtO1y2kdL5wa/eg/PjdJLlspPtTcQFAZXLohw=
-    last_login: 2019-06-12 11:37:52.862192+00:00
+    last_login: 2019-06-25 21:50:21.879074+00:00
     is_superuser: true
     username: admin
     first_name: ''
@@ -1324,6 +1652,137 @@
     object_repr: Event object (1)
     action_flag: 2
     change_message: '[{"changed": {"fields": ["teams"]}}]'
+- model: admin.logentry
+  pk: 26
+  fields:
+    action_time: 2019-06-25 21:57:04.537089+00:00
+    user: 1
+    content_type: 15
+    object_id: '14'
+    object_repr: Simon Fazey
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 27
+  fields:
+    action_time: 2019-06-25 21:58:34.462807+00:00
+    user: 1
+    content_type: 15
+    object_id: '15'
+    object_repr: Samuel Geronimo Deschamps
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 28
+  fields:
+    action_time: 2019-06-25 21:58:55.829921+00:00
+    user: 1
+    content_type: 17
+    object_id: '5'
+    object_repr: Lester City
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 29
+  fields:
+    action_time: 2019-06-25 22:00:38.089582+00:00
+    user: 1
+    content_type: 15
+    object_id: '16'
+    object_repr: Monica Gaga
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 30
+  fields:
+    action_time: 2019-06-25 22:01:17.922873+00:00
+    user: 1
+    content_type: 17
+    object_id: '6'
+    object_repr: Do The Right Scene
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 31
+  fields:
+    action_time: 2019-06-25 22:03:24.235482+00:00
+    user: 1
+    content_type: 16
+    object_id: '4'
+    object_repr: 'The Canvas: Cafe & Creative Venue, 42 Hanbury St, Spitalfields'
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 32
+  fields:
+    action_time: 2019-06-25 22:09:32.109177+00:00
+    user: 1
+    content_type: 15
+    object_id: '17'
+    object_repr: Michael Kunze
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 33
+  fields:
+    action_time: 2019-06-25 22:10:46.214119+00:00
+    user: 1
+    content_type: 15
+    object_id: '18'
+    object_repr: Mimi Bauer
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 34
+  fields:
+    action_time: 2019-06-25 22:10:52.090530+00:00
+    user: 1
+    content_type: 17
+    object_id: '7'
+    object_repr: Just Friends
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 35
+  fields:
+    action_time: 2019-06-25 22:12:59.219931+00:00
+    user: 1
+    content_type: 18
+    object_id: '2'
+    object_repr: 'Moop Presents: The Caretakers - @ 2019-07-22 20:00:00+00:00 - Nell
+      of Old Drury'
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 36
+  fields:
+    action_time: 2019-06-25 22:15:07.442474+00:00
+    user: 1
+    content_type: 15
+    object_id: '19'
+    object_repr: Alex Bradbury
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 37
+  fields:
+    action_time: 2019-06-25 22:15:10.509471+00:00
+    user: 1
+    content_type: 17
+    object_id: '8'
+    object_repr: Amorphous Horse
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 38
+  fields:
+    action_time: 2019-06-25 22:15:23.610049+00:00
+    user: 1
+    content_type: 18
+    object_id: '3'
+    object_repr: Lester City Super Sunday - @ 2019-06-23 19:30:00+00:00 - Free Association
+    action_flag: 1
+    change_message: '[{"added": {}}]'
 - model: reversion.revision
   pk: 1
   fields:
@@ -1474,3 +1933,81 @@
     date_created: 2019-06-13 13:15:59.848866+00:00
     user: 1
     comment: '[{"changed": {"fields": ["teams"]}}]'
+- model: reversion.revision
+  pk: 26
+  fields:
+    date_created: 2019-06-25 21:57:04.490483+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 27
+  fields:
+    date_created: 2019-06-25 21:58:34.458773+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 28
+  fields:
+    date_created: 2019-06-25 21:58:55.806209+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 29
+  fields:
+    date_created: 2019-06-25 22:00:38.086292+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 30
+  fields:
+    date_created: 2019-06-25 22:01:17.910486+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 31
+  fields:
+    date_created: 2019-06-25 22:03:24.232701+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 32
+  fields:
+    date_created: 2019-06-25 22:09:32.106276+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 33
+  fields:
+    date_created: 2019-06-25 22:10:46.210139+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 34
+  fields:
+    date_created: 2019-06-25 22:10:52.081469+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 35
+  fields:
+    date_created: 2019-06-25 22:12:59.199325+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 36
+  fields:
+    date_created: 2019-06-25 22:15:07.439314+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 37
+  fields:
+    date_created: 2019-06-25 22:15:10.501346+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 38
+  fields:
+    date_created: 2019-06-25 22:15:23.591103+00:00
+    user: 1
+    comment: '[{"added": {}}]'
