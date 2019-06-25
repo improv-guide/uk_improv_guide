@@ -7,7 +7,34 @@
 
     <ul>
         {% for performer in performers %}
-            <li><a href="/performers/{{ performer.id }}">{{ performer.full_name }}</a></li>
+            <li>
+                <a href="/performers/{{ performer.id }}">{{ performer.full_name }}</a>
+
+                {% if performer.facebook_link %}
+                    <a href="{{ performer.facebook_link }}">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                {% endif %}
+
+                {% if performer.instagram_link %}
+                    <a href="{{ performer.instagram_link }}">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                {% endif %}
+
+                {% if performer.twitter_link %}
+                    <a href="{{ performer.twitter_link }}">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                {% endif %}
+
+                {% if performer.imdb_link %}
+                    <a href="{{ performer.imdb_link }}">
+                        <i class="fab fa-imdb"></i>
+                    </a>
+                {% endif %}
+
+            </li>
         {%  endfor %}
     </ul>
 

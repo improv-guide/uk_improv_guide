@@ -5,7 +5,14 @@
 
     <ul>
         {% for venue in venues %}
-            <li><a href="/venues/{{ venue.id }}">{{venue.name}}</a></li>
+            <li><a href="/venues/{{ venue.id }}">{{venue.name}}</a>
+                {% if venue.google_maps_link %}
+                    <a href="{{ venue.google_maps_link }}">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </a>
+                {% endif %}
+            </li>
+
         {% endfor %}
     </ul>
 
