@@ -16,8 +16,8 @@
     <h3>Shows</h3>
 
     <ul>
-        {% for show in shows %}
-        <li><a href="/events/{{show.id}}">{{ show.name }} @ {{ show.start_time }}</a></li>
+        {% for event in events %}
+        <li><a href="/event/{{event.id}}">{{ event.name }} @ {{ event.start_time }}</a></li>
         {%  endfor %}
     </ul>
 
