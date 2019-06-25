@@ -6,12 +6,14 @@
 </head>
 <body>
 {% include "nav.html" %}
+
+<div class="content">
 {% block content %}
 
 {% endblock %}
+</div>
 
-
-
+{% include "footer.html" %}
 {% include "google_analyitcs.html" %}
 </body>
 </html>

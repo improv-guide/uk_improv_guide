@@ -404,6 +404,13 @@
     players:
     - 4
     - 19
+- model: uk_improv_guide.team
+  pk: 9
+  fields:
+    name: The Bareback Kings
+    facebook_link: ''
+    contact_email_address: ''
+    players: []
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -444,6 +451,16 @@
     address: 42 Hanbury St, Spitalfields
     city: London
     postcode: E1 5JL
+- model: uk_improv_guide.venue
+  pk: 5
+  fields:
+    name: Effra Social
+    facebook_link: ''
+    website_link: ''
+    google_maps_link: https://goo.gl/maps/wArrbV3izLQANfGW7
+    address: 89 Effra Road, Brixton
+    city: London
+    postcode: SW2 1DF
 - model: uk_improv_guide.event
   pk: 1
   fields:
@@ -482,6 +499,28 @@
     - 1
     - 5
     - 8
+- model: uk_improv_guide.event
+  pk: 4
+  fields:
+    name: DDG Summer Finale & Jam!
+    event_type: J
+    start_time: 2019-07-29 20:00:00+00:00
+    facebook_link: ''
+    eventbrite_link: ''
+    venue: 5
+    teams: []
+- model: uk_improv_guide.event
+  pk: 5
+  fields:
+    name: Just Friends
+    event_type: S
+    start_time: 2019-07-12 19:30:00+00:00
+    facebook_link: ''
+    eventbrite_link: ''
+    venue: 4
+    teams:
+    - 7
+    - 9
 - model: auth.permission
   pk: 1
   fields:
@@ -1386,6 +1425,56 @@
       "facebook_link": "https://www.facebook.com/events/463709171045195/", "eventbrite_link":
       "", "venue": 1, "teams": [1, 5, 8]}}]'
     object_repr: Lester City Super Sunday - @ 2019-06-23 19:30:00+00:00 - Free Association
+- model: reversion.version
+  pk: 39
+  fields:
+    revision: 39
+    object_id: '5'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 5, "fields": {"name":
+      "Effra Social", "facebook_link": "", "website_link": "", "google_maps_link":
+      "https://goo.gl/maps/wArrbV3izLQANfGW7", "address": "89 Effra Road, Brixton",
+      "city": "London", "postcode": "SW2 1DF"}}]'
+    object_repr: Effra Social, 89 Effra Road, Brixton
+- model: reversion.version
+  pk: 40
+  fields:
+    revision: 40
+    object_id: '4'
+    content_type: 18
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.event", "pk": 4, "fields": {"name":
+      "DDG Summer Finale & Jam!", "event_type": "J", "start_time": "2019-07-29T20:00:00Z",
+      "facebook_link": "", "eventbrite_link": "", "venue": 5, "teams": []}}]'
+    object_repr: DDG Summer Finale & Jam! - @ 2019-07-29 20:00:00+00:00 - Effra Social
+- model: reversion.version
+  pk: 41
+  fields:
+    revision: 41
+    object_id: '9'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 9, "fields": {"name":
+      "The Bareback Kings", "facebook_link": "", "contact_email_address": "", "players":
+      []}}]'
+    object_repr: The Bareback Kings
+- model: reversion.version
+  pk: 42
+  fields:
+    revision: 42
+    object_id: '5'
+    content_type: 18
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.event", "pk": 5, "fields": {"name":
+      "Just Friends", "event_type": "S", "start_time": "2019-07-12T19:30:00Z", "facebook_link":
+      "", "eventbrite_link": "", "venue": 4, "teams": [7, 9]}}]'
+    object_repr: 'Just Friends - @ 2019-07-12 19:30:00+00:00 - The Canvas: Cafe &
+      Creative Venue'
 - model: auth.user
   pk: 1
   fields:
@@ -1783,6 +1872,47 @@
     object_repr: Lester City Super Sunday - @ 2019-06-23 19:30:00+00:00 - Free Association
     action_flag: 1
     change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 39
+  fields:
+    action_time: 2019-06-25 22:17:38.992877+00:00
+    user: 1
+    content_type: 16
+    object_id: '5'
+    object_repr: Effra Social, 89 Effra Road, Brixton
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 40
+  fields:
+    action_time: 2019-06-25 22:20:37.811466+00:00
+    user: 1
+    content_type: 18
+    object_id: '4'
+    object_repr: DDG Summer Finale & Jam! - @ 2019-07-29 20:00:00+00:00 - Effra Social
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 41
+  fields:
+    action_time: 2019-06-25 22:23:26.878268+00:00
+    user: 1
+    content_type: 17
+    object_id: '9'
+    object_repr: The Bareback Kings
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 42
+  fields:
+    action_time: 2019-06-25 22:24:49.127259+00:00
+    user: 1
+    content_type: 18
+    object_id: '5'
+    object_repr: 'Just Friends - @ 2019-07-12 19:30:00+00:00 - The Canvas: Cafe &
+      Creative Venue'
+    action_flag: 1
+    change_message: '[{"added": {}}]'
 - model: reversion.revision
   pk: 1
   fields:
@@ -2009,5 +2139,29 @@
   pk: 38
   fields:
     date_created: 2019-06-25 22:15:23.591103+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 39
+  fields:
+    date_created: 2019-06-25 22:17:38.990156+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 40
+  fields:
+    date_created: 2019-06-25 22:20:37.803688+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 41
+  fields:
+    date_created: 2019-06-25 22:23:26.872163+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 42
+  fields:
+    date_created: 2019-06-25 22:24:49.110903+00:00
     user: 1
     comment: '[{"added": {}}]'
