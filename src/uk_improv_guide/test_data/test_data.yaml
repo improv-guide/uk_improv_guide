@@ -97,23 +97,145 @@
   pk: 1
   fields:
     first_name: Marc
+    middle_names: ''
     family_name: Salmon
+    alias: ''
     facebook_link: ''
+    twitter_link: ''
+    imdb_link: ''
     contact_email_address: ''
 - model: uk_improv_guide.performer
   pk: 2
   fields:
     first_name: Salim
+    middle_names: ''
     family_name: Fadhley
+    alias: ''
     facebook_link: https://www.facebook.com/salimfadhley
+    twitter_link: ''
+    imdb_link: ''
     contact_email_address: salimfadhley@gmail.com
 - model: uk_improv_guide.performer
   pk: 3
   fields:
     first_name: Brooke
+    middle_names: ''
     family_name: Hoerr
+    alias: ''
     facebook_link: ''
+    twitter_link: ''
+    imdb_link: ''
     contact_email_address: brookeroberthoerr@hotmail.com
+- model: uk_improv_guide.performer
+  pk: 4
+  fields:
+    first_name: Miriam
+    middle_names: ''
+    family_name: Craig
+    alias: ''
+    facebook_link: https://www.facebook.com/miriam.craig.50
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 5
+  fields:
+    first_name: Eli
+    middle_names: ''
+    family_name: Cohn
+    alias: ''
+    facebook_link: https://www.facebook.com/eli.cohn.7
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 6
+  fields:
+    first_name: Colin
+    middle_names: ''
+    family_name: Rothwell
+    alias: ''
+    facebook_link: https://www.facebook.com/colin.rothwell
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 7
+  fields:
+    first_name: Monika
+    middle_names: ''
+    family_name: Hadalska
+    alias: ''
+    facebook_link: https://www.facebook.com/monika.hadalska
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 8
+  fields:
+    first_name: Katie
+    middle_names: ''
+    family_name: Handley
+    alias: ''
+    facebook_link: https://www.facebook.com/katie.handley.92
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 9
+  fields:
+    first_name: Al
+    middle_names: ''
+    family_name: Jarrett
+    alias: ''
+    facebook_link: https://www.facebook.com/al.jarrett.988
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 10
+  fields:
+    first_name: Michael
+    middle_names: ''
+    family_name: Andrew
+    alias: ''
+    facebook_link: https://www.facebook.com/michaelandrew.me
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 11
+  fields:
+    first_name: Fiona Marie
+    middle_names: ''
+    family_name: Simpson
+    alias: ''
+    facebook_link: https://www.facebook.com/fiona.richmondpark
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 12
+  fields:
+    first_name: Rosanna
+    middle_names: ''
+    family_name: Wood
+    alias: ''
+    facebook_link: https://www.facebook.com/rosanna.thomaswood.9
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 13
+  fields:
+    first_name: Jack
+    middle_names: ''
+    family_name: Vaughn
+    alias: ''
+    facebook_link: ''
+    twitter_link: ''
+    imdb_link: https://www.imdb.com/name/nm0891049/
+    contact_email_address: ''
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -124,6 +246,39 @@
     - 1
     - 2
     - 3
+- model: uk_improv_guide.team
+  pk: 2
+  fields:
+    name: MOOP
+    facebook_link: https://www.facebook.com/MOOP-Mistakes-Of-Our-Past-287021065313239/
+    contact_email_address: ''
+    players:
+    - 1
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+- model: uk_improv_guide.team
+  pk: 3
+  fields:
+    name: The Foreseeable Future
+    facebook_link: ''
+    contact_email_address: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 4
+  fields:
+    name: Backstreet Boogaloo
+    facebook_link: ''
+    contact_email_address: ''
+    players: []
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -144,6 +299,29 @@
     address: The Miller, 96 Snowsfields
     city: London
     postcode: SE13SS
+- model: uk_improv_guide.venue
+  pk: 3
+  fields:
+    name: Nell of Old Drury
+    facebook_link: https://www.facebook.com/nellofolddrury/
+    website_link: http://www.nellofolddrury.com/
+    google_maps_link: https://goo.gl/maps/TCqmNM3Qzro4ZwZ16
+    address: 29 Catherine St
+    city: London
+    postcode: WC2B 5JS
+- model: uk_improv_guide.event
+  pk: 1
+  fields:
+    name: MOOP Inaugural
+    event_type: S
+    start_time: 2019-06-24 20:00:00+00:00
+    facebook_link: ''
+    eventbrite_link: ''
+    venue: 3
+    teams:
+    - 2
+    - 3
+    - 4
 - model: auth.permission
   pk: 1
   fields:
@@ -661,6 +839,225 @@
       "google_maps_link": "", "address": "The Miller, 96 Snowsfields", "city": "London",
       "postcode": "SE13SS"}}]'
     object_repr: Hoopla!, The Miller, 96 Snowsfields
+- model: reversion.version
+  pk: 8
+  fields:
+    revision: 8
+    object_id: '2'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 2, "fields": {"name":
+      "MOOP", "facebook_link": "https://www.facebook.com/MOOP-Mistakes-Of-Our-Past-287021065313239/",
+      "contact_email_address": "", "players": [1, 3]}}]'
+    object_repr: MOOP
+- model: reversion.version
+  pk: 9
+  fields:
+    revision: 9
+    object_id: '4'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 4, "fields": {"first_name":
+      "Miriam", "family_name": "Craig", "facebook_link": "", "contact_email_address":
+      ""}}]'
+    object_repr: Miriam Craig
+- model: reversion.version
+  pk: 10
+  fields:
+    revision: 10
+    object_id: '4'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 4, "fields": {"first_name":
+      "Miriam", "family_name": "Craig", "facebook_link": "https://www.facebook.com/miriam.craig.50",
+      "contact_email_address": ""}}]'
+    object_repr: Miriam Craig
+- model: reversion.version
+  pk: 11
+  fields:
+    revision: 11
+    object_id: '5'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 5, "fields": {"first_name":
+      "Eli", "family_name": "Cohn", "facebook_link": "https://www.facebook.com/eli.cohn.7",
+      "contact_email_address": ""}}]'
+    object_repr: Eli Cohn
+- model: reversion.version
+  pk: 12
+  fields:
+    revision: 12
+    object_id: '6'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 6, "fields": {"first_name":
+      "Colin", "family_name": "Rothwell", "facebook_link": "https://www.facebook.com/colin.rothwell",
+      "contact_email_address": ""}}]'
+    object_repr: Colin Rothwell
+- model: reversion.version
+  pk: 13
+  fields:
+    revision: 13
+    object_id: '7'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 7, "fields": {"first_name":
+      "Monika", "family_name": "Hadalska", "facebook_link": "https://www.facebook.com/monika.hadalska",
+      "contact_email_address": ""}}]'
+    object_repr: Monika Hadalska
+- model: reversion.version
+  pk: 14
+  fields:
+    revision: 14
+    object_id: '8'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 8, "fields": {"first_name":
+      "Katie", "family_name": "Handley", "facebook_link": "https://www.facebook.com/katie.handley.92",
+      "contact_email_address": ""}}]'
+    object_repr: Katie Handley
+- model: reversion.version
+  pk: 15
+  fields:
+    revision: 15
+    object_id: '9'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 9, "fields": {"first_name":
+      "Al", "family_name": "Jarrett", "facebook_link": "https://www.facebook.com/al.jarrett.988",
+      "contact_email_address": ""}}]'
+    object_repr: Al Jarrett
+- model: reversion.version
+  pk: 16
+  fields:
+    revision: 16
+    object_id: '10'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 10, "fields":
+      {"first_name": "Michael", "family_name": "Andrew", "facebook_link": "https://www.facebook.com/michaelandrew.me",
+      "contact_email_address": ""}}]'
+    object_repr: Michael Andrew
+- model: reversion.version
+  pk: 17
+  fields:
+    revision: 17
+    object_id: '11'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 11, "fields":
+      {"first_name": "Fiona Marie", "family_name": "Simpson", "facebook_link": "https://www.facebook.com/fiona.richmondpark",
+      "contact_email_address": ""}}]'
+    object_repr: Fiona Marie Simpson
+- model: reversion.version
+  pk: 18
+  fields:
+    revision: 18
+    object_id: '12'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 12, "fields":
+      {"first_name": "Rosanna", "family_name": "Wood", "facebook_link": "https://www.facebook.com/rosanna.thomaswood.9",
+      "contact_email_address": ""}}]'
+    object_repr: Rosanna Wood
+- model: reversion.version
+  pk: 19
+  fields:
+    revision: 19
+    object_id: '13'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 13, "fields":
+      {"first_name": "Jack", "middle_names": "", "family_name": "Vaughn", "alias":
+      "", "facebook_link": "", "imdb_link": "https://www.imdb.com/name/nm0891049/",
+      "contact_email_address": ""}}]'
+    object_repr: Jack Vaughn
+- model: reversion.version
+  pk: 20
+  fields:
+    revision: 20
+    object_id: '2'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 2, "fields": {"name":
+      "MOOP", "facebook_link": "https://www.facebook.com/MOOP-Mistakes-Of-Our-Past-287021065313239/",
+      "contact_email_address": "", "players": [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+      13]}}]'
+    object_repr: MOOP
+- model: reversion.version
+  pk: 21
+  fields:
+    revision: 21
+    object_id: '3'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 3, "fields": {"name":
+      "Nell of Old Drury", "facebook_link": "https://www.facebook.com/nellofolddrury/",
+      "website_link": "http://www.nellofolddrury.com/", "google_maps_link": "https://goo.gl/maps/TCqmNM3Qzro4ZwZ16",
+      "address": "29 Catherine St", "city": "London", "postcode": "WC2B 5JS"}}]'
+    object_repr: Nell of Old Drury, 29 Catherine St
+- model: reversion.version
+  pk: 22
+  fields:
+    revision: 22
+    object_id: '1'
+    content_type: 18
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.event", "pk": 1, "fields": {"name":
+      "MOOP Inaugural", "event_type": "S", "start_time": "2019-06-24T20:00:00Z", "facebook_link":
+      "", "eventbrite_link": "", "venue": 3, "teams": [2]}}]'
+    object_repr: Event object (1)
+- model: reversion.version
+  pk: 23
+  fields:
+    revision: 23
+    object_id: '3'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 3, "fields": {"name":
+      "The Foreseeable Future", "facebook_link": "", "contact_email_address": "",
+      "players": []}}]'
+    object_repr: The Foreseeable Future
+- model: reversion.version
+  pk: 24
+  fields:
+    revision: 24
+    object_id: '4'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 4, "fields": {"name":
+      "Backstreet Boogaloo", "facebook_link": "", "contact_email_address": "", "players":
+      []}}]'
+    object_repr: Backstreet Boogaloo
+- model: reversion.version
+  pk: 25
+  fields:
+    revision: 25
+    object_id: '1'
+    content_type: 18
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.event", "pk": 1, "fields": {"name":
+      "MOOP Inaugural", "event_type": "S", "start_time": "2019-06-24T20:00:00Z", "facebook_link":
+      "", "eventbrite_link": "", "venue": 3, "teams": [2, 3, 4]}}]'
+    object_repr: Event object (1)
 - model: auth.user
   pk: 1
   fields:
@@ -747,6 +1144,186 @@
     object_repr: Hoopla!, The Miller, 96 Snowsfields
     action_flag: 1
     change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 8
+  fields:
+    action_time: 2019-06-13 12:29:39.704347+00:00
+    user: 1
+    content_type: 17
+    object_id: '2'
+    object_repr: MOOP
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 9
+  fields:
+    action_time: 2019-06-13 12:35:58.216299+00:00
+    user: 1
+    content_type: 15
+    object_id: '4'
+    object_repr: Miriam Craig
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 10
+  fields:
+    action_time: 2019-06-13 12:36:20.841709+00:00
+    user: 1
+    content_type: 15
+    object_id: '4'
+    object_repr: Miriam Craig
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["facebook_link"]}}]'
+- model: admin.logentry
+  pk: 11
+  fields:
+    action_time: 2019-06-13 12:36:34.494868+00:00
+    user: 1
+    content_type: 15
+    object_id: '5'
+    object_repr: Eli Cohn
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 12
+  fields:
+    action_time: 2019-06-13 12:36:51.806662+00:00
+    user: 1
+    content_type: 15
+    object_id: '6'
+    object_repr: Colin Rothwell
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 13
+  fields:
+    action_time: 2019-06-13 12:37:16.017165+00:00
+    user: 1
+    content_type: 15
+    object_id: '7'
+    object_repr: Monika Hadalska
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 14
+  fields:
+    action_time: 2019-06-13 12:37:34.485210+00:00
+    user: 1
+    content_type: 15
+    object_id: '8'
+    object_repr: Katie Handley
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 15
+  fields:
+    action_time: 2019-06-13 12:37:57.835884+00:00
+    user: 1
+    content_type: 15
+    object_id: '9'
+    object_repr: Al Jarrett
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 16
+  fields:
+    action_time: 2019-06-13 12:38:14.978334+00:00
+    user: 1
+    content_type: 15
+    object_id: '10'
+    object_repr: Michael Andrew
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 17
+  fields:
+    action_time: 2019-06-13 12:38:43.793606+00:00
+    user: 1
+    content_type: 15
+    object_id: '11'
+    object_repr: Fiona Marie Simpson
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 18
+  fields:
+    action_time: 2019-06-13 12:38:59.780022+00:00
+    user: 1
+    content_type: 15
+    object_id: '12'
+    object_repr: Rosanna Wood
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 19
+  fields:
+    action_time: 2019-06-13 13:04:55.225060+00:00
+    user: 1
+    content_type: 15
+    object_id: '13'
+    object_repr: Jack Vaughn
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 20
+  fields:
+    action_time: 2019-06-13 13:05:19.444111+00:00
+    user: 1
+    content_type: 17
+    object_id: '2'
+    object_repr: MOOP
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["players"]}}]'
+- model: admin.logentry
+  pk: 21
+  fields:
+    action_time: 2019-06-13 13:12:43.186870+00:00
+    user: 1
+    content_type: 16
+    object_id: '3'
+    object_repr: Nell of Old Drury, 29 Catherine St
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 22
+  fields:
+    action_time: 2019-06-13 13:14:28.429144+00:00
+    user: 1
+    content_type: 18
+    object_id: '1'
+    object_repr: Event object (1)
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 23
+  fields:
+    action_time: 2019-06-13 13:15:18.608322+00:00
+    user: 1
+    content_type: 17
+    object_id: '3'
+    object_repr: The Foreseeable Future
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 24
+  fields:
+    action_time: 2019-06-13 13:15:25.306498+00:00
+    user: 1
+    content_type: 17
+    object_id: '4'
+    object_repr: Backstreet Boogaloo
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 25
+  fields:
+    action_time: 2019-06-13 13:15:59.886371+00:00
+    user: 1
+    content_type: 18
+    object_id: '1'
+    object_repr: Event object (1)
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["teams"]}}]'
 - model: reversion.revision
   pk: 1
   fields:
@@ -789,3 +1366,111 @@
     date_created: 2019-06-12 14:51:10.509903+00:00
     user: 1
     comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 8
+  fields:
+    date_created: 2019-06-13 12:29:39.593370+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 9
+  fields:
+    date_created: 2019-06-13 12:35:58.212126+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 10
+  fields:
+    date_created: 2019-06-13 12:36:20.835976+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["facebook_link"]}}]'
+- model: reversion.revision
+  pk: 11
+  fields:
+    date_created: 2019-06-13 12:36:34.489440+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 12
+  fields:
+    date_created: 2019-06-13 12:36:51.792515+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 13
+  fields:
+    date_created: 2019-06-13 12:37:16.010588+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 14
+  fields:
+    date_created: 2019-06-13 12:37:34.479495+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 15
+  fields:
+    date_created: 2019-06-13 12:37:57.830415+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 16
+  fields:
+    date_created: 2019-06-13 12:38:14.972545+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 17
+  fields:
+    date_created: 2019-06-13 12:38:43.788526+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 18
+  fields:
+    date_created: 2019-06-13 12:38:59.773286+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 19
+  fields:
+    date_created: 2019-06-13 13:04:55.039814+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 20
+  fields:
+    date_created: 2019-06-13 13:05:19.413038+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["players"]}}]'
+- model: reversion.revision
+  pk: 21
+  fields:
+    date_created: 2019-06-13 13:12:43.180357+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 22
+  fields:
+    date_created: 2019-06-13 13:14:28.396223+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 23
+  fields:
+    date_created: 2019-06-13 13:15:18.596420+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 24
+  fields:
+    date_created: 2019-06-13 13:15:25.294339+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 25
+  fields:
+    date_created: 2019-06-13 13:15:59.848866+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["teams"]}}]'
