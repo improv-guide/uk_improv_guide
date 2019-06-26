@@ -26,4 +26,7 @@ class Event(models.Model):
 
 
 def get_events_after_datetime(dt: datetime.datetime) -> Sequence[Event]:
-    return Event.objects.filter(start_time__gte=dt)
+    return Event.objects.filter(start_time__gte=dt).order_by('start_time')
+
+def get_events_after_datetime_for_performer_id(dt: datetime.datetime, performer_id:int) -> Sequence[Event]:
+    return Event.objects.filter(start_time__gte=dt, teams__players__id=performer_id).order_by('start_time')
