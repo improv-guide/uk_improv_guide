@@ -27,7 +27,10 @@ SECRET_KEY = "1n*$a4#0$5g&*esz0zlnfjty30tk$wp1)$6+y#z1b8o0vv(4xv"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'improv.guide',
+    'impro.guide'
+]
 
 
 # Application definition
