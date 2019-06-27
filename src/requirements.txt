@@ -1,5 +1,5 @@
 mysqlclient==1.4.2.post1
-django
+django==2.2.2
 jinja2
 django-reversion
 pytz
