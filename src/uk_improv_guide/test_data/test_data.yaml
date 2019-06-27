@@ -326,6 +326,114 @@
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 20
+  fields:
+    first_name: Caroline
+    middle_names: ''
+    family_name: Amer
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 21
+  fields:
+    first_name: Chloe
+    middle_names: ''
+    family_name: Godman
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 22
+  fields:
+    first_name: Daisy
+    middle_names: ''
+    family_name: Badger
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 23
+  fields:
+    first_name: David
+    middle_names: ''
+    family_name: Veniar
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 24
+  fields:
+    first_name: Gareth
+    middle_names: ''
+    family_name: O'Connor
+    alias: ''
+    facebook_link: https://www.facebook.com/garethanthonyoconnor
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 25
+  fields:
+    first_name: Lila
+    middle_names: ''
+    family_name: Baker-Ward
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 26
+  fields:
+    first_name: Nick
+    middle_names: ''
+    family_name: Adamson
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 27
+  fields:
+    first_name: Ben
+    middle_names: ''
+    family_name: Nolan
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 28
+  fields:
+    first_name: Hayley
+    middle_names: ''
+    family_name: McGee
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -411,6 +519,44 @@
     facebook_link: ''
     contact_email_address: ''
     players: []
+- model: uk_improv_guide.team
+  pk: 10
+  fields:
+    name: Mean People
+    facebook_link: https://www.facebook.com/meanpeoplecomedy/
+    contact_email_address: ''
+    players:
+    - 1
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+- model: uk_improv_guide.team
+  pk: 11
+  fields:
+    name: HOOF
+    facebook_link: https://www.facebook.com/HoofComedy/
+    contact_email_address: ''
+    players:
+    - 27
+- model: uk_improv_guide.team
+  pk: 12
+  fields:
+    name: Urban Heat Island
+    facebook_link: ''
+    contact_email_address: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 13
+  fields:
+    name: The Foreseeable Future
+    facebook_link: ''
+    contact_email_address: ''
+    players:
+    - 28
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -461,6 +607,16 @@
     address: 89 Effra Road, Brixton
     city: London
     postcode: SW2 1DF
+- model: uk_improv_guide.venue
+  pk: 6
+  fields:
+    name: The London irish Centre
+    facebook_link: https://www.facebook.com/londonirishcentre/
+    website_link: https://www.londonirishcentre.org/
+    google_maps_link: https://goo.gl/maps/2TwafworxbuN5fNu8
+    address: 50-52 Camden Square
+    city: London
+    postcode: NW1 9XB
 - model: uk_improv_guide.event
   pk: 1
   fields:
@@ -521,6 +677,16 @@
     teams:
     - 7
     - 9
+- model: uk_improv_guide.event
+  pk: 6
+  fields:
+    name: Mean People - Improv Comedy - LAST of the Summer!
+    event_type: S
+    start_time: 2019-06-26 20:30:00+00:00
+    facebook_link: ''
+    eventbrite_link: ''
+    venue: 6
+    teams: []
 - model: auth.permission
   pk: 1
   fields:
@@ -1475,6 +1641,198 @@
       "", "eventbrite_link": "", "venue": 4, "teams": [7, 9]}}]'
     object_repr: 'Just Friends - @ 2019-07-12 19:30:00+00:00 - The Canvas: Cafe &
       Creative Venue'
+- model: reversion.version
+  pk: 43
+  fields:
+    revision: 43
+    object_id: '20'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 20, "fields":
+      {"first_name": "Caroline", "middle_names": "", "family_name": "Amer", "alias":
+      "", "facebook_link": "", "instagram_link": "", "twitter_link": "", "imdb_link":
+      "", "contact_email_address": ""}}]'
+    object_repr: Caroline Amer
+- model: reversion.version
+  pk: 44
+  fields:
+    revision: 44
+    object_id: '21'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 21, "fields":
+      {"first_name": "Chloe", "middle_names": "", "family_name": "Godman", "alias":
+      "", "facebook_link": "", "instagram_link": "", "twitter_link": "", "imdb_link":
+      "", "contact_email_address": ""}}]'
+    object_repr: Chloe Godman
+- model: reversion.version
+  pk: 45
+  fields:
+    revision: 45
+    object_id: '22'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 22, "fields":
+      {"first_name": "Daisy", "middle_names": "", "family_name": "Badger", "alias":
+      "", "facebook_link": "", "instagram_link": "", "twitter_link": "", "imdb_link":
+      "", "contact_email_address": ""}}]'
+    object_repr: Daisy Badger
+- model: reversion.version
+  pk: 46
+  fields:
+    revision: 46
+    object_id: '23'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 23, "fields":
+      {"first_name": "David", "middle_names": "", "family_name": "Veniar", "alias":
+      "", "facebook_link": "", "instagram_link": "", "twitter_link": "", "imdb_link":
+      "", "contact_email_address": ""}}]'
+    object_repr: David Veniar
+- model: reversion.version
+  pk: 47
+  fields:
+    revision: 47
+    object_id: '24'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 24, "fields":
+      {"first_name": "Gareth", "middle_names": "", "family_name": "O''Connor", "alias":
+      "", "facebook_link": "https://www.facebook.com/garethanthonyoconnor", "instagram_link":
+      "", "twitter_link": "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Gareth O'Connor
+- model: reversion.version
+  pk: 48
+  fields:
+    revision: 48
+    object_id: '25'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 25, "fields":
+      {"first_name": "Lila", "middle_names": "", "family_name": "Baker-Ward", "alias":
+      "", "facebook_link": "", "instagram_link": "", "twitter_link": "", "imdb_link":
+      "", "contact_email_address": ""}}]'
+    object_repr: Lila Baker-Ward
+- model: reversion.version
+  pk: 49
+  fields:
+    revision: 49
+    object_id: '26'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 26, "fields":
+      {"first_name": "Nick", "middle_names": "", "family_name": "Adamson", "alias":
+      "", "facebook_link": "", "instagram_link": "", "twitter_link": "", "imdb_link":
+      "", "contact_email_address": ""}}]'
+    object_repr: Nick Adamson
+- model: reversion.version
+  pk: 50
+  fields:
+    revision: 50
+    object_id: '10'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 10, "fields": {"name":
+      "Mean People", "facebook_link": "https://www.facebook.com/meanpeoplecomedy/",
+      "contact_email_address": "", "players": [1, 20, 21, 22, 23, 24, 25, 26]}}]'
+    object_repr: Mean People
+- model: reversion.version
+  pk: 51
+  fields:
+    revision: 51
+    object_id: '27'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 27, "fields":
+      {"first_name": "Ben", "middle_names": "", "family_name": "Nolan", "alias": "",
+      "facebook_link": "", "instagram_link": "", "twitter_link": "", "imdb_link":
+      "", "contact_email_address": ""}}]'
+    object_repr: Ben Nolan
+- model: reversion.version
+  pk: 52
+  fields:
+    revision: 52
+    object_id: '11'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 11, "fields": {"name":
+      "HOOF", "facebook_link": "https://www.facebook.com/HoofComedy/", "contact_email_address":
+      "", "players": [27]}}]'
+    object_repr: HOOF
+- model: reversion.version
+  pk: 53
+  fields:
+    revision: 53
+    object_id: '12'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 12, "fields": {"name":
+      "Urban Heat Island", "facebook_link": "", "contact_email_address": "", "players":
+      []}}]'
+    object_repr: Urban Heat Island
+- model: reversion.version
+  pk: 54
+  fields:
+    revision: 54
+    object_id: '28'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 28, "fields":
+      {"first_name": "Hayley", "middle_names": "", "family_name": "McGee", "alias":
+      "", "facebook_link": "", "instagram_link": "", "twitter_link": "", "imdb_link":
+      "", "contact_email_address": ""}}]'
+    object_repr: Hayley McGee
+- model: reversion.version
+  pk: 55
+  fields:
+    revision: 55
+    object_id: '13'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 13, "fields": {"name":
+      "The Foreseeable Future", "facebook_link": "", "contact_email_address": "",
+      "players": [28]}}]'
+    object_repr: The Foreseeable Future
+- model: reversion.version
+  pk: 56
+  fields:
+    revision: 56
+    object_id: '6'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 6, "fields": {"name":
+      "The London irish Centre", "facebook_link": "https://www.facebook.com/londonirishcentre/",
+      "website_link": "https://www.londonirishcentre.org/", "google_maps_link": "https://goo.gl/maps/2TwafworxbuN5fNu8",
+      "address": "50-52 Camden Square", "city": "London", "postcode": "NW1 9XB"}}]'
+    object_repr: The London irish Centre, 50-52 Camden Square
+- model: reversion.version
+  pk: 57
+  fields:
+    revision: 57
+    object_id: '6'
+    content_type: 18
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.event", "pk": 6, "fields": {"name":
+      "Mean People - Improv Comedy - LAST of the Summer!", "event_type": "S", "start_time":
+      "2019-06-26T20:30:00Z", "facebook_link": "", "eventbrite_link": "", "venue":
+      6, "teams": []}}]'
+    object_repr: Mean People - Improv Comedy - LAST of the Summer! - @ 2019-06-26
+      20:30:00+00:00 - The London irish Centre
 - model: auth.user
   pk: 1
   fields:
@@ -1913,6 +2271,157 @@
       Creative Venue'
     action_flag: 1
     change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 43
+  fields:
+    action_time: 2019-06-26 20:10:57.633713+00:00
+    user: 1
+    content_type: 15
+    object_id: '20'
+    object_repr: Caroline Amer
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 44
+  fields:
+    action_time: 2019-06-26 20:11:10.642294+00:00
+    user: 1
+    content_type: 15
+    object_id: '21'
+    object_repr: Chloe Godman
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 45
+  fields:
+    action_time: 2019-06-26 20:11:24.446243+00:00
+    user: 1
+    content_type: 15
+    object_id: '22'
+    object_repr: Daisy Badger
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 46
+  fields:
+    action_time: 2019-06-26 20:11:35.582711+00:00
+    user: 1
+    content_type: 15
+    object_id: '23'
+    object_repr: David Veniar
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 47
+  fields:
+    action_time: 2019-06-26 20:12:12.551051+00:00
+    user: 1
+    content_type: 15
+    object_id: '24'
+    object_repr: Gareth O'Connor
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 48
+  fields:
+    action_time: 2019-06-26 20:12:30.269464+00:00
+    user: 1
+    content_type: 15
+    object_id: '25'
+    object_repr: Lila Baker-Ward
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 49
+  fields:
+    action_time: 2019-06-26 20:12:40.231065+00:00
+    user: 1
+    content_type: 15
+    object_id: '26'
+    object_repr: Nick Adamson
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 50
+  fields:
+    action_time: 2019-06-26 20:12:45.401533+00:00
+    user: 1
+    content_type: 17
+    object_id: '10'
+    object_repr: Mean People
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 51
+  fields:
+    action_time: 2019-06-26 20:14:03.512297+00:00
+    user: 1
+    content_type: 15
+    object_id: '27'
+    object_repr: Ben Nolan
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 52
+  fields:
+    action_time: 2019-06-26 20:14:06.982271+00:00
+    user: 1
+    content_type: 17
+    object_id: '11'
+    object_repr: HOOF
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 53
+  fields:
+    action_time: 2019-06-26 20:14:41.342668+00:00
+    user: 1
+    content_type: 17
+    object_id: '12'
+    object_repr: Urban Heat Island
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 54
+  fields:
+    action_time: 2019-06-26 20:15:01.675349+00:00
+    user: 1
+    content_type: 15
+    object_id: '28'
+    object_repr: Hayley McGee
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 55
+  fields:
+    action_time: 2019-06-26 20:15:53.807107+00:00
+    user: 1
+    content_type: 17
+    object_id: '13'
+    object_repr: The Foreseeable Future
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 56
+  fields:
+    action_time: 2019-06-26 20:17:53.326441+00:00
+    user: 1
+    content_type: 16
+    object_id: '6'
+    object_repr: The London irish Centre, 50-52 Camden Square
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 57
+  fields:
+    action_time: 2019-06-26 20:19:20.805522+00:00
+    user: 1
+    content_type: 18
+    object_id: '6'
+    object_repr: Mean People - Improv Comedy - LAST of the Summer! - @ 2019-06-26
+      20:30:00+00:00 - The London irish Centre
+    action_flag: 1
+    change_message: '[{"added": {}}]'
 - model: reversion.revision
   pk: 1
   fields:
@@ -2163,5 +2672,95 @@
   pk: 42
   fields:
     date_created: 2019-06-25 22:24:49.110903+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 43
+  fields:
+    date_created: 2019-06-26 20:10:57.578383+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 44
+  fields:
+    date_created: 2019-06-26 20:11:10.638550+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 45
+  fields:
+    date_created: 2019-06-26 20:11:24.443160+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 46
+  fields:
+    date_created: 2019-06-26 20:11:35.578860+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 47
+  fields:
+    date_created: 2019-06-26 20:12:12.546572+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 48
+  fields:
+    date_created: 2019-06-26 20:12:30.266231+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 49
+  fields:
+    date_created: 2019-06-26 20:12:40.227689+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 50
+  fields:
+    date_created: 2019-06-26 20:12:45.389661+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 51
+  fields:
+    date_created: 2019-06-26 20:14:03.508387+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 52
+  fields:
+    date_created: 2019-06-26 20:14:06.974991+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 53
+  fields:
+    date_created: 2019-06-26 20:14:41.336746+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 54
+  fields:
+    date_created: 2019-06-26 20:15:01.671118+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 55
+  fields:
+    date_created: 2019-06-26 20:15:53.797034+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 56
+  fields:
+    date_created: 2019-06-26 20:17:53.322681+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 57
+  fields:
+    date_created: 2019-06-26 20:19:20.798275+00:00
     user: 1
     comment: '[{"added": {}}]'

@@ -29,7 +29,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'improv.guide',
-    'impro.guide'
+    'impro.guide',
+    'localhost'
 ]
 
 
