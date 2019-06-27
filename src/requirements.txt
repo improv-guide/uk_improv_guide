@@ -1,6 +1,6 @@
 mysqlclient
 django
-jinja2
+jinja2==2.10.1
 django-reversion
 pytz
 django-recaptcha
