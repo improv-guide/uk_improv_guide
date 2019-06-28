@@ -1,5 +1,6 @@
 import logging
 import pprint
+import uuid
 from typing import Sequence
 
 import reversion
@@ -10,6 +11,7 @@ log = logging.getLogger(__name__)
 
 @reversion.register
 class Performer(models.Model):
+    unique_id = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     first_name = models.CharField(max_length=50, default="")
     middle_names = models.CharField(max_length=60, blank=True, default="")
     family_name = models.CharField(max_length=50, default="")
@@ -39,7 +41,7 @@ class Performer(models.Model):
 
 
 def get_all_performers() -> Sequence[Performer]:
-    return Performer.objects.all().order_by('family_name', 'first_name')
+    return Performer.objects.all().order_by("family_name", "first_name")
 
 
 def get_performer_by_id(id: int) -> Performer:
