@@ -23,4 +23,4 @@ def get_all_teams() -> Sequence[Team]:
 
 
 def get_team_by_id(id: int) -> Team:
-    return Team.objects.get(id=id)
+    return Team.objects.get(id=id).order_by("name")
