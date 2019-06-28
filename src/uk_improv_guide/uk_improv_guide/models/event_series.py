@@ -1,5 +1,3 @@
-import uuid
-
 import reversion
 from django.db import models
 
