@@ -1,4 +1,5 @@
 import datetime
+import uuid
 from typing import Sequence
 
 import reversion
@@ -12,7 +13,7 @@ from uk_improv_guide.models.venue import Venue
 class Event(models.Model):
     EVENT_TYPES = (("S", "Show"), ("J", "Jam"), ("W", "Workshop"), ("A", "Audition"))
 
-    unique_id = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
+    # unique_id = models.UUIDField(default=uuid.uuid4, editable=False, null=True)
     name = models.CharField(max_length=100)
     event_type = models.CharField(max_length=1, choices=EVENT_TYPES)
     start_time = models.DateTimeField(verbose_name="Show start time")
@@ -20,7 +21,7 @@ class Event(models.Model):
     eventbrite_link = models.CharField(max_length=256, blank=True)
     event_series = models.ForeignKey(EventSeries, on_delete=models.SET_NULL, null=True)
     venue = models.ForeignKey(Venue, on_delete=models.CASCADE)
-    series = models.ForeignKey(EventSeries, on_delete=models.SET_NULL, null=True)
+    series = models.ForeignKey(EventSeries, on_delete=models.SET_NULL, null=True, related_name="xxxxx")
     teams = models.ManyToManyField(Team, verbose_name="teams playing", blank=True)
 
     def __str__(self):

@@ -4,13 +4,13 @@ from typing import Sequence
 import reversion
 from django.db import models
 
-from uk_improv_guide.models import School
+from uk_improv_guide.models.school import School
 from uk_improv_guide.models.performer import Performer
 
 
 @reversion.register
 class Team(models.Model):
-    unique_id = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
+    # unique_id = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     name = models.CharField(max_length=100)
     facebook_link = models.CharField(max_length=100, blank=True, default="")
     contact_email_address = models.CharField(max_length=100, blank=True, default="")

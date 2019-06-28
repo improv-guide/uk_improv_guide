@@ -4,12 +4,12 @@ from typing import List
 import reversion
 from django.db import models
 
-from uk_improv_guide.models import School
+from uk_improv_guide.models.school import School
 
 
 @reversion.register
 class Venue(models.Model):
-    unique_id = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
+    # unique_id = models.UUIDField(default=uuid.uuid4, editable=False, null=True)
     name = models.CharField(max_length=100)
     facebook_link = models.CharField(max_length=256, blank=True)
     website_link = models.CharField(max_length=256, blank=True)
