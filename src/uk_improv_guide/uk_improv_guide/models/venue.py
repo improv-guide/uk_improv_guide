@@ -3,6 +3,8 @@ from typing import List
 import reversion
 from django.db import models
 
+from uk_improv_guide.models.school import School
+
 
 @reversion.register
 class Venue(models.Model):
@@ -13,6 +15,7 @@ class Venue(models.Model):
     address = models.CharField(max_length=256, verbose_name="Street Address")
     city = models.CharField(max_length=256, default="London")
     postcode = models.CharField(max_length=10, verbose_name="Post Code")
+    school = models.ForeignKey(School, on_delete=models.SET_DEFAULT, blank=True, null=True, default=None)
 
     def __str__(self) -> str:
         return f"{self.name}, {self.address}"

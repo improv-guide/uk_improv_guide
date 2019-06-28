@@ -88,6 +88,11 @@
   fields:
     app_label: uk_improv_guide
     model: event
+- model: contenttypes.contenttype
+  pk: 19
+  fields:
+    app_label: uk_improv_guide
+    model: school
 - model: sessions.session
   pk: 2bc7f6ihmzo68mh37easan9jea0p8zll
   fields:
@@ -567,6 +572,7 @@
     address: 113 Southgate Road
     city: London
     postcode: N1 3JS
+    school: null
 - model: uk_improv_guide.venue
   pk: 2
   fields:
@@ -577,6 +583,7 @@
     address: The Miller, 96 Snowsfields
     city: London
     postcode: SE13SS
+    school: null
 - model: uk_improv_guide.venue
   pk: 3
   fields:
@@ -587,6 +594,7 @@
     address: 29 Catherine St
     city: London
     postcode: WC2B 5JS
+    school: null
 - model: uk_improv_guide.venue
   pk: 4
   fields:
@@ -597,6 +605,7 @@
     address: 42 Hanbury St, Spitalfields
     city: London
     postcode: E1 5JL
+    school: null
 - model: uk_improv_guide.venue
   pk: 5
   fields:
@@ -607,6 +616,7 @@
     address: 89 Effra Road, Brixton
     city: London
     postcode: SW2 1DF
+    school: null
 - model: uk_improv_guide.venue
   pk: 6
   fields:
@@ -617,6 +627,7 @@
     address: 50-52 Camden Square
     city: London
     postcode: NW1 9XB
+    school: null
 - model: uk_improv_guide.event
   pk: 1
   fields:
@@ -1119,6 +1130,30 @@
     name: Can view event
     content_type: 18
     codename: view_event
+- model: auth.permission
+  pk: 73
+  fields:
+    name: Can add school
+    content_type: 19
+    codename: add_school
+- model: auth.permission
+  pk: 74
+  fields:
+    name: Can change school
+    content_type: 19
+    codename: change_school
+- model: auth.permission
+  pk: 75
+  fields:
+    name: Can delete school
+    content_type: 19
+    codename: delete_school
+- model: auth.permission
+  pk: 76
+  fields:
+    name: Can view school
+    content_type: 19
+    codename: view_school
 - model: reversion.version
   pk: 1
   fields:
