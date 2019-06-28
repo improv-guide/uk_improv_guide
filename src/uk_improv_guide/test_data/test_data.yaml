@@ -574,14 +574,17 @@
 - model: uk_improv_guide.school
   pk: 1f84d854-12e9-4c3b-a19b-c53847dcf36d
   fields:
+    image: ''
     name: Nursery
 - model: uk_improv_guide.school
   pk: 729a45a2-b9e8-4ce2-9b82-74d05640e4cb
   fields:
+    image: uk_improv_guide/static/images/school/falogo.png
     name: Free Association
 - model: uk_improv_guide.school
   pk: e6592717-72a1-4dab-936f-75b1ca1690d7
   fields:
+    image: ''
     name: Hoopla!
 - model: uk_improv_guide.venue
   pk: 1
@@ -595,6 +598,7 @@
     postcode: N1 3JS
     country: GB
     school: null
+    image: ''
 - model: uk_improv_guide.venue
   pk: 2
   fields:
@@ -607,6 +611,7 @@
     postcode: SE13SS
     country: GB
     school: null
+    image: ''
 - model: uk_improv_guide.venue
   pk: 3
   fields:
@@ -619,6 +624,7 @@
     postcode: WC2B 5JS
     country: GB
     school: null
+    image: ''
 - model: uk_improv_guide.venue
   pk: 4
   fields:
@@ -631,6 +637,7 @@
     postcode: E1 5JL
     country: GB
     school: null
+    image: ''
 - model: uk_improv_guide.venue
   pk: 5
   fields:
@@ -643,6 +650,7 @@
     postcode: SW2 1DF
     country: GB
     school: null
+    image: ''
 - model: uk_improv_guide.venue
   pk: 6
   fields:
@@ -655,6 +663,7 @@
     postcode: NW1 9XB
     country: GB
     school: null
+    image: ''
 - model: uk_improv_guide.venue
   pk: 7
   fields:
@@ -667,6 +676,7 @@
     postcode: NW1 9BH
     country: GB
     school: 729a45a2-b9e8-4ce2-9b82-74d05640e4cb
+    image: static/images/venues/falogo.png
 - model: uk_improv_guide.event
   pk: 1
   fields:
@@ -2073,6 +2083,58 @@
       "address": "29 Catherine St", "city": "London", "postcode": "WC2B 5JS", "country":
       "GB", "school": null}}]'
     object_repr: Nell of Old Drury, London, GB
+- model: reversion.version
+  pk: 71
+  fields:
+    revision: 71
+    object_id: '7'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 7, "fields": {"name":
+      "Free Association Comedy Room", "facebook_link": "", "website_link": "", "google_maps_link":
+      "", "address": "51 Camden Park Road", "city": "London", "postcode": "NW1 9BH",
+      "country": "GB", "school": "729a45a2-b9e8-4ce2-9b82-74d05640e4cb", "image":
+      "venues/falogo.png"}}]'
+    object_repr: Free Association Comedy Room, London, GB
+- model: reversion.version
+  pk: 72
+  fields:
+    revision: 72
+    object_id: '7'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 7, "fields": {"name":
+      "Free Association Comedy Room", "facebook_link": "", "website_link": "", "google_maps_link":
+      "", "address": "51 Camden Park Road", "city": "London", "postcode": "NW1 9BH",
+      "country": "GB", "school": "729a45a2-b9e8-4ce2-9b82-74d05640e4cb", "image":
+      "static/images/venues/falogo.png"}}]'
+    object_repr: Free Association Comedy Room, London, GB
+- model: reversion.version
+  pk: 73
+  fields:
+    revision: 73
+    object_id: 729a45a2-b9e8-4ce2-9b82-74d05640e4cb
+    content_type: 19
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.school", "pk": "729a45a2-b9e8-4ce2-9b82-74d05640e4cb",
+      "fields": {"image": "uk_improv_guide/static/images/school/falogo.png", "name":
+      "Free Association"}}]'
+    object_repr: Free Association
+- model: reversion.version
+  pk: 74
+  fields:
+    revision: 74
+    object_id: 729a45a2-b9e8-4ce2-9b82-74d05640e4cb
+    content_type: 19
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.school", "pk": "729a45a2-b9e8-4ce2-9b82-74d05640e4cb",
+      "fields": {"image": "uk_improv_guide/static/images/school/falogo.png", "name":
+      "Free Association"}}]'
+    object_repr: Free Association
 - model: auth.user
   pk: 1
   fields:
@@ -2792,6 +2854,46 @@
     object_repr: Nell of Old Drury, London, GB
     action_flag: 2
     change_message: '[{"changed": {"fields": ["country"]}}]'
+- model: admin.logentry
+  pk: 71
+  fields:
+    action_time: 2019-06-28 15:51:53.863788+00:00
+    user: 1
+    content_type: 16
+    object_id: '7'
+    object_repr: Free Association Comedy Room, London, GB
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["image"]}}]'
+- model: admin.logentry
+  pk: 72
+  fields:
+    action_time: 2019-06-28 15:58:08.395384+00:00
+    user: 1
+    content_type: 16
+    object_id: '7'
+    object_repr: Free Association Comedy Room, London, GB
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["image"]}}]'
+- model: admin.logentry
+  pk: 73
+  fields:
+    action_time: 2019-06-28 16:01:11.903003+00:00
+    user: 1
+    content_type: 19
+    object_id: 729a45a2-b9e8-4ce2-9b82-74d05640e4cb
+    object_repr: Free Association
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["image"]}}]'
+- model: admin.logentry
+  pk: 74
+  fields:
+    action_time: 2019-06-28 16:01:47.741122+00:00
+    user: 1
+    content_type: 19
+    object_id: 729a45a2-b9e8-4ce2-9b82-74d05640e4cb
+    object_repr: Free Association
+    action_flag: 2
+    change_message: '[]'
 - model: reversion.revision
   pk: 1
   fields:
@@ -3212,3 +3314,27 @@
     date_created: 2019-06-28 15:39:33.751133+00:00
     user: 1
     comment: '[{"changed": {"fields": ["country"]}}]'
+- model: reversion.revision
+  pk: 71
+  fields:
+    date_created: 2019-06-28 15:51:53.498331+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["image"]}}]'
+- model: reversion.revision
+  pk: 72
+  fields:
+    date_created: 2019-06-28 15:58:08.193863+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["image"]}}]'
+- model: reversion.revision
+  pk: 73
+  fields:
+    date_created: 2019-06-28 16:01:11.766158+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["image"]}}]'
+- model: reversion.revision
+  pk: 74
+  fields:
+    date_created: 2019-06-28 16:01:47.735417+00:00
+    user: 1
+    comment: '[]'

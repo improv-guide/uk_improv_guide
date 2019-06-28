@@ -18,6 +18,7 @@ class Venue(models.Model):
     postcode = models.CharField(max_length=10, verbose_name="Postal Code")
     country = CountryField(blank_label='(select country)', default="GB")
     school = models.ForeignKey(School, on_delete=models.SET_DEFAULT, blank=True, null=True, default=None)
+    image = models.ImageField(upload_to="uk_improv_guide/static/images/venues/", blank=True)
 
     def __str__(self) -> str:
         return f"{self.name}, {self.city}, {self.country}"

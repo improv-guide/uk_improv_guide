@@ -22,6 +22,7 @@ services:
       target: uk_improv_guide
     volumes:
       - ./src:/src
+      - ./images:/src/uk_improv_guide/uk_improv_guide/static/
     working_dir: "/src/uk_improv_guide"
     entrypoint: ["/src/uk_improv_guide/start.sh"]
     ports:

@@ -7,3 +7,4 @@ django-recaptcha
 social-auth-app-django
 pyyaml
 django-countries
+Pillow
