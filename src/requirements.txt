@@ -6,4 +6,3 @@ pytz
 django-recaptcha
 social-auth-app-django
 pyyaml
-Pillow
