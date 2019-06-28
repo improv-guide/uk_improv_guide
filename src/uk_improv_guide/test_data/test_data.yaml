@@ -103,6 +103,15 @@
   fields:
     session_data: ZWZmZmQ1NzcwZjIwMTcwYzFlOGY5YmIxNDRkNDViMjUzOWI3YTRlNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhMTEyNGZkOTYyZjA1MGRkM2I4YjM0NDU1ZmYyZGRjNDgwOWY1YjcwIn0=
     expire_date: 2019-06-26 11:37:52.881683+00:00
+- model: sessions.session
+  pk: on60dxncvjzputjw5n7yavhkqd6tc0wr
+  fields:
+    session_data: ZWZmZmQ1NzcwZjIwMTcwYzFlOGY5YmIxNDRkNDViMjUzOWI3YTRlNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhMTEyNGZkOTYyZjA1MGRkM2I4YjM0NDU1ZmYyZGRjNDgwOWY1YjcwIn0=
+    expire_date: 2019-07-12 13:16:15.835860+00:00
+- model: uk_improv_guide.eventseries
+  pk: 43e2c33d-1fe2-48af-a3cf-cac141c86cce
+  fields:
+    name: Big Smoke
 - model: uk_improv_guide.performer
   pk: 1
   fields:
@@ -562,6 +571,18 @@
     contact_email_address: ''
     players:
     - 28
+- model: uk_improv_guide.school
+  pk: 1f84d854-12e9-4c3b-a19b-c53847dcf36d
+  fields:
+    name: Nursery
+- model: uk_improv_guide.school
+  pk: 729a45a2-b9e8-4ce2-9b82-74d05640e4cb
+  fields:
+    name: Free Association
+- model: uk_improv_guide.school
+  pk: e6592717-72a1-4dab-936f-75b1ca1690d7
+  fields:
+    name: Hoopla!
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -572,6 +593,7 @@
     address: 113 Southgate Road
     city: London
     postcode: N1 3JS
+    country: GB
     school: null
 - model: uk_improv_guide.venue
   pk: 2
@@ -583,6 +605,7 @@
     address: The Miller, 96 Snowsfields
     city: London
     postcode: SE13SS
+    country: GB
     school: null
 - model: uk_improv_guide.venue
   pk: 3
@@ -594,6 +617,7 @@
     address: 29 Catherine St
     city: London
     postcode: WC2B 5JS
+    country: GB
     school: null
 - model: uk_improv_guide.venue
   pk: 4
@@ -605,6 +629,7 @@
     address: 42 Hanbury St, Spitalfields
     city: London
     postcode: E1 5JL
+    country: GB
     school: null
 - model: uk_improv_guide.venue
   pk: 5
@@ -616,6 +641,7 @@
     address: 89 Effra Road, Brixton
     city: London
     postcode: SW2 1DF
+    country: GB
     school: null
 - model: uk_improv_guide.venue
   pk: 6
@@ -627,7 +653,20 @@
     address: 50-52 Camden Square
     city: London
     postcode: NW1 9XB
+    country: GB
     school: null
+- model: uk_improv_guide.venue
+  pk: 7
+  fields:
+    name: Free Association Comedy Room
+    facebook_link: ''
+    website_link: ''
+    google_maps_link: ''
+    address: 51 Camden Park Road
+    city: London
+    postcode: NW1 9BH
+    country: GB
+    school: 729a45a2-b9e8-4ce2-9b82-74d05640e4cb
 - model: uk_improv_guide.event
   pk: 1
   fields:
@@ -1868,11 +1907,177 @@
       6, "teams": []}}]'
     object_repr: Mean People - Improv Comedy - LAST of the Summer! - @ 2019-06-26
       20:30:00+00:00 - The London irish Centre
+- model: reversion.version
+  pk: 58
+  fields:
+    revision: 58
+    object_id: 43e2c33d-1fe2-48af-a3cf-cac141c86cce
+    content_type: 14
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.eventseries", "pk": "43e2c33d-1fe2-48af-a3cf-cac141c86cce",
+      "fields": {"name": "Big Smoke"}}]'
+    object_repr: EventSeries object (43e2c33d-1fe2-48af-a3cf-cac141c86cce)
+- model: reversion.version
+  pk: 59
+  fields:
+    revision: 59
+    object_id: 729a45a2-b9e8-4ce2-9b82-74d05640e4cb
+    content_type: 19
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.school", "pk": "729a45a2-b9e8-4ce2-9b82-74d05640e4cb",
+      "fields": {"name": "Free Association"}}]'
+    object_repr: Free Association
+- model: reversion.version
+  pk: 60
+  fields:
+    revision: 60
+    object_id: e6592717-72a1-4dab-936f-75b1ca1690d7
+    content_type: 19
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.school", "pk": "e6592717-72a1-4dab-936f-75b1ca1690d7",
+      "fields": {"name": "Hoopla!"}}]'
+    object_repr: Hoopla!
+- model: reversion.version
+  pk: 61
+  fields:
+    revision: 61
+    object_id: 1f84d854-12e9-4c3b-a19b-c53847dcf36d
+    content_type: 19
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.school", "pk": "1f84d854-12e9-4c3b-a19b-c53847dcf36d",
+      "fields": {"name": "Nursery"}}]'
+    object_repr: Nursery
+- model: reversion.version
+  pk: 62
+  fields:
+    revision: 62
+    object_id: '7'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 7, "fields": {"name":
+      "Free Association Comedy Room", "facebook_link": "", "website_link": "", "google_maps_link":
+      "", "address": "51 Camden Park Road", "city": "London", "postcode": "NW1 9BH",
+      "school": "729a45a2-b9e8-4ce2-9b82-74d05640e4cb"}}]'
+    object_repr: Free Association Comedy Room, 51 Camden Park Road
+- model: reversion.version
+  pk: 63
+  fields:
+    revision: 63
+    object_id: '7'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 7, "fields": {"name":
+      "Free Association Comedy Room", "facebook_link": "", "website_link": "", "google_maps_link":
+      "", "address": "51 Camden Park Road", "city": "London", "postcode": "NW1 9BH",
+      "country": "GB", "school": "729a45a2-b9e8-4ce2-9b82-74d05640e4cb"}}]'
+    object_repr: Free Association Comedy Room, 51 Camden Park Road
+- model: reversion.version
+  pk: 64
+  fields:
+    revision: 64
+    object_id: '6'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 6, "fields": {"name":
+      "The London irish Centre", "facebook_link": "https://www.facebook.com/londonirishcentre/",
+      "website_link": "https://www.londonirishcentre.org/", "google_maps_link": "https://goo.gl/maps/2TwafworxbuN5fNu8",
+      "address": "50-52 Camden Square", "city": "London", "postcode": "NW1 9XB", "country":
+      "GB", "school": null}}]'
+    object_repr: The London irish Centre, 50-52 Camden Square
+- model: reversion.version
+  pk: 65
+  fields:
+    revision: 65
+    object_id: '6'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 6, "fields": {"name":
+      "The London irish Centre", "facebook_link": "https://www.facebook.com/londonirishcentre/",
+      "website_link": "https://www.londonirishcentre.org/", "google_maps_link": "https://goo.gl/maps/2TwafworxbuN5fNu8",
+      "address": "50-52 Camden Square", "city": "London", "postcode": "NW1 9XB", "country":
+      "GB", "school": null}}]'
+    object_repr: The London irish Centre, 50-52 Camden Square
+- model: reversion.version
+  pk: 66
+  fields:
+    revision: 66
+    object_id: '5'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 5, "fields": {"name":
+      "Effra Social", "facebook_link": "", "website_link": "", "google_maps_link":
+      "https://goo.gl/maps/wArrbV3izLQANfGW7", "address": "89 Effra Road, Brixton",
+      "city": "London", "postcode": "SW2 1DF", "country": "GB", "school": null}}]'
+    object_repr: Effra Social, 89 Effra Road, Brixton
+- model: reversion.version
+  pk: 67
+  fields:
+    revision: 67
+    object_id: '4'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 4, "fields": {"name":
+      "The Canvas: Cafe & Creative Venue", "facebook_link": "https://www.facebook.com/TheCanvasCafeE1/",
+      "website_link": "https://www.thecanvascafe.org/vegan-cafe", "google_maps_link":
+      "https://g.page/TheCanvasCafe", "address": "42 Hanbury St, Spitalfields", "city":
+      "London", "postcode": "E1 5JL", "country": "GB", "school": null}}]'
+    object_repr: 'The Canvas: Cafe & Creative Venue, 42 Hanbury St, Spitalfields'
+- model: reversion.version
+  pk: 68
+  fields:
+    revision: 68
+    object_id: '2'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 2, "fields": {"name":
+      "Hoopla!", "facebook_link": "", "website_link": "https://www.hooplaimpro.com/",
+      "google_maps_link": "", "address": "The Miller, 96 Snowsfields", "city": "London",
+      "postcode": "SE13SS", "country": "GB", "school": null}}]'
+    object_repr: Hoopla!, The Miller, 96 Snowsfields
+- model: reversion.version
+  pk: 69
+  fields:
+    revision: 69
+    object_id: '1'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 1, "fields": {"name":
+      "Free Association", "facebook_link": "https://www.facebook.com/FAimprov/", "website_link":
+      "https://thefreeassociation.co.uk/", "google_maps_link": "https://goo.gl/maps/9freHPdWUE3AVvZx9",
+      "address": "113 Southgate Road", "city": "London", "postcode": "N1 3JS", "country":
+      "GB", "school": null}}]'
+    object_repr: Free Association, 113 Southgate Road
+- model: reversion.version
+  pk: 70
+  fields:
+    revision: 70
+    object_id: '3'
+    content_type: 16
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 3, "fields": {"name":
+      "Nell of Old Drury", "facebook_link": "https://www.facebook.com/nellofolddrury/",
+      "website_link": "http://www.nellofolddrury.com/", "google_maps_link": "https://goo.gl/maps/TCqmNM3Qzro4ZwZ16",
+      "address": "29 Catherine St", "city": "London", "postcode": "WC2B 5JS", "country":
+      "GB", "school": null}}]'
+    object_repr: Nell of Old Drury, London, GB
 - model: auth.user
   pk: 1
   fields:
     password: pbkdf2_sha256$150000$NJN6PvxDrDXj$z/e4TbvtO1y2kdL5wa/eg/PjdJLlspPtTcQFAZXLohw=
-    last_login: 2019-06-25 21:50:21.879074+00:00
+    last_login: 2019-06-28 13:16:15.821973+00:00
     is_superuser: true
     username: admin
     first_name: ''
@@ -2457,6 +2662,136 @@
       20:30:00+00:00 - The London irish Centre
     action_flag: 1
     change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 58
+  fields:
+    action_time: 2019-06-28 13:17:32.846279+00:00
+    user: 1
+    content_type: 14
+    object_id: 43e2c33d-1fe2-48af-a3cf-cac141c86cce
+    object_repr: EventSeries object (43e2c33d-1fe2-48af-a3cf-cac141c86cce)
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 59
+  fields:
+    action_time: 2019-06-28 13:18:36.221020+00:00
+    user: 1
+    content_type: 19
+    object_id: 729a45a2-b9e8-4ce2-9b82-74d05640e4cb
+    object_repr: Free Association
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 60
+  fields:
+    action_time: 2019-06-28 13:18:41.424508+00:00
+    user: 1
+    content_type: 19
+    object_id: e6592717-72a1-4dab-936f-75b1ca1690d7
+    object_repr: Hoopla!
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 61
+  fields:
+    action_time: 2019-06-28 13:18:55.393848+00:00
+    user: 1
+    content_type: 19
+    object_id: 1f84d854-12e9-4c3b-a19b-c53847dcf36d
+    object_repr: Nursery
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 62
+  fields:
+    action_time: 2019-06-28 13:20:16.907275+00:00
+    user: 1
+    content_type: 16
+    object_id: '7'
+    object_repr: Free Association Comedy Room, 51 Camden Park Road
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 63
+  fields:
+    action_time: 2019-06-28 15:34:55.851339+00:00
+    user: 1
+    content_type: 16
+    object_id: '7'
+    object_repr: Free Association Comedy Room, 51 Camden Park Road
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["country"]}}]'
+- model: admin.logentry
+  pk: 64
+  fields:
+    action_time: 2019-06-28 15:38:17.896855+00:00
+    user: 1
+    content_type: 16
+    object_id: '6'
+    object_repr: The London irish Centre, 50-52 Camden Square
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["country"]}}]'
+- model: admin.logentry
+  pk: 65
+  fields:
+    action_time: 2019-06-28 15:38:22.982903+00:00
+    user: 1
+    content_type: 16
+    object_id: '6'
+    object_repr: The London irish Centre, 50-52 Camden Square
+    action_flag: 2
+    change_message: '[]'
+- model: admin.logentry
+  pk: 66
+  fields:
+    action_time: 2019-06-28 15:38:26.723169+00:00
+    user: 1
+    content_type: 16
+    object_id: '5'
+    object_repr: Effra Social, 89 Effra Road, Brixton
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["country"]}}]'
+- model: admin.logentry
+  pk: 67
+  fields:
+    action_time: 2019-06-28 15:38:32.053729+00:00
+    user: 1
+    content_type: 16
+    object_id: '4'
+    object_repr: 'The Canvas: Cafe & Creative Venue, 42 Hanbury St, Spitalfields'
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["country"]}}]'
+- model: admin.logentry
+  pk: 68
+  fields:
+    action_time: 2019-06-28 15:38:36.594274+00:00
+    user: 1
+    content_type: 16
+    object_id: '2'
+    object_repr: Hoopla!, The Miller, 96 Snowsfields
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["country"]}}]'
+- model: admin.logentry
+  pk: 69
+  fields:
+    action_time: 2019-06-28 15:38:39.896581+00:00
+    user: 1
+    content_type: 16
+    object_id: '1'
+    object_repr: Free Association, 113 Southgate Road
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["country"]}}]'
+- model: admin.logentry
+  pk: 70
+  fields:
+    action_time: 2019-06-28 15:39:33.807169+00:00
+    user: 1
+    content_type: 16
+    object_id: '3'
+    object_repr: Nell of Old Drury, London, GB
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["country"]}}]'
 - model: reversion.revision
   pk: 1
   fields:
@@ -2799,3 +3134,81 @@
     date_created: 2019-06-26 20:19:20.798275+00:00
     user: 1
     comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 58
+  fields:
+    date_created: 2019-06-28 13:17:32.729263+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 59
+  fields:
+    date_created: 2019-06-28 13:18:36.173058+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 60
+  fields:
+    date_created: 2019-06-28 13:18:41.419677+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 61
+  fields:
+    date_created: 2019-06-28 13:18:55.381270+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 62
+  fields:
+    date_created: 2019-06-28 13:20:16.894760+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 63
+  fields:
+    date_created: 2019-06-28 15:34:55.735323+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["country"]}}]'
+- model: reversion.revision
+  pk: 64
+  fields:
+    date_created: 2019-06-28 15:38:17.839213+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["country"]}}]'
+- model: reversion.revision
+  pk: 65
+  fields:
+    date_created: 2019-06-28 15:38:22.961266+00:00
+    user: 1
+    comment: '[]'
+- model: reversion.revision
+  pk: 66
+  fields:
+    date_created: 2019-06-28 15:38:26.705055+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["country"]}}]'
+- model: reversion.revision
+  pk: 67
+  fields:
+    date_created: 2019-06-28 15:38:32.032298+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["country"]}}]'
+- model: reversion.revision
+  pk: 68
+  fields:
+    date_created: 2019-06-28 15:38:36.572928+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["country"]}}]'
+- model: reversion.revision
+  pk: 69
+  fields:
+    date_created: 2019-06-28 15:38:39.878584+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["country"]}}]'
+- model: reversion.revision
+  pk: 70
+  fields:
+    date_created: 2019-06-28 15:39:33.751133+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["country"]}}]'

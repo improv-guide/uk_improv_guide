@@ -4,6 +4,7 @@ import reversion
 from django.db import models
 
 from uk_improv_guide.models.school import School
+from django_countries.fields import CountryField
 
 
 @reversion.register
@@ -14,11 +15,12 @@ class Venue(models.Model):
     google_maps_link = models.CharField(max_length=256, blank=True)
     address = models.CharField(max_length=256, verbose_name="Street Address")
     city = models.CharField(max_length=256, default="London")
-    postcode = models.CharField(max_length=10, verbose_name="Post Code")
+    postcode = models.CharField(max_length=10, verbose_name="Postal Code")
+    country = CountryField(blank_label='(select country)', default="GB")
     school = models.ForeignKey(School, on_delete=models.SET_DEFAULT, blank=True, null=True, default=None)
 
     def __str__(self) -> str:
-        return f"{self.name}, {self.address}"
+        return f"{self.name}, {self.city}, {self.country}"
 
 
 def get_all_venues() -> List[Venue]:
