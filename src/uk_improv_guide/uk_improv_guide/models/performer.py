@@ -13,6 +13,7 @@ class Performer(models.Model):
     first_name = models.CharField(max_length=50, default="")
     middle_names = models.CharField(max_length=60, blank=True, default="")
     family_name = models.CharField(max_length=50, default="")
+    image = models.ImageField(upload_to="performer/", blank=True)
     alias = models.CharField(
         max_length=50, default="", verbose_name="Alias / Performing as", blank=True
     )

@@ -8,6 +8,7 @@ from uk_improv_guide.models.performer import Performer
 @reversion.register
 class Team(models.Model):
     name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to="team/", blank=True)
     facebook_link = models.CharField(max_length=100, blank=True, default="")
     contact_email_address = models.CharField(max_length=100, blank=True, default="")
     players = models.ManyToManyField(
@@ -19,8 +20,8 @@ class Team(models.Model):
 
 
 def get_all_teams() -> Sequence[Team]:
-    return Team.objects.all()
+    return Team.objects.all().order_by("name")
 
 
 def get_team_by_id(id: int) -> Team:
-    return Team.objects.get(id=id).order_by("name")
+    return Team.objects.get(id=id)

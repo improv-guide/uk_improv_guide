@@ -22,7 +22,7 @@ services:
       target: uk_improv_guide
     volumes:
       - ./src:/src
-      - ./images:/src/uk_improv_guide/uk_improv_guide/static/
+      - ./media:/src/uk_improv_guide/static/media
     working_dir: "/src/uk_improv_guide"
     entrypoint: ["/src/uk_improv_guide/start.sh"]
     ports:
@@ -41,21 +41,6 @@ services:
     volumes:
       - ./src:/src
     entrypoint: ["/usr/local/bin/python"]
-    depends_on:
-      - db
-    environment:
-      <<: *base-database
-
-
-  shell:
-    <<: *base-dev
-    image: salimfadhley/uk_improv_guide:${UK_IMPROV_GUIDE_VERSION}
-    build:
-      context: .
-      target: uk_improv_guide
-    volumes:
-      - ./src:/src
-    entrypoint: ["/bin/bash"]
     depends_on:
       - db
     environment:

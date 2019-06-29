@@ -109,6 +109,7 @@
     first_name: Marc
     middle_names: ''
     family_name: Salmon
+    image: ''
     alias: ''
     facebook_link: ''
     instagram_link: ''
@@ -121,6 +122,7 @@
     first_name: Salim
     middle_names: ''
     family_name: Fadhley
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/salimfadhley
     instagram_link: ''
@@ -133,6 +135,7 @@
     first_name: Brooke
     middle_names: ''
     family_name: Hoerr
+    image: ''
     alias: ''
     facebook_link: ''
     instagram_link: ''
@@ -145,6 +148,7 @@
     first_name: Miriam
     middle_names: ''
     family_name: Craig
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/miriam.craig.50
     instagram_link: ''
@@ -157,6 +161,7 @@
     first_name: Eli
     middle_names: ''
     family_name: Cohn
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/eli.cohn.7
     instagram_link: ''
@@ -169,6 +174,7 @@
     first_name: Colin
     middle_names: ''
     family_name: Rothwell
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/colin.rothwell
     instagram_link: ''
@@ -181,6 +187,7 @@
     first_name: Monika
     middle_names: ''
     family_name: Hadalska
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/monika.hadalska
     instagram_link: ''
@@ -193,6 +200,7 @@
     first_name: Katie
     middle_names: ''
     family_name: Handley
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/katie.handley.92
     instagram_link: ''
@@ -205,6 +213,7 @@
     first_name: Al
     middle_names: ''
     family_name: Jarrett
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/al.jarrett.988
     instagram_link: ''
@@ -217,6 +226,7 @@
     first_name: Michael
     middle_names: ''
     family_name: Andrew
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/michaelandrew.me
     instagram_link: ''
@@ -229,6 +239,7 @@
     first_name: Fiona Marie
     middle_names: ''
     family_name: Simpson
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/fiona.richmondpark
     instagram_link: ''
@@ -241,6 +252,7 @@
     first_name: Rosanna
     middle_names: ''
     family_name: Wood
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/rosanna.thomaswood.9
     instagram_link: ''
@@ -253,6 +265,7 @@
     first_name: Jack
     middle_names: ''
     family_name: Vaughn
+    image: ''
     alias: ''
     facebook_link: ''
     instagram_link: ''
@@ -265,6 +278,7 @@
     first_name: Simon
     middle_names: ''
     family_name: Fazey
+    image: ''
     alias: ''
     facebook_link: ''
     instagram_link: https://www.instagram.com/simonfazey/
@@ -277,6 +291,7 @@
     first_name: Samuel
     middle_names: Geronimo
     family_name: Deschamps
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/samuel.deschamps.12
     instagram_link: ''
@@ -289,6 +304,7 @@
     first_name: Monica
     middle_names: ''
     family_name: Gaga
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/msmonicagaga
     instagram_link: ''
@@ -301,6 +317,7 @@
     first_name: Michael
     middle_names: ''
     family_name: Kunze
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/michael.kunze.9
     instagram_link: ''
@@ -313,6 +330,7 @@
     first_name: Mimi
     middle_names: ''
     family_name: Bauer
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/events/457990218346091/
     instagram_link: ''
@@ -325,6 +343,7 @@
     first_name: Alex
     middle_names: ''
     family_name: Bradbury
+    image: ''
     alias: ''
     facebook_link: ''
     instagram_link: ''
@@ -337,6 +356,7 @@
     first_name: Caroline
     middle_names: ''
     family_name: Amer
+    image: ''
     alias: ''
     facebook_link: ''
     instagram_link: ''
@@ -349,6 +369,7 @@
     first_name: Chloe
     middle_names: ''
     family_name: Godman
+    image: ''
     alias: ''
     facebook_link: ''
     instagram_link: ''
@@ -361,6 +382,7 @@
     first_name: Daisy
     middle_names: ''
     family_name: Badger
+    image: ''
     alias: ''
     facebook_link: ''
     instagram_link: ''
@@ -373,6 +395,7 @@
     first_name: David
     middle_names: ''
     family_name: Veniar
+    image: ''
     alias: ''
     facebook_link: ''
     instagram_link: ''
@@ -385,6 +408,7 @@
     first_name: Gareth
     middle_names: ''
     family_name: O'Connor
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/garethanthonyoconnor
     instagram_link: ''
@@ -397,6 +421,7 @@
     first_name: Lila
     middle_names: ''
     family_name: Baker-Ward
+    image: ''
     alias: ''
     facebook_link: ''
     instagram_link: ''
@@ -409,6 +434,7 @@
     first_name: Nick
     middle_names: ''
     family_name: Adamson
+    image: ''
     alias: ''
     facebook_link: ''
     instagram_link: ''
@@ -421,6 +447,7 @@
     first_name: Ben
     middle_names: ''
     family_name: Nolan
+    image: ''
     alias: ''
     facebook_link: ''
     instagram_link: ''
@@ -433,6 +460,7 @@
     first_name: Hayley
     middle_names: ''
     family_name: McGee
+    image: ''
     alias: ''
     facebook_link: ''
     instagram_link: ''
@@ -445,26 +473,43 @@
     first_name: Robin
     middle_names: ''
     family_name: Wiggs
+    image: ''
     alias: ''
     facebook_link: https://www.facebook.com/robin.wiggs.1
     instagram_link: https://www.instagram.com/wiggsrobin/
     twitter_link: ''
     imdb_link: ''
     contact_email_address: wiggsrobin@aim.com
+- model: uk_improv_guide.performer
+  pk: 30
+  fields:
+    first_name: Jessica
+    middle_names: ''
+    family_name: Ulrich
+    image: ''
+    alias: ''
+    facebook_link: https://www.facebook.com/jessica.ulrich.98
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
 - model: uk_improv_guide.team
   pk: 1
   fields:
     name: Caretakers
+    image: ''
     facebook_link: https://www.facebook.com/thecaretakerscomedy/?modal=admin_todo_tour
     contact_email_address: salimfadhley@gmail.com
     players:
     - 1
     - 2
     - 3
+    - 30
 - model: uk_improv_guide.team
   pk: 2
   fields:
     name: MOOP
+    image: ''
     facebook_link: https://www.facebook.com/MOOP-Mistakes-Of-Our-Past-287021065313239/
     contact_email_address: ''
     players:
@@ -484,6 +529,7 @@
   pk: 3
   fields:
     name: The Foreseeable Future
+    image: ''
     facebook_link: ''
     contact_email_address: ''
     players: []
@@ -491,6 +537,7 @@
   pk: 4
   fields:
     name: Backstreet Boogaloo
+    image: ''
     facebook_link: ''
     contact_email_address: ''
     players: []
@@ -498,6 +545,7 @@
   pk: 5
   fields:
     name: Lester City
+    image: ''
     facebook_link: https://www.facebook.com/lestercityimprov/
     contact_email_address: ''
     players:
@@ -507,6 +555,7 @@
   pk: 6
   fields:
     name: Do The Right Scene
+    image: ''
     facebook_link: https://www.facebook.com/DoTheRightScene/
     contact_email_address: ''
     players:
@@ -515,6 +564,7 @@
   pk: 7
   fields:
     name: Just Friends
+    image: ''
     facebook_link: https://www.facebook.com/justfriendsimpro/
     contact_email_address: ''
     players:
@@ -524,6 +574,7 @@
   pk: 8
   fields:
     name: Amorphous Horse
+    image: ''
     facebook_link: https://www.facebook.com/amorphoushorse/
     contact_email_address: ''
     players:
@@ -533,6 +584,7 @@
   pk: 9
   fields:
     name: The Bareback Kings
+    image: ''
     facebook_link: ''
     contact_email_address: ''
     players: []
@@ -540,6 +592,7 @@
   pk: 10
   fields:
     name: Mean People
+    image: ''
     facebook_link: https://www.facebook.com/meanpeoplecomedy/
     contact_email_address: ''
     players:
@@ -555,6 +608,7 @@
   pk: 11
   fields:
     name: HOOF
+    image: ''
     facebook_link: https://www.facebook.com/HoofComedy/
     contact_email_address: ''
     players:
@@ -563,6 +617,7 @@
   pk: 12
   fields:
     name: Urban Heat Island
+    image: ''
     facebook_link: ''
     contact_email_address: ''
     players: []
@@ -570,6 +625,7 @@
   pk: 13
   fields:
     name: The Foreseeable Future
+    image: ''
     facebook_link: ''
     contact_email_address: ''
     players:
@@ -578,6 +634,7 @@
   pk: 14
   fields:
     name: Swipe Right
+    image: ''
     facebook_link: ''
     contact_email_address: ''
     players: []
@@ -585,6 +642,7 @@
   pk: 15
   fields:
     name: When X met Y
+    image: ''
     facebook_link: https://www.facebook.com/XMetYImprov/
     contact_email_address: wiggsrobin@aim.com
     players:
@@ -593,6 +651,7 @@
   pk: 16
   fields:
     name: The Gatekeepers
+    image: ''
     facebook_link: ''
     contact_email_address: ''
     players: []
@@ -600,16 +659,29 @@
   pk: 17
   fields:
     name: The Bathhouse Children
+    image: ''
     facebook_link: ''
     contact_email_address: ''
-    players: []
+    players:
+    - 17
+    - 30
 - model: uk_improv_guide.team
   pk: 18
   fields:
     name: The Tuesday Group
+    image: ''
     facebook_link: https://www.facebook.com/thetuesdaygroupimprov
     contact_email_address: ged@thetuesdaygroup.org.uk
     players: []
+- model: uk_improv_guide.team
+  pk: 19
+  fields:
+    name: The Art of Happiness
+    image: team/art_of_happiness.jpg
+    facebook_link: ''
+    contact_email_address: ''
+    players:
+    - 30
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -2026,6 +2098,139 @@
       "When X met Y", "facebook_link": "https://www.facebook.com/XMetYImprov/", "contact_email_address":
       "wiggsrobin@aim.com", "players": [29]}}]'
     object_repr: When X met Y
+- model: reversion.version
+  pk: 66
+  fields:
+    revision: 66
+    object_id: '30'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 30, "fields":
+      {"first_name": "Jessica", "middle_names": "", "family_name": "Ulrich", "alias":
+      "", "facebook_link": "https://www.facebook.com/jessica.ulrich.98", "instagram_link":
+      "", "twitter_link": "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Jessica Ulrich
+- model: reversion.version
+  pk: 67
+  fields:
+    revision: 67
+    object_id: '19'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
+      "The Art of Happiness", "image": "uk_improv_guide/static/images/team/art_of_happiness.jpg",
+      "facebook_link": "", "contact_email_address": "", "players": [30]}}]'
+    object_repr: The Art of Happiness
+- model: reversion.version
+  pk: 68
+  fields:
+    revision: 68
+    object_id: '1'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 1, "fields": {"name":
+      "Caretakers", "image": "", "facebook_link": "https://www.facebook.com/thecaretakerscomedy/?modal=admin_todo_tour",
+      "contact_email_address": "salimfadhley@gmail.com", "players": [1, 2, 3, 30]}}]'
+    object_repr: Caretakers
+- model: reversion.version
+  pk: 69
+  fields:
+    revision: 69
+    object_id: '17'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 17, "fields": {"name":
+      "The Bathhouse Children", "image": "", "facebook_link": "", "contact_email_address":
+      "", "players": [17, 30]}}]'
+    object_repr: The Bathhouse Children
+- model: reversion.version
+  pk: 70
+  fields:
+    revision: 70
+    object_id: '19'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
+      "The Art of Happiness", "image": "team/art_of_happiness.jpg", "facebook_link":
+      "", "contact_email_address": "", "players": [30]}}]'
+    object_repr: The Art of Happiness
+- model: reversion.version
+  pk: 71
+  fields:
+    revision: 71
+    object_id: '19'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
+      "The Art of Happiness", "image": "team/art_of_happiness.jpg", "facebook_link":
+      "", "contact_email_address": "", "players": [30]}}]'
+    object_repr: The Art of Happiness
+- model: reversion.version
+  pk: 72
+  fields:
+    revision: 72
+    object_id: '19'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
+      "The Art of Happiness", "image": "team/art_of_happiness.jpg", "facebook_link":
+      "", "contact_email_address": "", "players": [30]}}]'
+    object_repr: The Art of Happiness
+- model: reversion.version
+  pk: 73
+  fields:
+    revision: 73
+    object_id: '19'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
+      "The Art of Happiness", "image": "team/art_of_happiness_TTrZIMO.jpg", "facebook_link":
+      "", "contact_email_address": "", "players": [30]}}]'
+    object_repr: The Art of Happiness
+- model: reversion.version
+  pk: 74
+  fields:
+    revision: 74
+    object_id: '19'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
+      "The Art of Happiness", "image": "team/art_of_happiness.jpg", "facebook_link":
+      "", "contact_email_address": "", "players": [30]}}]'
+    object_repr: The Art of Happiness
+- model: reversion.version
+  pk: 75
+  fields:
+    revision: 75
+    object_id: '19'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
+      "The Art of Happiness", "image": "team/art_of_happiness.jpg", "facebook_link":
+      "", "contact_email_address": "", "players": [30]}}]'
+    object_repr: The Art of Happiness
+- model: reversion.version
+  pk: 76
+  fields:
+    revision: 76
+    object_id: '19'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
+      "The Art of Happiness", "image": "team/art_of_happiness.jpg", "facebook_link":
+      "", "contact_email_address": "", "players": [30]}}]'
+    object_repr: The Art of Happiness
 - model: auth.user
   pk: 1
   fields:
@@ -2696,6 +2901,116 @@
     action_flag: 2
     change_message: '[{"changed": {"fields": ["facebook_link", "contact_email_address",
       "players"]}}]'
+- model: admin.logentry
+  pk: 66
+  fields:
+    action_time: 2019-06-28 21:58:25.643340+00:00
+    user: 1
+    content_type: 15
+    object_id: '30'
+    object_repr: Jessica Ulrich
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 67
+  fields:
+    action_time: 2019-06-28 21:58:36.281451+00:00
+    user: 1
+    content_type: 17
+    object_id: '19'
+    object_repr: The Art of Happiness
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 68
+  fields:
+    action_time: 2019-06-28 22:08:57.329872+00:00
+    user: 1
+    content_type: 17
+    object_id: '1'
+    object_repr: Caretakers
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["players"]}}]'
+- model: admin.logentry
+  pk: 69
+  fields:
+    action_time: 2019-06-28 22:09:19.601454+00:00
+    user: 1
+    content_type: 17
+    object_id: '17'
+    object_repr: The Bathhouse Children
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["players"]}}]'
+- model: admin.logentry
+  pk: 70
+  fields:
+    action_time: 2019-06-28 22:25:14.517382+00:00
+    user: 1
+    content_type: 17
+    object_id: '19'
+    object_repr: The Art of Happiness
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["image"]}}]'
+- model: admin.logentry
+  pk: 71
+  fields:
+    action_time: 2019-06-28 22:27:36.782019+00:00
+    user: 1
+    content_type: 17
+    object_id: '19'
+    object_repr: The Art of Happiness
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["image"]}}]'
+- model: admin.logentry
+  pk: 72
+  fields:
+    action_time: 2019-06-28 22:33:12.029012+00:00
+    user: 1
+    content_type: 17
+    object_id: '19'
+    object_repr: The Art of Happiness
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["image"]}}]'
+- model: admin.logentry
+  pk: 73
+  fields:
+    action_time: 2019-06-28 22:37:05.365711+00:00
+    user: 1
+    content_type: 17
+    object_id: '19'
+    object_repr: The Art of Happiness
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["image"]}}]'
+- model: admin.logentry
+  pk: 74
+  fields:
+    action_time: 2019-06-28 22:39:29.929843+00:00
+    user: 1
+    content_type: 17
+    object_id: '19'
+    object_repr: The Art of Happiness
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["image"]}}]'
+- model: admin.logentry
+  pk: 75
+  fields:
+    action_time: 2019-06-28 22:44:05.842668+00:00
+    user: 1
+    content_type: 17
+    object_id: '19'
+    object_repr: The Art of Happiness
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["image"]}}]'
+- model: admin.logentry
+  pk: 76
+  fields:
+    action_time: 2019-06-28 22:47:53.263042+00:00
+    user: 1
+    content_type: 17
+    object_id: '19'
+    object_repr: The Art of Happiness
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["image"]}}]'
 - model: reversion.revision
   pk: 1
   fields:
@@ -3086,3 +3401,69 @@
     date_created: 2019-06-28 18:42:52.212503+00:00
     user: 1
     comment: '[{"changed": {"fields": ["facebook_link", "contact_email_address", "players"]}}]'
+- model: reversion.revision
+  pk: 66
+  fields:
+    date_created: 2019-06-28 21:58:25.579645+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 67
+  fields:
+    date_created: 2019-06-28 21:58:36.206902+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 68
+  fields:
+    date_created: 2019-06-28 22:08:57.316499+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["players"]}}]'
+- model: reversion.revision
+  pk: 69
+  fields:
+    date_created: 2019-06-28 22:09:19.588651+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["players"]}}]'
+- model: reversion.revision
+  pk: 70
+  fields:
+    date_created: 2019-06-28 22:25:14.428192+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["image"]}}]'
+- model: reversion.revision
+  pk: 71
+  fields:
+    date_created: 2019-06-28 22:27:36.710682+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["image"]}}]'
+- model: reversion.revision
+  pk: 72
+  fields:
+    date_created: 2019-06-28 22:33:11.934369+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["image"]}}]'
+- model: reversion.revision
+  pk: 73
+  fields:
+    date_created: 2019-06-28 22:37:05.289353+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["image"]}}]'
+- model: reversion.revision
+  pk: 74
+  fields:
+    date_created: 2019-06-28 22:39:29.826060+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["image"]}}]'
+- model: reversion.revision
+  pk: 75
+  fields:
+    date_created: 2019-06-28 22:44:05.758309+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["image"]}}]'
+- model: reversion.revision
+  pk: 76
+  fields:
+    date_created: 2019-06-28 22:47:53.186598+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["image"]}}]'

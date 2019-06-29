@@ -4,14 +4,18 @@
 
     <h1>{{ title }}</h1>
 
+    <p>
 
+    </p>
+
+    {% if teams %}
     <h3>Plays in these teams:</h3>
-
-<ul>
+    <ul>
         {% for team in teams %}
         <li><a href="/teams/{{team.id}}">{{ team.name }}</a></li>
         {%  endfor %}
     </ul>
+    {% endif %}
 
     <h3>Shows</h3>
 
