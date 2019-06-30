@@ -493,6 +493,58 @@
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 31
+  fields:
+    first_name: Phillippa
+    middle_names: ''
+    family_name: Peacock
+    image: ''
+    alias: ''
+    facebook_link: https://www.facebook.com/philippa.peacock
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 32
+  fields:
+    first_name: Chris
+    middle_names: ''
+    family_name: Gau
+    image: ''
+    alias: ''
+    facebook_link: https://www.facebook.com/thechrisgau
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 33
+  fields:
+    first_name: Katherine
+    middle_names: ''
+    family_name: Bennett-Fox
+    image: ''
+    alias: ''
+    facebook_link: https://www.facebook.com/katharine.bennettfox
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 34
+  fields:
+    first_name: Sophia
+    middle_names: ''
+    family_name: Brio
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -689,7 +741,19 @@
     image: team/rhinoseros_logo.png
     facebook_link: https://www.facebook.com/rhinocerosimprov/
     contact_email_address: ''
-    players: []
+    players:
+    - 31
+- model: uk_improv_guide.team
+  pk: 21
+  fields:
+    name: The Wilsons
+    image: ''
+    facebook_link: https://www.facebook.com/thewilsonsimprov/
+    contact_email_address: ''
+    players:
+    - 32
+    - 33
+    - 34
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -851,6 +915,18 @@
     eventbrite_link: ''
     venue: 6
     teams: []
+- model: uk_improv_guide.event
+  pk: 7
+  fields:
+    name: Big Friday
+    event_type: S
+    start_time: 2019-06-28 19:30:00+00:00
+    facebook_link: ''
+    eventbrite_link: ''
+    venue: 7
+    teams:
+    - 20
+    - 21
 - model: auth.permission
   pk: 1
   fields:
@@ -2340,6 +2416,96 @@
       "address": "375 Kilburn High Rd", "city": "London", "postcode": "NW6 7QB", "country":
       "GB", "school": null, "image": ""}}]'
     object_repr: The North London Tavern, London, GB
+- model: reversion.version
+  pk: 84
+  fields:
+    revision: 84
+    object_id: '31'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 31, "fields":
+      {"first_name": "Phillippa", "middle_names": "", "family_name": "Peacock", "image":
+      "", "alias": "", "facebook_link": "https://www.facebook.com/philippa.peacock",
+      "instagram_link": "", "twitter_link": "", "imdb_link": "", "contact_email_address":
+      ""}}]'
+    object_repr: Peacock, Phillippa
+- model: reversion.version
+  pk: 85
+  fields:
+    revision: 85
+    object_id: '20'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 20, "fields": {"name":
+      "Rhinoseros", "image": "team/rhinoseros_logo.png", "facebook_link": "https://www.facebook.com/rhinocerosimprov/",
+      "contact_email_address": "", "players": [31]}}]'
+    object_repr: Rhinoseros
+- model: reversion.version
+  pk: 86
+  fields:
+    revision: 86
+    object_id: '32'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 32, "fields":
+      {"first_name": "Chris", "middle_names": "", "family_name": "Gau", "image": "",
+      "alias": "", "facebook_link": "https://www.facebook.com/thechrisgau", "instagram_link":
+      "", "twitter_link": "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Gau, Chris
+- model: reversion.version
+  pk: 87
+  fields:
+    revision: 87
+    object_id: '33'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 33, "fields":
+      {"first_name": "Katherine", "middle_names": "", "family_name": "Bennett-Fox",
+      "image": "", "alias": "", "facebook_link": "https://www.facebook.com/katharine.bennettfox",
+      "instagram_link": "", "twitter_link": "", "imdb_link": "", "contact_email_address":
+      ""}}]'
+    object_repr: Bennett-Fox, Katherine
+- model: reversion.version
+  pk: 88
+  fields:
+    revision: 88
+    object_id: '34'
+    content_type: 15
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 34, "fields":
+      {"first_name": "Sophia", "middle_names": "", "family_name": "Brio", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Brio, Sophia
+- model: reversion.version
+  pk: 89
+  fields:
+    revision: 89
+    object_id: '21'
+    content_type: 17
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 21, "fields": {"name":
+      "The Wilsons", "image": "", "facebook_link": "https://www.facebook.com/thewilsonsimprov/",
+      "contact_email_address": "", "players": [32, 33, 34]}}]'
+    object_repr: The Wilsons
+- model: reversion.version
+  pk: 90
+  fields:
+    revision: 90
+    object_id: '7'
+    content_type: 18
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.event", "pk": 7, "fields": {"name":
+      "Big Friday", "event_type": "S", "start_time": "2019-06-28T19:30:00Z", "facebook_link":
+      "", "eventbrite_link": "", "venue": 7, "teams": [20, 21]}}]'
+    object_repr: Big Friday - @ 2019-06-28 19:30:00+00:00 - The North London Tavern
 - model: auth.user
   pk: 1
   fields:
@@ -3190,6 +3356,76 @@
     object_repr: The North London Tavern, London, GB
     action_flag: 1
     change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 84
+  fields:
+    action_time: 2019-06-30 16:30:07.297113+00:00
+    user: 1
+    content_type: 15
+    object_id: '31'
+    object_repr: Peacock, Phillippa
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 85
+  fields:
+    action_time: 2019-06-30 16:30:25.291758+00:00
+    user: 1
+    content_type: 17
+    object_id: '20'
+    object_repr: Rhinoseros
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["players"]}}]'
+- model: admin.logentry
+  pk: 86
+  fields:
+    action_time: 2019-06-30 16:33:46.447906+00:00
+    user: 1
+    content_type: 15
+    object_id: '32'
+    object_repr: Gau, Chris
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 87
+  fields:
+    action_time: 2019-06-30 16:35:01.970843+00:00
+    user: 1
+    content_type: 15
+    object_id: '33'
+    object_repr: Bennett-Fox, Katherine
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 88
+  fields:
+    action_time: 2019-06-30 16:35:30.959317+00:00
+    user: 1
+    content_type: 15
+    object_id: '34'
+    object_repr: Brio, Sophia
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 89
+  fields:
+    action_time: 2019-06-30 16:35:32.803949+00:00
+    user: 1
+    content_type: 17
+    object_id: '21'
+    object_repr: The Wilsons
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 90
+  fields:
+    action_time: 2019-06-30 16:37:11.787018+00:00
+    user: 1
+    content_type: 18
+    object_id: '7'
+    object_repr: Big Friday - @ 2019-06-28 19:30:00+00:00 - The North London Tavern
+    action_flag: 1
+    change_message: '[{"added": {}}]'
 - model: reversion.revision
   pk: 1
   fields:
@@ -3686,5 +3922,47 @@
   pk: 83
   fields:
     date_created: 2019-06-30 16:23:20.193880+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 84
+  fields:
+    date_created: 2019-06-30 16:30:07.248116+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 85
+  fields:
+    date_created: 2019-06-30 16:30:25.268626+00:00
+    user: 1
+    comment: '[{"changed": {"fields": ["players"]}}]'
+- model: reversion.revision
+  pk: 86
+  fields:
+    date_created: 2019-06-30 16:33:46.408650+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 87
+  fields:
+    date_created: 2019-06-30 16:35:01.965389+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 88
+  fields:
+    date_created: 2019-06-30 16:35:30.954713+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 89
+  fields:
+    date_created: 2019-06-30 16:35:32.791747+00:00
+    user: 1
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 90
+  fields:
+    date_created: 2019-06-30 16:37:11.770810+00:00
     user: 1
     comment: '[{"added": {}}]'

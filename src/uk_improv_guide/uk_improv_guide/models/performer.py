@@ -35,8 +35,12 @@ class Performer(models.Model):
         middle_names: str = self.middle_names or ""
         return " ".join([self.first_name] + middle_names.split() + [self.family_name])
 
+    def name_in_list_order(self):
+        middle_names: str = self.middle_names or ""
+        return f"{self.family_name}, {self.first_name}"
+
     def __str__(self) -> str:
-        return self.full_name()
+        return self.name_in_list_order()
 
 
 def get_all_performers() -> Sequence[Performer]:
