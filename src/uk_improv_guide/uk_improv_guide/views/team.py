@@ -1,5 +1,3 @@
-import datetime
-
 from django.shortcuts import render
 from pytz import timezone
 from uk_improv_guide.models.team import Team, get_team_by_id

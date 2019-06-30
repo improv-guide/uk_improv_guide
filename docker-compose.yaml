@@ -10,6 +10,7 @@ x-base-database: &base-database
   DATABASE_PASSWORD: 'changeme'
   DATABASE_HOST: 'db'
   DATABASE_PORT: '3306'
+  MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
 
 services:
 
@@ -53,12 +54,11 @@ services:
     volumes:
       - "mysql_data:/var/lib/mysql"
     environment:
-      <<: *base-database
-      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
 
 
   adminer:
-    image: adminer:latest
+    image: adminer:4.7.1
     restart: always
     ports:
       - "8080:8080"

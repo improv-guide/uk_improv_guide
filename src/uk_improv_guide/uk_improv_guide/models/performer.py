@@ -44,7 +44,7 @@ class Performer(models.Model):
 
 
 def get_all_performers() -> Sequence[Performer]:
-    return Performer.objects.all().order_by('family_name', 'first_name')
+    return Performer.objects.all().order_by("family_name", "first_name")
 
 
 def get_performer_by_id(id: int) -> Performer:

@@ -16,7 +16,9 @@ def performer(request, id: int):
 
     teams: Sequence[Team] = this_performer.plays_for.all
 
-    events: Sequence[Event] = get_events_after_datetime_for_performer_id(now, this_performer.id)
+    events: Sequence[Event] = get_events_after_datetime_for_performer_id(
+        now, this_performer.id
+    )
 
     return render(
         request,

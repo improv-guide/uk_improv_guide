@@ -27,15 +27,9 @@ SECRET_KEY = "1n*$a4#0$5g&*esz0zlnfjty30tk$wp1)$6+y#z1b8o0vv(4xv"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-COUNTRIES_FIRST = [
-    "GB"
-]
+COUNTRIES_FIRST = ["GB"]
 
-ALLOWED_HOSTS = [
-    'improv.guide',
-    'impro.guide',
-    'localhost'
-]
+ALLOWED_HOSTS = ["improv.guide", "impro.guide", "localhost"]
 
 
 # Application definition
@@ -150,8 +144,8 @@ MEDIA_URL = "media/"
 #
 # print(f"Media Root: {MEDIA_ROOT}")
 
-_static_dir = os.path.join(BASE_DIR, 'static')
+_static_dir = os.path.join(BASE_DIR, "static")
 
-STATICFILES_DIRS = ( _static_dir, )
+STATICFILES_DIRS = (_static_dir,)
 
-MEDIA_ROOT = os.path.join(_static_dir, 'media')
+MEDIA_ROOT = os.path.join(_static_dir, "media")
