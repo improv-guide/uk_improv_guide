@@ -6,7 +6,6 @@ from uk_improv_guide.models.team import Team, get_team_by_id
 
 
 def team(request, id: int):
-    now: datetime.datetime = datetime.datetime.now(tz=timezone("Europe/London"))
     team: Team = get_team_by_id(id)
 
     events = team.event_set.all()

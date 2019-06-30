@@ -143,8 +143,15 @@ AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
-MEDIA_URL = "/media/"
+# STATIC_ROOT = os.path.join(BASE_DIR, '')
+#
 
-print(f"Media Root: {MEDIA_ROOT}")
+MEDIA_URL = "media/"
+#
+# print(f"Media Root: {MEDIA_ROOT}")
+
+_static_dir = os.path.join(BASE_DIR, 'static')
+
+STATICFILES_DIRS = ( _static_dir, )
+
+MEDIA_ROOT = os.path.join(_static_dir, 'media')
