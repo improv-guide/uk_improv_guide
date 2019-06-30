@@ -22,7 +22,7 @@ services:
       target: uk_improv_guide
     volumes:
       - ./src:/src
-      - ./media:/src/uk_improv_guide/static/media
+      - ./static:/src/uk_improv_guide/static
     working_dir: "/src/uk_improv_guide"
     entrypoint: ["/src/uk_improv_guide/start.sh"]
     ports:
@@ -61,11 +61,19 @@ services:
     image: adminer:latest
     restart: always
     ports:
-      - 8080:8080
+      - "8080:8080"
     environment:
       ADMINER_DEFAULT_SERVER: "db"
     depends_on:
       - db
+
+#  nginx:
+#    image: ngnix:latest
+#    restart: always
+#    ports:
+#      - "7999:80"
+#    volumes:
+#      - ./static:/usr/share/nginx/html:ro
 
 volumes:
   mysql_data:
