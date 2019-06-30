@@ -54,7 +54,7 @@ services:
       - "mysql_data:/var/lib/mysql"
     environment:
       <<: *base-database
-      MYSQL_RANDOM_ROOT_PASSWORD: "true"
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
 
 
   adminer:
