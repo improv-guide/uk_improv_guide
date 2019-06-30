@@ -1,95 +1,76 @@
 - model: contenttypes.contenttype
-  pk: 1
   fields:
     app_label: reversion
     model: revision
 - model: contenttypes.contenttype
-  pk: 2
   fields:
     app_label: reversion
     model: version
 - model: contenttypes.contenttype
-  pk: 3
   fields:
     app_label: admin
     model: logentry
 - model: contenttypes.contenttype
-  pk: 4
   fields:
     app_label: auth
     model: permission
 - model: contenttypes.contenttype
-  pk: 5
   fields:
     app_label: auth
     model: group
 - model: contenttypes.contenttype
-  pk: 6
   fields:
     app_label: auth
     model: user
 - model: contenttypes.contenttype
-  pk: 7
   fields:
     app_label: contenttypes
     model: contenttype
 - model: contenttypes.contenttype
-  pk: 8
   fields:
     app_label: sessions
     model: session
 - model: contenttypes.contenttype
-  pk: 9
   fields:
     app_label: social_django
     model: association
 - model: contenttypes.contenttype
-  pk: 10
   fields:
     app_label: social_django
     model: code
 - model: contenttypes.contenttype
-  pk: 11
   fields:
     app_label: social_django
     model: nonce
 - model: contenttypes.contenttype
-  pk: 12
   fields:
     app_label: social_django
     model: usersocialauth
 - model: contenttypes.contenttype
-  pk: 13
   fields:
     app_label: social_django
     model: partial
 - model: contenttypes.contenttype
-  pk: 14
   fields:
     app_label: uk_improv_guide
     model: eventseries
 - model: contenttypes.contenttype
-  pk: 15
   fields:
     app_label: uk_improv_guide
     model: performer
 - model: contenttypes.contenttype
-  pk: 16
   fields:
     app_label: uk_improv_guide
     model: venue
 - model: contenttypes.contenttype
-  pk: 17
   fields:
     app_label: uk_improv_guide
     model: team
 - model: contenttypes.contenttype
-  pk: 18
   fields:
     app_label: uk_improv_guide
     model: event
 - model: contenttypes.contenttype
-  pk: 19
   fields:
     app_label: uk_improv_guide
     model: school
@@ -928,467 +909,545 @@
     - 20
     - 21
 - model: auth.permission
-  pk: 1
   fields:
     name: Can add revision
-    content_type: 1
+    content_type:
+    - reversion
+    - revision
     codename: add_revision
 - model: auth.permission
-  pk: 2
   fields:
     name: Can change revision
-    content_type: 1
+    content_type:
+    - reversion
+    - revision
     codename: change_revision
 - model: auth.permission
-  pk: 3
   fields:
     name: Can delete revision
-    content_type: 1
+    content_type:
+    - reversion
+    - revision
     codename: delete_revision
 - model: auth.permission
-  pk: 4
   fields:
     name: Can view revision
-    content_type: 1
+    content_type:
+    - reversion
+    - revision
     codename: view_revision
 - model: auth.permission
-  pk: 5
   fields:
     name: Can add version
-    content_type: 2
+    content_type:
+    - reversion
+    - version
     codename: add_version
 - model: auth.permission
-  pk: 6
   fields:
     name: Can change version
-    content_type: 2
+    content_type:
+    - reversion
+    - version
     codename: change_version
 - model: auth.permission
-  pk: 7
   fields:
     name: Can delete version
-    content_type: 2
+    content_type:
+    - reversion
+    - version
     codename: delete_version
 - model: auth.permission
-  pk: 8
   fields:
     name: Can view version
-    content_type: 2
+    content_type:
+    - reversion
+    - version
     codename: view_version
 - model: auth.permission
-  pk: 9
   fields:
     name: Can add log entry
-    content_type: 3
+    content_type:
+    - admin
+    - logentry
     codename: add_logentry
 - model: auth.permission
-  pk: 10
   fields:
     name: Can change log entry
-    content_type: 3
+    content_type:
+    - admin
+    - logentry
     codename: change_logentry
 - model: auth.permission
-  pk: 11
   fields:
     name: Can delete log entry
-    content_type: 3
+    content_type:
+    - admin
+    - logentry
     codename: delete_logentry
 - model: auth.permission
-  pk: 12
   fields:
     name: Can view log entry
-    content_type: 3
+    content_type:
+    - admin
+    - logentry
     codename: view_logentry
 - model: auth.permission
-  pk: 13
   fields:
     name: Can add permission
-    content_type: 4
+    content_type:
+    - auth
+    - permission
     codename: add_permission
 - model: auth.permission
-  pk: 14
   fields:
     name: Can change permission
-    content_type: 4
+    content_type:
+    - auth
+    - permission
     codename: change_permission
 - model: auth.permission
-  pk: 15
   fields:
     name: Can delete permission
-    content_type: 4
+    content_type:
+    - auth
+    - permission
     codename: delete_permission
 - model: auth.permission
-  pk: 16
   fields:
     name: Can view permission
-    content_type: 4
+    content_type:
+    - auth
+    - permission
     codename: view_permission
 - model: auth.permission
-  pk: 17
   fields:
     name: Can add group
-    content_type: 5
+    content_type:
+    - auth
+    - group
     codename: add_group
 - model: auth.permission
-  pk: 18
   fields:
     name: Can change group
-    content_type: 5
+    content_type:
+    - auth
+    - group
     codename: change_group
 - model: auth.permission
-  pk: 19
   fields:
     name: Can delete group
-    content_type: 5
+    content_type:
+    - auth
+    - group
     codename: delete_group
 - model: auth.permission
-  pk: 20
   fields:
     name: Can view group
-    content_type: 5
+    content_type:
+    - auth
+    - group
     codename: view_group
 - model: auth.permission
-  pk: 21
   fields:
     name: Can add user
-    content_type: 6
+    content_type:
+    - auth
+    - user
     codename: add_user
 - model: auth.permission
-  pk: 22
   fields:
     name: Can change user
-    content_type: 6
+    content_type:
+    - auth
+    - user
     codename: change_user
 - model: auth.permission
-  pk: 23
   fields:
     name: Can delete user
-    content_type: 6
+    content_type:
+    - auth
+    - user
     codename: delete_user
 - model: auth.permission
-  pk: 24
   fields:
     name: Can view user
-    content_type: 6
+    content_type:
+    - auth
+    - user
     codename: view_user
 - model: auth.permission
-  pk: 25
   fields:
     name: Can add content type
-    content_type: 7
+    content_type:
+    - contenttypes
+    - contenttype
     codename: add_contenttype
 - model: auth.permission
-  pk: 26
   fields:
     name: Can change content type
-    content_type: 7
+    content_type:
+    - contenttypes
+    - contenttype
     codename: change_contenttype
 - model: auth.permission
-  pk: 27
   fields:
     name: Can delete content type
-    content_type: 7
+    content_type:
+    - contenttypes
+    - contenttype
     codename: delete_contenttype
 - model: auth.permission
-  pk: 28
   fields:
     name: Can view content type
-    content_type: 7
+    content_type:
+    - contenttypes
+    - contenttype
     codename: view_contenttype
 - model: auth.permission
-  pk: 29
   fields:
     name: Can add session
-    content_type: 8
+    content_type:
+    - sessions
+    - session
     codename: add_session
 - model: auth.permission
-  pk: 30
   fields:
     name: Can change session
-    content_type: 8
+    content_type:
+    - sessions
+    - session
     codename: change_session
 - model: auth.permission
-  pk: 31
   fields:
     name: Can delete session
-    content_type: 8
+    content_type:
+    - sessions
+    - session
     codename: delete_session
 - model: auth.permission
-  pk: 32
   fields:
     name: Can view session
-    content_type: 8
+    content_type:
+    - sessions
+    - session
     codename: view_session
 - model: auth.permission
-  pk: 33
   fields:
     name: Can add association
-    content_type: 9
+    content_type:
+    - social_django
+    - association
     codename: add_association
 - model: auth.permission
-  pk: 34
   fields:
     name: Can change association
-    content_type: 9
+    content_type:
+    - social_django
+    - association
     codename: change_association
 - model: auth.permission
-  pk: 35
   fields:
     name: Can delete association
-    content_type: 9
+    content_type:
+    - social_django
+    - association
     codename: delete_association
 - model: auth.permission
-  pk: 36
   fields:
     name: Can view association
-    content_type: 9
+    content_type:
+    - social_django
+    - association
     codename: view_association
 - model: auth.permission
-  pk: 37
   fields:
     name: Can add code
-    content_type: 10
+    content_type:
+    - social_django
+    - code
     codename: add_code
 - model: auth.permission
-  pk: 38
   fields:
     name: Can change code
-    content_type: 10
+    content_type:
+    - social_django
+    - code
     codename: change_code
 - model: auth.permission
-  pk: 39
   fields:
     name: Can delete code
-    content_type: 10
+    content_type:
+    - social_django
+    - code
     codename: delete_code
 - model: auth.permission
-  pk: 40
   fields:
     name: Can view code
-    content_type: 10
+    content_type:
+    - social_django
+    - code
     codename: view_code
 - model: auth.permission
-  pk: 41
   fields:
     name: Can add nonce
-    content_type: 11
+    content_type:
+    - social_django
+    - nonce
     codename: add_nonce
 - model: auth.permission
-  pk: 42
   fields:
     name: Can change nonce
-    content_type: 11
+    content_type:
+    - social_django
+    - nonce
     codename: change_nonce
 - model: auth.permission
-  pk: 43
   fields:
     name: Can delete nonce
-    content_type: 11
+    content_type:
+    - social_django
+    - nonce
     codename: delete_nonce
 - model: auth.permission
-  pk: 44
   fields:
     name: Can view nonce
-    content_type: 11
+    content_type:
+    - social_django
+    - nonce
     codename: view_nonce
 - model: auth.permission
-  pk: 45
   fields:
     name: Can add user social auth
-    content_type: 12
+    content_type:
+    - social_django
+    - usersocialauth
     codename: add_usersocialauth
 - model: auth.permission
-  pk: 46
   fields:
     name: Can change user social auth
-    content_type: 12
+    content_type:
+    - social_django
+    - usersocialauth
     codename: change_usersocialauth
 - model: auth.permission
-  pk: 47
   fields:
     name: Can delete user social auth
-    content_type: 12
+    content_type:
+    - social_django
+    - usersocialauth
     codename: delete_usersocialauth
 - model: auth.permission
-  pk: 48
   fields:
     name: Can view user social auth
-    content_type: 12
+    content_type:
+    - social_django
+    - usersocialauth
     codename: view_usersocialauth
 - model: auth.permission
-  pk: 49
   fields:
     name: Can add partial
-    content_type: 13
+    content_type:
+    - social_django
+    - partial
     codename: add_partial
 - model: auth.permission
-  pk: 50
   fields:
     name: Can change partial
-    content_type: 13
+    content_type:
+    - social_django
+    - partial
     codename: change_partial
 - model: auth.permission
-  pk: 51
   fields:
     name: Can delete partial
-    content_type: 13
+    content_type:
+    - social_django
+    - partial
     codename: delete_partial
 - model: auth.permission
-  pk: 52
   fields:
     name: Can view partial
-    content_type: 13
+    content_type:
+    - social_django
+    - partial
     codename: view_partial
 - model: auth.permission
-  pk: 53
   fields:
     name: Can add event series
-    content_type: 14
+    content_type:
+    - uk_improv_guide
+    - eventseries
     codename: add_eventseries
 - model: auth.permission
-  pk: 54
   fields:
     name: Can change event series
-    content_type: 14
+    content_type:
+    - uk_improv_guide
+    - eventseries
     codename: change_eventseries
 - model: auth.permission
-  pk: 55
   fields:
     name: Can delete event series
-    content_type: 14
+    content_type:
+    - uk_improv_guide
+    - eventseries
     codename: delete_eventseries
 - model: auth.permission
-  pk: 56
   fields:
     name: Can view event series
-    content_type: 14
+    content_type:
+    - uk_improv_guide
+    - eventseries
     codename: view_eventseries
 - model: auth.permission
-  pk: 57
   fields:
     name: Can add performer
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     codename: add_performer
 - model: auth.permission
-  pk: 58
   fields:
     name: Can change performer
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     codename: change_performer
 - model: auth.permission
-  pk: 59
   fields:
     name: Can delete performer
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     codename: delete_performer
 - model: auth.permission
-  pk: 60
   fields:
     name: Can view performer
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     codename: view_performer
 - model: auth.permission
-  pk: 61
   fields:
     name: Can add venue
-    content_type: 16
+    content_type:
+    - uk_improv_guide
+    - venue
     codename: add_venue
 - model: auth.permission
-  pk: 62
   fields:
     name: Can change venue
-    content_type: 16
+    content_type:
+    - uk_improv_guide
+    - venue
     codename: change_venue
 - model: auth.permission
-  pk: 63
   fields:
     name: Can delete venue
-    content_type: 16
+    content_type:
+    - uk_improv_guide
+    - venue
     codename: delete_venue
 - model: auth.permission
-  pk: 64
   fields:
     name: Can view venue
-    content_type: 16
+    content_type:
+    - uk_improv_guide
+    - venue
     codename: view_venue
 - model: auth.permission
-  pk: 65
   fields:
     name: Can add team
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     codename: add_team
 - model: auth.permission
-  pk: 66
   fields:
     name: Can change team
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     codename: change_team
 - model: auth.permission
-  pk: 67
   fields:
     name: Can delete team
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     codename: delete_team
 - model: auth.permission
-  pk: 68
   fields:
     name: Can view team
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     codename: view_team
 - model: auth.permission
-  pk: 69
   fields:
     name: Can add event
-    content_type: 18
+    content_type:
+    - uk_improv_guide
+    - event
     codename: add_event
 - model: auth.permission
-  pk: 70
   fields:
     name: Can change event
-    content_type: 18
+    content_type:
+    - uk_improv_guide
+    - event
     codename: change_event
 - model: auth.permission
-  pk: 71
   fields:
     name: Can delete event
-    content_type: 18
+    content_type:
+    - uk_improv_guide
+    - event
     codename: delete_event
 - model: auth.permission
-  pk: 72
   fields:
     name: Can view event
-    content_type: 18
+    content_type:
+    - uk_improv_guide
+    - event
     codename: view_event
 - model: auth.permission
-  pk: 73
   fields:
     name: Can add school
-    content_type: 19
+    content_type:
+    - uk_improv_guide
+    - school
     codename: add_school
 - model: auth.permission
-  pk: 74
   fields:
     name: Can change school
-    content_type: 19
+    content_type:
+    - uk_improv_guide
+    - school
     codename: change_school
 - model: auth.permission
-  pk: 75
   fields:
     name: Can delete school
-    content_type: 19
+    content_type:
+    - uk_improv_guide
+    - school
     codename: delete_school
 - model: auth.permission
-  pk: 76
   fields:
     name: Can view school
-    content_type: 19
+    content_type:
+    - uk_improv_guide
+    - school
     codename: view_school
 - model: reversion.version
   pk: 1
   fields:
     revision: 1
     object_id: '1'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 1, "fields": {"name":
@@ -1399,7 +1458,9 @@
   fields:
     revision: 2
     object_id: '1'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 1, "fields": {"first_name":
@@ -1411,7 +1472,9 @@
   fields:
     revision: 3
     object_id: '2'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 2, "fields": {"first_name":
@@ -1423,7 +1486,9 @@
   fields:
     revision: 4
     object_id: '3'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 3, "fields": {"first_name":
@@ -1435,7 +1500,9 @@
   fields:
     revision: 5
     object_id: '1'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 1, "fields": {"name":
@@ -1447,7 +1514,9 @@
   fields:
     revision: 6
     object_id: '1'
-    content_type: 16
+    content_type:
+    - uk_improv_guide
+    - venue
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 1, "fields": {"name":
@@ -1460,7 +1529,9 @@
   fields:
     revision: 7
     object_id: '2'
-    content_type: 16
+    content_type:
+    - uk_improv_guide
+    - venue
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 2, "fields": {"name":
@@ -1473,7 +1544,9 @@
   fields:
     revision: 8
     object_id: '2'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 2, "fields": {"name":
@@ -1485,7 +1558,9 @@
   fields:
     revision: 9
     object_id: '4'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 4, "fields": {"first_name":
@@ -1497,7 +1572,9 @@
   fields:
     revision: 10
     object_id: '4'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 4, "fields": {"first_name":
@@ -1509,7 +1586,9 @@
   fields:
     revision: 11
     object_id: '5'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 5, "fields": {"first_name":
@@ -1521,7 +1600,9 @@
   fields:
     revision: 12
     object_id: '6'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 6, "fields": {"first_name":
@@ -1533,7 +1614,9 @@
   fields:
     revision: 13
     object_id: '7'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 7, "fields": {"first_name":
@@ -1545,7 +1628,9 @@
   fields:
     revision: 14
     object_id: '8'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 8, "fields": {"first_name":
@@ -1557,7 +1642,9 @@
   fields:
     revision: 15
     object_id: '9'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 9, "fields": {"first_name":
@@ -1569,7 +1656,9 @@
   fields:
     revision: 16
     object_id: '10'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 10, "fields":
@@ -1581,7 +1670,9 @@
   fields:
     revision: 17
     object_id: '11'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 11, "fields":
@@ -1593,7 +1684,9 @@
   fields:
     revision: 18
     object_id: '12'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 12, "fields":
@@ -1605,7 +1698,9 @@
   fields:
     revision: 19
     object_id: '13'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 13, "fields":
@@ -1618,7 +1713,9 @@
   fields:
     revision: 20
     object_id: '2'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 2, "fields": {"name":
@@ -1631,7 +1728,9 @@
   fields:
     revision: 21
     object_id: '3'
-    content_type: 16
+    content_type:
+    - uk_improv_guide
+    - venue
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 3, "fields": {"name":
@@ -1644,7 +1743,9 @@
   fields:
     revision: 22
     object_id: '1'
-    content_type: 18
+    content_type:
+    - uk_improv_guide
+    - event
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.event", "pk": 1, "fields": {"name":
@@ -1656,7 +1757,9 @@
   fields:
     revision: 23
     object_id: '3'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 3, "fields": {"name":
@@ -1668,7 +1771,9 @@
   fields:
     revision: 24
     object_id: '4'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 4, "fields": {"name":
@@ -1680,7 +1785,9 @@
   fields:
     revision: 25
     object_id: '1'
-    content_type: 18
+    content_type:
+    - uk_improv_guide
+    - event
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.event", "pk": 1, "fields": {"name":
@@ -1692,7 +1799,9 @@
   fields:
     revision: 26
     object_id: '14'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 14, "fields":
@@ -1706,7 +1815,9 @@
   fields:
     revision: 27
     object_id: '15'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 15, "fields":
@@ -1720,7 +1831,9 @@
   fields:
     revision: 28
     object_id: '5'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 5, "fields": {"name":
@@ -1732,7 +1845,9 @@
   fields:
     revision: 29
     object_id: '16'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 16, "fields":
@@ -1745,7 +1860,9 @@
   fields:
     revision: 30
     object_id: '6'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 6, "fields": {"name":
@@ -1757,7 +1874,9 @@
   fields:
     revision: 31
     object_id: '4'
-    content_type: 16
+    content_type:
+    - uk_improv_guide
+    - venue
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 4, "fields": {"name":
@@ -1771,7 +1890,9 @@
   fields:
     revision: 32
     object_id: '17'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 17, "fields":
@@ -1784,7 +1905,9 @@
   fields:
     revision: 33
     object_id: '18'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 18, "fields":
@@ -1797,7 +1920,9 @@
   fields:
     revision: 34
     object_id: '7'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 7, "fields": {"name":
@@ -1809,7 +1934,9 @@
   fields:
     revision: 35
     object_id: '2'
-    content_type: 18
+    content_type:
+    - uk_improv_guide
+    - event
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.event", "pk": 2, "fields": {"name":
@@ -1822,7 +1949,9 @@
   fields:
     revision: 36
     object_id: '19'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 19, "fields":
@@ -1835,7 +1964,9 @@
   fields:
     revision: 37
     object_id: '8'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 8, "fields": {"name":
@@ -1847,7 +1978,9 @@
   fields:
     revision: 38
     object_id: '3'
-    content_type: 18
+    content_type:
+    - uk_improv_guide
+    - event
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.event", "pk": 3, "fields": {"name":
@@ -1860,7 +1993,9 @@
   fields:
     revision: 39
     object_id: '5'
-    content_type: 16
+    content_type:
+    - uk_improv_guide
+    - venue
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 5, "fields": {"name":
@@ -1873,7 +2008,9 @@
   fields:
     revision: 40
     object_id: '4'
-    content_type: 18
+    content_type:
+    - uk_improv_guide
+    - event
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.event", "pk": 4, "fields": {"name":
@@ -1885,7 +2022,9 @@
   fields:
     revision: 41
     object_id: '9'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 9, "fields": {"name":
@@ -1897,7 +2036,9 @@
   fields:
     revision: 42
     object_id: '5'
-    content_type: 18
+    content_type:
+    - uk_improv_guide
+    - event
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.event", "pk": 5, "fields": {"name":
@@ -1910,7 +2051,9 @@
   fields:
     revision: 43
     object_id: '20'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 20, "fields":
@@ -1923,7 +2066,9 @@
   fields:
     revision: 44
     object_id: '21'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 21, "fields":
@@ -1936,7 +2081,9 @@
   fields:
     revision: 45
     object_id: '22'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 22, "fields":
@@ -1949,7 +2096,9 @@
   fields:
     revision: 46
     object_id: '23'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 23, "fields":
@@ -1962,7 +2111,9 @@
   fields:
     revision: 47
     object_id: '24'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 24, "fields":
@@ -1975,7 +2126,9 @@
   fields:
     revision: 48
     object_id: '25'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 25, "fields":
@@ -1988,7 +2141,9 @@
   fields:
     revision: 49
     object_id: '26'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 26, "fields":
@@ -2001,7 +2156,9 @@
   fields:
     revision: 50
     object_id: '10'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 10, "fields": {"name":
@@ -2013,7 +2170,9 @@
   fields:
     revision: 51
     object_id: '27'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 27, "fields":
@@ -2026,7 +2185,9 @@
   fields:
     revision: 52
     object_id: '11'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 11, "fields": {"name":
@@ -2038,7 +2199,9 @@
   fields:
     revision: 53
     object_id: '12'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 12, "fields": {"name":
@@ -2050,7 +2213,9 @@
   fields:
     revision: 54
     object_id: '28'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 28, "fields":
@@ -2063,7 +2228,9 @@
   fields:
     revision: 55
     object_id: '13'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 13, "fields": {"name":
@@ -2075,7 +2242,9 @@
   fields:
     revision: 56
     object_id: '6'
-    content_type: 16
+    content_type:
+    - uk_improv_guide
+    - venue
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 6, "fields": {"name":
@@ -2088,7 +2257,9 @@
   fields:
     revision: 57
     object_id: '6'
-    content_type: 18
+    content_type:
+    - uk_improv_guide
+    - event
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.event", "pk": 6, "fields": {"name":
@@ -2102,7 +2273,9 @@
   fields:
     revision: 58
     object_id: '14'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 14, "fields": {"name":
@@ -2114,7 +2287,9 @@
   fields:
     revision: 59
     object_id: '15'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 15, "fields": {"name":
@@ -2126,7 +2301,9 @@
   fields:
     revision: 60
     object_id: '16'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 16, "fields": {"name":
@@ -2138,7 +2315,9 @@
   fields:
     revision: 61
     object_id: '17'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 17, "fields": {"name":
@@ -2150,7 +2329,9 @@
   fields:
     revision: 62
     object_id: '18'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 18, "fields": {"name":
@@ -2162,7 +2343,9 @@
   fields:
     revision: 63
     object_id: '18'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 18, "fields": {"name":
@@ -2174,7 +2357,9 @@
   fields:
     revision: 64
     object_id: '29'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 29, "fields":
@@ -2188,7 +2373,9 @@
   fields:
     revision: 65
     object_id: '15'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 15, "fields": {"name":
@@ -2200,7 +2387,9 @@
   fields:
     revision: 66
     object_id: '30'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 30, "fields":
@@ -2213,7 +2402,9 @@
   fields:
     revision: 67
     object_id: '19'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
@@ -2225,7 +2416,9 @@
   fields:
     revision: 68
     object_id: '1'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 1, "fields": {"name":
@@ -2237,7 +2430,9 @@
   fields:
     revision: 69
     object_id: '17'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 17, "fields": {"name":
@@ -2249,7 +2444,9 @@
   fields:
     revision: 70
     object_id: '19'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
@@ -2261,7 +2458,9 @@
   fields:
     revision: 71
     object_id: '19'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
@@ -2273,7 +2472,9 @@
   fields:
     revision: 72
     object_id: '19'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
@@ -2285,7 +2486,9 @@
   fields:
     revision: 73
     object_id: '19'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
@@ -2297,7 +2500,9 @@
   fields:
     revision: 74
     object_id: '19'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
@@ -2309,7 +2514,9 @@
   fields:
     revision: 75
     object_id: '19'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
@@ -2321,7 +2528,9 @@
   fields:
     revision: 76
     object_id: '19'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
@@ -2333,7 +2542,9 @@
   fields:
     revision: 77
     object_id: '19'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
@@ -2345,7 +2556,9 @@
   fields:
     revision: 78
     object_id: '19'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
@@ -2357,7 +2570,9 @@
   fields:
     revision: 79
     object_id: '19'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 19, "fields": {"name":
@@ -2369,7 +2584,9 @@
   fields:
     revision: 80
     object_id: '2'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 2, "fields": {"name":
@@ -2382,7 +2599,9 @@
   fields:
     revision: 81
     object_id: '2'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 2, "fields": {"name":
@@ -2395,7 +2614,9 @@
   fields:
     revision: 82
     object_id: '20'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 20, "fields": {"name":
@@ -2407,7 +2628,9 @@
   fields:
     revision: 83
     object_id: '7'
-    content_type: 16
+    content_type:
+    - uk_improv_guide
+    - venue
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 7, "fields": {"name":
@@ -2421,7 +2644,9 @@
   fields:
     revision: 84
     object_id: '31'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 31, "fields":
@@ -2435,7 +2660,9 @@
   fields:
     revision: 85
     object_id: '20'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 20, "fields": {"name":
@@ -2447,7 +2674,9 @@
   fields:
     revision: 86
     object_id: '32'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 32, "fields":
@@ -2460,7 +2689,9 @@
   fields:
     revision: 87
     object_id: '33'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 33, "fields":
@@ -2474,7 +2705,9 @@
   fields:
     revision: 88
     object_id: '34'
-    content_type: 15
+    content_type:
+    - uk_improv_guide
+    - performer
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 34, "fields":
@@ -2487,7 +2720,9 @@
   fields:
     revision: 89
     object_id: '21'
-    content_type: 17
+    content_type:
+    - uk_improv_guide
+    - team
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.team", "pk": 21, "fields": {"name":
@@ -2499,7 +2734,9 @@
   fields:
     revision: 90
     object_id: '7'
-    content_type: 18
+    content_type:
+    - uk_improv_guide
+    - event
     db: default
     format: json
     serialized_data: '[{"model": "uk_improv_guide.event", "pk": 7, "fields": {"name":
@@ -2507,7 +2744,6 @@
       "", "eventbrite_link": "", "venue": 7, "teams": [20, 21]}}]'
     object_repr: Big Friday - @ 2019-06-28 19:30:00+00:00 - The North London Tavern
 - model: auth.user
-  pk: 1
   fields:
     password: pbkdf2_sha256$150000$NJN6PvxDrDXj$z/e4TbvtO1y2kdL5wa/eg/PjdJLlspPtTcQFAZXLohw=
     last_login: 2019-06-25 21:50:21.879074+00:00
@@ -2525,8 +2761,11 @@
   pk: 1
   fields:
     action_time: 2019-06-12 11:38:39.894605+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '1'
     object_repr: Caretakers
     action_flag: 1
@@ -2535,8 +2774,11 @@
   pk: 2
   fields:
     action_time: 2019-06-12 11:39:17.111930+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '1'
     object_repr: Marc Salmon
     action_flag: 1
@@ -2545,8 +2787,11 @@
   pk: 3
   fields:
     action_time: 2019-06-12 11:40:04.493788+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '2'
     object_repr: Salim Fadhley
     action_flag: 1
@@ -2555,8 +2800,11 @@
   pk: 4
   fields:
     action_time: 2019-06-12 11:40:32.250105+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '3'
     object_repr: Brooke Hoerr
     action_flag: 1
@@ -2565,8 +2813,11 @@
   pk: 5
   fields:
     action_time: 2019-06-12 11:41:12.737117+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '1'
     object_repr: Caretakers
     action_flag: 2
@@ -2576,8 +2827,11 @@
   pk: 6
   fields:
     action_time: 2019-06-12 14:47:28.857812+00:00
-    user: 1
-    content_type: 16
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - venue
     object_id: '1'
     object_repr: Free Association, 113 Southgate Road
     action_flag: 1
@@ -2586,8 +2840,11 @@
   pk: 7
   fields:
     action_time: 2019-06-12 14:51:10.520371+00:00
-    user: 1
-    content_type: 16
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - venue
     object_id: '2'
     object_repr: Hoopla!, The Miller, 96 Snowsfields
     action_flag: 1
@@ -2596,8 +2853,11 @@
   pk: 8
   fields:
     action_time: 2019-06-13 12:29:39.704347+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '2'
     object_repr: MOOP
     action_flag: 1
@@ -2606,8 +2866,11 @@
   pk: 9
   fields:
     action_time: 2019-06-13 12:35:58.216299+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '4'
     object_repr: Miriam Craig
     action_flag: 1
@@ -2616,8 +2879,11 @@
   pk: 10
   fields:
     action_time: 2019-06-13 12:36:20.841709+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '4'
     object_repr: Miriam Craig
     action_flag: 2
@@ -2626,8 +2892,11 @@
   pk: 11
   fields:
     action_time: 2019-06-13 12:36:34.494868+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '5'
     object_repr: Eli Cohn
     action_flag: 1
@@ -2636,8 +2905,11 @@
   pk: 12
   fields:
     action_time: 2019-06-13 12:36:51.806662+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '6'
     object_repr: Colin Rothwell
     action_flag: 1
@@ -2646,8 +2918,11 @@
   pk: 13
   fields:
     action_time: 2019-06-13 12:37:16.017165+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '7'
     object_repr: Monika Hadalska
     action_flag: 1
@@ -2656,8 +2931,11 @@
   pk: 14
   fields:
     action_time: 2019-06-13 12:37:34.485210+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '8'
     object_repr: Katie Handley
     action_flag: 1
@@ -2666,8 +2944,11 @@
   pk: 15
   fields:
     action_time: 2019-06-13 12:37:57.835884+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '9'
     object_repr: Al Jarrett
     action_flag: 1
@@ -2676,8 +2957,11 @@
   pk: 16
   fields:
     action_time: 2019-06-13 12:38:14.978334+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '10'
     object_repr: Michael Andrew
     action_flag: 1
@@ -2686,8 +2970,11 @@
   pk: 17
   fields:
     action_time: 2019-06-13 12:38:43.793606+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '11'
     object_repr: Fiona Marie Simpson
     action_flag: 1
@@ -2696,8 +2983,11 @@
   pk: 18
   fields:
     action_time: 2019-06-13 12:38:59.780022+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '12'
     object_repr: Rosanna Wood
     action_flag: 1
@@ -2706,8 +2996,11 @@
   pk: 19
   fields:
     action_time: 2019-06-13 13:04:55.225060+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '13'
     object_repr: Jack Vaughn
     action_flag: 1
@@ -2716,8 +3009,11 @@
   pk: 20
   fields:
     action_time: 2019-06-13 13:05:19.444111+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '2'
     object_repr: MOOP
     action_flag: 2
@@ -2726,8 +3022,11 @@
   pk: 21
   fields:
     action_time: 2019-06-13 13:12:43.186870+00:00
-    user: 1
-    content_type: 16
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - venue
     object_id: '3'
     object_repr: Nell of Old Drury, 29 Catherine St
     action_flag: 1
@@ -2736,8 +3035,11 @@
   pk: 22
   fields:
     action_time: 2019-06-13 13:14:28.429144+00:00
-    user: 1
-    content_type: 18
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - event
     object_id: '1'
     object_repr: Event object (1)
     action_flag: 1
@@ -2746,8 +3048,11 @@
   pk: 23
   fields:
     action_time: 2019-06-13 13:15:18.608322+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '3'
     object_repr: The Foreseeable Future
     action_flag: 1
@@ -2756,8 +3061,11 @@
   pk: 24
   fields:
     action_time: 2019-06-13 13:15:25.306498+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '4'
     object_repr: Backstreet Boogaloo
     action_flag: 1
@@ -2766,8 +3074,11 @@
   pk: 25
   fields:
     action_time: 2019-06-13 13:15:59.886371+00:00
-    user: 1
-    content_type: 18
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - event
     object_id: '1'
     object_repr: Event object (1)
     action_flag: 2
@@ -2776,8 +3087,11 @@
   pk: 26
   fields:
     action_time: 2019-06-25 21:57:04.537089+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '14'
     object_repr: Simon Fazey
     action_flag: 1
@@ -2786,8 +3100,11 @@
   pk: 27
   fields:
     action_time: 2019-06-25 21:58:34.462807+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '15'
     object_repr: Samuel Geronimo Deschamps
     action_flag: 1
@@ -2796,8 +3113,11 @@
   pk: 28
   fields:
     action_time: 2019-06-25 21:58:55.829921+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '5'
     object_repr: Lester City
     action_flag: 1
@@ -2806,8 +3126,11 @@
   pk: 29
   fields:
     action_time: 2019-06-25 22:00:38.089582+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '16'
     object_repr: Monica Gaga
     action_flag: 1
@@ -2816,8 +3139,11 @@
   pk: 30
   fields:
     action_time: 2019-06-25 22:01:17.922873+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '6'
     object_repr: Do The Right Scene
     action_flag: 1
@@ -2826,8 +3152,11 @@
   pk: 31
   fields:
     action_time: 2019-06-25 22:03:24.235482+00:00
-    user: 1
-    content_type: 16
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - venue
     object_id: '4'
     object_repr: 'The Canvas: Cafe & Creative Venue, 42 Hanbury St, Spitalfields'
     action_flag: 1
@@ -2836,8 +3165,11 @@
   pk: 32
   fields:
     action_time: 2019-06-25 22:09:32.109177+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '17'
     object_repr: Michael Kunze
     action_flag: 1
@@ -2846,8 +3178,11 @@
   pk: 33
   fields:
     action_time: 2019-06-25 22:10:46.214119+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '18'
     object_repr: Mimi Bauer
     action_flag: 1
@@ -2856,8 +3191,11 @@
   pk: 34
   fields:
     action_time: 2019-06-25 22:10:52.090530+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '7'
     object_repr: Just Friends
     action_flag: 1
@@ -2866,8 +3204,11 @@
   pk: 35
   fields:
     action_time: 2019-06-25 22:12:59.219931+00:00
-    user: 1
-    content_type: 18
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - event
     object_id: '2'
     object_repr: 'Moop Presents: The Caretakers - @ 2019-07-22 20:00:00+00:00 - Nell
       of Old Drury'
@@ -2877,8 +3218,11 @@
   pk: 36
   fields:
     action_time: 2019-06-25 22:15:07.442474+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '19'
     object_repr: Alex Bradbury
     action_flag: 1
@@ -2887,8 +3231,11 @@
   pk: 37
   fields:
     action_time: 2019-06-25 22:15:10.509471+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '8'
     object_repr: Amorphous Horse
     action_flag: 1
@@ -2897,8 +3244,11 @@
   pk: 38
   fields:
     action_time: 2019-06-25 22:15:23.610049+00:00
-    user: 1
-    content_type: 18
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - event
     object_id: '3'
     object_repr: Lester City Super Sunday - @ 2019-06-23 19:30:00+00:00 - Free Association
     action_flag: 1
@@ -2907,8 +3257,11 @@
   pk: 39
   fields:
     action_time: 2019-06-25 22:17:38.992877+00:00
-    user: 1
-    content_type: 16
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - venue
     object_id: '5'
     object_repr: Effra Social, 89 Effra Road, Brixton
     action_flag: 1
@@ -2917,8 +3270,11 @@
   pk: 40
   fields:
     action_time: 2019-06-25 22:20:37.811466+00:00
-    user: 1
-    content_type: 18
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - event
     object_id: '4'
     object_repr: DDG Summer Finale & Jam! - @ 2019-07-29 20:00:00+00:00 - Effra Social
     action_flag: 1
@@ -2927,8 +3283,11 @@
   pk: 41
   fields:
     action_time: 2019-06-25 22:23:26.878268+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '9'
     object_repr: The Bareback Kings
     action_flag: 1
@@ -2937,8 +3296,11 @@
   pk: 42
   fields:
     action_time: 2019-06-25 22:24:49.127259+00:00
-    user: 1
-    content_type: 18
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - event
     object_id: '5'
     object_repr: 'Just Friends - @ 2019-07-12 19:30:00+00:00 - The Canvas: Cafe &
       Creative Venue'
@@ -2948,8 +3310,11 @@
   pk: 43
   fields:
     action_time: 2019-06-26 20:10:57.633713+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '20'
     object_repr: Caroline Amer
     action_flag: 1
@@ -2958,8 +3323,11 @@
   pk: 44
   fields:
     action_time: 2019-06-26 20:11:10.642294+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '21'
     object_repr: Chloe Godman
     action_flag: 1
@@ -2968,8 +3336,11 @@
   pk: 45
   fields:
     action_time: 2019-06-26 20:11:24.446243+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '22'
     object_repr: Daisy Badger
     action_flag: 1
@@ -2978,8 +3349,11 @@
   pk: 46
   fields:
     action_time: 2019-06-26 20:11:35.582711+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '23'
     object_repr: David Veniar
     action_flag: 1
@@ -2988,8 +3362,11 @@
   pk: 47
   fields:
     action_time: 2019-06-26 20:12:12.551051+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '24'
     object_repr: Gareth O'Connor
     action_flag: 1
@@ -2998,8 +3375,11 @@
   pk: 48
   fields:
     action_time: 2019-06-26 20:12:30.269464+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '25'
     object_repr: Lila Baker-Ward
     action_flag: 1
@@ -3008,8 +3388,11 @@
   pk: 49
   fields:
     action_time: 2019-06-26 20:12:40.231065+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '26'
     object_repr: Nick Adamson
     action_flag: 1
@@ -3018,8 +3401,11 @@
   pk: 50
   fields:
     action_time: 2019-06-26 20:12:45.401533+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '10'
     object_repr: Mean People
     action_flag: 1
@@ -3028,8 +3414,11 @@
   pk: 51
   fields:
     action_time: 2019-06-26 20:14:03.512297+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '27'
     object_repr: Ben Nolan
     action_flag: 1
@@ -3038,8 +3427,11 @@
   pk: 52
   fields:
     action_time: 2019-06-26 20:14:06.982271+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '11'
     object_repr: HOOF
     action_flag: 1
@@ -3048,8 +3440,11 @@
   pk: 53
   fields:
     action_time: 2019-06-26 20:14:41.342668+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '12'
     object_repr: Urban Heat Island
     action_flag: 1
@@ -3058,8 +3453,11 @@
   pk: 54
   fields:
     action_time: 2019-06-26 20:15:01.675349+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '28'
     object_repr: Hayley McGee
     action_flag: 1
@@ -3068,8 +3466,11 @@
   pk: 55
   fields:
     action_time: 2019-06-26 20:15:53.807107+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '13'
     object_repr: The Foreseeable Future
     action_flag: 1
@@ -3078,8 +3479,11 @@
   pk: 56
   fields:
     action_time: 2019-06-26 20:17:53.326441+00:00
-    user: 1
-    content_type: 16
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - venue
     object_id: '6'
     object_repr: The London irish Centre, 50-52 Camden Square
     action_flag: 1
@@ -3088,8 +3492,11 @@
   pk: 57
   fields:
     action_time: 2019-06-26 20:19:20.805522+00:00
-    user: 1
-    content_type: 18
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - event
     object_id: '6'
     object_repr: Mean People - Improv Comedy - LAST of the Summer! - @ 2019-06-26
       20:30:00+00:00 - The London irish Centre
@@ -3099,8 +3506,11 @@
   pk: 58
   fields:
     action_time: 2019-06-28 18:40:29.026863+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '14'
     object_repr: Swipe Right
     action_flag: 1
@@ -3109,8 +3519,11 @@
   pk: 59
   fields:
     action_time: 2019-06-28 18:40:35.772122+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '15'
     object_repr: When X met Y
     action_flag: 1
@@ -3119,8 +3532,11 @@
   pk: 60
   fields:
     action_time: 2019-06-28 18:40:40.064873+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '16'
     object_repr: The Gatekeepers
     action_flag: 1
@@ -3129,8 +3545,11 @@
   pk: 61
   fields:
     action_time: 2019-06-28 18:40:53.805829+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '17'
     object_repr: The Bathhouse Children
     action_flag: 1
@@ -3139,8 +3558,11 @@
   pk: 62
   fields:
     action_time: 2019-06-28 18:41:01.807610+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '18'
     object_repr: The Tuesday Group
     action_flag: 1
@@ -3149,8 +3571,11 @@
   pk: 63
   fields:
     action_time: 2019-06-28 18:41:38.103721+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '18'
     object_repr: The Tuesday Group
     action_flag: 2
@@ -3159,8 +3584,11 @@
   pk: 64
   fields:
     action_time: 2019-06-28 18:42:48.701026+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '29'
     object_repr: Robin Wiggs
     action_flag: 1
@@ -3169,8 +3597,11 @@
   pk: 65
   fields:
     action_time: 2019-06-28 18:42:52.222641+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '15'
     object_repr: When X met Y
     action_flag: 2
@@ -3180,8 +3611,11 @@
   pk: 66
   fields:
     action_time: 2019-06-28 21:58:25.643340+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '30'
     object_repr: Jessica Ulrich
     action_flag: 1
@@ -3190,8 +3624,11 @@
   pk: 67
   fields:
     action_time: 2019-06-28 21:58:36.281451+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '19'
     object_repr: The Art of Happiness
     action_flag: 1
@@ -3200,8 +3637,11 @@
   pk: 68
   fields:
     action_time: 2019-06-28 22:08:57.329872+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '1'
     object_repr: Caretakers
     action_flag: 2
@@ -3210,8 +3650,11 @@
   pk: 69
   fields:
     action_time: 2019-06-28 22:09:19.601454+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '17'
     object_repr: The Bathhouse Children
     action_flag: 2
@@ -3220,8 +3663,11 @@
   pk: 70
   fields:
     action_time: 2019-06-28 22:25:14.517382+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '19'
     object_repr: The Art of Happiness
     action_flag: 2
@@ -3230,8 +3676,11 @@
   pk: 71
   fields:
     action_time: 2019-06-28 22:27:36.782019+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '19'
     object_repr: The Art of Happiness
     action_flag: 2
@@ -3240,8 +3689,11 @@
   pk: 72
   fields:
     action_time: 2019-06-28 22:33:12.029012+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '19'
     object_repr: The Art of Happiness
     action_flag: 2
@@ -3250,8 +3702,11 @@
   pk: 73
   fields:
     action_time: 2019-06-28 22:37:05.365711+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '19'
     object_repr: The Art of Happiness
     action_flag: 2
@@ -3260,8 +3715,11 @@
   pk: 74
   fields:
     action_time: 2019-06-28 22:39:29.929843+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '19'
     object_repr: The Art of Happiness
     action_flag: 2
@@ -3270,8 +3728,11 @@
   pk: 75
   fields:
     action_time: 2019-06-28 22:44:05.842668+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '19'
     object_repr: The Art of Happiness
     action_flag: 2
@@ -3280,8 +3741,11 @@
   pk: 76
   fields:
     action_time: 2019-06-28 22:47:53.263042+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '19'
     object_repr: The Art of Happiness
     action_flag: 2
@@ -3290,8 +3754,11 @@
   pk: 77
   fields:
     action_time: 2019-06-29 11:53:43.325440+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '19'
     object_repr: The Art of Happiness
     action_flag: 2
@@ -3300,8 +3767,11 @@
   pk: 78
   fields:
     action_time: 2019-06-29 11:58:16.557148+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '19'
     object_repr: The Art of Happiness
     action_flag: 2
@@ -3310,8 +3780,11 @@
   pk: 79
   fields:
     action_time: 2019-06-29 12:00:03.675617+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '19'
     object_repr: The Art of Happiness
     action_flag: 2
@@ -3320,8 +3793,11 @@
   pk: 80
   fields:
     action_time: 2019-06-30 10:15:42.559967+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '2'
     object_repr: MOOP
     action_flag: 2
@@ -3330,8 +3806,11 @@
   pk: 81
   fields:
     action_time: 2019-06-30 10:18:21.717374+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '2'
     object_repr: MOOP
     action_flag: 2
@@ -3340,8 +3819,11 @@
   pk: 82
   fields:
     action_time: 2019-06-30 15:20:56.852589+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '20'
     object_repr: Rhinoseros
     action_flag: 1
@@ -3350,8 +3832,11 @@
   pk: 83
   fields:
     action_time: 2019-06-30 16:23:20.234438+00:00
-    user: 1
-    content_type: 16
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - venue
     object_id: '7'
     object_repr: The North London Tavern, London, GB
     action_flag: 1
@@ -3360,8 +3845,11 @@
   pk: 84
   fields:
     action_time: 2019-06-30 16:30:07.297113+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '31'
     object_repr: Peacock, Phillippa
     action_flag: 1
@@ -3370,8 +3858,11 @@
   pk: 85
   fields:
     action_time: 2019-06-30 16:30:25.291758+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '20'
     object_repr: Rhinoseros
     action_flag: 2
@@ -3380,8 +3871,11 @@
   pk: 86
   fields:
     action_time: 2019-06-30 16:33:46.447906+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '32'
     object_repr: Gau, Chris
     action_flag: 1
@@ -3390,8 +3884,11 @@
   pk: 87
   fields:
     action_time: 2019-06-30 16:35:01.970843+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '33'
     object_repr: Bennett-Fox, Katherine
     action_flag: 1
@@ -3400,8 +3897,11 @@
   pk: 88
   fields:
     action_time: 2019-06-30 16:35:30.959317+00:00
-    user: 1
-    content_type: 15
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
     object_id: '34'
     object_repr: Brio, Sophia
     action_flag: 1
@@ -3410,8 +3910,11 @@
   pk: 89
   fields:
     action_time: 2019-06-30 16:35:32.803949+00:00
-    user: 1
-    content_type: 17
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
     object_id: '21'
     object_repr: The Wilsons
     action_flag: 1
@@ -3420,8 +3923,11 @@
   pk: 90
   fields:
     action_time: 2019-06-30 16:37:11.787018+00:00
-    user: 1
-    content_type: 18
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - event
     object_id: '7'
     object_repr: Big Friday - @ 2019-06-28 19:30:00+00:00 - The North London Tavern
     action_flag: 1
@@ -3430,539 +3936,629 @@
   pk: 1
   fields:
     date_created: 2019-06-12 11:38:39.856960+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 2
   fields:
     date_created: 2019-06-12 11:39:17.105226+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 3
   fields:
     date_created: 2019-06-12 11:40:04.488238+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 4
   fields:
     date_created: 2019-06-12 11:40:32.235307+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 5
   fields:
     date_created: 2019-06-12 11:41:12.704768+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["facebook_link", "contact_email_address", "players"]}}]'
 - model: reversion.revision
   pk: 6
   fields:
     date_created: 2019-06-12 14:47:28.820225+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 7
   fields:
     date_created: 2019-06-12 14:51:10.509903+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 8
   fields:
     date_created: 2019-06-13 12:29:39.593370+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 9
   fields:
     date_created: 2019-06-13 12:35:58.212126+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 10
   fields:
     date_created: 2019-06-13 12:36:20.835976+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["facebook_link"]}}]'
 - model: reversion.revision
   pk: 11
   fields:
     date_created: 2019-06-13 12:36:34.489440+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 12
   fields:
     date_created: 2019-06-13 12:36:51.792515+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 13
   fields:
     date_created: 2019-06-13 12:37:16.010588+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 14
   fields:
     date_created: 2019-06-13 12:37:34.479495+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 15
   fields:
     date_created: 2019-06-13 12:37:57.830415+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 16
   fields:
     date_created: 2019-06-13 12:38:14.972545+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 17
   fields:
     date_created: 2019-06-13 12:38:43.788526+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 18
   fields:
     date_created: 2019-06-13 12:38:59.773286+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 19
   fields:
     date_created: 2019-06-13 13:04:55.039814+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 20
   fields:
     date_created: 2019-06-13 13:05:19.413038+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["players"]}}]'
 - model: reversion.revision
   pk: 21
   fields:
     date_created: 2019-06-13 13:12:43.180357+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 22
   fields:
     date_created: 2019-06-13 13:14:28.396223+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 23
   fields:
     date_created: 2019-06-13 13:15:18.596420+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 24
   fields:
     date_created: 2019-06-13 13:15:25.294339+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 25
   fields:
     date_created: 2019-06-13 13:15:59.848866+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["teams"]}}]'
 - model: reversion.revision
   pk: 26
   fields:
     date_created: 2019-06-25 21:57:04.490483+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 27
   fields:
     date_created: 2019-06-25 21:58:34.458773+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 28
   fields:
     date_created: 2019-06-25 21:58:55.806209+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 29
   fields:
     date_created: 2019-06-25 22:00:38.086292+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 30
   fields:
     date_created: 2019-06-25 22:01:17.910486+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 31
   fields:
     date_created: 2019-06-25 22:03:24.232701+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 32
   fields:
     date_created: 2019-06-25 22:09:32.106276+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 33
   fields:
     date_created: 2019-06-25 22:10:46.210139+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 34
   fields:
     date_created: 2019-06-25 22:10:52.081469+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 35
   fields:
     date_created: 2019-06-25 22:12:59.199325+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 36
   fields:
     date_created: 2019-06-25 22:15:07.439314+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 37
   fields:
     date_created: 2019-06-25 22:15:10.501346+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 38
   fields:
     date_created: 2019-06-25 22:15:23.591103+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 39
   fields:
     date_created: 2019-06-25 22:17:38.990156+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 40
   fields:
     date_created: 2019-06-25 22:20:37.803688+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 41
   fields:
     date_created: 2019-06-25 22:23:26.872163+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 42
   fields:
     date_created: 2019-06-25 22:24:49.110903+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 43
   fields:
     date_created: 2019-06-26 20:10:57.578383+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 44
   fields:
     date_created: 2019-06-26 20:11:10.638550+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 45
   fields:
     date_created: 2019-06-26 20:11:24.443160+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 46
   fields:
     date_created: 2019-06-26 20:11:35.578860+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 47
   fields:
     date_created: 2019-06-26 20:12:12.546572+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 48
   fields:
     date_created: 2019-06-26 20:12:30.266231+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 49
   fields:
     date_created: 2019-06-26 20:12:40.227689+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 50
   fields:
     date_created: 2019-06-26 20:12:45.389661+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 51
   fields:
     date_created: 2019-06-26 20:14:03.508387+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 52
   fields:
     date_created: 2019-06-26 20:14:06.974991+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 53
   fields:
     date_created: 2019-06-26 20:14:41.336746+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 54
   fields:
     date_created: 2019-06-26 20:15:01.671118+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 55
   fields:
     date_created: 2019-06-26 20:15:53.797034+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 56
   fields:
     date_created: 2019-06-26 20:17:53.322681+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 57
   fields:
     date_created: 2019-06-26 20:19:20.798275+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 58
   fields:
     date_created: 2019-06-28 18:40:28.940505+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 59
   fields:
     date_created: 2019-06-28 18:40:35.765308+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 60
   fields:
     date_created: 2019-06-28 18:40:40.057285+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 61
   fields:
     date_created: 2019-06-28 18:40:53.801443+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 62
   fields:
     date_created: 2019-06-28 18:41:01.801004+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 63
   fields:
     date_created: 2019-06-28 18:41:38.096399+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["facebook_link", "contact_email_address"]}}]'
 - model: reversion.revision
   pk: 64
   fields:
     date_created: 2019-06-28 18:42:48.696630+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 65
   fields:
     date_created: 2019-06-28 18:42:52.212503+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["facebook_link", "contact_email_address", "players"]}}]'
 - model: reversion.revision
   pk: 66
   fields:
     date_created: 2019-06-28 21:58:25.579645+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 67
   fields:
     date_created: 2019-06-28 21:58:36.206902+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 68
   fields:
     date_created: 2019-06-28 22:08:57.316499+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["players"]}}]'
 - model: reversion.revision
   pk: 69
   fields:
     date_created: 2019-06-28 22:09:19.588651+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["players"]}}]'
 - model: reversion.revision
   pk: 70
   fields:
     date_created: 2019-06-28 22:25:14.428192+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["image"]}}]'
 - model: reversion.revision
   pk: 71
   fields:
     date_created: 2019-06-28 22:27:36.710682+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["image"]}}]'
 - model: reversion.revision
   pk: 72
   fields:
     date_created: 2019-06-28 22:33:11.934369+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["image"]}}]'
 - model: reversion.revision
   pk: 73
   fields:
     date_created: 2019-06-28 22:37:05.289353+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["image"]}}]'
 - model: reversion.revision
   pk: 74
   fields:
     date_created: 2019-06-28 22:39:29.826060+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["image"]}}]'
 - model: reversion.revision
   pk: 75
   fields:
     date_created: 2019-06-28 22:44:05.758309+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["image"]}}]'
 - model: reversion.revision
   pk: 76
   fields:
     date_created: 2019-06-28 22:47:53.186598+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["image"]}}]'
 - model: reversion.revision
   pk: 77
   fields:
     date_created: 2019-06-29 11:53:43.162912+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["image"]}}]'
 - model: reversion.revision
   pk: 78
   fields:
     date_created: 2019-06-29 11:58:16.486881+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["image"]}}]'
 - model: reversion.revision
   pk: 79
   fields:
     date_created: 2019-06-29 12:00:03.544775+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["image"]}}]'
 - model: reversion.revision
   pk: 80
   fields:
     date_created: 2019-06-30 10:15:42.424777+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["image"]}}]'
 - model: reversion.revision
   pk: 81
   fields:
     date_created: 2019-06-30 10:18:21.637600+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["image"]}}]'
 - model: reversion.revision
   pk: 82
   fields:
     date_created: 2019-06-30 15:20:56.732524+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 83
   fields:
     date_created: 2019-06-30 16:23:20.193880+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 84
   fields:
     date_created: 2019-06-30 16:30:07.248116+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 85
   fields:
     date_created: 2019-06-30 16:30:25.268626+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"changed": {"fields": ["players"]}}]'
 - model: reversion.revision
   pk: 86
   fields:
     date_created: 2019-06-30 16:33:46.408650+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 87
   fields:
     date_created: 2019-06-30 16:35:01.965389+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 88
   fields:
     date_created: 2019-06-30 16:35:30.954713+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 89
   fields:
     date_created: 2019-06-30 16:35:32.791747+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
 - model: reversion.revision
   pk: 90
   fields:
     date_created: 2019-06-30 16:37:11.770810+00:00
-    user: 1
+    user:
+    - admin
     comment: '[{"added": {}}]'
