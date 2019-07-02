@@ -1,7 +1,31 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
 
     <h1>{{ venue.name }}</h1>
+
+    {% if venue.image %}
+    <img class="featured_image" src="{% static "" %}{{ venue.image.url }}" />
+    {%  endif %}
+
+    <div class="address_info">
+    <ul class="address">
+        <li>{{ venue.address }}</li>
+        <li>{{ venue.city }}</li>
+        <li>{{ venue.postcode }}</li>
+        <li>{{ venue.country }}</li>
+    </ul>
+
+    </div>
+
+    <h2>Events</h2>
+
+    <ul>
+    {% for event in events %}
+{#        <li><a href="/event{{ event.id }}">{{ event.name }}</a></li>#}
+    {% endfor %}
+
+    </ul>
 
 
 

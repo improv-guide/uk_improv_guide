@@ -31,3 +31,12 @@ body {
     width: 100%;
     background-color: aqua;
 }
+
+.featured_image {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}

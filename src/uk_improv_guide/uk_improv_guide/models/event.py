@@ -18,7 +18,6 @@ class Event(models.Model):
     facebook_link = models.CharField(max_length=256, blank=True)
     eventbrite_link = models.CharField(max_length=256, blank=True)
     venue = models.ForeignKey(EventSeries, on_delete=models.SET_NULL, null=True)
-    venue = models.ForeignKey(Venue, on_delete=models.CASCADE)
     teams = models.ManyToManyField(Team, verbose_name="teams playing", blank=True)
 
     def __str__(self):
@@ -40,3 +39,7 @@ def get_events_after_datetime_for_performer_id(
 def get_event_by_id(id: int) -> Event:
     e: Event = Event.objects.get(id=id)
     return e
+
+
+def get_events_by_venue_id(id: int) -> Sequence[Event]:
+    return Event.objects.order_by("start_time")

@@ -1,6 +1,6 @@
 import datetime
 import logging
-from typing import Sequence, Optional
+from typing import Sequence
 
 from django.shortcuts import render
 from uk_improv_guide.lib.opengraph import opengraph_person, opengraph_website
@@ -23,8 +23,6 @@ def performer(request, id: int):
 
     title = f"{this_performer.full_name()}"
 
-
-
     return render(
         request,
         "performer.html",
@@ -38,7 +36,7 @@ def performer(request, id: int):
                 url=request.build_absolute_uri(),
                 first_name=this_performer.first_name,
                 family_name=this_performer.family_name,
-                image=this_performer.image
+                image=this_performer.image,
             ),
         },
     )
