@@ -11,8 +11,8 @@ from uk_improv_guide.models.venue import Venue
 @reversion.register
 class Event(models.Model):
     EVENT_TYPES = (("S", "Show"), ("J", "Jam"), ("W", "Workshop"), ("A", "Audition"))
-
     name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to="event/", blank=True)
     event_type = models.CharField(max_length=1, choices=EVENT_TYPES)
     start_time = models.DateTimeField(verbose_name="Show start time")
     facebook_link = models.CharField(max_length=256, blank=True)
@@ -35,3 +35,8 @@ def get_events_after_datetime_for_performer_id(
     return Event.objects.filter(
         start_time__gte=dt, teams__players__id=performer_id
     ).order_by("start_time")
+
+
+def get_event_by_id(id: int) -> Event:
+    e: Event = Event.objects.get(id=id)
+    return e

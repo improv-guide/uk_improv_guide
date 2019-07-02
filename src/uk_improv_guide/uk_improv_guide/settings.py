@@ -14,6 +14,9 @@ import os
 
 import pkg_resources
 
+SITE_NAME: str = "European Improv Gude"
+SITE_CANONICAL_URL = "http://improv.guide"
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 

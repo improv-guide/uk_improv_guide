@@ -41,7 +41,6 @@ services:
       target: uk_improv_guide
     volumes:
       - ./src:/src
-    entrypoint: ["/usr/local/bin/python"]
     depends_on:
       - db
     environment:
