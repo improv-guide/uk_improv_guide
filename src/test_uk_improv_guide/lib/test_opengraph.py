@@ -5,7 +5,7 @@ def test_opengraph0():
 
     result = opengraph_headers(
         title="title",
-        image="http://foo"
+        image="http://foo",
         type="xxx",
         url="http://bar"
     )
