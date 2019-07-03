@@ -1,5 +1,4 @@
 import logging
-import pprint
 from typing import Sequence
 
 from django.shortcuts import render

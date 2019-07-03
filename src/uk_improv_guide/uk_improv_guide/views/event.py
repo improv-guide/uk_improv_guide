@@ -5,7 +5,6 @@ from uk_improv_guide.models.event import (
     get_event_by_id,
     get_events_after_datetime,
 )
-
 from uk_improv_guide.models.venue import Venue
 
 
