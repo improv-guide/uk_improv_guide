@@ -12,45 +12,26 @@ x-base-database: &base-database
 
 
 services:
-
-  dev:
+  site:
     <<: *base-dev
     image: salimfadhley/uk_improv_guide:${UK_IMPROV_GUIDE_VERSION}
-    build:
-      context: .
-      target: uk_improv_guide
     volumes:
-      - ./src:/src
-      - ./static:/src/uk_improv_guide/static
+      - ~/data/static:/src/uk_improv_guide/static
     working_dir: "/src/uk_improv_guide"
     entrypoint: ["/src/uk_improv_guide/start.sh"]
     ports:
-      - "8000:${SITE_PORT}"
+      - "80:${SITE_PORT}"
     depends_on:
       - db
     environment:
       <<: *base-database
       SITE_PORT: ${SITE_PORT}
 
-
-
-  python:
-    image: salimfadhley/uk_improv_guide:${UK_IMPROV_GUIDE_VERSION}
-    build:
-      context: .
-      target: uk_improv_guide
-    volumes:
-      - ./src:/src
-    depends_on:
-      - db
-    environment:
-      <<: *base-database
-
   db:
     <<: *base-dev
     image: postgres
-#    command: --help
-#    entrypoint: "/bin/sh"
+    #    command: --help
+    #    entrypoint: "/bin/sh"
     volumes:
       - "postgres_data:/var/lib/postgresql/data"
     environment:
@@ -59,15 +40,6 @@ services:
       POSTGRES_DB: ${POSTGRES_NAME}
       POSTGRES_PORT: '5432'
 
-  adminer:
-    image: adminer:4.7.1
-    restart: always
-    ports:
-      - "8080:8080"
-    environment:
-      ADMINER_DEFAULT_SERVER: "db"
-    depends_on:
-      - db
 
 
 volumes:
