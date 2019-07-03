@@ -5,9 +5,21 @@
 
     <h1>{{ team.name }}</h1>
 
-    {% if team.image %}}
-    <img class="featured_image" src="{% static "" %}{{ team.image.url }}" />
+    {% if team.image %}
+        <img class="featured_image" src="{% static "" %}{{ team.image.url }}" />
     {% endif %}
+
+
+    <h3>Contact</h3>
+    {% if team.contact_email_address %}
+        <a href="mailto:{{ team.contact_email_address }}">EMAIL</a>
+    {% endif %}
+
+    {% if team.facebook_link %}
+        <a href="team.facebook_link">FB</a>
+    {% endif %}
+
+
 
     <h3>Players</h3>
 

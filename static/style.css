@@ -21,8 +21,8 @@ body {
 }
 
 .listings {
-    column-count: 3;
-    column-gap: 40px;
+    /*column-count: 3;*/
+    /*column-gap: 40px;*/
 }
 
 .footer {

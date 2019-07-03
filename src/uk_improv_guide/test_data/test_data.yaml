@@ -61,6 +61,10 @@
 - model: contenttypes.contenttype
   fields:
     app_label: uk_improv_guide
+    model: school
+- model: contenttypes.contenttype
+  fields:
+    app_label: uk_improv_guide
     model: venue
 - model: contenttypes.contenttype
   fields:
@@ -70,10 +74,6 @@
   fields:
     app_label: uk_improv_guide
     model: event
-- model: contenttypes.contenttype
-  fields:
-    app_label: uk_improv_guide
-    model: school
 - model: sessions.session
   pk: 2bc7f6ihmzo68mh37easan9jea0p8zll
   fields:
@@ -84,6 +84,11 @@
   fields:
     session_data: ZWZmZmQ1NzcwZjIwMTcwYzFlOGY5YmIxNDRkNDViMjUzOWI3YTRlNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhMTEyNGZkOTYyZjA1MGRkM2I4YjM0NDU1ZmYyZGRjNDgwOWY1YjcwIn0=
     expire_date: 2019-07-16 22:50:20.672935+00:00
+- model: sessions.session
+  pk: erq4qjq2a18cjai51szi2qyeytgnq278
+  fields:
+    session_data: ZWZmZmQ1NzcwZjIwMTcwYzFlOGY5YmIxNDRkNDViMjUzOWI3YTRlNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhMTEyNGZkOTYyZjA1MGRkM2I4YjM0NDU1ZmYyZGRjNDgwOWY1YjcwIn0=
+    expire_date: 2019-07-17 12:08:12.513197+00:00
 - model: sessions.session
   pk: njomq97i0ywoegl4s0rza1oj5oicjqts
   fields:
@@ -583,11 +588,89 @@
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 39
+  fields:
+    first_name: Charlie
+    middle_names: ''
+    family_name: Kemp
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 40
+  fields:
+    first_name: Luke
+    middle_names: ''
+    family_name: Healey
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 41
+  fields:
+    first_name: Alisha
+    middle_names: ''
+    family_name: May
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 42
+  fields:
+    first_name: Fahad
+    middle_names: ''
+    family_name: Bandar
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 43
+  fields:
+    first_name: Will
+    middle_names: ''
+    family_name: Truefitt
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 44
+  fields:
+    first_name: Samantha
+    middle_names: ''
+    family_name: Hannah
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
 - model: uk_improv_guide.team
   pk: 1
   fields:
     name: Caretakers
-    image: ''
+    image: team/caretakers.jpg
     facebook_link: https://www.facebook.com/thecaretakerscomedy/?modal=admin_todo_tour
     contact_email_address: salimfadhley@gmail.com
     players:
@@ -595,6 +678,10 @@
     - 2
     - 3
     - 30
+    - 41
+    - 42
+    - 43
+    - 44
 - model: uk_improv_guide.team
   pk: 2
   fields:
@@ -748,7 +835,10 @@
     image: ''
     facebook_link: ''
     contact_email_address: ''
-    players: []
+    players:
+    - 24
+    - 26
+    - 40
 - model: uk_improv_guide.team
   pk: 17
   fields:
@@ -803,7 +893,9 @@
     image: ''
     facebook_link: ''
     contact_email_address: ''
-    players: []
+    players:
+    - 33
+    - 39
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -1441,6 +1533,34 @@
     codename: view_performer
 - model: auth.permission
   fields:
+    name: Can add school
+    content_type:
+    - uk_improv_guide
+    - school
+    codename: add_school
+- model: auth.permission
+  fields:
+    name: Can change school
+    content_type:
+    - uk_improv_guide
+    - school
+    codename: change_school
+- model: auth.permission
+  fields:
+    name: Can delete school
+    content_type:
+    - uk_improv_guide
+    - school
+    codename: delete_school
+- model: auth.permission
+  fields:
+    name: Can view school
+    content_type:
+    - uk_improv_guide
+    - school
+    codename: view_school
+- model: auth.permission
+  fields:
     name: Can add venue
     content_type:
     - uk_improv_guide
@@ -1523,34 +1643,6 @@
     - uk_improv_guide
     - event
     codename: view_event
-- model: auth.permission
-  fields:
-    name: Can add school
-    content_type:
-    - uk_improv_guide
-    - school
-    codename: add_school
-- model: auth.permission
-  fields:
-    name: Can change school
-    content_type:
-    - uk_improv_guide
-    - school
-    codename: change_school
-- model: auth.permission
-  fields:
-    name: Can delete school
-    content_type:
-    - uk_improv_guide
-    - school
-    codename: delete_school
-- model: auth.permission
-  fields:
-    name: Can view school
-    content_type:
-    - uk_improv_guide
-    - school
-    codename: view_school
 - model: reversion.version
   pk: 1
   fields:
@@ -2973,10 +3065,172 @@
       "facebook_link": "https://www.facebook.com/events/1043479525857095/", "eventbrite_link":
       "", "venue": 8, "teams": [11, 21, 22]}}]'
     object_repr: Hoof - @ 2019-07-03 20:00:00+00:00 - The Taproom
+- model: reversion.version
+  pk: 99
+  fields:
+    revision: 99
+    object_id: '39'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 39, "fields":
+      {"first_name": "Charlie", "middle_names": "", "family_name": "Kemp", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Kemp, Charlie
+- model: reversion.version
+  pk: 100
+  fields:
+    revision: 100
+    object_id: '22'
+    content_type:
+    - uk_improv_guide
+    - team
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 22, "fields": {"name":
+      "Charlie Kemp & KBF", "image": "", "facebook_link": "", "contact_email_address":
+      "", "players": [33, 39]}}]'
+    object_repr: Charlie Kemp & KBF
+- model: reversion.version
+  pk: 101
+  fields:
+    revision: 101
+    object_id: '40'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 40, "fields":
+      {"first_name": "Luke", "middle_names": "", "family_name": "Healey", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Healey, Luke
+- model: reversion.version
+  pk: 102
+  fields:
+    revision: 102
+    object_id: '16'
+    content_type:
+    - uk_improv_guide
+    - team
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 16, "fields": {"name":
+      "The Gatekeepers", "image": "", "facebook_link": "", "contact_email_address":
+      "", "players": [24, 26, 40]}}]'
+    object_repr: The Gatekeepers
+- model: reversion.version
+  pk: 103
+  fields:
+    revision: 103
+    object_id: '1'
+    content_type:
+    - uk_improv_guide
+    - team
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 1, "fields": {"name":
+      "Caretakers", "image": "team/caretakers.jpg", "facebook_link": "https://www.facebook.com/thecaretakerscomedy/?modal=admin_todo_tour",
+      "contact_email_address": "salimfadhley@gmail.com", "players": [1, 2, 3, 30]}}]'
+    object_repr: Caretakers
+- model: reversion.version
+  pk: 104
+  fields:
+    revision: 104
+    object_id: '41'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 41, "fields":
+      {"first_name": "Alisha", "middle_names": "", "family_name": "May", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: May, Alisha
+- model: reversion.version
+  pk: 105
+  fields:
+    revision: 105
+    object_id: '42'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 42, "fields":
+      {"first_name": "Fahad", "middle_names": "", "family_name": "Bandar", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Bandar, Fahad
+- model: reversion.version
+  pk: 106
+  fields:
+    revision: 106
+    object_id: '43'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 43, "fields":
+      {"first_name": "Will", "middle_names": "", "family_name": "Truefitt", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Truefitt, Will
+- model: reversion.version
+  pk: 107
+  fields:
+    revision: 107
+    object_id: '1'
+    content_type:
+    - uk_improv_guide
+    - team
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 1, "fields": {"name":
+      "Caretakers", "image": "team/caretakers.jpg", "facebook_link": "https://www.facebook.com/thecaretakerscomedy/?modal=admin_todo_tour",
+      "contact_email_address": "salimfadhley@gmail.com", "players": [1, 2, 3, 30,
+      41, 42, 43]}}]'
+    object_repr: Caretakers
+- model: reversion.version
+  pk: 108
+  fields:
+    revision: 108
+    object_id: '44'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 44, "fields":
+      {"first_name": "Samantha", "middle_names": "", "family_name": "Hannah", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Hannah, Samantha
+- model: reversion.version
+  pk: 109
+  fields:
+    revision: 109
+    object_id: '1'
+    content_type:
+    - uk_improv_guide
+    - team
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 1, "fields": {"name":
+      "Caretakers", "image": "team/caretakers.jpg", "facebook_link": "https://www.facebook.com/thecaretakerscomedy/?modal=admin_todo_tour",
+      "contact_email_address": "salimfadhley@gmail.com", "players": [1, 2, 3, 30,
+      41, 42, 43, 44]}}]'
+    object_repr: Caretakers
 - model: auth.user
   fields:
     password: pbkdf2_sha256$150000$NJN6PvxDrDXj$z/e4TbvtO1y2kdL5wa/eg/PjdJLlspPtTcQFAZXLohw=
-    last_login: 2019-07-02 22:50:20.654973+00:00
+    last_login: 2019-07-03 12:08:12.504916+00:00
     is_superuser: true
     username: admin
     first_name: ''
@@ -4266,6 +4520,149 @@
     object_repr: Hoof - @ 2019-07-03 20:00:00+00:00 - The Taproom
     action_flag: 1
     change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 99
+  fields:
+    action_time: 2019-07-03 12:09:06.961132+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '39'
+    object_repr: Kemp, Charlie
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 100
+  fields:
+    action_time: 2019-07-03 12:09:15.667030+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
+    object_id: '22'
+    object_repr: Charlie Kemp & KBF
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["players"]}}]'
+- model: admin.logentry
+  pk: 101
+  fields:
+    action_time: 2019-07-03 12:17:43.150380+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '40'
+    object_repr: Healey, Luke
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 102
+  fields:
+    action_time: 2019-07-03 12:17:55.647658+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
+    object_id: '16'
+    object_repr: The Gatekeepers
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["players"]}}]'
+- model: admin.logentry
+  pk: 103
+  fields:
+    action_time: 2019-07-03 12:28:59.973171+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
+    object_id: '1'
+    object_repr: Caretakers
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["image"]}}]'
+- model: admin.logentry
+  pk: 104
+  fields:
+    action_time: 2019-07-03 12:33:34.550394+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '41'
+    object_repr: May, Alisha
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 105
+  fields:
+    action_time: 2019-07-03 12:33:51.158095+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '42'
+    object_repr: Bandar, Fahad
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 106
+  fields:
+    action_time: 2019-07-03 12:34:12.258141+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '43'
+    object_repr: Truefitt, Will
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 107
+  fields:
+    action_time: 2019-07-03 12:34:17.265013+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
+    object_id: '1'
+    object_repr: Caretakers
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["players"]}}]'
+- model: admin.logentry
+  pk: 108
+  fields:
+    action_time: 2019-07-03 12:34:45.218381+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '44'
+    object_repr: Hannah, Samantha
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 109
+  fields:
+    action_time: 2019-07-03 12:34:47.707043+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
+    object_id: '1'
+    object_repr: Caretakers
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["players"]}}]'
 - model: reversion.revision
   pk: 1
   fields:
@@ -4952,3 +5349,80 @@
     user:
     - admin
     comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 99
+  fields:
+    date_created: 2019-07-03 12:09:06.921047+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 100
+  fields:
+    date_created: 2019-07-03 12:09:15.655442+00:00
+    user:
+    - admin
+    comment: '[{"changed": {"fields": ["players"]}}]'
+- model: reversion.revision
+  pk: 101
+  fields:
+    date_created: 2019-07-03 12:17:43.147338+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 102
+  fields:
+    date_created: 2019-07-03 12:17:55.636001+00:00
+    user:
+    - admin
+    comment: '[{"changed": {"fields": ["players"]}}]'
+- model: reversion.revision
+  pk: 103
+  fields:
+    date_created: 2019-07-03 12:28:59.920972+00:00
+    user:
+    - admin
+    comment: '[{"changed": {"fields": ["image"]}}]'
+- model: reversion.revision
+  pk: 104
+  fields:
+    date_created: 2019-07-03 12:33:34.547319+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 105
+  fields:
+    date_created: 2019-07-03 12:33:51.153426+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 106
+  fields:
+    date_created: 2019-07-03 12:34:12.255125+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 107
+  fields:
+    date_created: 2019-07-03 12:34:17.252398+00:00
+    user:
+    - admin
+    comment: '[{"changed": {"fields": ["players"]}}]'
+- model: reversion.revision
+  pk: 108
+  fields:
+    date_created: 2019-07-03 12:34:45.214961+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 109
+  fields:
+    date_created: 2019-07-03 12:34:47.695468+00:00
+    user:
+    - admin
+    comment: '[{"changed": {"fields": ["players"]}}]'
