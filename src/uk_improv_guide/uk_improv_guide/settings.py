@@ -91,7 +91,7 @@ WSGI_APPLICATION = "uk_improv_guide.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.mysql",
+        "ENGINE": "django.db.backends.postgresql",
         "NAME": os.environ["DATABASE_NAME"],
         "USER": os.environ["DATABASE_USER"],
         "PASSWORD": os.environ["DATABASE_PASSWORD"],
@@ -100,7 +100,8 @@ DATABASES = {
     }
 }
 
-
+import pprint
+print(f"Database settings: {pprint.pformat(DATABASES)}")
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
@@ -152,3 +153,9 @@ _static_dir = os.path.join(BASE_DIR, "static")
 STATICFILES_DIRS = (_static_dir,)
 
 MEDIA_ROOT = os.path.join(_static_dir, "media")
+
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
+    'locale': 'uk_GB',
+    'fields': 'id, name, email, age_range'
+}

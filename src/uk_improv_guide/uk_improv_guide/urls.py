@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from uk_improv_guide.models import Event, Performer, Team, Venue
-from uk_improv_guide.views.contribute import contribute, contribute_item
+from uk_improv_guide.views.misc import contribute, contribute_item, privacy, terms
 from uk_improv_guide.views.event import event
 from uk_improv_guide.views.events import events
 from uk_improv_guide.views.performer import performer
@@ -62,4 +62,6 @@ urlpatterns = [
         kwargs={"model": Performer},
     ),
     path("admin/", admin.site.urls),
+    path("privacy/", privacy),
+    path("terms/", terms),
 ]

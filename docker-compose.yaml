@@ -3,17 +3,15 @@ version: '3.7'
 x-base-dev: &base-dev
   restart: on-failure
 
-
 x-base-database: &base-database
-  DATABASE_NAME: 'improv'
-  DATABASE_USER: 'improv'
-  DATABASE_PASSWORD: 'changeme'
+  DATABASE_NAME: ${POSTGRES_NAME}
+  DATABASE_USER: ${POSTGRES_USER}
+  DATABASE_PASSWORD: ${POSTGRES_PASSWORD}
   DATABASE_HOST: 'db'
-  DATABASE_PORT: '3306'
-  MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+  DATABASE_PORT: ${POSTGRES_PORT}
+
 
 services:
-
 
   dev:
     <<: *base-dev
@@ -33,8 +31,10 @@ services:
     environment:
       <<: *base-database
 
+
+
   python:
-    <<: *base-dev
+
     image: salimfadhley/uk_improv_guide:${UK_IMPROV_GUIDE_VERSION}
     build:
       context: .
@@ -47,14 +47,17 @@ services:
       <<: *base-database
 
   db:
-    image: mysql
-    command: --default-authentication-plugin=mysql_native_password
-    restart: always
+    <<: *base-dev
+    image: postgres
+#    command: --help
+#    entrypoint: "/bin/sh"
     volumes:
-      - "mysql_data:/var/lib/mysql"
+      - "postgres_data:/var/lib/postgresql/data"
     environment:
-      MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
-
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_DB: ${POSTGRES_NAME}
+      POSTGRES_PORT: '5432'
 
   adminer:
     image: adminer:4.7.1
@@ -75,7 +78,7 @@ services:
 #      - ./static:/usr/share/nginx/html:ro
 
 volumes:
-  mysql_data:
+  postgres_data:
 
 
 

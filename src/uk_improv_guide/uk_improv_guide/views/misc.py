@@ -1,7 +1,4 @@
-from django.http import HttpResponse
 from django.shortcuts import render
-from pytz import timezone
-from uk_improv_guide.models.event import Event, get_events_after_datetime
 
 
 def contribute(request):
@@ -10,3 +7,10 @@ def contribute(request):
 
 def contribute_item(request, model):
     return render(request, "contribute_item.html", {"title": "Contribute"})
+
+def privacy(request):
+    return render(request, "privacy.html")
+
+def terms(request):
+    return render(request, "terms.html")
+

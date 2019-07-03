@@ -61,10 +61,6 @@
 - model: contenttypes.contenttype
   fields:
     app_label: uk_improv_guide
-    model: school
-- model: contenttypes.contenttype
-  fields:
-    app_label: uk_improv_guide
     model: venue
 - model: contenttypes.contenttype
   fields:
@@ -74,6 +70,10 @@
   fields:
     app_label: uk_improv_guide
     model: event
+- model: contenttypes.contenttype
+  fields:
+    app_label: uk_improv_guide
+    model: school
 - model: sessions.session
   pk: 2bc7f6ihmzo68mh37easan9jea0p8zll
   fields:
@@ -94,6 +94,11 @@
   fields:
     session_data: ZWZmZmQ1NzcwZjIwMTcwYzFlOGY5YmIxNDRkNDViMjUzOWI3YTRlNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhMTEyNGZkOTYyZjA1MGRkM2I4YjM0NDU1ZmYyZGRjNDgwOWY1YjcwIn0=
     expire_date: 2019-06-26 11:37:52.881683+00:00
+- model: uk_improv_guide.eventseries
+  pk: 1aaf4020-4e05-453e-b6ae-84e61a2eae22
+  fields:
+    image: event_series/IMPORTANTART.png
+    name: Important Art
 - model: uk_improv_guide.performer
   pk: 1
   fields:
@@ -666,6 +671,136 @@
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 45
+  fields:
+    first_name: Dan
+    middle_names: ''
+    family_name: Kelly
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 46
+  fields:
+    first_name: Liz
+    middle_names: ''
+    family_name: Guterbock
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 47
+  fields:
+    first_name: Sophie
+    middle_names: ''
+    family_name: Dickson
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 48
+  fields:
+    first_name: Matthew
+    middle_names: ''
+    family_name: Gundel
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 49
+  fields:
+    first_name: Nicholas
+    middle_names: ''
+    family_name: Everritt
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 50
+  fields:
+    first_name: Amanda
+    middle_names: ''
+    family_name: Stauffer
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 51
+  fields:
+    first_name: Patrick
+    middle_names: ''
+    family_name: Dishman
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 52
+  fields:
+    first_name: Theo
+    middle_names: ''
+    family_name: McCabe
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 53
+  fields:
+    first_name: Graham
+    middle_names: ''
+    family_name: Dickson
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 54
+  fields:
+    first_name: Damian
+    middle_names: ''
+    family_name: Arnold
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -896,6 +1031,40 @@
     players:
     - 33
     - 39
+- model: uk_improv_guide.team
+  pk: 23
+  fields:
+    name: Uber Pool
+    image: ''
+    facebook_link: ''
+    contact_email_address: ''
+    players:
+    - 45
+    - 46
+- model: uk_improv_guide.team
+  pk: 24
+  fields:
+    name: Mechanik de Theatre
+    image: ''
+    facebook_link: ''
+    contact_email_address: ''
+    players:
+    - 47
+    - 48
+    - 49
+    - 50
+    - 51
+    - 52
+- model: uk_improv_guide.team
+  pk: 25
+  fields:
+    name: Founding Fathers
+    image: ''
+    facebook_link: ''
+    contact_email_address: ''
+    players:
+    - 53
+    - 54
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -1111,6 +1280,21 @@
     - 11
     - 21
     - 22
+- model: uk_improv_guide.event
+  pk: 9
+  fields:
+    name: Important Art
+    image: event/IMPORTANTART.png
+    event_type: S
+    start_time: 2019-07-04 21:00:00+00:00
+    facebook_link: ''
+    eventbrite_link: ''
+    venue: 1
+    series: 1aaf4020-4e05-453e-b6ae-84e61a2eae22
+    teams:
+    - 23
+    - 24
+    - 25
 - model: auth.permission
   fields:
     name: Can add revision
@@ -1533,34 +1717,6 @@
     codename: view_performer
 - model: auth.permission
   fields:
-    name: Can add school
-    content_type:
-    - uk_improv_guide
-    - school
-    codename: add_school
-- model: auth.permission
-  fields:
-    name: Can change school
-    content_type:
-    - uk_improv_guide
-    - school
-    codename: change_school
-- model: auth.permission
-  fields:
-    name: Can delete school
-    content_type:
-    - uk_improv_guide
-    - school
-    codename: delete_school
-- model: auth.permission
-  fields:
-    name: Can view school
-    content_type:
-    - uk_improv_guide
-    - school
-    codename: view_school
-- model: auth.permission
-  fields:
     name: Can add venue
     content_type:
     - uk_improv_guide
@@ -1643,6 +1799,34 @@
     - uk_improv_guide
     - event
     codename: view_event
+- model: auth.permission
+  fields:
+    name: Can add school
+    content_type:
+    - uk_improv_guide
+    - school
+    codename: add_school
+- model: auth.permission
+  fields:
+    name: Can change school
+    content_type:
+    - uk_improv_guide
+    - school
+    codename: change_school
+- model: auth.permission
+  fields:
+    name: Can delete school
+    content_type:
+    - uk_improv_guide
+    - school
+    codename: delete_school
+- model: auth.permission
+  fields:
+    name: Can view school
+    content_type:
+    - uk_improv_guide
+    - school
+    codename: view_school
 - model: reversion.version
   pk: 1
   fields:
@@ -3227,6 +3411,226 @@
       "contact_email_address": "salimfadhley@gmail.com", "players": [1, 2, 3, 30,
       41, 42, 43, 44]}}]'
     object_repr: Caretakers
+- model: reversion.version
+  pk: 110
+  fields:
+    revision: 110
+    object_id: 1aaf4020-4e05-453e-b6ae-84e61a2eae22
+    content_type:
+    - uk_improv_guide
+    - eventseries
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.eventseries", "pk": "1aaf4020-4e05-453e-b6ae-84e61a2eae22",
+      "fields": {"image": "event_series/IMPORTANTART.png", "name": "Important Art"}}]'
+    object_repr: Important Art
+- model: reversion.version
+  pk: 111
+  fields:
+    revision: 111
+    object_id: '45'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 45, "fields":
+      {"first_name": "Dan", "middle_names": "", "family_name": "Kelly", "image": "",
+      "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link": "",
+      "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Kelly, Dan
+- model: reversion.version
+  pk: 112
+  fields:
+    revision: 112
+    object_id: '46'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 46, "fields":
+      {"first_name": "Liz", "middle_names": "", "family_name": "Guterbock", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Guterbock, Liz
+- model: reversion.version
+  pk: 113
+  fields:
+    revision: 113
+    object_id: '23'
+    content_type:
+    - uk_improv_guide
+    - team
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 23, "fields": {"name":
+      "Uber Pool", "image": "", "facebook_link": "", "contact_email_address": "",
+      "players": [45, 46]}}]'
+    object_repr: Uber Pool
+- model: reversion.version
+  pk: 114
+  fields:
+    revision: 114
+    object_id: '47'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 47, "fields":
+      {"first_name": "Sophie", "middle_names": "", "family_name": "Dickson", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Dickson, Sophie
+- model: reversion.version
+  pk: 115
+  fields:
+    revision: 115
+    object_id: '48'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 48, "fields":
+      {"first_name": "Matthew", "middle_names": "", "family_name": "Gundel", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Gundel, Matthew
+- model: reversion.version
+  pk: 116
+  fields:
+    revision: 116
+    object_id: '49'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 49, "fields":
+      {"first_name": "Nicholas", "middle_names": "", "family_name": "Everritt", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Everritt, Nicholas
+- model: reversion.version
+  pk: 117
+  fields:
+    revision: 117
+    object_id: '50'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 50, "fields":
+      {"first_name": "Amanda", "middle_names": "", "family_name": "Stauffer", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Stauffer, Amanda
+- model: reversion.version
+  pk: 118
+  fields:
+    revision: 118
+    object_id: '51'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 51, "fields":
+      {"first_name": "Patrick", "middle_names": "", "family_name": "Dishman", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Dishman, Patrick
+- model: reversion.version
+  pk: 119
+  fields:
+    revision: 119
+    object_id: '52'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 52, "fields":
+      {"first_name": "Theo", "middle_names": "", "family_name": "McCabe", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: McCabe, Theo
+- model: reversion.version
+  pk: 120
+  fields:
+    revision: 120
+    object_id: '24'
+    content_type:
+    - uk_improv_guide
+    - team
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 24, "fields": {"name":
+      "Mechanik de Theatre", "image": "", "facebook_link": "", "contact_email_address":
+      "", "players": [47, 48, 49, 50, 51, 52]}}]'
+    object_repr: Mechanik de Theatre
+- model: reversion.version
+  pk: 121
+  fields:
+    revision: 121
+    object_id: '53'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 53, "fields":
+      {"first_name": "Graham", "middle_names": "", "family_name": "Dickson", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Dickson, Graham
+- model: reversion.version
+  pk: 122
+  fields:
+    revision: 122
+    object_id: '54'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 54, "fields":
+      {"first_name": "Damian", "middle_names": "", "family_name": "Arnold", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Arnold, Damian
+- model: reversion.version
+  pk: 123
+  fields:
+    revision: 123
+    object_id: '25'
+    content_type:
+    - uk_improv_guide
+    - team
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 25, "fields": {"name":
+      "Founding Fathers", "image": "", "facebook_link": "", "contact_email_address":
+      "", "players": [53, 54]}}]'
+    object_repr: Founding Fathers
+- model: reversion.version
+  pk: 124
+  fields:
+    revision: 124
+    object_id: '9'
+    content_type:
+    - uk_improv_guide
+    - event
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.event", "pk": 9, "fields": {"name":
+      "Important Art", "image": "event/IMPORTANTART.png", "event_type": "S", "start_time":
+      "2019-07-04T21:00:00Z", "facebook_link": "", "eventbrite_link": "", "venue":
+      1, "series": "1aaf4020-4e05-453e-b6ae-84e61a2eae22", "teams": [23, 24, 25]}}]'
+    object_repr: Important Art - @ 2019-07-04 21:00:00+00:00 - Free Association
 - model: auth.user
   fields:
     password: pbkdf2_sha256$150000$NJN6PvxDrDXj$z/e4TbvtO1y2kdL5wa/eg/PjdJLlspPtTcQFAZXLohw=
@@ -4663,6 +5067,201 @@
     object_repr: Caretakers
     action_flag: 2
     change_message: '[{"changed": {"fields": ["players"]}}]'
+- model: admin.logentry
+  pk: 110
+  fields:
+    action_time: 2019-07-03 19:03:22.018380+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - eventseries
+    object_id: 1aaf4020-4e05-453e-b6ae-84e61a2eae22
+    object_repr: Important Art
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 111
+  fields:
+    action_time: 2019-07-03 19:03:50.206329+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '45'
+    object_repr: Kelly, Dan
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 112
+  fields:
+    action_time: 2019-07-03 19:04:03.700674+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '46'
+    object_repr: Guterbock, Liz
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 113
+  fields:
+    action_time: 2019-07-03 19:04:10.611943+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
+    object_id: '23'
+    object_repr: Uber Pool
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 114
+  fields:
+    action_time: 2019-07-03 19:04:45.910104+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '47'
+    object_repr: Dickson, Sophie
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 115
+  fields:
+    action_time: 2019-07-03 19:05:37.617783+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '48'
+    object_repr: Gundel, Matthew
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 116
+  fields:
+    action_time: 2019-07-03 19:05:58.668099+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '49'
+    object_repr: Everritt, Nicholas
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 117
+  fields:
+    action_time: 2019-07-03 19:06:13.902317+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '50'
+    object_repr: Stauffer, Amanda
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 118
+  fields:
+    action_time: 2019-07-03 19:06:27.924991+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '51'
+    object_repr: Dishman, Patrick
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 119
+  fields:
+    action_time: 2019-07-03 19:06:43.953402+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '52'
+    object_repr: McCabe, Theo
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 120
+  fields:
+    action_time: 2019-07-03 19:06:47.207291+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
+    object_id: '24'
+    object_repr: Mechanik de Theatre
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 121
+  fields:
+    action_time: 2019-07-03 19:07:10.221758+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '53'
+    object_repr: Dickson, Graham
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 122
+  fields:
+    action_time: 2019-07-03 19:07:19.671693+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '54'
+    object_repr: Arnold, Damian
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 123
+  fields:
+    action_time: 2019-07-03 19:07:21.462546+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
+    object_id: '25'
+    object_repr: Founding Fathers
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 124
+  fields:
+    action_time: 2019-07-03 19:07:30.584385+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - event
+    object_id: '9'
+    object_repr: Important Art - @ 2019-07-04 21:00:00+00:00 - Free Association
+    action_flag: 1
+    change_message: '[{"added": {}}]'
 - model: reversion.revision
   pk: 1
   fields:
@@ -5426,3 +6025,108 @@
     user:
     - admin
     comment: '[{"changed": {"fields": ["players"]}}]'
+- model: reversion.revision
+  pk: 110
+  fields:
+    date_created: 2019-07-03 19:03:21.929432+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 111
+  fields:
+    date_created: 2019-07-03 19:03:50.202404+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 112
+  fields:
+    date_created: 2019-07-03 19:04:03.697501+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 113
+  fields:
+    date_created: 2019-07-03 19:04:10.603323+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 114
+  fields:
+    date_created: 2019-07-03 19:04:45.906808+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 115
+  fields:
+    date_created: 2019-07-03 19:05:37.610673+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 116
+  fields:
+    date_created: 2019-07-03 19:05:58.665244+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 117
+  fields:
+    date_created: 2019-07-03 19:06:13.899155+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 118
+  fields:
+    date_created: 2019-07-03 19:06:27.921996+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 119
+  fields:
+    date_created: 2019-07-03 19:06:43.950386+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 120
+  fields:
+    date_created: 2019-07-03 19:06:47.195014+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 121
+  fields:
+    date_created: 2019-07-03 19:07:10.218000+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 122
+  fields:
+    date_created: 2019-07-03 19:07:19.668187+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 123
+  fields:
+    date_created: 2019-07-03 19:07:21.453558+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 124
+  fields:
+    date_created: 2019-07-03 19:07:30.565383+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'

@@ -40,3 +40,9 @@ body {
     height: 250px;
     object-fit: cover;
 }
+
+.performer_list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
