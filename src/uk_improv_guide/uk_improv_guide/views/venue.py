@@ -14,9 +14,7 @@ def venue(request, id: int):
     this_venue: Venue = get_venue_by_id(id)
     title = this_venue.name
 
-    log.info(pprint.pformat(dir(this_venue)))
-
-    events: Sequence[Event] = this_venue.event_set.all()
+    events: Sequence[Event] = Event.objects.all()
 
     return render(
         request,
