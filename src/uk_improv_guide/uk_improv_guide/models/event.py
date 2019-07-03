@@ -3,9 +3,10 @@ from typing import Sequence
 
 import reversion
 from django.db import models
+
+from uk_improv_guide.models.venue import Venue
 from uk_improv_guide.models.event_series import EventSeries
 from uk_improv_guide.models.team import Team
-from uk_improv_guide.models.venue import Venue
 
 
 @reversion.register
@@ -17,7 +18,8 @@ class Event(models.Model):
     start_time = models.DateTimeField(verbose_name="Show start time")
     facebook_link = models.CharField(max_length=256, blank=True)
     eventbrite_link = models.CharField(max_length=256, blank=True)
-    venue = models.ForeignKey(EventSeries, on_delete=models.SET_NULL, null=True)
+    venue = models.ForeignKey(Venue, on_delete=models.SET_NULL, null=True)
+    series = models.ForeignKey(EventSeries, on_delete=models.SET_NULL, null=True)
     teams = models.ManyToManyField(Team, verbose_name="teams playing", blank=True)
 
     def __str__(self):
@@ -39,7 +41,3 @@ def get_events_after_datetime_for_performer_id(
 def get_event_by_id(id: int) -> Event:
     e: Event = Event.objects.get(id=id)
     return e
-
-
-def get_events_by_venue_id(id: int) -> Sequence[Event]:
-    return Event.objects.order_by("start_time")
