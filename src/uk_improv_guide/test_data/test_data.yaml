@@ -80,6 +80,11 @@
     session_data: ZWZmZmQ1NzcwZjIwMTcwYzFlOGY5YmIxNDRkNDViMjUzOWI3YTRlNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhMTEyNGZkOTYyZjA1MGRkM2I4YjM0NDU1ZmYyZGRjNDgwOWY1YjcwIn0=
     expire_date: 2019-07-09 21:50:21.909074+00:00
 - model: sessions.session
+  pk: bae6n00m18daxebx537239rdd0nm6bma
+  fields:
+    session_data: ZWZmZmQ1NzcwZjIwMTcwYzFlOGY5YmIxNDRkNDViMjUzOWI3YTRlNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhMTEyNGZkOTYyZjA1MGRkM2I4YjM0NDU1ZmYyZGRjNDgwOWY1YjcwIn0=
+    expire_date: 2019-07-16 22:50:20.672935+00:00
+- model: sessions.session
   pk: njomq97i0ywoegl4s0rza1oj5oicjqts
   fields:
     session_data: ZWZmZmQ1NzcwZjIwMTcwYzFlOGY5YmIxNDRkNDViMjUzOWI3YTRlNjp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJhMTEyNGZkOTYyZjA1MGRkM2I4YjM0NDU1ZmYyZGRjNDgwOWY1YjcwIn0=
@@ -526,6 +531,58 @@
     twitter_link: ''
     imdb_link: ''
     contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 35
+  fields:
+    first_name: Kirsty
+    middle_names: ''
+    family_name: Cooke
+    image: ''
+    alias: ''
+    facebook_link: https://www.facebook.com/kirsty.cooke
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 36
+  fields:
+    first_name: Tom
+    middle_names: ''
+    family_name: Levinge
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 37
+  fields:
+    first_name: Dom
+    middle_names: ''
+    family_name: Dashton
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
+- model: uk_improv_guide.performer
+  pk: 38
+  fields:
+    first_name: Morrish
+    middle_names: ''
+    family_name: Jules
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    imdb_link: ''
+    contact_email_address: ''
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -646,6 +703,10 @@
     contact_email_address: ''
     players:
     - 27
+    - 35
+    - 36
+    - 37
+    - 38
 - model: uk_improv_guide.team
   pk: 12
   fields:
@@ -735,6 +796,14 @@
     - 32
     - 33
     - 34
+- model: uk_improv_guide.team
+  pk: 22
+  fields:
+    name: Charlie Kemp & KBF
+    image: ''
+    facebook_link: ''
+    contact_email_address: ''
+    players: []
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -826,15 +895,30 @@
     country: GB
     school: null
     image: ''
+- model: uk_improv_guide.venue
+  pk: 8
+  fields:
+    name: The Taproom
+    facebook_link: https://www.facebook.com/TaproomN1/
+    website_link: http://www.thetaprooms.co.uk/
+    google_maps_link: https://goo.gl/maps/BmKT9DwFYCH3fjVr5
+    address: 163 Upper St, Islington
+    city: London
+    postcode: N1 1US
+    country: GB
+    school: null
+    image: venue/the_taproom_n1.jpg
 - model: uk_improv_guide.event
   pk: 1
   fields:
     name: MOOP Inaugural
+    image: ''
     event_type: S
     start_time: 2019-06-24 20:00:00+00:00
     facebook_link: ''
     eventbrite_link: ''
     venue: 3
+    series: null
     teams:
     - 2
     - 3
@@ -843,11 +927,13 @@
   pk: 2
   fields:
     name: 'Moop Presents: The Caretakers'
+    image: ''
     event_type: S
     start_time: 2019-07-22 20:00:00+00:00
     facebook_link: ''
     eventbrite_link: ''
     venue: 3
+    series: null
     teams:
     - 1
     - 2
@@ -855,11 +941,13 @@
   pk: 3
   fields:
     name: Lester City Super Sunday
+    image: ''
     event_type: S
     start_time: 2019-06-23 19:30:00+00:00
     facebook_link: https://www.facebook.com/events/463709171045195/
     eventbrite_link: ''
     venue: 1
+    series: null
     teams:
     - 1
     - 5
@@ -868,21 +956,25 @@
   pk: 4
   fields:
     name: DDG Summer Finale & Jam!
+    image: ''
     event_type: J
     start_time: 2019-07-29 20:00:00+00:00
     facebook_link: ''
     eventbrite_link: ''
     venue: 5
+    series: null
     teams: []
 - model: uk_improv_guide.event
   pk: 5
   fields:
     name: Just Friends
+    image: ''
     event_type: S
     start_time: 2019-07-12 19:30:00+00:00
     facebook_link: ''
     eventbrite_link: ''
     venue: 4
+    series: null
     teams:
     - 7
     - 9
@@ -890,24 +982,43 @@
   pk: 6
   fields:
     name: Mean People - Improv Comedy - LAST of the Summer!
+    image: ''
     event_type: S
     start_time: 2019-06-26 20:30:00+00:00
     facebook_link: ''
     eventbrite_link: ''
     venue: 6
+    series: null
     teams: []
 - model: uk_improv_guide.event
   pk: 7
   fields:
     name: Big Friday
+    image: ''
     event_type: S
     start_time: 2019-06-28 19:30:00+00:00
     facebook_link: ''
     eventbrite_link: ''
     venue: 7
+    series: null
     teams:
     - 20
     - 21
+- model: uk_improv_guide.event
+  pk: 8
+  fields:
+    name: Hoof
+    image: ''
+    event_type: S
+    start_time: 2019-07-03 20:00:00+00:00
+    facebook_link: https://www.facebook.com/events/1043479525857095/
+    eventbrite_link: ''
+    venue: 8
+    series: null
+    teams:
+    - 11
+    - 21
+    - 22
 - model: auth.permission
   fields:
     name: Can add revision
@@ -2743,10 +2854,129 @@
       "Big Friday", "event_type": "S", "start_time": "2019-06-28T19:30:00Z", "facebook_link":
       "", "eventbrite_link": "", "venue": 7, "teams": [20, 21]}}]'
     object_repr: Big Friday - @ 2019-06-28 19:30:00+00:00 - The North London Tavern
+- model: reversion.version
+  pk: 91
+  fields:
+    revision: 91
+    object_id: '8'
+    content_type:
+    - uk_improv_guide
+    - venue
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.venue", "pk": 8, "fields": {"name":
+      "The Taproom", "facebook_link": "https://www.facebook.com/TaproomN1/", "website_link":
+      "http://www.thetaprooms.co.uk/", "google_maps_link": "https://goo.gl/maps/BmKT9DwFYCH3fjVr5",
+      "address": "163 Upper St, Islington", "city": "London", "postcode": "N1 1US",
+      "country": "GB", "school": null, "image": "venue/the_taproom_n1.jpg"}}]'
+    object_repr: The Taproom, London, GB
+- model: reversion.version
+  pk: 92
+  fields:
+    revision: 92
+    object_id: '35'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 35, "fields":
+      {"first_name": "Kirsty", "middle_names": "", "family_name": "Cooke", "image":
+      "", "alias": "", "facebook_link": "https://www.facebook.com/kirsty.cooke", "instagram_link":
+      "", "twitter_link": "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Cooke, Kirsty
+- model: reversion.version
+  pk: 93
+  fields:
+    revision: 93
+    object_id: '36'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 36, "fields":
+      {"first_name": "Tom", "middle_names": "", "family_name": "Levinge", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Levinge, Tom
+- model: reversion.version
+  pk: 94
+  fields:
+    revision: 94
+    object_id: '37'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 37, "fields":
+      {"first_name": "Dom", "middle_names": "", "family_name": "Dashton", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Dashton, Dom
+- model: reversion.version
+  pk: 95
+  fields:
+    revision: 95
+    object_id: '38'
+    content_type:
+    - uk_improv_guide
+    - performer
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.performer", "pk": 38, "fields":
+      {"first_name": "Morrish", "middle_names": "", "family_name": "Jules", "image":
+      "", "alias": "", "facebook_link": "", "instagram_link": "", "twitter_link":
+      "", "imdb_link": "", "contact_email_address": ""}}]'
+    object_repr: Jules, Morrish
+- model: reversion.version
+  pk: 96
+  fields:
+    revision: 96
+    object_id: '11'
+    content_type:
+    - uk_improv_guide
+    - team
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 11, "fields": {"name":
+      "HOOF", "image": "", "facebook_link": "https://www.facebook.com/HoofComedy/",
+      "contact_email_address": "", "players": [27, 35, 36, 37, 38]}}]'
+    object_repr: HOOF
+- model: reversion.version
+  pk: 97
+  fields:
+    revision: 97
+    object_id: '22'
+    content_type:
+    - uk_improv_guide
+    - team
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.team", "pk": 22, "fields": {"name":
+      "Charlie Kemp & KBF", "image": "", "facebook_link": "", "contact_email_address":
+      "", "players": []}}]'
+    object_repr: Charlie Kemp & KBF
+- model: reversion.version
+  pk: 98
+  fields:
+    revision: 98
+    object_id: '8'
+    content_type:
+    - uk_improv_guide
+    - event
+    db: default
+    format: json
+    serialized_data: '[{"model": "uk_improv_guide.event", "pk": 8, "fields": {"name":
+      "Hoof", "image": "", "event_type": "S", "start_time": "2019-07-03T20:00:00Z",
+      "facebook_link": "https://www.facebook.com/events/1043479525857095/", "eventbrite_link":
+      "", "venue": 8, "teams": [11, 21, 22]}}]'
+    object_repr: Hoof - @ 2019-07-03 20:00:00+00:00 - The Taproom
 - model: auth.user
   fields:
     password: pbkdf2_sha256$150000$NJN6PvxDrDXj$z/e4TbvtO1y2kdL5wa/eg/PjdJLlspPtTcQFAZXLohw=
-    last_login: 2019-06-25 21:50:21.879074+00:00
+    last_login: 2019-07-02 22:50:20.654973+00:00
     is_superuser: true
     username: admin
     first_name: ''
@@ -3932,6 +4162,110 @@
     object_repr: Big Friday - @ 2019-06-28 19:30:00+00:00 - The North London Tavern
     action_flag: 1
     change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 91
+  fields:
+    action_time: 2019-07-02 22:54:27.212922+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - venue
+    object_id: '8'
+    object_repr: The Taproom, London, GB
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 92
+  fields:
+    action_time: 2019-07-02 23:19:37.612992+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '35'
+    object_repr: Cooke, Kirsty
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 93
+  fields:
+    action_time: 2019-07-02 23:20:08.772320+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '36'
+    object_repr: Levinge, Tom
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 94
+  fields:
+    action_time: 2019-07-02 23:20:19.804553+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '37'
+    object_repr: Dashton, Dom
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 95
+  fields:
+    action_time: 2019-07-02 23:20:36.704643+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - performer
+    object_id: '38'
+    object_repr: Jules, Morrish
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 96
+  fields:
+    action_time: 2019-07-02 23:24:56.071788+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
+    object_id: '11'
+    object_repr: HOOF
+    action_flag: 2
+    change_message: '[{"changed": {"fields": ["players"]}}]'
+- model: admin.logentry
+  pk: 97
+  fields:
+    action_time: 2019-07-02 23:27:08.083101+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - team
+    object_id: '22'
+    object_repr: Charlie Kemp & KBF
+    action_flag: 1
+    change_message: '[{"added": {}}]'
+- model: admin.logentry
+  pk: 98
+  fields:
+    action_time: 2019-07-02 23:27:17.180150+00:00
+    user:
+    - admin
+    content_type:
+    - uk_improv_guide
+    - event
+    object_id: '8'
+    object_repr: Hoof - @ 2019-07-03 20:00:00+00:00 - The Taproom
+    action_flag: 1
+    change_message: '[{"added": {}}]'
 - model: reversion.revision
   pk: 1
   fields:
@@ -4559,6 +4893,62 @@
   pk: 90
   fields:
     date_created: 2019-06-30 16:37:11.770810+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 91
+  fields:
+    date_created: 2019-07-02 22:54:26.924258+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 92
+  fields:
+    date_created: 2019-07-02 23:19:37.577811+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 93
+  fields:
+    date_created: 2019-07-02 23:20:08.769553+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 94
+  fields:
+    date_created: 2019-07-02 23:20:19.801757+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 95
+  fields:
+    date_created: 2019-07-02 23:20:36.701376+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 96
+  fields:
+    date_created: 2019-07-02 23:24:56.056419+00:00
+    user:
+    - admin
+    comment: '[{"changed": {"fields": ["players"]}}]'
+- model: reversion.revision
+  pk: 97
+  fields:
+    date_created: 2019-07-02 23:27:08.077864+00:00
+    user:
+    - admin
+    comment: '[{"added": {}}]'
+- model: reversion.revision
+  pk: 98
+  fields:
+    date_created: 2019-07-02 23:27:17.157362+00:00
     user:
     - admin
     comment: '[{"added": {}}]'

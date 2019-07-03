@@ -3,10 +3,9 @@ from typing import Sequence
 
 import reversion
 from django.db import models
-
-from uk_improv_guide.models.venue import Venue
 from uk_improv_guide.models.event_series import EventSeries
 from uk_improv_guide.models.team import Team
+from uk_improv_guide.models.venue import Venue
 
 
 @reversion.register

@@ -7,8 +7,8 @@ from uk_improv_guide.lib.opengraph import opengraph_website
 from uk_improv_guide.models import Event
 from uk_improv_guide.models.venue import Venue, get_venue_by_id
 
-
 log = logging.getLogger(__name__)
+
 
 def venue(request, id: int):
     this_venue: Venue = get_venue_by_id(id)
@@ -16,7 +16,7 @@ def venue(request, id: int):
 
     log.info(pprint.pformat(dir(this_venue)))
 
-    events:Sequence[Event] = this_venue.event_set.all()
+    events: Sequence[Event] = this_venue.event_set.all()
 
     return render(
         request,
