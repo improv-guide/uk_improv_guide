@@ -4,3 +4,4 @@ __pycache__
 migrations
 !/secret.env
 /.env
+/production/.env
