@@ -22,7 +22,7 @@ def event(request, id: int):
             "venue": venue,
             "teams": this_event.teams.all(),
             "og": opengraph_website(
-                title=title, url=request.build_absolute_uri(), image=this_event.image
+                title=title, request=request, image=this_event.image
             ),
         },
     )

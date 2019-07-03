@@ -20,7 +20,7 @@ def team(request, id: int):
             "events": events,
             "players": players,
             "og": opengraph_website(
-                title=title, url=request.build_absolute_uri(), image=None
+                title=title, request=request, image=None
             ),
         },
     )

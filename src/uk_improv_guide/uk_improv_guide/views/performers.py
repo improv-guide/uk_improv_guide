@@ -15,7 +15,7 @@ def performers(request):
             "title": title,
             "performers": all_performers,
             "og": opengraph_website(
-                title=title, url=request.build_absolute_uri(), image=None
+                title=title, request=request, image=None
             ),
         },
     )

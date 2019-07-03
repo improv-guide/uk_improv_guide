@@ -1,14 +1,13 @@
 {% extends "base.html" %}
+{% load static %}
 {%  block title %}{{ full_name }}{% endblock %}
 {% block content %}
 
     <h1>{{ title }}</h1>
 
-
-
-    <p>
-
-    </p>
+    {% if performer.image %}
+        <img class="featured_image" src="{% static "" %}{{ performer.image.url }}" />
+    {% endif %}
 
     {% if teams %}
     <h3>Plays in these teams:</h3>

@@ -33,10 +33,10 @@ def performer(request, id: int):
             "events": events,
             "og": opengraph_person(
                 title=title,
-                url=request.build_absolute_uri(),
                 first_name=this_performer.first_name,
                 family_name=this_performer.family_name,
                 image=this_performer.image,
+                request=request
             ),
         },
     )

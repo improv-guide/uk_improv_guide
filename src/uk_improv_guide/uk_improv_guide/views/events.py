@@ -18,7 +18,7 @@ def events(request):
             "title": "Events",
             "events": events,
             "og": opengraph_website(
-                title=title, url=request.build_absolute_uri(), image=None
+                title=title, request=request, image=None
             ),
         },
     )

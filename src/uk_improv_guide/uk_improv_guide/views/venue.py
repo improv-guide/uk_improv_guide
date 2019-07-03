@@ -23,7 +23,7 @@ def venue(request, id: int):
             "venue": this_venue,
             "events": events,
             "og": opengraph_website(
-                title=title, url=request.build_absolute_uri(), image=this_venue.image
+                title=title, request=request, image=this_venue.image
             ),
         },
     )

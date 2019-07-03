@@ -15,6 +15,7 @@ class Venue(models.Model):
     address = models.CharField(max_length=256, verbose_name="Street Address")
     city = models.CharField(max_length=256, default="London")
     postcode = models.CharField(max_length=10, verbose_name="Postal Code")
+    email_address = models.CharField(max_length=100, verbose_name="Email Address", blank=True)
     country = CountryField(blank_label="(select country)", default="GB")
     school = models.ForeignKey(
         School,

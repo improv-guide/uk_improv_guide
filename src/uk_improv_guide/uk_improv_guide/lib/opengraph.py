@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from typing import Iterator, Optional
 
 from django.db import models
+from django.http import HttpRequest
 
 
 @dataclass
@@ -9,30 +10,27 @@ class OpengraphItem:
     name: str
     content: str
 
-
-def url_from_image_field(imf: models.ImageField) -> Optional[str]:
-    return imf.url if imf else None
-
-
 def opengraph_person(
-    title: str, url: str, first_name: str, family_name: str, image: models.ImageField
+    title: str, first_name: str, family_name: str, image: models.ImageField, request: HttpRequest
 ) -> Iterator[OpengraphItem]:
+    image_url = request.build_absolute_uri(image.url) if image else None
     yield from og_headers(
         title=title,
-        url=url,
-        image=url_from_image_field(image),
+        url=request.build_absolute_uri(),
+        image=image_url,
         type="profile",
         **{"profile:first_name": first_name, "profile:last_name": family_name}
     )
 
 
 def opengraph_website(
-    title: str, url: str, image: models.ImageField, **kwargs
+    title: str, image: models.ImageField, request: HttpRequest, **kwargs
 ) -> Iterator[OpengraphItem]:
+    image_url = request.build_absolute_uri(image.url) if image else None
     yield from og_headers(
         title=title,
-        url=url,
-        image=url_from_image_field(image),
+        url=request.build_absolute_uri(),
+        image=image_url,
         type="website",
         **kwargs
     )

@@ -15,7 +15,7 @@ def teams(request):
             "title": title,
             "items": teams,
             "og": opengraph_website(
-                title=title, url=request.build_absolute_uri(), image=None
+                title=title, request=request, image=None
             ),
         },
     )
