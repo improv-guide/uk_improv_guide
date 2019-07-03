@@ -4,10 +4,20 @@
     <p>Events happening soon.</p>
 
 
-    <div class="listings"></div>
-    {% for event in events %}
-        <div class="grid-item">{% include "content/event.html" %}</div>
-    {% endfor %}
+    <div class="listings">
+        <ul>
+        {% for event in events %}
+        <li>
+            <a href="/events/{{event.id}}">{{event.name}}</a> @ <a href="/events/{{ event.id }}">{{ event.venue.name }}</a> with:
+            <ul>
+                {% for team in event.teams.all %}
+                    <li><a href="/teams/{{ team.id }}">{{ team.name }}</a></li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+        </ul>
+    </div>
 
 
 

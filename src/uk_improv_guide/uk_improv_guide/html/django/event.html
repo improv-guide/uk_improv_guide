@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{%  block title %}{{ full_name }}{% endblock %}
+{% block content %}
+
+<h1>{{ title }}</h1>
+
+<div class="event_info">
+    <p>{{event.name}} @ <a href="/venues/{{venue.id}}">{{venue.name}}</a>, {{event.start_time}}</p>
+</div>
+
+{% if teams %}
+<h3>Teams playing</h3>
+<ul>
+    {% for team in teams %}
+    <li><a href="/teams/{{team.id}}">{{ team.name }}</a></li>
+    {%  endfor %}
+</ul>
+{% endif %}
+
+
+{% endblock %}

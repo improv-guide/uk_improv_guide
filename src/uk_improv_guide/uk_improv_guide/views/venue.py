@@ -14,7 +14,7 @@ def venue(request, id: int):
     this_venue: Venue = get_venue_by_id(id)
     title = this_venue.name
 
-    events: Sequence[Event] = Event.objects.all()
+    events: Sequence[Event] = this_venue.event_set.order_by("-start_time")
 
     return render(
         request,
