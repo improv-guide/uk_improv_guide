@@ -9,8 +9,17 @@ from uk_improv_guide.models.performer import Performer
 class Team(models.Model):
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to="team/", blank=True)
-    facebook_link = models.CharField(max_length=100, blank=True, default="")
+    facebook_link = models.CharField(
+        max_length=100, blank=True, default="", verbose_name="Facebook Link"
+    )
+    instagram_link = models.CharField(
+        max_length=100, blank=True, default="", verbose_name="Instagram Link"
+    )
+    twitter_link = models.CharField(
+        max_length=100, blank=True, default="", verbose_name="Twitter Link"
+    )
     contact_email_address = models.CharField(max_length=100, blank=True, default="")
+    website_link = models.CharField(max_length=256, blank=True)
     players = models.ManyToManyField(
         Performer, verbose_name="Team members", blank=True, related_name="plays_for"
     )

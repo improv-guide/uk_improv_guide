@@ -26,10 +26,13 @@ class Performer(models.Model):
     twitter_link = models.CharField(
         max_length=100, blank=True, default="", verbose_name="Twitter Link"
     )
+    contact_email_address = models.CharField(max_length=100, blank=True, default="")
+    website_link = models.CharField(max_length=256, blank=True)
+
     imdb_link = models.CharField(
         max_length=100, blank=True, default="", verbose_name="IMDB Link"
     )
-    contact_email_address = models.CharField(max_length=100, blank=True, default="")
+
 
     def full_name(self) -> str:
         middle_names: str = self.middle_names or ""
