@@ -51,7 +51,7 @@ services:
 
   db:
     <<: *base-dev
-    image: postgres:11.4
+    image: postgres:10.9
     volumes:
       - "postgres_data:/var/lib/postgresql/data"
     environment:
