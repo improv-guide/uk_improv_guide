@@ -55,12 +55,10 @@ services:
     volumes:
       - "postgres_data:/var/lib/postgresql/data"
     environment:
-      POSTGRES_PASSWORD_FILE: /run/secrets/postgres_password
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_DB: ${POSTGRES_NAME}
       POSTGRES_PORT: '5432'
-    secrets:
-      - postgres_password
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     networks:
       - internal
 
@@ -80,9 +78,6 @@ services:
 volumes:
   postgres_data:
 
-secrets:
-  postgres_password:
-    external: true
 
 networks:
   internal:
