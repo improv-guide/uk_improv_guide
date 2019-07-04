@@ -10,12 +10,14 @@ x-base-database: &base-database
   DATABASE_HOST: 'db'
   DATABASE_PORT: ${POSTGRES_PORT}
 
+x-base-image: &base-image
+  image: salimfadhley/uk_improv_guide:0.1.4
 
 services:
 
   dev:
     <<: *base-dev
-    image: salimfadhley/uk_improv_guide:${UK_IMPROV_GUIDE_VERSION}
+    <<: *base-image
     build:
       context: .
       target: uk_improv_guide
@@ -31,33 +33,36 @@ services:
     environment:
       <<: *base-database
       SITE_PORT: ${SITE_PORT}
+    networks:
+      - internal
 
 
 
   python:
-    image: salimfadhley/uk_improv_guide:${UK_IMPROV_GUIDE_VERSION}
-    build:
-      context: .
-      target: uk_improv_guide
+    <<: *base-image
     volumes:
       - ./src:/src
     depends_on:
       - db
     environment:
       <<: *base-database
+    networks:
+      - internal
 
   db:
     <<: *base-dev
-    image: postgres
-#    command: --help
-#    entrypoint: "/bin/sh"
+    image: postgres:11.4
     volumes:
       - "postgres_data:/var/lib/postgresql/data"
     environment:
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_PASSWORD_FILE: /run/secrets/postgres_password
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_DB: ${POSTGRES_NAME}
       POSTGRES_PORT: '5432'
+    secrets:
+      - postgres_password
+    networks:
+      - internal
 
   adminer:
     image: adminer:4.7.1
@@ -68,10 +73,16 @@ services:
       ADMINER_DEFAULT_SERVER: "db"
     depends_on:
       - db
+    networks:
+      - internal
 
 
 volumes:
   postgres_data:
 
+secrets:
+  postgres_password:
+    external: true
 
-
+networks:
+  internal:
