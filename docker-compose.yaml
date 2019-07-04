@@ -4,11 +4,11 @@ x-base-dev: &base-dev
   restart: on-failure
 
 x-base-database: &base-database
-  DATABASE_NAME: ${POSTGRES_NAME}
-  DATABASE_USER: ${POSTGRES_USER}
-  DATABASE_PASSWORD: ${POSTGRES_PASSWORD}
-  DATABASE_HOST: 'db'
-  DATABASE_PORT: ${POSTGRES_PORT}
+  POSTGRES_USER: ${POSTGRES_USER}
+  POSTGRES_DB: ${POSTGRES_DB}
+  POSTGRES_PORT: '5432'
+  POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+  POSTGRES_HOST: 'db'
 
 x-base-image: &base-image
   image: salimfadhley/uk_improv_guide:0.1.4
