@@ -3,6 +3,11 @@
   fields:
     image: event_series/IMPORTANTART.png
     name: Important Art
+- model: uk_improv_guide.eventseries
+  pk: b165abbe-585c-4fdb-8438-539785d22716
+  fields:
+    image: event_series/amorphous_horse.jpg
+    name: Amorphous Horse's Happy Place
 - model: uk_improv_guide.performer
   pk: 1
   fields:
@@ -759,6 +764,160 @@
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 55
+  fields:
+    first_name: Heather
+    middle_names: ''
+    family_name: Urquhart
+    image: performer/heather_urquhart.jpg
+    alias: ''
+    facebook_link: https://www.facebook.com/heather.urquhart.184
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 56
+  fields:
+    first_name: Joe
+    middle_names: ''
+    family_name: Samuel
+    image: ''
+    alias: ''
+    facebook_link: https://www.facebook.com/joe.samuel.37669
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 57
+  fields:
+    first_name: Liz
+    middle_names: ''
+    family_name: Peters
+    image: performer/liz_peters.jpg
+    alias: ''
+    facebook_link: https://www.facebook.com/liz.peters.9216
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 58
+  fields:
+    first_name: Jules
+    middle_names: ''
+    family_name: Munns
+    image: performer/jules_munns.jpg
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 59
+  fields:
+    first_name: Katy
+    middle_names: ''
+    family_name: Schutte
+    image: performer/katy_schutte.jpg
+    alias: ''
+    facebook_link: https://www.facebook.com/katy.schutte.1
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 60
+  fields:
+    first_name: Rhiannon
+    middle_names: ''
+    family_name: Vivian
+    image: ''
+    alias: ''
+    facebook_link: https://www.facebook.com/rhiannon.vivian.7
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 61
+  fields:
+    first_name: John
+    middle_names: ''
+    family_name: Cremer
+    image: performer/john_cremer.jpg
+    alias: ''
+    facebook_link: https://www.facebook.com/john.cremer.7
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 62
+  fields:
+    first_name: Rebecca
+    middle_names: ''
+    family_name: MacMillan
+    image: performer/rebecca_macmillan.jpg
+    alias: ''
+    facebook_link: https://www.facebook.com/rebecca.macmillan.58
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 63
+  fields:
+    first_name: Lloydie
+    middle_names: James
+    family_name: Lloyd
+    image: performer/james_lloyd.jpg
+    alias: ''
+    facebook_link: https://www.facebook.com/lloydiejl
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 64
+  fields:
+    first_name: Chris
+    middle_names: ''
+    family_name: Mead
+    image: performer/chris_mead.jpg
+    alias: ''
+    facebook_link: https://www.facebook.com/mrchrismead
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 65
+  fields:
+    first_name: Jenny
+    middle_names: ''
+    family_name: Rowe
+    image: performer/jenny_rowe.jpg
+    alias: ''
+    facebook_link: https://www.facebook.com/jenny.rowe.908
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -1098,6 +1257,28 @@
     players:
     - 53
     - 54
+- model: uk_improv_guide.team
+  pk: 26
+  fields:
+    name: The Maydays
+    image: team/the_maydays_u0VfEVH.jpg
+    facebook_link: https://www.facebook.com/maydaysimprov/
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: https://www.themaydays.co.uk/
+    players:
+    - 56
+    - 57
+    - 58
+    - 55
+    - 64
+    - 65
+    - 59
+    - 60
+    - 61
+    - 62
+    - 63
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -1210,6 +1391,20 @@
     country: GB
     school: null
     image: venue/the_taproom_n1.jpg
+- model: uk_improv_guide.venue
+  pk: 9
+  fields:
+    name: The Castle
+    facebook_link: https://www.facebook.com/thecastlelondon/
+    website_link: http://www.thecastlelondon.com/
+    google_maps_link: https://goo.gl/maps/D6fC3htVnB6KXDRM6
+    address: 44 Commercial Road
+    city: London
+    postcode: E1 1LN
+    email_address: thecastle44@gmail.com
+    country: GB
+    school: null
+    image: ''
 - model: uk_improv_guide.event
   pk: 1
   fields:
@@ -1336,6 +1531,19 @@
     - 23
     - 24
     - 25
+- model: uk_improv_guide.event
+  pk: 10
+  fields:
+    name: Amorphous Horse's Happy Place
+    image: ''
+    event_type: S
+    start_time: 2019-07-25 19:15:00+00:00
+    facebook_link: https://www.facebook.com/events/2172032679574953/
+    eventbrite_link: https://www.eventbrite.co.uk/e/amorphous-horses-happy-place-tickets-64730079410
+    venue: 9
+    series: b165abbe-585c-4fdb-8438-539785d22716
+    teams:
+    - 8
 - model: auth.permission
   pk: 1
   fields:
@@ -1796,7 +2004,7 @@
   pk: 1
   fields:
     password: pbkdf2_sha256$150000$NJN6PvxDrDXj$z/e4TbvtO1y2kdL5wa/eg/PjdJLlspPtTcQFAZXLohw=
-    last_login: 2019-07-03 12:08:12.504916+00:00
+    last_login: 2019-07-04 23:38:53.921514+00:00
     is_superuser: true
     username: admin
     first_name: ''
