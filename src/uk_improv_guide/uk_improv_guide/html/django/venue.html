@@ -8,6 +8,10 @@
     <img class="featured_image" src="{% static "" %}{{ venue.image.url }}" />
     {%  endif %}
 
+    {% with social_thing=venue %}
+        {% include "content/social.html" %}
+    {% endwith %}
+
     <div class="address_info">
     <ul class="address">
         <li>{{ venue.address }}</li>

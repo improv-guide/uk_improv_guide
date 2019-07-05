@@ -6,17 +6,12 @@
     <ul>
         {% for venue in venues %}
             <li><a href="/venues/{{ venue.id }}">{{venue.name}}</a>
-                {% if venue.google_maps_link %}
-                    <a href="{{ venue.google_maps_link }}">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </a>
-                {% endif %}
+                {% with social_thing=venue %}
+                    {% include "content/social.html" %}
+                {% endwith %}
             </li>
 
         {% endfor %}
     </ul>
-
-
-
 
 {% endblock %}
