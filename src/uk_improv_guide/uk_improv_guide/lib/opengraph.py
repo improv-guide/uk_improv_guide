@@ -13,7 +13,7 @@ class OpengraphItem:
 def opengraph_person(
     title: str, first_name: str, family_name: str, image: models.ImageField, request: HttpRequest
 ) -> Iterator[OpengraphItem]:
-    image_url = request.build_absolute_uri(image.url) if image else None
+    image_url = request.build_absolute_uri(f"/{image.url}") if image else "xxx"
     yield from og_headers(
         title=title,
         url=request.build_absolute_uri(),
@@ -26,7 +26,7 @@ def opengraph_person(
 def opengraph_website(
     title: str, image: models.ImageField, request: HttpRequest, **kwargs
 ) -> Iterator[OpengraphItem]:
-    image_url = request.build_absolute_uri(image.url) if image else None
+    image_url = request.build_absolute_uri(f"/{image.url}") if image else None
     yield from og_headers(
         title=title,
         url=request.build_absolute_uri(),

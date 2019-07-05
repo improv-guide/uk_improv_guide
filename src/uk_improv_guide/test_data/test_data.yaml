@@ -420,7 +420,7 @@
     first_name: Jessica
     middle_names: ''
     family_name: Ulrich
-    image: ''
+    image: performer/jess_ulrich.jpg
     alias: ''
     facebook_link: https://www.facebook.com/jessica.ulrich.98
     instagram_link: ''
@@ -932,11 +932,11 @@
     - 1
     - 2
     - 3
-    - 30
     - 41
     - 42
     - 43
     - 44
+    - 30
 - model: uk_improv_guide.team
   pk: 2
   fields:
@@ -1024,7 +1024,7 @@
   pk: 8
   fields:
     name: Amorphous Horse
-    image: ''
+    image: team/amorphous_horse.jpg
     facebook_link: https://www.facebook.com/amorphoushorse/
     instagram_link: ''
     twitter_link: ''
