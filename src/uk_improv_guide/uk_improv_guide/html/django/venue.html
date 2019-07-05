@@ -31,6 +31,10 @@
 
     </ul>
 
+    {% with obj=venue %}
+        {% include "content/admin.html" %}
+    {% endwith %}
+
 
 
 {% endblock %}

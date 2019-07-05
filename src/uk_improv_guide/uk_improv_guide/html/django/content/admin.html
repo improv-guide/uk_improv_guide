@@ -1,0 +1,6 @@
+{% if obj.is_adminable %}
+    [
+    <a href="{{ obj.get_admin_info.admin_change_url }}">Edit</a> |
+    <a href="{{ obj.get_admin_info.admin_history_url }}">History</a>
+    ]
+{% endif %}

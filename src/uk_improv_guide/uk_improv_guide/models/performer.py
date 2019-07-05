@@ -5,11 +5,13 @@ from typing import Sequence
 import reversion
 from django.db import models
 
+from uk_improv_guide.lib.adminable import AdminableObject
+
 log = logging.getLogger(__name__)
 
 
 @reversion.register
-class Performer(models.Model):
+class Performer(AdminableObject, models.Model):
     first_name = models.CharField(max_length=50, default="")
     middle_names = models.CharField(max_length=60, blank=True, default="")
     family_name = models.CharField(max_length=50, default="")

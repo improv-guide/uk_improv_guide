@@ -3,6 +3,8 @@
 {%  block title %}{{ full_name }}{% endblock %}
 {% block content %}
 
+
+
     <h1>{{ title }}</h1>
 
     {% if performer.image %}
@@ -26,5 +28,8 @@
         {%  endfor %}
     </ul>
 
+    {% with obj=performer %}
+        {% include "content/admin.html" %}
+    {% endwith %}
 
 {% endblock %}

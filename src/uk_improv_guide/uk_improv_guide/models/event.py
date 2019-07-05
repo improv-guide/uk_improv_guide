@@ -3,13 +3,15 @@ from typing import Sequence
 
 import reversion
 from django.db import models
+
+from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.models.event_series import EventSeries
 from uk_improv_guide.models.team import Team
 from uk_improv_guide.models.venue import Venue
 
 
 @reversion.register
-class Event(models.Model):
+class Event(AdminableObject, models.Model):
     EVENT_TYPES = (("S", "Show"), ("J", "Jam"), ("W", "Workshop"), ("A", "Audition"))
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to="event/", blank=True)

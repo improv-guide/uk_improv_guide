@@ -32,5 +32,9 @@
         {%  endfor %}
     </ul>
 
+    {% with obj=team %}
+        {% include "content/admin.html" %}
+    {% endwith %}
+
 
 {% endblock %}

@@ -2,11 +2,13 @@ from typing import Sequence
 
 import reversion
 from django.db import models
+
+from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.models.performer import Performer
 
 
 @reversion.register
-class Team(models.Model):
+class Team(AdminableObject, models.Model):
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to="team/", blank=True)
     facebook_link = models.CharField(
