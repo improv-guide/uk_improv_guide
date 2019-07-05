@@ -11,15 +11,10 @@
 
 
     <h3>Contact</h3>
-    {% if team.contact_email_address %}
-        <a href="mailto:{{ team.contact_email_address }}">EMAIL</a>
-    {% endif %}
 
-    {% if team.facebook_link %}
-        <a href="team.facebook_link">FB</a>
-    {% endif %}
-
-
+    {% with social_thing=team %}
+        {% include "content/social.html" %}
+    {% endwith %}
 
     <h3>Players</h3>
 
