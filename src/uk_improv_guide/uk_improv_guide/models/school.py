@@ -16,7 +16,7 @@ class School(AdminableObject, models.Model):
     instagram_link = models.CharField(
         max_length=100, blank=True, default="", verbose_name="Instagram Link"
     )
-    twitter_link = models.CharField(
+    twitter_handle = models.CharField(
         max_length=100, blank=True, default="", verbose_name="Twitter Link"
     )
     contact_email_address = models.CharField(max_length=100, blank=True, default="")

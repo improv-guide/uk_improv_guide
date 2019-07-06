@@ -8,7 +8,7 @@
         {% for venue in venues %}
 
             <div class="box">
-                <img class="boximage" src="{% static "" %}{{ team.image.url }}"/>
+                <img class="boximage" src="{% static "" %}{{ team.image.url }}"/ alt="{{ venue.name }}">
 
                 <a href="/venues/{{ venue.id }}">{{venue.name}}</a>
                 {% with social_thing=venue %}

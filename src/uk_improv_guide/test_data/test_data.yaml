@@ -23,7 +23,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -37,7 +37,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/salimfadhley
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: salimfadhley@gmail.com
     website_link: ''
     imdb_link: ''
@@ -51,7 +51,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: brookeroberthoerr@hotmail.com
     website_link: ''
     imdb_link: ''
@@ -65,7 +65,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/miriam.craig.50
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -79,7 +79,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/eli.cohn.7
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -93,7 +93,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/colin.rothwell
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -107,7 +107,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/monika.hadalska
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -121,7 +121,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/katie.handley.92
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -135,7 +135,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/al.jarrett.988
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -149,7 +149,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/michaelandrew.me
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -163,7 +163,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/fiona.richmondpark
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -177,7 +177,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/rosanna.thomaswood.9
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -191,7 +191,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: https://www.imdb.com/name/nm0891049/
@@ -205,7 +205,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: https://www.instagram.com/simonfazey/
-    twitter_link: https://twitter.com/SimonFazey
+    twitter_username: https://twitter.com/SimonFazey
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -219,7 +219,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/samuel.deschamps.12
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -233,7 +233,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/msmonicagaga
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -247,7 +247,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/michael.kunze.9
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -261,7 +261,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/events/457990218346091/
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -275,7 +275,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -289,7 +289,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -303,7 +303,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -317,7 +317,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -331,7 +331,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -345,7 +345,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/garethanthonyoconnor
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -359,7 +359,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -373,7 +373,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -387,7 +387,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -401,7 +401,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -415,7 +415,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/robin.wiggs.1
     instagram_link: https://www.instagram.com/wiggsrobin/
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: wiggsrobin@aim.com
     website_link: ''
     imdb_link: ''
@@ -429,7 +429,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/jessica.ulrich.98
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -443,7 +443,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/philippa.peacock
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -457,7 +457,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/thechrisgau
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -471,7 +471,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/katharine.bennettfox
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -485,7 +485,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -499,7 +499,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/kirsty.cooke
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -513,7 +513,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -527,7 +527,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -541,7 +541,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -555,7 +555,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -569,7 +569,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -583,7 +583,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -597,7 +597,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -611,7 +611,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -625,7 +625,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -639,7 +639,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -653,7 +653,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -667,7 +667,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -681,7 +681,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -695,7 +695,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -709,7 +709,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -723,7 +723,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -737,7 +737,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -751,7 +751,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -765,7 +765,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -779,7 +779,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/heather.urquhart.184
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -793,7 +793,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/joe.samuel.37669
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -807,7 +807,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/liz.peters.9216
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -821,7 +821,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -835,7 +835,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/katy.schutte.1
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -849,7 +849,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/rhiannon.vivian.7
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -863,7 +863,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/john.cremer.7
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -877,7 +877,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/rebecca.macmillan.58
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -891,7 +891,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/lloydiejl
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -905,7 +905,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/mrchrismead
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -919,7 +919,7 @@
     alias: ''
     facebook_link: https://www.facebook.com/jenny.rowe.908
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -933,7 +933,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_username: ''
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -947,7 +947,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: '@ShaunLowthian'
+    twitter_username: '@ShaunLowthian'
     contact_email_address: ''
     website_link: http://www.shaunlowthian.com/
     imdb_link: ''
@@ -961,7 +961,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: '@helenodonnell'
+    twitter_username: '@helenodonnell'
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -975,7 +975,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: '@MattStevensMA'
+    twitter_username: '@MattStevensMA'
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -989,7 +989,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: '@MrRhysCollier'
+    twitter_username: '@MrRhysCollier'
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -1003,7 +1003,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: '@nicholas_oram'
+    twitter_username: '@nicholas_oram'
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -1017,7 +1017,7 @@
     alias: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: '@TGrewcock'
+    twitter_username: '@TGrewcock'
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
@@ -1028,7 +1028,7 @@
     image: team/caretakers.jpg
     facebook_link: https://www.facebook.com/thecaretakerscomedy/?modal=admin_todo_tour
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: salimfadhley@gmail.com
     website_link: ''
     players:
@@ -1047,7 +1047,7 @@
     image: team/moop.jpg
     facebook_link: https://www.facebook.com/MOOP-Mistakes-Of-Our-Past-287021065313239/
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1070,7 +1070,7 @@
     image: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players: []
@@ -1081,7 +1081,7 @@
     image: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players: []
@@ -1092,7 +1092,7 @@
     image: ''
     facebook_link: https://www.facebook.com/lestercityimprov/
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1105,7 +1105,7 @@
     image: ''
     facebook_link: https://www.facebook.com/DoTheRightScene/
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1117,7 +1117,7 @@
     image: ''
     facebook_link: https://www.facebook.com/justfriendsimpro/
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1130,7 +1130,7 @@
     image: team/amorphous_horse.jpg
     facebook_link: https://www.facebook.com/amorphoushorse/
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1143,7 +1143,7 @@
     image: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players: []
@@ -1154,7 +1154,7 @@
     image: ''
     facebook_link: https://www.facebook.com/meanpeoplecomedy/
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1173,7 +1173,7 @@
     image: ''
     facebook_link: https://www.facebook.com/HoofComedy/
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1189,7 +1189,7 @@
     image: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players: []
@@ -1200,7 +1200,7 @@
     image: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1212,7 +1212,7 @@
     image: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players: []
@@ -1223,7 +1223,7 @@
     image: ''
     facebook_link: https://www.facebook.com/XMetYImprov/
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: wiggsrobin@aim.com
     website_link: ''
     players:
@@ -1235,7 +1235,7 @@
     image: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1249,7 +1249,7 @@
     image: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1262,7 +1262,7 @@
     image: ''
     facebook_link: https://www.facebook.com/thetuesdaygroupimprov
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ged@thetuesdaygroup.org.uk
     website_link: ''
     players: []
@@ -1273,7 +1273,7 @@
     image: team/art_of_happiness.jpg
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1285,7 +1285,7 @@
     image: team/rhinoseros_logo.png
     facebook_link: https://www.facebook.com/rhinocerosimprov/
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1297,7 +1297,7 @@
     image: ''
     facebook_link: https://www.facebook.com/thewilsonsimprov/
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1311,7 +1311,7 @@
     image: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1324,7 +1324,7 @@
     image: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1337,7 +1337,7 @@
     image: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1354,7 +1354,7 @@
     image: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: ''
     players:
@@ -1367,7 +1367,7 @@
     image: team/the_maydays_u0VfEVH.jpg
     facebook_link: https://www.facebook.com/maydaysimprov/
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: https://www.themaydays.co.uk/
     players:
@@ -1389,7 +1389,7 @@
     image: team/dnays.jpg
     facebook_link: http://facebook.com/dnayscomedy
     instagram_link: ''
-    twitter_link: '@dnayscomedy'
+    twitter_handle: '@dnayscomedy'
     contact_email_address: ''
     website_link: http://www.dnays.com
     players:
@@ -1407,7 +1407,7 @@
     image: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: https://www.bumperblyton.com/
     players: []
@@ -1418,7 +1418,7 @@
     image: ''
     facebook_link: ''
     instagram_link: ''
-    twitter_link: ''
+    twitter_handle: ''
     contact_email_address: ''
     website_link: http://www.glitchimprov.com/
     players: []
