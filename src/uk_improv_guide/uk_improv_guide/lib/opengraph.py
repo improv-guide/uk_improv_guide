@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Iterator, Optional
+from typing import Iterator
 
 from django.db import models
 from django.http import HttpRequest
@@ -10,8 +10,13 @@ class OpengraphItem:
     name: str
     content: str
 
+
 def opengraph_person(
-    title: str, first_name: str, family_name: str, image: models.ImageField, request: HttpRequest
+    title: str,
+    first_name: str,
+    family_name: str,
+    image: models.ImageField,
+    request: HttpRequest,
 ) -> Iterator[OpengraphItem]:
     image_url = request.build_absolute_uri(f"/{image.url}") if image else "xxx"
     yield from og_headers(
@@ -19,7 +24,7 @@ def opengraph_person(
         url=request.build_absolute_uri(),
         image=image_url,
         type="profile",
-        **{"profile:first_name": first_name, "profile:last_name": family_name}
+        **{"profile:first_name": first_name, "profile:last_name": family_name},
     )
 
 
@@ -32,7 +37,7 @@ def opengraph_website(
         url=request.build_absolute_uri(),
         image=image_url,
         type="website",
-        **kwargs
+        **kwargs,
     )
 
 

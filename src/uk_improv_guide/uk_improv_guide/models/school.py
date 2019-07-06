@@ -2,7 +2,6 @@ import uuid
 
 import reversion
 from django.db import models
-
 from uk_improv_guide.lib.adminable import AdminableObject
 
 

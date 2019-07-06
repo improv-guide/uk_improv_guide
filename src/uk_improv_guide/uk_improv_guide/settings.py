@@ -154,10 +154,10 @@ STATICFILES_DIRS = (_static_dir,)
 
 MEDIA_ROOT = os.path.join(_static_dir, "media")
 
-SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+SOCIAL_AUTH_FACEBOOK_SCOPE = ["email"]
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
-    'locale': 'uk_GB',
-    'fields': 'id, name, email, age_range'
+    "locale": "uk_GB",
+    "fields": "id, name, email, age_range",
 }
 
-SITE_ID=1
+SITE_ID = 1

@@ -36,7 +36,7 @@ def performer(request, id: int):
                 first_name=this_performer.first_name,
                 family_name=this_performer.family_name,
                 image=this_performer.image,
-                request=request
+                request=request,
             ),
         },
     )

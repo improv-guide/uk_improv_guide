@@ -4,7 +4,6 @@ from typing import Sequence
 
 import reversion
 from django.db import models
-
 from uk_improv_guide.lib.adminable import AdminableObject
 
 log = logging.getLogger(__name__)
@@ -34,7 +33,6 @@ class Performer(AdminableObject, models.Model):
     imdb_link = models.CharField(
         max_length=100, blank=True, default="", verbose_name="IMDB Link"
     )
-
 
     def full_name(self) -> str:
         middle_names: str = self.middle_names or ""

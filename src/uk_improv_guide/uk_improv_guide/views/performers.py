@@ -14,8 +14,6 @@ def performers(request):
         {
             "title": title,
             "performers": all_performers,
-            "og": opengraph_website(
-                title=title, request=request, image=None
-            ),
+            "og": opengraph_website(title=title, request=request, image=None),
         },
     )

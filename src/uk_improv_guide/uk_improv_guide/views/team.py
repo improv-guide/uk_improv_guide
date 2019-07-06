@@ -19,8 +19,6 @@ def team(request, id: int):
             "team": team,
             "events": events,
             "players": players,
-            "og": opengraph_website(
-                title=title, request=request, image=None
-            ),
+            "og": opengraph_website(title=title, request=request, image=None),
         },
     )

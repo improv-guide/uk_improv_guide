@@ -3,7 +3,6 @@ from typing import List
 import reversion
 from django.db import models
 from django_countries.fields import CountryField
-
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.models.school import School
 
@@ -17,7 +16,9 @@ class Venue(AdminableObject, models.Model):
     address = models.CharField(max_length=256, verbose_name="Street Address")
     city = models.CharField(max_length=256, default="London")
     postcode = models.CharField(max_length=10, verbose_name="Postal Code")
-    email_address = models.CharField(max_length=100, verbose_name="Email Address", blank=True)
+    email_address = models.CharField(
+        max_length=100, verbose_name="Email Address", blank=True
+    )
     country = CountryField(blank_label="(select country)", default="GB")
     school = models.ForeignKey(
         School,

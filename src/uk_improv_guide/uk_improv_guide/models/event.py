@@ -3,7 +3,6 @@ from typing import Sequence
 
 import reversion
 from django.db import models
-
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.sitemaps import register_model_for_site_map
 from uk_improv_guide.models.event_series import EventSeries
@@ -22,7 +21,9 @@ class Event(AdminableObject, models.Model):
     facebook_link = models.CharField(max_length=256, blank=True)
     eventbrite_link = models.CharField(max_length=256, blank=True)
     venue = models.ForeignKey(Venue, on_delete=models.SET_NULL, null=True)
-    series = models.ForeignKey(EventSeries, on_delete=models.SET_NULL, blank=True, null=True)
+    series = models.ForeignKey(
+        EventSeries, on_delete=models.SET_NULL, blank=True, null=True
+    )
     teams = models.ManyToManyField(Team, verbose_name="teams playing", blank=True)
 
     def __str__(self):
@@ -32,8 +33,10 @@ class Event(AdminableObject, models.Model):
 def get_events_after_datetime(dt: datetime.datetime) -> Sequence[Event]:
     return Event.objects.filter(start_time__gte=dt).order_by("start_time")
 
+
 def get_all_events() -> Sequence[Event]:
     return Event.objects.all()
+
 
 def get_events_after_datetime_for_performer_id(
     dt: datetime.datetime, performer_id: int
