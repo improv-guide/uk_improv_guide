@@ -7,13 +7,18 @@
     <div class="boxes">
         {% for venue in venues %}
 
-            <div class="box">
-                <img class="boximage" src="{% static "" %}{{ team.image.url }}"/ alt="{{ venue.name }}">
 
-                <a href="/venues/{{ venue.id }}">{{venue.name}}</a>
-                {% with social_thing=venue %}
-                    {% include "content/social.html" %}
-                {% endwith %}
+            <div class="box">
+                {% if venue.image %}
+                    <img class="boximage" src="{% static "" %}{{ venue.image.url }}" alt="{{ venue.name }}">
+                {% endif %}
+                <div class="box_bottom">
+                    <a href="/venues/{{ venue.id }}">{{venue.name}}</a>
+                    {% with social_thing=venue %}
+                        {% include "content/social.html" %}
+                    {% endwith %}
+                </div>
+
             </div>
 
         {% endfor %}

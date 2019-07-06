@@ -18,14 +18,36 @@ body {
 
 
 .boxes {
+    float:left;
+}
 
+.boximage {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .box {
+    width: 250px;
+    height: 250px;
+    padding: 2px;
+    border-spacing: 2px;
+    float:left;
 
 }
 
+.box_bottom {
+    /*background-color: black;*/
+    /*color: white;*/
+    width: 100%;
+    float: bottom;
+}
+
 .box img {
+    float: top;
     height: 250px;
     width: 250px;
 }
