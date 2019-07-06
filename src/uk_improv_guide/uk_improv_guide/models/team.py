@@ -5,7 +5,7 @@ from django.db import models
 
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.models.performer import Performer
-
+from django.contrib.sitemaps import Sitemap
 
 @reversion.register
 class Team(AdminableObject, models.Model):
@@ -28,6 +28,9 @@ class Team(AdminableObject, models.Model):
 
     def __str__(self):
         return self.name
+
+
+
 
 
 def get_all_teams() -> Sequence[Team]:

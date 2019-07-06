@@ -16,6 +16,20 @@ body {
     text-align: center;
 }
 
+
+.boxes {
+
+}
+
+.box {
+
+}
+
+.box img {
+    height: 250px;
+    width: 250px;
+}
+
 .event h1 {
     font-size: 50%;
 }

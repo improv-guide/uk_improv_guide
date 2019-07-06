@@ -14,7 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.contrib.sitemaps import GenericSitemap
 from django.urls import path
+
 from uk_improv_guide.models import Event, Performer, Team, Venue
 from uk_improv_guide.views.misc import contribute, contribute_item, privacy, terms
 from uk_improv_guide.views.event import event
@@ -25,6 +27,12 @@ from uk_improv_guide.views.team import team
 from uk_improv_guide.views.teams import teams
 from uk_improv_guide.views.venue import venue
 from uk_improv_guide.views.venues import venues
+from django.contrib.sitemaps.views import sitemap
+
+info_dict = {
+    'queryset': Performer.objects.all(),
+    'date_field': 'pub_date',
+}
 
 urlpatterns = [
     path("", events, name="Events"),
@@ -63,5 +71,5 @@ urlpatterns = [
     ),
     path("admin/", admin.site.urls),
     path("privacy/", privacy),
-    path("terms/", terms),
+    path("terms/", terms)
 ]

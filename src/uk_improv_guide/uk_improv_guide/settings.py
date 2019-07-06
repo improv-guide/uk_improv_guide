@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.sites",
+    "django.contrib.sitemaps",
     "social_django",
     "uk_improv_guide",
 ]
@@ -157,3 +159,5 @@ SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
     'locale': 'uk_GB',
     'fields': 'id, name, email, age_range'
 }
+
+SITE_ID=1

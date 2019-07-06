@@ -1,17 +1,22 @@
 {% extends "base.html" %}
+{% load static %}
 {% block content %}
 
     <h1>Venues</h1>
 
-    <ul>
+    <div class="boxes">
         {% for venue in venues %}
-            <li><a href="/venues/{{ venue.id }}">{{venue.name}}</a>
+
+            <div class="box">
+                <img class="boximage" src="{% static "" %}{{ team.image.url }}"/>
+
+                <a href="/venues/{{ venue.id }}">{{venue.name}}</a>
                 {% with social_thing=venue %}
                     {% include "content/social.html" %}
                 {% endwith %}
-            </li>
+            </div>
 
         {% endfor %}
-    </ul>
+    </div>
 
 {% endblock %}
