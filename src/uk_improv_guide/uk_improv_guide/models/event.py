@@ -6,6 +6,7 @@ from django.db import models
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.sitemaps import register_model_for_site_map
 from uk_improv_guide.models.event_series import EventSeries
+from uk_improv_guide.models.fields.fields import EVENTBRITE_LINK, FACEBOOK_LINK
 from uk_improv_guide.models.team import Team
 from uk_improv_guide.models.venue import Venue
 
@@ -18,8 +19,8 @@ class Event(AdminableObject, models.Model):
     image = models.ImageField(upload_to="event/", blank=True)
     event_type = models.CharField(max_length=1, choices=EVENT_TYPES)
     start_time = models.DateTimeField(verbose_name="Show start time")
-    facebook_link = models.CharField(max_length=256, blank=True)
-    eventbrite_link = models.CharField(max_length=256, blank=True)
+    facebook_link = FACEBOOK_LINK
+    eventbrite_link = EVENTBRITE_LINK
     venue = models.ForeignKey(Venue, on_delete=models.SET_NULL, null=True)
     series = models.ForeignKey(
         EventSeries, on_delete=models.SET_NULL, blank=True, null=True

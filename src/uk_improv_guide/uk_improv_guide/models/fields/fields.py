@@ -1,6 +1,6 @@
 from django.db import models
 
-TWITTER_LINK = models.CharField(
+TWITTER_HANDLE = models.CharField(
     max_length=100, blank=True, default="", verbose_name="Twitter Link"
 )
 

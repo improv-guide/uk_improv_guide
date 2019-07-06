@@ -5,6 +5,13 @@ from typing import Sequence
 import reversion
 from django.db import models
 from uk_improv_guide.lib.adminable import AdminableObject
+from uk_improv_guide.models.fields.fields import (
+    EMAIL_ADDRESS,
+    FACEBOOK_LINK,
+    INSTAGRAM_LINK,
+    TWITTER_HANDLE,
+    WEBSITE_LINK,
+)
 
 log = logging.getLogger(__name__)
 
@@ -18,17 +25,11 @@ class Performer(AdminableObject, models.Model):
     alias = models.CharField(
         max_length=50, default="", verbose_name="Alias / Performing as", blank=True
     )
-    facebook_link = models.CharField(
-        max_length=100, blank=True, default="", verbose_name="Facebook Link"
-    )
-    instagram_link = models.CharField(
-        max_length=100, blank=True, default="", verbose_name="Instagram Link"
-    )
-    twitter_username = models.CharField(
-        max_length=100, blank=True, default="", verbose_name="Twitter Link"
-    )
-    contact_email_address = models.CharField(max_length=100, blank=True, default="")
-    website_link = models.CharField(max_length=256, blank=True)
+    facebook_link = FACEBOOK_LINK
+    instagram_link = INSTAGRAM_LINK
+    twitter_username = TWITTER_HANDLE
+    contact_email_address = EMAIL_ADDRESS
+    website_link = WEBSITE_LINK
 
     imdb_link = models.CharField(
         max_length=100, blank=True, default="", verbose_name="IMDB Link"
