@@ -11,16 +11,17 @@ x-base-database: &base-database
   POSTGRES_HOST: 'db'
 
 x-base-image: &base-image
-  image: salimfadhley/uk_improv_guide:${IMPROV_GUIDE_VERSION}
+  image: "salimfadhley/uk_improv_guide:${IMPROV_GUIDE_VERSION}"
+  build:
+    context: .
+    target: uk_improv_guide
 
 services:
 
   dev:
     <<: *base-dev
     <<: *base-image
-    build:
-      context: .
-      target: uk_improv_guide
+
     volumes:
       - ./src:/src
       - ./static:/src/uk_improv_guide/static
