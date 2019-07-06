@@ -10,7 +10,7 @@
 
             <div class="box">
                 {% if venue.image %}
-                    <img class="boximage" src="{% static "" %}{{ venue.image.url }}" alt="{{ venue.name }}">
+                    <a href="/venues/{{ venue.id }}"><img class="boximage" src="{% static "" %}{{ venue.image.url }}" alt="{{ venue.name }}"></a>
                 {% endif %}
                 <div class="box_bottom">
                     <a href="/venues/{{ venue.id }}">{{venue.name}}</a>
