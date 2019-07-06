@@ -4,6 +4,7 @@ import reversion
 from django.db import models
 from django_countries.fields import CountryField
 from uk_improv_guide.lib.adminable import AdminableObject
+from uk_improv_guide.models.fields.fields import TWITTER_LINK
 from uk_improv_guide.models.school import School
 
 
@@ -12,6 +13,7 @@ class Venue(AdminableObject, models.Model):
     name = models.CharField(max_length=100)
     facebook_link = models.CharField(max_length=256, blank=True)
     website_link = models.CharField(max_length=256, blank=True)
+    twitter_handle = TWITTER_LINK
     google_maps_link = models.CharField(max_length=256, blank=True)
     address = models.CharField(max_length=256, verbose_name="Street Address")
     city = models.CharField(max_length=256, default="London")

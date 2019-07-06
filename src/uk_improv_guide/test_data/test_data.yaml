@@ -1,3 +1,8 @@
+- model: sites.site
+  pk: 2
+  fields:
+    domain: improv.guide
+    name: Improv Guide
 - model: uk_improv_guide.eventseries
   pk: 1aaf4020-4e05-453e-b6ae-84e61a2eae22
   fields:
@@ -918,6 +923,104 @@
     contact_email_address: ''
     website_link: ''
     imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 66
+  fields:
+    first_name: Claire
+    middle_names: ''
+    family_name: Plested
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 67
+  fields:
+    first_name: Shaun
+    middle_names: ''
+    family_name: Lowthian
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: '@ShaunLowthian'
+    contact_email_address: ''
+    website_link: http://www.shaunlowthian.com/
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 68
+  fields:
+    first_name: Helen
+    middle_names: ''
+    family_name: O'Donnell
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: '@helenodonnell'
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 69
+  fields:
+    first_name: Matthew
+    middle_names: ''
+    family_name: Stevens
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: '@MattStevensMA'
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 70
+  fields:
+    first_name: Rhys
+    middle_names: ''
+    family_name: Collier
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: '@MrRhysCollier'
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 71
+  fields:
+    first_name: Nick
+    middle_names: ''
+    family_name: Oram
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: '@nicholas_oram'
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 72
+  fields:
+    first_name: Tim
+    middle_names: ''
+    family_name: Grenwick
+    image: ''
+    alias: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: '@TGrewcock'
+    contact_email_address: ''
+    website_link: ''
+    imdb_link: ''
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -1279,9 +1382,50 @@
     - 61
     - 62
     - 63
+- model: uk_improv_guide.team
+  pk: 27
+  fields:
+    name: Do Not Adjust Your Stage
+    image: team/dnays.jpg
+    facebook_link: http://facebook.com/dnayscomedy
+    instagram_link: ''
+    twitter_link: '@dnayscomedy'
+    contact_email_address: ''
+    website_link: http://www.dnays.com
+    players:
+    - 66
+    - 67
+    - 68
+    - 69
+    - 70
+    - 71
+    - 72
+- model: uk_improv_guide.team
+  pk: 28
+  fields:
+    name: Bumper Blyton
+    image: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: https://www.bumperblyton.com/
+    players: []
+- model: uk_improv_guide.team
+  pk: 29
+  fields:
+    name: Glitch
+    image: ''
+    facebook_link: ''
+    instagram_link: ''
+    twitter_link: ''
+    contact_email_address: ''
+    website_link: http://www.glitchimprov.com/
+    players: []
 - model: uk_improv_guide.venue
   pk: 1
   fields:
+    twitter_handle: ''
     name: Free Association
     facebook_link: https://www.facebook.com/FAimprov/
     website_link: https://thefreeassociation.co.uk/
@@ -1296,6 +1440,7 @@
 - model: uk_improv_guide.venue
   pk: 2
   fields:
+    twitter_handle: ''
     name: Hoopla!
     facebook_link: ''
     website_link: https://www.hooplaimpro.com/
@@ -1310,6 +1455,7 @@
 - model: uk_improv_guide.venue
   pk: 3
   fields:
+    twitter_handle: ''
     name: Nell of Old Drury
     facebook_link: https://www.facebook.com/nellofolddrury/
     website_link: http://www.nellofolddrury.com/
@@ -1324,6 +1470,7 @@
 - model: uk_improv_guide.venue
   pk: 4
   fields:
+    twitter_handle: ''
     name: 'The Canvas: Cafe & Creative Venue'
     facebook_link: https://www.facebook.com/TheCanvasCafeE1/
     website_link: https://www.thecanvascafe.org/vegan-cafe
@@ -1338,6 +1485,7 @@
 - model: uk_improv_guide.venue
   pk: 5
   fields:
+    twitter_handle: ''
     name: Effra Social
     facebook_link: ''
     website_link: ''
@@ -1352,6 +1500,7 @@
 - model: uk_improv_guide.venue
   pk: 6
   fields:
+    twitter_handle: ''
     name: The London irish Centre
     facebook_link: https://www.facebook.com/londonirishcentre/
     website_link: https://www.londonirishcentre.org/
@@ -1366,6 +1515,7 @@
 - model: uk_improv_guide.venue
   pk: 7
   fields:
+    twitter_handle: ''
     name: The North London Tavern
     facebook_link: https://www.facebook.com/rhinocerosimprov/
     website_link: http://www.northlondontavern.co.uk/
@@ -1380,6 +1530,7 @@
 - model: uk_improv_guide.venue
   pk: 8
   fields:
+    twitter_handle: ''
     name: The Taproom
     facebook_link: https://www.facebook.com/TaproomN1/
     website_link: http://www.thetaprooms.co.uk/
@@ -1394,6 +1545,7 @@
 - model: uk_improv_guide.venue
   pk: 9
   fields:
+    twitter_handle: ''
     name: The Castle
     facebook_link: https://www.facebook.com/thecastlelondon/
     website_link: http://www.thecastlelondon.com/
@@ -1544,6 +1696,21 @@
     series: b165abbe-585c-4fdb-8438-539785d22716
     teams:
     - 8
+- model: uk_improv_guide.event
+  pk: 11
+  fields:
+    name: Bumper Blyton, Do Not Adjust Your Stage & Glitch!
+    image: ''
+    event_type: S
+    start_time: 2019-07-13 20:00:00+00:00
+    facebook_link: ''
+    eventbrite_link: https://www.eventbrite.co.uk/e/hoopla-bumper-blyton-do-not-adjust-your-stage-glitch-tickets-63967300919
+    venue: 2
+    series: null
+    teams:
+    - 27
+    - 28
+    - 29
 - model: auth.permission
   pk: 1
   fields:
@@ -2000,11 +2167,35 @@
     name: Can view event
     content_type: 19
     codename: view_event
+- model: auth.permission
+  pk: 77
+  fields:
+    name: Can add site
+    content_type: 20
+    codename: add_site
+- model: auth.permission
+  pk: 78
+  fields:
+    name: Can change site
+    content_type: 20
+    codename: change_site
+- model: auth.permission
+  pk: 79
+  fields:
+    name: Can delete site
+    content_type: 20
+    codename: delete_site
+- model: auth.permission
+  pk: 80
+  fields:
+    name: Can view site
+    content_type: 20
+    codename: view_site
 - model: auth.user
   pk: 1
   fields:
     password: pbkdf2_sha256$150000$NJN6PvxDrDXj$z/e4TbvtO1y2kdL5wa/eg/PjdJLlspPtTcQFAZXLohw=
-    last_login: 2019-07-04 23:38:53.921514+00:00
+    last_login: 2019-07-05 21:12:10.085432+00:00
     is_superuser: true
     username: admin
     first_name: ''
