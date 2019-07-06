@@ -1,6 +1,8 @@
 body {
-    color: purple;
+    color: black;
 }
+
+
 
 .grid-container {
     display: grid;
@@ -19,14 +21,15 @@ body {
 
 .boxes {
     float:left;
+    position: relative;
 }
 
 .boximage {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -36,20 +39,34 @@ body {
     padding: 2px;
     border-spacing: 2px;
     float:left;
+    position: relative;
 
 }
 
-.box_bottom {
-    /*background-color: black;*/
-    /*color: white;*/
-    width: 100%;
-    float: bottom;
+.box_text {
+    position: absolute;
+    top: 200px;
+    right: 8px;
+    background-color: black;
+    color: white;
 }
+
+.box_social {
+    float: top;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
 
 .box img {
     float: top;
     height: 250px;
     width: 250px;
+}
+
+.box a {
+    color: gray;
 }
 
 .event h1 {

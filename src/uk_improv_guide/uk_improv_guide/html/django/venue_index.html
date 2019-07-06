@@ -9,14 +9,16 @@
 
 
             <div class="box">
-                {% if venue.image %}
-                    <a href="/venues/{{ venue.id }}"><img class="boximage" src="{% static "" %}{{ venue.image.url }}" alt="{{ venue.name }}"></a>
-                {% endif %}
-                <div class="box_bottom">
-                    <a href="/venues/{{ venue.id }}">{{venue.name}}</a>
+                <a href="/venues/{{ venue.id }}"><img class="boximage" src="{% static "" %}{{ venue.image.url }}" alt="{{ venue.name }}"></a>
+                <div class="box_social">
                     {% with social_thing=venue %}
                         {% include "content/social.html" %}
                     {% endwith %}
+                </div>
+
+                <div class="box_text">
+                    <a href="/venues/{{ venue.id }}">{{venue.name}}</a>
+
                 </div>
 
             </div>

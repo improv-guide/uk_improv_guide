@@ -1432,6 +1432,26 @@
     instagram_link: ''
     name: Free Association
     image: school/fa_logo.png
+- model: uk_improv_guide.school
+  pk: 44254cc3-d017-4296-82fb-58504f10b3ac
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Islington Comedy Club
+    image: ''
+- model: uk_improv_guide.school
+  pk: 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Hoopla!
+    image: ''
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -1582,6 +1602,36 @@
     country: GB
     school: 3bc46024-c973-4709-ba65-aace19f97fd9
     image: venue/the_lord_stanley.jpg
+- model: uk_improv_guide.venue
+  pk: 11
+  fields:
+    twitter_handle: ''
+    name: The Bill Murray
+    facebook_link: ''
+    website_link: ''
+    google_maps_link: ''
+    address: 39 Queen's Head St
+    city: London
+    postcode: N1 8NQ
+    email_address: ''
+    country: GB
+    school: 44254cc3-d017-4296-82fb-58504f10b3ac
+    image: venue/the_bill_murray.jpg
+- model: uk_improv_guide.venue
+  pk: 12
+  fields:
+    twitter_handle: ''
+    name: Angel Comedy Club
+    facebook_link: ''
+    website_link: ''
+    google_maps_link: https://goo.gl/maps/qLwLjiQQj2LhZLSd9
+    address: 2 Camden Passage, The Angel, London
+    city: London
+    postcode: N1 8DY
+    email_address: ''
+    country: GB
+    school: 44254cc3-d017-4296-82fb-58504f10b3ac
+    image: venue/angel_comedy_club.jpg
 - model: uk_improv_guide.event
   pk: 1
   fields:

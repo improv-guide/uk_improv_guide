@@ -30,7 +30,7 @@ class Venue(AdminableObject, models.Model):
         default=None,
         verbose_name="School affiliation",
     )
-    image = models.ImageField(upload_to="venue/", blank=True)
+    image = models.ImageField(upload_to="venue/")
 
     def __str__(self) -> str:
         return f"{self.name}, {self.city}, {self.country}"
