@@ -11,7 +11,7 @@ x-base-database: &base-database
   POSTGRES_HOST: 'db'
 
 x-base-image: &base-image
-  salimfadhley/uk_improv_guide:${IMPROV_GUIDE_VERSION}
+  image: salimfadhley/uk_improv_guide:${IMPROV_GUIDE_VERSION}
 
 services:
 
