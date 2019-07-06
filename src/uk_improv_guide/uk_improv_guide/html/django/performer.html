@@ -11,6 +11,10 @@
         <img class="featured_image" src="{% static "" %}{{ performer.image.url }}" />
     {% endif %}
 
+    {% with social_thing=performer %}
+        {% include "content/social.html" %}
+    {% endwith %}
+
     {% if teams %}
     <h3>Plays in these teams:</h3>
     <ul>

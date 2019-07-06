@@ -1,35 +1,23 @@
 {% if social_thing.contact_email_address %}
-    <a href="mailto:{{ social_thing.contact_email_address }}">
-        <i class="fas fa-envelope-square"></i>
-    </a>
+    <a href="mailto:{{ social_thing.contact_email_address }}"><i class="fas fa-envelope-square"></i></a>
 {% endif %}
 
 {% if social_thing.facebook_link %}
-    <a href="{{ social_thing.facebook_link }}">
-        <i class="fab fa-facebook"></i>
-    </a>
+    <a href="{{ social_thing.facebook_link }}"><i class="fab fa-facebook"></i></a>
 {% endif %}
 
 {% if social_thing.instagram_link %}
-    <a href="{{ social_thing.instagram_link }}">
-        <i class="fab fa-instagram"></i>
-    </a>
+    <a href="{{ social_thing.instagram_link }}"><i class="fab fa-instagram"></i></a>
 {% endif %}
 
-{% if social_thing.twitter_link %}
-    <a href="{{ social_thing.twitter_link }}">
-        <i class="fab fa-twitter"></i>
-    </a>
+{% if social_thing.twitter_handle %}
+    <a href="https://twitter.com/{{ social_thing.twitter_handle|slice:"1:" }}"><i class="fab fa-twitter"></i></a>
 {% endif %}
 
 {% if social_thing.imdb_link %}
-    <a href="{{ social_thing.imdb_link }}">
-        <i class="fab fa-imdb"></i>
-    </a>
+    <a href="{{ social_thing.imdb_link }}"><i class="fab fa-imdb"></i></a>
 {% endif %}
 
 {% if social_thing.google_maps_link %}
-    <a href="{{ social_thing.google_maps_link }}">
-        <i class="fas fa-map-marked-alt"></i>
-    </a>
+    <a href="{{ social_thing.google_maps_link }}"><i class="fas fa-map-marked-alt"></i></a>
 {% endif %}

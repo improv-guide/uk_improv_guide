@@ -27,7 +27,7 @@ class Performer(AdminableObject, models.Model):
     )
     facebook_link = FACEBOOK_LINK
     instagram_link = INSTAGRAM_LINK
-    twitter_username = TWITTER_HANDLE
+    twitter_handle = TWITTER_HANDLE
     contact_email_address = EMAIL_ADDRESS
     website_link = WEBSITE_LINK
 

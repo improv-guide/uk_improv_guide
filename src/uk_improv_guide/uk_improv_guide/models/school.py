@@ -7,6 +7,7 @@ from uk_improv_guide.models.fields.fields import (
     EMAIL_ADDRESS,
     FACEBOOK_LINK,
     INSTAGRAM_LINK,
+    TWITTER_HANDLE,
     WEBSITE_LINK,
 )
 
@@ -18,9 +19,7 @@ class School(AdminableObject, models.Model):
     image = models.ImageField(upload_to="school/", blank=True)
     facebook_link = FACEBOOK_LINK
     instagram_link = INSTAGRAM_LINK
-    twitter_handle = models.CharField(
-        max_length=100, blank=True, default="", verbose_name="Twitter Link"
-    )
+    twitter_handle = TWITTER_HANDLE
     contact_email_address = EMAIL_ADDRESS
     website_link = WEBSITE_LINK
 
