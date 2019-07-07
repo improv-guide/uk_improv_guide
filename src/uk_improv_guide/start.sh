@@ -2,7 +2,7 @@
 set -e
 
 echo "Generating migrations..."
-yes | python manage.py makemigrations
+python manage.py makemigrations
 echo "Running database migrations..."
 python manage.py migrate
 echo "Creating revisions..."

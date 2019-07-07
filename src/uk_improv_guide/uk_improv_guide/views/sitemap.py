@@ -18,4 +18,4 @@ def sitemap(request):
 
     print(objects)
 
-    return render(request, "sitemap.html", {"objects": objects})
+    return render(request, "sitemap.html", {"objects": objects}, content_type="application/xml")

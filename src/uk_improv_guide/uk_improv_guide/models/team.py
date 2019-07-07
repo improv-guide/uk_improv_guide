@@ -3,7 +3,7 @@ from typing import Sequence
 import reversion
 from django.db import models
 from uk_improv_guide.lib.adminable import AdminableObject
-from uk_improv_guide.lib.site_mappable import sitemap_model_object
+from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.models.fields.fields import (
     EMAIL_ADDRESS,
     FACEBOOK_LINK,
@@ -15,7 +15,8 @@ from uk_improv_guide.models.performer import Performer
 
 
 @reversion.register
-class Team(sitemap_model_object("team"), AdminableObject, models.Model):
+class Team(SiteMapThing, AdminableObject, models.Model):
+    url_base: str = "team"
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to="team/", blank=True)
     facebook_link = FACEBOOK_LINK

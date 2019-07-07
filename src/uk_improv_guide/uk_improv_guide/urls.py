@@ -67,5 +67,5 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("privacy/", privacy),
     path("terms/", terms),
-    path("sitemap.html", sitemap),
+    path("sitemap.xml", sitemap),
 ]

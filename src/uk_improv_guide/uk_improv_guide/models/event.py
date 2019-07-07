@@ -1,10 +1,12 @@
 import datetime
+
+import django.utils.timezone
 from typing import Sequence
 
 import reversion
 from django.db import models
 from uk_improv_guide.lib.adminable import AdminableObject
-from uk_improv_guide.lib.site_mappable import sitemap_model_object
+from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.sitemaps import register_model_for_site_map
 from uk_improv_guide.models.event_series import EventSeries
 from uk_improv_guide.models.fields.fields import EVENTBRITE_LINK, FACEBOOK_LINK
@@ -14,7 +16,9 @@ from uk_improv_guide.models.venue import Venue
 
 @reversion.register
 @register_model_for_site_map
-class Event(sitemap_model_object("event"), AdminableObject, models.Model):
+class Event(SiteMapThing, AdminableObject, models.Model):
+    url_base: str = "event"
+
     EVENT_TYPES = (("S", "Show"), ("J", "Jam"), ("W", "Workshop"), ("A", "Audition"))
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to="event/", blank=True)

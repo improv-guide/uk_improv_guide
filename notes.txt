@@ -10,3 +10,16 @@ Remove all containers
 docker rm $(docker ps -aq)
 Remove all images
 docker rmi $(docker images -q)
+
+
+
+DO $$ DECLARE
+    tabname RECORD;
+BEGIN
+    FOR tabname IN (SELECT tablename
+                    FROM pg_tables
+                    WHERE schemaname = current_schema())
+LOOP
+    EXECUTE 'DROP TABLE IF EXISTS ' || quote_ident(tabname.tablename) || ' CASCADE';
+END LOOP;
+END $$;
