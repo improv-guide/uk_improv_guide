@@ -5,6 +5,7 @@ from typing import Sequence
 import reversion
 from django.db import models
 from uk_improv_guide.lib.adminable import AdminableObject
+from uk_improv_guide.lib.site_mappable import sitemap_model_object
 from uk_improv_guide.models.fields.fields import (
     EMAIL_ADDRESS,
     FACEBOOK_LINK,
@@ -17,7 +18,7 @@ log = logging.getLogger(__name__)
 
 
 @reversion.register
-class Performer(AdminableObject, models.Model):
+class Performer(sitemap_model_object("performer"), AdminableObject, models.Model):
     first_name = models.CharField(max_length=50, default="")
     middle_names = models.CharField(max_length=60, blank=True, default="")
     family_name = models.CharField(max_length=50, default="")

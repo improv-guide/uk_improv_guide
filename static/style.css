@@ -45,10 +45,13 @@ body {
 
 .box_text {
     position: absolute;
-    top: 200px;
-    right: 8px;
+    /*top: 200px;*/
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
     background-color: black;
     color: white;
+    border-radius: 8px;
 }
 
 .box_social {

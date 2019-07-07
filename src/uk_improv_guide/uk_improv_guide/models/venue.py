@@ -4,12 +4,13 @@ import reversion
 from django.db import models
 from django_countries.fields import CountryField
 from uk_improv_guide.lib.adminable import AdminableObject
+from uk_improv_guide.lib.site_mappable import sitemap_model_object
 from uk_improv_guide.models.fields.fields import TWITTER_HANDLE
 from uk_improv_guide.models.school import School
 
 
 @reversion.register
-class Venue(AdminableObject, models.Model):
+class Venue(sitemap_model_object("venue"), AdminableObject, models.Model):
     name = models.CharField(max_length=100)
     facebook_link = models.CharField(max_length=256, blank=True)
     website_link = models.CharField(max_length=256, blank=True)

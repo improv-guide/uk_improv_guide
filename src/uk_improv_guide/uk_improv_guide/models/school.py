@@ -3,6 +3,7 @@ import uuid
 import reversion
 from django.db import models
 from uk_improv_guide.lib.adminable import AdminableObject
+from uk_improv_guide.lib.site_mappable import sitemap_model_object
 from uk_improv_guide.models.fields.fields import (
     EMAIL_ADDRESS,
     FACEBOOK_LINK,

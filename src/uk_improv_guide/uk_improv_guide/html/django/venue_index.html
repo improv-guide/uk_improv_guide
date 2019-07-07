@@ -16,10 +16,12 @@
                     {% endwith %}
                 </div>
 
-                <div class="box_text">
-                    <a href="/venues/{{ venue.id }}">{{venue.name}}</a>
+                <span class="box_text">
+                    <p><a href="/venues/{{ venue.id }}">{{venue.name}}</a></p>
+{#                    <p>{{ venue.city }}, {{ venue.country.name }}</p>#}
 
-                </div>
+
+                </span>
 
             </div>
 
