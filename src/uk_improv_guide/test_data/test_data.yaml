@@ -1512,6 +1512,20 @@
     image: ''
     alias: ''
     imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 108
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Franchesca
+    middle_names: ''
+    family_name: Reid
+    image: performer/franchesca_reid.jpg
+    alias: ''
+    imdb_link: ''
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -1630,14 +1644,15 @@
 - model: uk_improv_guide.team
   pk: 9
   fields:
-    twitter_handle: ''
+    twitter_handle: '@barebackkings'
     facebook_link: ''
     website_link: ''
     contact_email_address: ''
     instagram_link: ''
     name: The Bareback Kings
-    image: ''
-    players: []
+    image: team/bareback_kings.jpg
+    players:
+    - 108
 - model: uk_improv_guide.team
   pk: 10
   fields:
@@ -2260,6 +2275,21 @@
     country: GB
     school: null
     image: venue/Etcetera_Theatre_2017.png
+- model: uk_improv_guide.venue
+  pk: 14
+  fields:
+    twitter_handle: ''
+    name: The Cavendish Arms
+    facebook_link: https://www.facebook.com/thecavendisharms/
+    website_link: http://www.thecavendisharmsstockwell.co.uk/
+    google_maps_link: https://goo.gl/maps/nhNbza85Xy6Etnrw5
+    address: 128 Hartington Rd
+    city: London
+    postcode: SW8 2HJ
+    email_address: info@thecavendisharmsstockwell.co.uk
+    country: GB
+    school: null
+    image: venue/cavendish_arms_stage.jpg
 - model: uk_improv_guide.event
   pk: 1
   fields:
