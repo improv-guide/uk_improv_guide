@@ -17,8 +17,6 @@ def sitemap(request):
 
     objects = [o.sitemap_url_data(request) for o in everything]
 
-    print(objects)
-
     return render(
         request, "sitemap.html", {"objects": objects}, content_type="application/xml"
     )
