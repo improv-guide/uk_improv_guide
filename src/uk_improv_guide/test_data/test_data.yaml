@@ -14,6 +14,16 @@
     image: event_series/IMPORTANTART.png
     name: Important Art
 - model: uk_improv_guide.eventseries
+  pk: 3aacbd0b-8536-4a9f-8d66-6e85a7869438
+  fields:
+    image: event_series/DDG_logo_-_Copy.png
+    name: DDG Improv Jam (Duck Duck Goose)
+- model: uk_improv_guide.eventseries
+  pk: 8921978b-be00-4845-a8b0-787f8c9ef1fb
+  fields:
+    image: ''
+    name: Free Association Cage Match
+- model: uk_improv_guide.eventseries
   pk: b165abbe-585c-4fdb-8438-539785d22716
   fields:
     image: event_series/amorphous_horse.jpg
@@ -1110,6 +1120,398 @@
     image: ''
     alias: ''
     imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 79
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Amy
+    middle_names: ''
+    family_name: Cooke-Hodgson
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 80
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Andrew
+    middle_names: ''
+    family_name: Hunter-Murray
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 81
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Cariad
+    middle_names: ''
+    family_name: Lloyd
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 82
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Charlotte
+    middle_names: ''
+    family_name: Gittins
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 83
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Daniel
+    middle_names: Nils
+    family_name: Roberts
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 84
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Joseph
+    middle_names: ''
+    family_name: Morpurgo
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 85
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Rachel
+    middle_names: ''
+    family_name: Parris
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 86
+  fields:
+    twitter_handle: brenway
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Brendan
+    middle_names: ''
+    family_name: Way
+    image: performer/DSCF1304.jpg
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 87
+  fields:
+    twitter_handle: vicwardian
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/vicwardian/
+    first_name: Vic
+    middle_names: ''
+    family_name: Hogg
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 89
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/lovely_madeleine/
+    first_name: Madeleine
+    middle_names: ''
+    family_name: Hunter
+    image: ''
+    alias: Maddy
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 90
+  fields:
+    twitter_handle: loudemile
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/ludmilabogatchek/
+    first_name: Lou
+    middle_names: ''
+    family_name: Bogatchek
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 91
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Alison
+    middle_names: ''
+    family_name: Kent
+    image: ''
+    alias: Ali
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 92
+  fields:
+    twitter_handle: DanScrooge
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Daniel
+    middle_names: ''
+    family_name: Luxton
+    image: ''
+    alias: Dan
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 93
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Steff
+    middle_names: ''
+    family_name: Prince
+    image: ''
+    alias: Steff Man
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 94
+  fields:
+    twitter_handle: vanessa_tsu
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/vanessatsu/
+    first_name: Vanessa
+    middle_names: ''
+    family_name: Tsu
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 95
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/timothy3032/
+    first_name: Tim
+    middle_names: ''
+    family_name: Williams
+    image: ''
+    alias: Timothy
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 96
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Dominic
+    middle_names: ''
+    family_name: Ashton
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 97
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Emma
+    middle_names: ''
+    family_name: Pritchard
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 98
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Ambika
+    middle_names: ''
+    family_name: Mod
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 99
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Ishan
+    middle_names: ''
+    family_name: Ganjor
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 100
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Dan
+    middle_names: ''
+    family_name: Kelly
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 101
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Lottie
+    middle_names: ''
+    family_name: Field
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 102
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Rob
+    middle_names: ''
+    family_name: Sladden
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 103
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Deep
+    middle_names: ''
+    family_name: Lidder
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 104
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Liz
+    middle_names: ''
+    family_name: Gutterbock
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 105
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jenny
+    middle_names: ''
+    family_name: Donoghue
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 106
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Kathryn
+    middle_names: ''
+    family_name: Higgins
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 107
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Victoria
+    middle_names: ''
+    family_name: Beardwood
+    image: ''
+    alias: ''
+    imdb_link: ''
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -1483,12 +1885,12 @@
     name: Do Not Adjust Your Stage
     image: team/dnays.jpg
     players:
+    - 71
     - 66
     - 67
     - 68
     - 69
     - 70
-    - 71
     - 72
 - model: uk_improv_guide.team
   pk: 28
@@ -1526,11 +1928,103 @@
     - 73
     - 74
     - 75
-    - 43
     - 76
+    - 43
     - 77
     - 78
     - 22
+- model: uk_improv_guide.team
+  pk: 31
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: https://www.austentatiousimpro.com
+    contact_email_address: ''
+    instagram_link: ''
+    name: Austentatious
+    image: team/austintatious.jpeg
+    players:
+    - 79
+    - 80
+    - 81
+    - 82
+    - 83
+    - 84
+    - 53
+    - 85
+- model: uk_improv_guide.team
+  pk: 32
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Punderstandingly
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 33
+  fields:
+    twitter_handle: tparentheticals
+    facebook_link: https://www.facebook.com/parentheticalsimprov/
+    website_link: https://theparentheticals.co.uk/
+    contact_email_address: parentheticalsimprov@gmail.com
+    instagram_link: ''
+    name: The Parentheticals
+    image: team/IMG-20170806-WA0007.jpg
+    players:
+    - 86
+- model: uk_improv_guide.team
+  pk: 34
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Historyonics
+    image: ''
+    players:
+    - 92
+    - 95
+- model: uk_improv_guide.team
+  pk: 35
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Millicent Tendrils Experience
+    image: ''
+    players:
+    - 96
+    - 97
+    - 98
+    - 99
+    - 100
+    - 101
+    - 40
+- model: uk_improv_guide.team
+  pk: 36
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Fortitude
+    image: team/THEFORTITUDEFINAL2.jpg
+    players:
+    - 102
+    - 103
+    - 104
+    - 105
+    - 106
+    - 107
+    - 14
+    - 26
 - model: uk_improv_guide.school
   pk: 3bc46024-c973-4709-ba65-aace19f97fd9
   fields:
@@ -1561,6 +2055,16 @@
     instagram_link: ''
     name: Hoopla!
     image: ''
+- model: uk_improv_guide.school
+  pk: dbcb6379-a8b2-418f-938b-602623baa2be
+  fields:
+    twitter_handle: duckduckg
+    facebook_link: https://www.facebook.com/duckduckg
+    website_link: http://ddgimprov.com
+    contact_email_address: ddgimprov@gmail.com
+    instagram_link: https://www.instagram.com/ddgimprov/
+    name: DDG Improv (Duck Duck Goose)
+    image: school/DDG_logo_-_Copy.png
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -1741,6 +2245,21 @@
     country: GB
     school: 44254cc3-d017-4296-82fb-58504f10b3ac
     image: venue/angel_comedy_club.jpg
+- model: uk_improv_guide.venue
+  pk: 13
+  fields:
+    twitter_handle: etceteratheatre
+    name: Etcetera Theatre
+    facebook_link: https://www.facebook.com/etceteratheatre
+    website_link: http://www.etceteratheatre.com/
+    google_maps_link: ''
+    address: 265 Camden High Street (Above the Oxford Arms), Camden
+    city: London
+    postcode: NW1 7BU
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/Etcetera_Theatre_2017.png
 - model: uk_improv_guide.event
   pk: 1
   fields:
@@ -1795,7 +2314,7 @@
     event_type: J
     start_time: 2019-07-29 20:00:00+00:00
     venue: 5
-    series: null
+    series: 3aacbd0b-8536-4a9f-8d66-6e85a7869438
     teams: []
 - model: uk_improv_guide.event
   pk: 5
@@ -1895,6 +2414,108 @@
     - 27
     - 28
     - 29
+- model: uk_improv_guide.event
+  pk: 12
+  fields:
+    facebook_link: ''
+    eventbrite_link: ''
+    name: Cage Match
+    image: ''
+    event_type: S
+    start_time: 2019-07-25 21:00:00+00:00
+    venue: 1
+    series: 8921978b-be00-4845-a8b0-787f8c9ef1fb
+    teams:
+    - 30
+- model: uk_improv_guide.event
+  pk: 13
+  fields:
+    facebook_link: ''
+    eventbrite_link: ''
+    name: PUNDERFEST
+    image: ''
+    event_type: S
+    start_time: 2019-08-16 20:00:00+00:00
+    venue: 2
+    series: null
+    teams:
+    - 30
+    - 32
+- model: uk_improv_guide.event
+  pk: 14
+  fields:
+    facebook_link: https://www.facebook.com/events/467238420698796
+    eventbrite_link: ''
+    name: 'The Parentheticals: Improdyssey (Camden Fringe)'
+    image: event/Square_group_image.jpg
+    event_type: S
+    start_time: 2019-08-11 20:30:00+00:00
+    venue: 13
+    series: null
+    teams:
+    - 33
+- model: uk_improv_guide.event
+  pk: 15
+  fields:
+    facebook_link: https://www.facebook.com/events/467238420698796
+    eventbrite_link: ''
+    name: 'The Parentheticals: Improdyssey (Camden Fringe)'
+    image: event/Square_group_image_nTXkZQf.jpg
+    event_type: S
+    start_time: 2019-08-12 20:30:00+00:00
+    venue: 13
+    series: null
+    teams:
+    - 33
+- model: uk_improv_guide.event
+  pk: 16
+  fields:
+    facebook_link: https://www.facebook.com/events/314916575838327
+    eventbrite_link: https://www.eventbrite.co.uk/e/ddg-improv-beginners-improv-comedy-course-tickets-58928126613
+    name: 'DDG Improv: Beginner''s Improv Comedy Course'
+    image: event/DDG_Beginners_Course.jpg
+    event_type: W
+    start_time: 2019-09-02 18:45:00+00:00
+    venue: 5
+    series: null
+    teams: []
+- model: uk_improv_guide.event
+  pk: 17
+  fields:
+    facebook_link: https://www.facebook.com/events/789272194778577/
+    eventbrite_link: https://www.eventbrite.co.uk/e/ddg-improv-performance-improv-comedy-course-tickets-58927880878
+    name: 'DDG Improv: Performance Improv Comedy Course'
+    image: event/DDG_Performance_Course.jpg
+    event_type: W
+    start_time: 2019-10-28 18:45:00+00:00
+    venue: 5
+    series: null
+    teams: []
+- model: uk_improv_guide.event
+  pk: 18
+  fields:
+    facebook_link: ''
+    eventbrite_link: ''
+    name: DDG Improv Jam (Historyonics; Plus One; Improbotics)
+    image: event/DDG_logo_-_Copy.png
+    event_type: J
+    start_time: 2019-07-15 20:00:00+00:00
+    venue: 5
+    series: 3aacbd0b-8536-4a9f-8d66-6e85a7869438
+    teams:
+    - 34
+- model: uk_improv_guide.event
+  pk: 19
+  fields:
+    facebook_link: ''
+    eventbrite_link: ''
+    name: DDG Improv Jam (Authentic Dylan; Patrol; DuckDuckTales)
+    image: event/DDG_logo_-_Copy_eo4Fxy4.png
+    event_type: J
+    start_time: 2019-07-22 20:00:00+00:00
+    venue: 5
+    series: 3aacbd0b-8536-4a9f-8d66-6e85a7869438
+    teams: []
 - model: auth.permission
   pk: 1
   fields:
@@ -2667,7 +3288,7 @@
   pk: 1
   fields:
     password: pbkdf2_sha256$150000$NJN6PvxDrDXj$z/e4TbvtO1y2kdL5wa/eg/PjdJLlspPtTcQFAZXLohw=
-    last_login: 2019-07-07 20:15:43.673956+00:00
+    last_login: 2019-07-07 22:02:02.134095+00:00
     is_superuser: true
     username: admin
     first_name: ''
