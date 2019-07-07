@@ -21,7 +21,7 @@ from uk_improv_guide.views.events import events
 from uk_improv_guide.views.misc import contribute, contribute_item, privacy, terms
 from uk_improv_guide.views.performer import performer
 from uk_improv_guide.views.performers import performers
-from uk_improv_guide.views.sitemap import sitemap, robots_txt
+from uk_improv_guide.views.sitemap import robots_txt, sitemap
 from uk_improv_guide.views.team import team
 from uk_improv_guide.views.teams import teams
 from uk_improv_guide.views.venue import venue

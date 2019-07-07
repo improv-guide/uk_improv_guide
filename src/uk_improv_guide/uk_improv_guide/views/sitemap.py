@@ -5,10 +5,10 @@ from uk_improv_guide.models.event import get_all_events
 from uk_improv_guide.models.performer import get_all_performers
 from uk_improv_guide.models.team import get_all_teams
 
+
 def robots_txt(request):
-    return render(
-        request, "robots.txt", content_type="text/plain"
-    )
+    return render(request, "robots.txt", content_type="text/plain")
+
 
 def sitemap(request):
     everything = itertools.chain(
