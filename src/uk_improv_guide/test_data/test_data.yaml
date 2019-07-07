@@ -1040,6 +1040,76 @@
     image: performer/agl.jpg
     alias: ''
     imdb_link: https://www.imdb.com/name/nm4055497/?ref_=nv_sr_1?ref_=nv_sr_1
+- model: uk_improv_guide.performer
+  pk: 74
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: David
+    middle_names: ''
+    family_name: Buckley
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 75
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Robert
+    middle_names: ''
+    family_name: Rampton
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 76
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Adrian
+    middle_names: ''
+    family_name: Lane
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 77
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Amber
+    middle_names: ''
+    family_name: Barrow
+    image: ''
+    alias: ''
+    imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 78
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Stephen
+    middle_names: ''
+    family_name: Kovalcik
+    image: ''
+    alias: ''
+    imdb_link: ''
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -1442,6 +1512,25 @@
     name: Glitch
     image: ''
     players: []
+- model: uk_improv_guide.team
+  pk: 30
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.messenger.com/t/improvfieldtrip
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Field Trip
+    image: team/field_trip_logo.png
+    players:
+    - 73
+    - 74
+    - 75
+    - 43
+    - 76
+    - 77
+    - 78
+    - 22
 - model: uk_improv_guide.school
   pk: 3bc46024-c973-4709-ba65-aace19f97fd9
   fields:
