@@ -16,12 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from uk_improv_guide.models import Event, Performer, Team, Venue
-from uk_improv_guide.views.sitemap import sitemap
 from uk_improv_guide.views.event import event
 from uk_improv_guide.views.events import events
 from uk_improv_guide.views.misc import contribute, contribute_item, privacy, terms
 from uk_improv_guide.views.performer import performer
 from uk_improv_guide.views.performers import performers
+from uk_improv_guide.views.sitemap import sitemap
 from uk_improv_guide.views.team import team
 from uk_improv_guide.views.teams import teams
 from uk_improv_guide.views.venue import venue

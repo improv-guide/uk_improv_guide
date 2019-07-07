@@ -1,9 +1,8 @@
 import uuid
 
+import django.utils.timezone
 import reversion
 from django.db import models
-import django.utils.timezone
-
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.models.fields.fields import (

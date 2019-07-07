@@ -1,6 +1,6 @@
-import django.utils.timezone
 from typing import List
 
+import django.utils.timezone
 import reversion
 from django.db import models
 from django_countries.fields import CountryField

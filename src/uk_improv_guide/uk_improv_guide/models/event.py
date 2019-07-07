@@ -1,8 +1,7 @@
 import datetime
-
-import django.utils.timezone
 from typing import Sequence
 
+import django.utils.timezone
 import reversion
 from django.db import models
 from uk_improv_guide.lib.adminable import AdminableObject
