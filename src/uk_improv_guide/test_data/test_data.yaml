@@ -1554,7 +1554,7 @@
 - model: uk_improv_guide.school
   pk: 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
   fields:
-    twitter_handle: ''
+    twitter_handle: '@hooplaimpro'
     facebook_link: ''
     website_link: ''
     contact_email_address: ''

@@ -6,12 +6,13 @@ from django.db import models
 from django_countries.fields import CountryField
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
+from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
 from uk_improv_guide.models.fields.fields import TWITTER_HANDLE
 from uk_improv_guide.models.school import School
 
 
 @reversion.register
-class Venue(SiteMapThing, AdminableObject, models.Model):
+class Venue(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     url_base: str = "venue"
     name = models.CharField(max_length=100)
     facebook_link = models.CharField(max_length=256, blank=True)

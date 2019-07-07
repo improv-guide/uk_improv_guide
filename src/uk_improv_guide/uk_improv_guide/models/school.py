@@ -5,6 +5,7 @@ import reversion
 from django.db import models
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
+from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
 from uk_improv_guide.models.fields.fields import (
     EMAIL_ADDRESS,
     FACEBOOK_LINK,
@@ -15,7 +16,7 @@ from uk_improv_guide.models.fields.fields import (
 
 
 @reversion.register
-class School(SiteMapThing, AdminableObject, models.Model):
+class School(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     url_base: str = "school"
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=100)

@@ -7,6 +7,7 @@ from django.db import models
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.sitemaps import register_model_for_site_map
+from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
 from uk_improv_guide.models.event_series import EventSeries
 from uk_improv_guide.models.fields.fields import EVENTBRITE_LINK, FACEBOOK_LINK
 from uk_improv_guide.models.team import Team
@@ -15,7 +16,7 @@ from uk_improv_guide.models.venue import Venue
 
 @reversion.register
 @register_model_for_site_map
-class Event(SiteMapThing, AdminableObject, models.Model):
+class Event(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     url_base: str = "event"
 
     EVENT_TYPES = (("S", "Show"), ("J", "Jam"), ("W", "Workshop"), ("A", "Audition"))

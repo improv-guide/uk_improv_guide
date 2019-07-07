@@ -7,6 +7,7 @@ import reversion
 from django.db import models
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
+from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
 from uk_improv_guide.models.fields.fields import (
     EMAIL_ADDRESS,
     FACEBOOK_LINK,
@@ -19,7 +20,7 @@ log = logging.getLogger(__name__)
 
 
 @reversion.register
-class Performer(SiteMapThing, AdminableObject, models.Model):
+class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     url_base: str = "performer"
     first_name = models.CharField(max_length=50, default="")
     middle_names = models.CharField(max_length=60, blank=True, default="")

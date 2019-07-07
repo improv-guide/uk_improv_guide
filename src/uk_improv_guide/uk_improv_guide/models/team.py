@@ -4,6 +4,7 @@ import reversion
 from django.db import models
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
+from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
 from uk_improv_guide.models.fields.fields import (
     EMAIL_ADDRESS,
     FACEBOOK_LINK,
@@ -15,7 +16,7 @@ from uk_improv_guide.models.performer import Performer
 
 
 @reversion.register
-class Team(SiteMapThing, AdminableObject, models.Model):
+class Team(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     url_base: str = "team"
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to="team/", blank=True)
