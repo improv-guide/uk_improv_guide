@@ -1,4 +1,9 @@
 - model: sites.site
+  pk: 1
+  fields:
+    domain: example.com
+    name: example.com
+- model: sites.site
   pk: 2
   fields:
     domain: improv.guide
@@ -1021,6 +1026,20 @@
     image: ''
     alias: ''
     imdb_link: ''
+- model: uk_improv_guide.performer
+  pk: 73
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/arthurgillarsen
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/arthur_gil_larsen/
+    first_name: Arthur
+    middle_names: ''
+    family_name: Gil Larsen
+    image: performer/agl.jpg
+    alias: ''
+    imdb_link: https://www.imdb.com/name/nm4055497/?ref_=nv_sr_1?ref_=nv_sr_1
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -1033,13 +1052,13 @@
     image: team/caretakers.jpg
     players:
     - 1
+    - 2
     - 3
+    - 30
     - 41
     - 42
     - 43
     - 44
-    - 30
-    - 2
 - model: uk_improv_guide.team
   pk: 2
   fields:
@@ -1251,10 +1270,11 @@
     contact_email_address: ''
     instagram_link: ''
     name: The Bathhouse Children
-    image: ''
+    image: team/horror.jpg
     players:
     - 17
     - 30
+    - 73
 - model: uk_improv_guide.team
   pk: 18
   fields:
@@ -1371,17 +1391,17 @@
     name: The Maydays
     image: team/the_maydays_u0VfEVH.jpg
     players:
+    - 55
     - 56
     - 57
     - 58
-    - 55
-    - 64
-    - 65
     - 59
     - 60
     - 61
     - 62
     - 63
+    - 64
+    - 65
 - model: uk_improv_guide.team
   pk: 27
   fields:
@@ -2266,11 +2286,299 @@
     name: Can view site
     content_type: 20
     codename: view_site
+- model: auth.permission
+  pk: 81
+  fields:
+    name: Can add site
+    content_type: 9
+    codename: add_site
+- model: auth.permission
+  pk: 82
+  fields:
+    name: Can change site
+    content_type: 9
+    codename: change_site
+- model: auth.permission
+  pk: 83
+  fields:
+    name: Can delete site
+    content_type: 9
+    codename: delete_site
+- model: auth.permission
+  pk: 84
+  fields:
+    name: Can view site
+    content_type: 9
+    codename: view_site
+- model: auth.permission
+  pk: 85
+  fields:
+    name: Can add association
+    content_type: 10
+    codename: add_association
+- model: auth.permission
+  pk: 86
+  fields:
+    name: Can change association
+    content_type: 10
+    codename: change_association
+- model: auth.permission
+  pk: 87
+  fields:
+    name: Can delete association
+    content_type: 10
+    codename: delete_association
+- model: auth.permission
+  pk: 88
+  fields:
+    name: Can view association
+    content_type: 10
+    codename: view_association
+- model: auth.permission
+  pk: 89
+  fields:
+    name: Can add code
+    content_type: 11
+    codename: add_code
+- model: auth.permission
+  pk: 90
+  fields:
+    name: Can change code
+    content_type: 11
+    codename: change_code
+- model: auth.permission
+  pk: 91
+  fields:
+    name: Can delete code
+    content_type: 11
+    codename: delete_code
+- model: auth.permission
+  pk: 92
+  fields:
+    name: Can view code
+    content_type: 11
+    codename: view_code
+- model: auth.permission
+  pk: 93
+  fields:
+    name: Can add nonce
+    content_type: 12
+    codename: add_nonce
+- model: auth.permission
+  pk: 94
+  fields:
+    name: Can change nonce
+    content_type: 12
+    codename: change_nonce
+- model: auth.permission
+  pk: 95
+  fields:
+    name: Can delete nonce
+    content_type: 12
+    codename: delete_nonce
+- model: auth.permission
+  pk: 96
+  fields:
+    name: Can view nonce
+    content_type: 12
+    codename: view_nonce
+- model: auth.permission
+  pk: 97
+  fields:
+    name: Can add user social auth
+    content_type: 13
+    codename: add_usersocialauth
+- model: auth.permission
+  pk: 98
+  fields:
+    name: Can change user social auth
+    content_type: 13
+    codename: change_usersocialauth
+- model: auth.permission
+  pk: 99
+  fields:
+    name: Can delete user social auth
+    content_type: 13
+    codename: delete_usersocialauth
+- model: auth.permission
+  pk: 100
+  fields:
+    name: Can view user social auth
+    content_type: 13
+    codename: view_usersocialauth
+- model: auth.permission
+  pk: 101
+  fields:
+    name: Can add partial
+    content_type: 14
+    codename: add_partial
+- model: auth.permission
+  pk: 102
+  fields:
+    name: Can change partial
+    content_type: 14
+    codename: change_partial
+- model: auth.permission
+  pk: 103
+  fields:
+    name: Can delete partial
+    content_type: 14
+    codename: delete_partial
+- model: auth.permission
+  pk: 104
+  fields:
+    name: Can view partial
+    content_type: 14
+    codename: view_partial
+- model: auth.permission
+  pk: 105
+  fields:
+    name: Can add event series
+    content_type: 15
+    codename: add_eventseries
+- model: auth.permission
+  pk: 106
+  fields:
+    name: Can change event series
+    content_type: 15
+    codename: change_eventseries
+- model: auth.permission
+  pk: 107
+  fields:
+    name: Can delete event series
+    content_type: 15
+    codename: delete_eventseries
+- model: auth.permission
+  pk: 108
+  fields:
+    name: Can view event series
+    content_type: 15
+    codename: view_eventseries
+- model: auth.permission
+  pk: 109
+  fields:
+    name: Can add performer
+    content_type: 16
+    codename: add_performer
+- model: auth.permission
+  pk: 110
+  fields:
+    name: Can change performer
+    content_type: 16
+    codename: change_performer
+- model: auth.permission
+  pk: 111
+  fields:
+    name: Can delete performer
+    content_type: 16
+    codename: delete_performer
+- model: auth.permission
+  pk: 112
+  fields:
+    name: Can view performer
+    content_type: 16
+    codename: view_performer
+- model: auth.permission
+  pk: 113
+  fields:
+    name: Can add school
+    content_type: 17
+    codename: add_school
+- model: auth.permission
+  pk: 114
+  fields:
+    name: Can change school
+    content_type: 17
+    codename: change_school
+- model: auth.permission
+  pk: 115
+  fields:
+    name: Can delete school
+    content_type: 17
+    codename: delete_school
+- model: auth.permission
+  pk: 116
+  fields:
+    name: Can view school
+    content_type: 17
+    codename: view_school
+- model: auth.permission
+  pk: 117
+  fields:
+    name: Can add venue
+    content_type: 18
+    codename: add_venue
+- model: auth.permission
+  pk: 118
+  fields:
+    name: Can change venue
+    content_type: 18
+    codename: change_venue
+- model: auth.permission
+  pk: 119
+  fields:
+    name: Can delete venue
+    content_type: 18
+    codename: delete_venue
+- model: auth.permission
+  pk: 120
+  fields:
+    name: Can view venue
+    content_type: 18
+    codename: view_venue
+- model: auth.permission
+  pk: 121
+  fields:
+    name: Can add team
+    content_type: 19
+    codename: add_team
+- model: auth.permission
+  pk: 122
+  fields:
+    name: Can change team
+    content_type: 19
+    codename: change_team
+- model: auth.permission
+  pk: 123
+  fields:
+    name: Can delete team
+    content_type: 19
+    codename: delete_team
+- model: auth.permission
+  pk: 124
+  fields:
+    name: Can view team
+    content_type: 19
+    codename: view_team
+- model: auth.permission
+  pk: 125
+  fields:
+    name: Can add event
+    content_type: 20
+    codename: add_event
+- model: auth.permission
+  pk: 126
+  fields:
+    name: Can change event
+    content_type: 20
+    codename: change_event
+- model: auth.permission
+  pk: 127
+  fields:
+    name: Can delete event
+    content_type: 20
+    codename: delete_event
+- model: auth.permission
+  pk: 128
+  fields:
+    name: Can view event
+    content_type: 20
+    codename: view_event
 - model: auth.user
   pk: 1
   fields:
     password: pbkdf2_sha256$150000$NJN6PvxDrDXj$z/e4TbvtO1y2kdL5wa/eg/PjdJLlspPtTcQFAZXLohw=
-    last_login: 2019-07-05 21:12:10.085432+00:00
+    last_login: 2019-07-07 20:15:43.673956+00:00
     is_superuser: true
     username: admin
     first_name: ''
