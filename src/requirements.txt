@@ -10,4 +10,5 @@ django-countries==5.3.3
 Pillow==6.1.0
 django-imagekit
 gunicorn
+requests
 
