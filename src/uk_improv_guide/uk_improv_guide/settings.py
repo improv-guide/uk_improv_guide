@@ -133,7 +133,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = "/uk_improv_guide.static/"
+STATIC_URL = "/static/"
 
 AUTHENTICATION_BACKENDS = [
     "social_core.backends.linkedin.LinkedinOAuth2",
@@ -142,8 +142,8 @@ AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
 ]
 
-# STATIC_ROOT = os.path.join(BASE_DIR, '')
-#
+
+
 
 MEDIA_URL = "media/"
 #
@@ -152,6 +152,8 @@ MEDIA_URL = "media/"
 _static_dir = os.path.join(BASE_DIR, "static")
 
 STATICFILES_DIRS = (_static_dir,)
+
+STATIC_ROOT = "/static_content"
 
 MEDIA_ROOT = os.path.join(_static_dir, "media")
 

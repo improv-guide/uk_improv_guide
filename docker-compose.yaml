@@ -101,7 +101,7 @@ services:
     container_name: production_nginx
     volumes:
       - ./nginx/config/default.conf:/etc/nginx/conf.d/default.conf
-      - ./static:/usr/share/nginx/html/uk_improv_guide.static:ro
+      - ./static:/usr/share/nginx/html/static:ro
     ports:
       - 80:80
       - 443:443
