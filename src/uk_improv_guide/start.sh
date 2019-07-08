@@ -10,4 +10,4 @@ python manage.py createinitialrevisions
 echo "Setting permissions on migrations"
 chmod o+rw uk_improv_guide/migrations/*.py
 echo "Starting development server..."
-python manage.py runserver 0.0.0.0:80
+python manage.py runserver 0.0.0.0:8000
