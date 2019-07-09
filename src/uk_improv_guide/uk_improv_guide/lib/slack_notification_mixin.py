@@ -12,5 +12,8 @@ class SlackNotificationMixin:
         result = super(SlackNotificationMixin, self).save(*args, **kwargs)
         log.info(f"About to ping {settings.SLACK_WEB_HOOK}")
         message = pprint.pformat(kwargs)
-        requests.post(url=settings.SLACK_WEB_HOOK, data={f"An object was updated: {message}".encode("UTF-8")})
+        requests.post(
+            url=settings.SLACK_WEB_HOOK,
+            data={f"An object was updated: {message}".encode("UTF-8")},
+        )
         return result

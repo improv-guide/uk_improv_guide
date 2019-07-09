@@ -143,8 +143,6 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 
-
-
 MEDIA_URL = "media/"
 #
 # print(f"Media Root: {MEDIA_ROOT}")
@@ -165,4 +163,4 @@ SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
 
 SITE_ID = 1
 
-SLACK_WEB_HOOK=os.environ["SLACK_WEB_HOOK"]
+SLACK_WEB_HOOK = os.environ["SLACK_WEB_HOOK"]

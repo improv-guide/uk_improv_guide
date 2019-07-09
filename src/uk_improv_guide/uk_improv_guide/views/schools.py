@@ -10,4 +10,12 @@ def schools(request):
     schools_with_image = [s for s in schools if s.image]
     schools_without_image = [s for s in schools if not s.image]
 
-    return render(request, "school_index.html", {"title": "Schools", "schools": schools_with_image, "schools_without_image":schools_without_image}, )
+    return render(
+        request,
+        "school_index.html",
+        {
+            "title": "Schools",
+            "schools": schools_with_image,
+            "schools_without_image": schools_without_image,
+        },
+    )

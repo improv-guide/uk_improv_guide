@@ -4,8 +4,6 @@ from typing import Sequence
 
 import reversion
 from django.db import models
-from uk_improv_guide.models.school import School
-
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
@@ -16,6 +14,7 @@ from uk_improv_guide.models.fields.fields import (
     TWITTER_HANDLE,
     WEBSITE_LINK,
 )
+from uk_improv_guide.models.school import School
 
 log = logging.getLogger(__name__)
 
@@ -41,10 +40,11 @@ class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mo
     )
 
     teaches_for = models.ManyToManyField(
-        School, verbose_name="Teaches at this school", blank=True, related_name="teachers"
+        School,
+        verbose_name="Teaches at this school",
+        blank=True,
+        related_name="teachers",
     )
-
-
 
     def full_name(self) -> str:
         middle_names: str = self.middle_names or ""
