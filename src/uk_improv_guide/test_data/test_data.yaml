@@ -24,6 +24,16 @@
     image: ''
     name: Free Association Cage Match
 - model: uk_improv_guide.eventseries
+  pk: a2bc0d74-5936-4940-b44b-e9e6cfc512b7
+  fields:
+    image: event_series/missimp.png
+    name: MissImp Presents
+- model: uk_improv_guide.eventseries
+  pk: ae0e1240-ede4-4918-a182-a31910a62fdc
+  fields:
+    image: ''
+    name: Austentatious
+- model: uk_improv_guide.eventseries
   pk: b165abbe-585c-4fdb-8438-539785d22716
   fields:
     image: event_series/amorphous_horse.jpg
@@ -2040,6 +2050,49 @@
     - 107
     - 14
     - 26
+- model: uk_improv_guide.team
+  pk: 37
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Four Far Away
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 38
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Mischief Managed Improv
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 39
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Smash Night Social Club
+    image: ''
+    players: []
+- model: uk_improv_guide.school
+  pk: 1858aee6-79ea-4ded-a235-f205fe400678
+  fields:
+    twitter_handle: '@MissImp_Notts'
+    facebook_link: https://www.facebook.com/missimp.co.uk
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: MissImp
+    image: ''
 - model: uk_improv_guide.school
   pk: 3bc46024-c973-4709-ba65-aace19f97fd9
   fields:
@@ -2290,6 +2343,51 @@
     country: GB
     school: null
     image: venue/cavendish_arms_stage.jpg
+- model: uk_improv_guide.venue
+  pk: 15
+  fields:
+    twitter_handle: '@NottmPlayhouse'
+    name: Nottingham Playhouse
+    facebook_link: http://www.facebook.com/nottinghamplayhouse
+    website_link: https://www.nottinghamplayhouse.co.uk/
+    google_maps_link: ''
+    address: Wellington Circus,
+    city: Nottingham
+    postcode: NG1 5AF
+    email_address: ''
+    country: GB
+    school: 1858aee6-79ea-4ded-a235-f205fe400678
+    image: venue/nottingham_playhouse.jpg
+- model: uk_improv_guide.venue
+  pk: 16
+  fields:
+    twitter_handle: '@angelmbrewery'
+    name: The Angel
+    facebook_link: ''
+    website_link: http://www.angelmicrobrewery.com/
+    google_maps_link: https://goo.gl/maps/nHHzCHFAQbwGWj4BA
+    address: 7 Stoney Street
+    city: Nottingham
+    postcode: NG1 1LG
+    email_address: thechapel.amb@gmail.com
+    country: GB
+    school: 1858aee6-79ea-4ded-a235-f205fe400678
+    image: venue/the_angel.jpeg
+- model: uk_improv_guide.venue
+  pk: 17
+  fields:
+    twitter_handle: ''
+    name: Fortune Theatre
+    facebook_link: ''
+    website_link: https://www.atgtickets.com/venues/fortune-theatre/
+    google_maps_link: ''
+    address: Russell Street
+    city: London
+    postcode: WC2B 5HH
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/FortuneTheatre.jpg
 - model: uk_improv_guide.event
   pk: 1
   fields:
@@ -2546,6 +2644,33 @@
     venue: 5
     series: 3aacbd0b-8536-4a9f-8d66-6e85a7869438
     teams: []
+- model: uk_improv_guide.event
+  pk: 20
+  fields:
+    facebook_link: ''
+    eventbrite_link: ''
+    name: 'MissImp Presents: Improv ComicCon!'
+    image: event/Improv-ComicCon-FB-1.jpg
+    event_type: S
+    start_time: 2019-07-20 19:00:00+00:00
+    venue: 16
+    series: a2bc0d74-5936-4940-b44b-e9e6cfc512b7
+    teams:
+    - 37
+    - 38
+- model: uk_improv_guide.event
+  pk: 21
+  fields:
+    facebook_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-11-18 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
 - model: auth.permission
   pk: 1
   fields:
@@ -3314,11 +3439,64 @@
     name: Can view event
     content_type: 20
     codename: view_event
+- model: auth.group
+  pk: 2
+  fields:
+    name: site_administrators
+    permissions:
+    - 125
+    - 77
+    - 126
+    - 78
+    - 127
+    - 79
+    - 128
+    - 80
+    - 105
+    - 57
+    - 106
+    - 58
+    - 107
+    - 59
+    - 108
+    - 60
+    - 109
+    - 61
+    - 110
+    - 62
+    - 111
+    - 63
+    - 112
+    - 64
+    - 113
+    - 65
+    - 114
+    - 66
+    - 115
+    - 67
+    - 116
+    - 68
+    - 73
+    - 121
+    - 74
+    - 122
+    - 75
+    - 123
+    - 76
+    - 124
+    - 69
+    - 117
+    - 70
+    - 118
+    - 71
+    - 119
+    - 72
+    - 120
 - model: auth.user
   pk: 1
   fields:
     password: pbkdf2_sha256$150000$NJN6PvxDrDXj$z/e4TbvtO1y2kdL5wa/eg/PjdJLlspPtTcQFAZXLohw=
-    last_login: 2019-07-07 22:02:02.134095+00:00
+    last_login: 2019-07-09 17:16:40.067975+00:00
     is_superuser: true
     username: admin
     first_name: ''
@@ -3328,4 +3506,20 @@
     is_active: true
     date_joined: 2019-06-12 11:37:35.847690+00:00
     groups: []
+    user_permissions: []
+- model: auth.user
+  pk: 2
+  fields:
+    password: pbkdf2_sha256$150000$1cQy6ImeHoA7$QqFjlo7Oqt8uGon4h9gVQBSTTWHUOSGeZnYXWydbpWw=
+    last_login: 2019-07-08 21:37:37.404644+00:00
+    is_superuser: false
+    username: rosie
+    first_name: Rosie
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-08 21:22:38+00:00
+    groups:
+    - 2
     user_permissions: []
