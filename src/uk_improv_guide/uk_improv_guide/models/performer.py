@@ -14,6 +14,7 @@ from uk_improv_guide.models.fields.fields import (
     TWITTER_HANDLE,
     WEBSITE_LINK,
 )
+from uk_improv_guide.models.school import School
 
 log = logging.getLogger(__name__)
 
@@ -36,6 +37,13 @@ class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mo
 
     imdb_link = models.CharField(
         max_length=100, blank=True, default="", verbose_name="IMDB Link"
+    )
+
+    teaches_for = models.ManyToManyField(
+        School,
+        verbose_name="Teaches at this school",
+        blank=True,
+        related_name="teachers",
     )
 
     def full_name(self) -> str:
