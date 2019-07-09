@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<h1>{{ school.name }}</h1>
+
+{% with social_thing=school %}
+{% include "content/social.html" %}
+{% endwith %}
+
+{% if school.image %}
+<img class="featured_image" src="{% static "" %}{{ school.image.url }}" />
+{%  endif %}
+
+
+
+<h2>Venues</h2>
+
+<ul>
+    {% for venue in venues %}
+    <li><a href="venues/{{venue.id}}">{{venue.name}}</a></li>
+    {% endfor %}
+</ul>
+
+
+<h2>Teachers</h2>
+
+<ul>
+    {% for teacher in teachers %}
+    <li><a href="performers/{{teacher.id}}">{{teacher.full_name}}</a></li>
+    {% endfor %}
+</ul>
+
+
+{% with obj=school %}
+{% include "content/admin.html" %}
+{% endwith %}
+
+
+{% endblock %}

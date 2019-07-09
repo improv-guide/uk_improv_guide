@@ -4,6 +4,7 @@ from typing import Sequence
 
 import reversion
 from django.db import models
+from uk_improv_guide.models.school import School
 
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
@@ -38,6 +39,12 @@ class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mo
     imdb_link = models.CharField(
         max_length=100, blank=True, default="", verbose_name="IMDB Link"
     )
+
+    teaches_for = models.ManyToManyField(
+        School, verbose_name="Teaches at this school", blank=True, related_name="teachers"
+    )
+
+
 
     def full_name(self) -> str:
         middle_names: str = self.middle_names or ""

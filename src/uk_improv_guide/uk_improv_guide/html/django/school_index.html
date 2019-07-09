@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<h1>{{title}}</h1>
+
+<div class="boxes">
+    {% for school in schools %}
+
+
+    <div class="box">
+        <a href="/schools/{{ school.id }}"><img class="boximage" src="{% static "" %}{{ school.image.url }}" alt="{{ school.name }}"></a>
+        <div class="box_social">
+            {% with social_thing=school %}
+            {% include "content/social.html" %}
+            {% endwith %}
+        </div>
+
+        <span class="box_text">
+                    <p><a href="/school/{{ school.id }}">{{school.name}}</a></p>
+{#                    <p>{{ school.city }}, {{ school.country.name }}</p>#}
+
+
+                </span>
+
+    </div>
+
+    {% endfor %}
+
+    <ul>
+        {% for school in schools_without_image %}
+        <li><a href="/school/{{ school.id }}">{{school.name}}</a>, {{school.country.name}}</li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+{% endblock %}

@@ -26,6 +26,8 @@ from uk_improv_guide.views.team import team
 from uk_improv_guide.views.teams import teams
 from uk_improv_guide.views.venue import venue
 from uk_improv_guide.views.venues import venues
+from uk_improv_guide.views.school import school
+from uk_improv_guide.views.schools import schools
 
 info_dict = {"queryset": Performer.objects.all(), "date_field": "pub_date"}
 
@@ -39,6 +41,8 @@ urlpatterns = [
     path("teams/<int:id>", team, name="Team"),
     path("performers/", performers, name="Performer"),
     path("performers/<int:id>", performer, name="Performer"),
+    path("schools/", schools),
+    path("schools/<str:id>", school),
     path("contribute/", contribute, name="Contribute"),
     path(
         "contribute/event",
