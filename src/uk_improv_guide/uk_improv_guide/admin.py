@@ -6,4 +6,4 @@ for m in ALL_MODELS:
 
     @admin.register(m)
     class YourModelAdmin(VersionAdmin):
-        pass
+        save_as = True
