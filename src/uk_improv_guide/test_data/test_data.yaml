@@ -2083,6 +2083,28 @@
     name: The Smash Night Social Club
     image: ''
     players: []
+- model: uk_improv_guide.team
+  pk: 40
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Other People's Children
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 41
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Stccatos
+    image: ''
+    players: []
 - model: uk_improv_guide.school
   pk: 1858aee6-79ea-4ded-a235-f205fe400678
   fields:
@@ -2113,6 +2135,16 @@
     instagram_link: ''
     name: Islington Comedy Club
     image: ''
+- model: uk_improv_guide.school
+  pk: 528bc2b9-5c6a-4738-a7c7-80ff0acf4ffc
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: London Improv Theatre
+    image: school/london_improv_theatre.png
 - model: uk_improv_guide.school
   pk: 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
   fields:
@@ -2161,7 +2193,7 @@
     postcode: SE13SS
     email_address: ''
     country: GB
-    school: null
+    school: 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
     image: venue/the_miller_AZABhoL.jpg
 - model: uk_improv_guide.venue
   pk: 3
@@ -2206,7 +2238,7 @@
     postcode: SW2 1DF
     email_address: ''
     country: GB
-    school: null
+    school: dbcb6379-a8b2-418f-938b-602623baa2be
     image: venue/effra_social.jpg
 - model: uk_improv_guide.venue
   pk: 6
@@ -2388,6 +2420,36 @@
     country: GB
     school: null
     image: venue/FortuneTheatre.jpg
+- model: uk_improv_guide.venue
+  pk: 18
+  fields:
+    twitter_handle: ''
+    name: London Improv Theatre
+    facebook_link: https://www.facebook.com/thelondonimprovtheatre
+    website_link: https://www.londonimprovtheatre.com
+    google_maps_link: https://goo.gl/maps/teXFmukUJRifMF3s6
+    address: 104-A Finchley Road
+    city: London
+    postcode: NW3 5JJ
+    email_address: ''
+    country: GB
+    school: 528bc2b9-5c6a-4738-a7c7-80ff0acf4ffc
+    image: venue/london_improv_theatre.png
+- model: uk_improv_guide.venue
+  pk: 19
+  fields:
+    twitter_handle: TheComedyPub
+    name: The Comedy Pub
+    facebook_link: http://www.facebook.com/TheComedyPub
+    website_link: https://www.craft-pubs.co.uk/comedy
+    google_maps_link: ''
+    address: 7 Oxendon Street
+    city: London
+    postcode: SW1Y 4EE
+    email_address: ''
+    country: GB
+    school: 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
+    image: venue/The_Comedy_Pub_Hoopla_Megajam.jpg
 - model: uk_improv_guide.event
   pk: 1
   fields:
@@ -2671,6 +2733,112 @@
     series: ae0e1240-ede4-4918-a182-a31910a62fdc
     teams:
     - 31
+- model: uk_improv_guide.event
+  pk: 22
+  fields:
+    facebook_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-11-25 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 23
+  fields:
+    facebook_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-12-01 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 24
+  fields:
+    facebook_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-12-02 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 25
+  fields:
+    facebook_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-12-08 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 26
+  fields:
+    facebook_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-12-09 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 27
+  fields:
+    facebook_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-12-15 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 28
+  fields:
+    facebook_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-12-16 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 29
+  fields:
+    facebook_link: https://www.facebook.com/events/637992360029091
+    eventbrite_link: ''
+    name: Sunday Improv Combo
+    image: event/sunday_combo.jpg
+    event_type: S
+    start_time: 2019-07-21 18:30:00+00:00
+    venue: 18
+    series: null
+    teams:
+    - 9
+    - 40
+    - 41
 - model: auth.permission
   pk: 1
   fields:
@@ -3496,7 +3664,7 @@
   pk: 1
   fields:
     password: pbkdf2_sha256$150000$NJN6PvxDrDXj$z/e4TbvtO1y2kdL5wa/eg/PjdJLlspPtTcQFAZXLohw=
-    last_login: 2019-07-09 17:16:40.067975+00:00
+    last_login: 2019-07-09 22:27:30.663507+00:00
     is_superuser: true
     username: admin
     first_name: ''
