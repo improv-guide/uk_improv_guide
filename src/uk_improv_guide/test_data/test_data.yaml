@@ -38,6 +38,72 @@
   fields:
     image: event_series/amorphous_horse.jpg
     name: Amorphous Horse's Happy Place
+- model: uk_improv_guide.school
+  pk: 1858aee6-79ea-4ded-a235-f205fe400678
+  fields:
+    twitter_handle: '@MissImp_Notts'
+    facebook_link: https://www.facebook.com/missimp.co.uk
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: MissImp
+    image: ''
+    country: GB
+- model: uk_improv_guide.school
+  pk: 3bc46024-c973-4709-ba65-aace19f97fd9
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Free Association
+    image: school/fa_logo.png
+    country: GB
+- model: uk_improv_guide.school
+  pk: 44254cc3-d017-4296-82fb-58504f10b3ac
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Islington Comedy Club
+    image: ''
+    country: GB
+- model: uk_improv_guide.school
+  pk: 528bc2b9-5c6a-4738-a7c7-80ff0acf4ffc
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: London Improv Theatre
+    image: school/london_improv_theatre.png
+    country: GB
+- model: uk_improv_guide.school
+  pk: 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
+  fields:
+    twitter_handle: '@hooplaimpro'
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Hoopla!
+    image: ''
+    country: GB
+- model: uk_improv_guide.school
+  pk: dbcb6379-a8b2-418f-938b-602623baa2be
+  fields:
+    twitter_handle: duckduckg
+    facebook_link: https://www.facebook.com/duckduckg
+    website_link: http://ddgimprov.com
+    contact_email_address: ddgimprov@gmail.com
+    instagram_link: https://www.instagram.com/ddgimprov/
+    name: DDG Improv (Duck Duck Goose)
+    image: school/DDG_logo_-_Copy.png
+    country: GB
 - model: uk_improv_guide.performer
   pk: 1
   fields:
@@ -52,6 +118,7 @@
     image: performer/marc_salmon.jpg
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 2
   fields:
@@ -66,6 +133,7 @@
     image: performer/salim_fadhley.jpg
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 3
   fields:
@@ -80,6 +148,7 @@
     image: performer/brooke_hoerr.jpg
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 4
   fields:
@@ -94,6 +163,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 5
   fields:
@@ -108,6 +178,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 6
   fields:
@@ -122,6 +193,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 7
   fields:
@@ -136,6 +208,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 8
   fields:
@@ -150,6 +223,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 9
   fields:
@@ -164,6 +238,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 10
   fields:
@@ -178,6 +253,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 11
   fields:
@@ -192,6 +268,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 12
   fields:
@@ -206,6 +283,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 13
   fields:
@@ -220,6 +298,7 @@
     image: ''
     alias: ''
     imdb_link: https://www.imdb.com/name/nm0891049/
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 14
   fields:
@@ -234,6 +313,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 15
   fields:
@@ -248,6 +328,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 16
   fields:
@@ -262,6 +343,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 17
   fields:
@@ -276,6 +358,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 18
   fields:
@@ -290,6 +373,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 19
   fields:
@@ -304,6 +388,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 20
   fields:
@@ -318,6 +403,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 21
   fields:
@@ -332,6 +418,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 22
   fields:
@@ -346,6 +433,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 23
   fields:
@@ -360,6 +448,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 24
   fields:
@@ -374,6 +463,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 25
   fields:
@@ -388,6 +478,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 26
   fields:
@@ -402,6 +493,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 27
   fields:
@@ -416,6 +508,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 28
   fields:
@@ -430,6 +523,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 29
   fields:
@@ -444,6 +538,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 30
   fields:
@@ -458,6 +553,7 @@
     image: performer/jess_ulrich.jpg
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 31
   fields:
@@ -472,6 +568,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 32
   fields:
@@ -486,6 +583,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 33
   fields:
@@ -500,6 +598,8 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
 - model: uk_improv_guide.performer
   pk: 34
   fields:
@@ -514,6 +614,8 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
 - model: uk_improv_guide.performer
   pk: 35
   fields:
@@ -528,6 +630,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 36
   fields:
@@ -542,6 +645,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 37
   fields:
@@ -556,6 +660,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 38
   fields:
@@ -570,6 +675,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 39
   fields:
@@ -584,6 +690,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 40
   fields:
@@ -598,6 +705,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 41
   fields:
@@ -612,6 +720,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 42
   fields:
@@ -626,6 +735,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 43
   fields:
@@ -640,6 +750,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 44
   fields:
@@ -654,6 +765,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 45
   fields:
@@ -668,6 +780,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 46
   fields:
@@ -682,6 +795,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 47
   fields:
@@ -696,6 +810,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 48
   fields:
@@ -710,6 +825,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 49
   fields:
@@ -724,6 +840,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 50
   fields:
@@ -738,6 +855,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 51
   fields:
@@ -752,6 +870,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 52
   fields:
@@ -766,6 +885,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 53
   fields:
@@ -780,6 +900,8 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
 - model: uk_improv_guide.performer
   pk: 54
   fields:
@@ -794,6 +916,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 55
   fields:
@@ -808,6 +931,8 @@
     image: performer/heather_urquhart.jpg
     alias: ''
     imdb_link: ''
+    teaches_for:
+    - 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
 - model: uk_improv_guide.performer
   pk: 56
   fields:
@@ -822,6 +947,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 57
   fields:
@@ -836,6 +962,7 @@
     image: performer/liz_peters.jpg
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 58
   fields:
@@ -850,6 +977,7 @@
     image: performer/jules_munns.jpg
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 59
   fields:
@@ -864,6 +992,8 @@
     image: performer/katy_schutte.jpg
     alias: ''
     imdb_link: ''
+    teaches_for:
+    - 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
 - model: uk_improv_guide.performer
   pk: 60
   fields:
@@ -878,6 +1008,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 61
   fields:
@@ -892,6 +1023,7 @@
     image: performer/john_cremer.jpg
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 62
   fields:
@@ -906,6 +1038,7 @@
     image: performer/rebecca_macmillan.jpg
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 63
   fields:
@@ -920,6 +1053,7 @@
     image: performer/james_lloyd.jpg
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 64
   fields:
@@ -934,6 +1068,8 @@
     image: performer/chris_mead.jpg
     alias: ''
     imdb_link: ''
+    teaches_for:
+    - 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
 - model: uk_improv_guide.performer
   pk: 65
   fields:
@@ -948,6 +1084,7 @@
     image: performer/jenny_rowe.jpg
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 66
   fields:
@@ -962,6 +1099,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 67
   fields:
@@ -976,6 +1114,8 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
 - model: uk_improv_guide.performer
   pk: 68
   fields:
@@ -990,6 +1130,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 69
   fields:
@@ -1004,6 +1145,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 70
   fields:
@@ -1018,6 +1160,8 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
 - model: uk_improv_guide.performer
   pk: 71
   fields:
@@ -1032,6 +1176,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 72
   fields:
@@ -1046,6 +1191,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 73
   fields:
@@ -1060,6 +1206,7 @@
     image: performer/agl.jpg
     alias: ''
     imdb_link: https://www.imdb.com/name/nm4055497/?ref_=nv_sr_1?ref_=nv_sr_1
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 74
   fields:
@@ -1074,6 +1221,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 75
   fields:
@@ -1088,6 +1236,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 76
   fields:
@@ -1102,6 +1251,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 77
   fields:
@@ -1116,6 +1266,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 78
   fields:
@@ -1130,6 +1281,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 79
   fields:
@@ -1144,6 +1296,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 80
   fields:
@@ -1158,6 +1311,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 81
   fields:
@@ -1172,6 +1326,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 82
   fields:
@@ -1186,6 +1341,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 83
   fields:
@@ -1200,6 +1356,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 84
   fields:
@@ -1214,6 +1371,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 85
   fields:
@@ -1228,6 +1386,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 86
   fields:
@@ -1242,6 +1401,7 @@
     image: performer/DSCF1304.jpg
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 87
   fields:
@@ -1256,6 +1416,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 89
   fields:
@@ -1270,6 +1431,7 @@
     image: ''
     alias: Maddy
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 90
   fields:
@@ -1284,6 +1446,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 91
   fields:
@@ -1298,6 +1461,7 @@
     image: ''
     alias: Ali
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 92
   fields:
@@ -1312,6 +1476,7 @@
     image: ''
     alias: Dan
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 93
   fields:
@@ -1326,6 +1491,7 @@
     image: ''
     alias: Steff Man
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 94
   fields:
@@ -1340,6 +1506,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 95
   fields:
@@ -1354,6 +1521,7 @@
     image: ''
     alias: Timothy
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 96
   fields:
@@ -1368,6 +1536,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 97
   fields:
@@ -1382,6 +1551,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 98
   fields:
@@ -1396,6 +1566,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 99
   fields:
@@ -1410,6 +1581,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 100
   fields:
@@ -1424,6 +1596,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 101
   fields:
@@ -1438,6 +1611,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 102
   fields:
@@ -1452,6 +1626,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 103
   fields:
@@ -1466,6 +1641,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 104
   fields:
@@ -1480,6 +1656,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 105
   fields:
@@ -1494,6 +1671,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 106
   fields:
@@ -1508,6 +1686,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 107
   fields:
@@ -1522,6 +1701,7 @@
     image: ''
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 108
   fields:
@@ -1536,6 +1716,7 @@
     image: performer/franchesca_reid.jpg
     alias: ''
     imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -1818,9 +1999,9 @@
     name: The Wilsons
     image: ''
     players:
-    - 32
     - 33
     - 34
+    - 32
 - model: uk_improv_guide.team
   pk: 22
   fields:
@@ -1888,17 +2069,17 @@
     name: The Maydays
     image: team/the_maydays_u0VfEVH.jpg
     players:
-    - 55
     - 56
     - 57
     - 58
-    - 59
     - 60
     - 61
     - 62
     - 63
-    - 64
     - 65
+    - 64
+    - 59
+    - 55
 - model: uk_improv_guide.team
   pk: 27
   fields:
@@ -1912,11 +2093,11 @@
     players:
     - 71
     - 66
-    - 67
     - 68
     - 69
-    - 70
     - 72
+    - 70
+    - 67
 - model: uk_improv_guide.team
   pk: 28
   fields:
@@ -2105,66 +2286,6 @@
     name: The Stccatos
     image: ''
     players: []
-- model: uk_improv_guide.school
-  pk: 1858aee6-79ea-4ded-a235-f205fe400678
-  fields:
-    twitter_handle: '@MissImp_Notts'
-    facebook_link: https://www.facebook.com/missimp.co.uk
-    website_link: ''
-    contact_email_address: ''
-    instagram_link: ''
-    name: MissImp
-    image: ''
-- model: uk_improv_guide.school
-  pk: 3bc46024-c973-4709-ba65-aace19f97fd9
-  fields:
-    twitter_handle: ''
-    facebook_link: ''
-    website_link: ''
-    contact_email_address: ''
-    instagram_link: ''
-    name: Free Association
-    image: school/fa_logo.png
-- model: uk_improv_guide.school
-  pk: 44254cc3-d017-4296-82fb-58504f10b3ac
-  fields:
-    twitter_handle: ''
-    facebook_link: ''
-    website_link: ''
-    contact_email_address: ''
-    instagram_link: ''
-    name: Islington Comedy Club
-    image: ''
-- model: uk_improv_guide.school
-  pk: 528bc2b9-5c6a-4738-a7c7-80ff0acf4ffc
-  fields:
-    twitter_handle: ''
-    facebook_link: ''
-    website_link: ''
-    contact_email_address: ''
-    instagram_link: ''
-    name: London Improv Theatre
-    image: school/london_improv_theatre.png
-- model: uk_improv_guide.school
-  pk: 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
-  fields:
-    twitter_handle: '@hooplaimpro'
-    facebook_link: ''
-    website_link: ''
-    contact_email_address: ''
-    instagram_link: ''
-    name: Hoopla!
-    image: ''
-- model: uk_improv_guide.school
-  pk: dbcb6379-a8b2-418f-938b-602623baa2be
-  fields:
-    twitter_handle: duckduckg
-    facebook_link: https://www.facebook.com/duckduckg
-    website_link: http://ddgimprov.com
-    contact_email_address: ddgimprov@gmail.com
-    instagram_link: https://www.instagram.com/ddgimprov/
-    name: DDG Improv (Duck Duck Goose)
-    image: school/DDG_logo_-_Copy.png
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -2178,7 +2299,7 @@
     postcode: N1 3JS
     email_address: ''
     country: GB
-    school: null
+    school: 3bc46024-c973-4709-ba65-aace19f97fd9
     image: venue/de_bauvoir_arms.jpg
 - model: uk_improv_guide.venue
   pk: 2
