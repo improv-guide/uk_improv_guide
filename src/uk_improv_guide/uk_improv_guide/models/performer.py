@@ -4,6 +4,7 @@ from typing import Sequence
 
 import reversion
 from django.db import models
+from reversion.admin import VersionAdmin
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
@@ -19,9 +20,28 @@ from uk_improv_guide.models.school import School
 log = logging.getLogger(__name__)
 
 
+class PerformerAdmin(VersionAdmin):
+    save_as = True
+    search_fields = ["first_name", "family_name"]
+    view_on_site = True
+
+    fields = (
+        ("first_name", "middle_names", "family_name"),
+        "alias",
+        "image",
+        "teaches_for",
+        "facebook_link",
+        "instagram_link",
+        "twitter_handle",
+        "contact_email_address",
+        "website_link",
+        "imdb_link",
+    )
+
+
 @reversion.register
 class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
-    url_base: str = "performer"
+
     first_name = models.CharField(max_length=50, default="")
     middle_names = models.CharField(max_length=60, blank=True, default="")
     family_name = models.CharField(max_length=50, default="")
@@ -29,6 +49,7 @@ class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mo
     alias = models.CharField(
         max_length=50, default="", verbose_name="Alias / Performing as", blank=True
     )
+
     facebook_link = FACEBOOK_LINK
     instagram_link = INSTAGRAM_LINK
     twitter_handle = TWITTER_HANDLE
@@ -46,13 +67,18 @@ class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mo
         related_name="teachers",
     )
 
+    url_base: str = "performer"
+    model_admin = PerformerAdmin
+
     def full_name(self) -> str:
         middle_names: str = self.middle_names or ""
         return " ".join([self.first_name] + middle_names.split() + [self.family_name])
 
     def name_in_list_order(self):
-        middle_names: str = self.middle_names or ""
         return f"{self.family_name}, {self.first_name}"
+
+    def get_absolute_url(self):
+        return "/performers/%i/" % self.id
 
     def __str__(self) -> str:
         return self.name_in_list_order()
