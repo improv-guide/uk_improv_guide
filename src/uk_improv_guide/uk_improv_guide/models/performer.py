@@ -78,7 +78,7 @@ class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mo
         return f"{self.family_name}, {self.first_name}"
 
     def get_absolute_url(self):
-        return "/performers/%i/" % self.id
+        return "/performers/%i" % self.id
 
     def __str__(self) -> str:
         return self.name_in_list_order()

@@ -35,6 +35,9 @@ class Event(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
     def __str__(self):
         return f"{self.name} - @ {self.start_time} - {self.venue.name}"
 
+    def get_absolute_url(self)->str:
+        return f"/events/{self.id}"
+
 
 def get_events_after_datetime(dt: datetime.datetime) -> Sequence[Event]:
     return Event.objects.filter(start_time__gte=dt).order_by("start_time")

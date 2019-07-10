@@ -38,6 +38,9 @@ class Venue(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
     def __str__(self) -> str:
         return f"{self.name}, {self.city}, {self.country}"
 
+    def get_absolute_url(self)->str:
+        return f"/venues/{self.id}"
+
 
 def get_all_venues() -> List[Venue]:
     return Venue.objects.all()
