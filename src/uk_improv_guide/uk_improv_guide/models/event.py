@@ -35,7 +35,7 @@ class Event(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
     def __str__(self):
         return f"{self.name} - @ {self.start_time} - {self.venue.name}"
 
-    def get_absolute_url(self)->str:
+    def get_absolute_url(self) -> str:
         return f"/events/{self.id}"
 
 

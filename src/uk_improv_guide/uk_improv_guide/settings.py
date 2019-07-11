@@ -165,4 +165,4 @@ SITE_ID = 1
 
 SLACK_WEB_HOOK = os.environ["SLACK_WEB_HOOK"]
 
-LOGIN_REDIRECT_URL:str = "/"
+LOGIN_REDIRECT_URL: str = "/"

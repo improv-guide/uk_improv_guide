@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import include, path
 from uk_improv_guide.models import Event, Performer, Team, Venue
 from uk_improv_guide.views.event import event
 from uk_improv_guide.views.events import events
@@ -49,6 +49,6 @@ urlpatterns = [
     path("sitemap.xml", sitemap),
     path("robots.txt", robots_txt),
     path("admin/", admin.site.urls),
-    path('accounts/', include('django.contrib.auth.urls')),
-    path('register/', register, name='register')
+    path("accounts/", include("django.contrib.auth.urls")),
+    path("register/", register, name="register"),
 ]

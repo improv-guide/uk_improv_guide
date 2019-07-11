@@ -32,7 +32,7 @@ class School(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model
     def __str__(self):
         return self.name
 
-    def get_absolute_url(self)->str:
+    def get_absolute_url(self) -> str:
         return f"/schools/{self.id}"
 
 
