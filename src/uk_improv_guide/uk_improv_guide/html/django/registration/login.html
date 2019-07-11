@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{%  block title %}{{ full_name }}{% endblock %}
+{% block content %}
+
+<h1>Login</h1>
+
+<p>Are you here because you just registered as a new user? Great - if you want to admin content I will need to manually
+    upgrade your account. Please let me know via the
+    <a href="https://chat.whatsapp.com/La3ctCUSo6SFzStqH3dSht">WhatsApp Group</a>. Just let me know your username and I
+    will upgrade you. - Sal</p>
+
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+</form>
+
+{% endblock %}

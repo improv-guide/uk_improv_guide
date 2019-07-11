@@ -14,13 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from uk_improv_guide.models import Event, Performer, Team, Venue
 from uk_improv_guide.views.event import event
 from uk_improv_guide.views.events import events
 from uk_improv_guide.views.misc import contribute, contribute_item, privacy, terms
 from uk_improv_guide.views.performer import performer
 from uk_improv_guide.views.performers import performers
+from uk_improv_guide.views.register import register
 from uk_improv_guide.views.school import school
 from uk_improv_guide.views.schools import schools
 from uk_improv_guide.views.sitemap import robots_txt, sitemap
@@ -43,34 +44,11 @@ urlpatterns = [
     path("performers/<int:id>", performer, name="Performer"),
     path("schools/", schools),
     path("schools/<str:id>", school),
-    path("contribute/", contribute, name="Contribute"),
-    path(
-        "contribute/event",
-        contribute_item,
-        name="Contribute an event",
-        kwargs={"model": Event},
-    ),
-    path(
-        "contribute/venue",
-        contribute_item,
-        name="Contribute a venue",
-        kwargs={"model": Venue},
-    ),
-    path(
-        "contribute/team",
-        contribute_item,
-        name="Contribute a team",
-        kwargs={"model": Team},
-    ),
-    path(
-        "contribute/performer",
-        contribute_item,
-        name="Contribute a performer",
-        kwargs={"model": Performer},
-    ),
-    path("admin/", admin.site.urls),
     path("privacy/", privacy),
     path("terms/", terms),
     path("sitemap.xml", sitemap),
     path("robots.txt", robots_txt),
+    path("admin/", admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('register/', register, name='register')
 ]
