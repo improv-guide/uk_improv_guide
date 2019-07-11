@@ -3,12 +3,19 @@ https://dzone.com/articles/introduction-to-docker-secrets
 https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71
 
 List all containers (only IDs)
+
 docker ps -aq
+
 Stop all running containers
+
 docker stop $(docker ps -aq)
+
 Remove all containers
+
 docker rm $(docker ps -aq)
+
 Remove all images
+
 docker rmi $(docker images -q)
 
 
