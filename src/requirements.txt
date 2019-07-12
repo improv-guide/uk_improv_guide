@@ -12,3 +12,4 @@ django-imagekit
 gunicorn
 requests
 eventlet
+django-sass-processor
