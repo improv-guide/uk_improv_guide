@@ -1,9 +1,6 @@
 {% extends "base.html" %}
 {%  block title %}{{ full_name }}{% endblock %}
-{% block content %}
-
-    <h1>{{ title }}</h1>
-
+{% block content_inner %}
 
     <ul class="performer_list">
         {% for performer in performers %}

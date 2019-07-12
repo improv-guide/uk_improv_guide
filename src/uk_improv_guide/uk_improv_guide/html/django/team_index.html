@@ -1,8 +1,5 @@
 {% extends "base.html" %}
-{% block content %}
-
-    <h1>Teams</h1>
-
+{% block content_inner %}
     <div class="three_column_list">
         {% for item in items %}
             <li><a href="/teams/{{ item.id }}">{{ item }}</a>

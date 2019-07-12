@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% block content %}
-
-    <h1>{{ venue.name }}</h1>
+{% block content_inner %}
 
     {% with social_thing=venue %}
         {% include "content/social.html" %}

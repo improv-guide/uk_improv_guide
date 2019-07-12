@@ -1,31 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
-{% block content %}
-
-    <h1>Venues</h1>
-
-    <div class="boxes">
-        {% for venue in venues %}
+{% block content_inner %}
+<div class="boxes">
+    {% for venue in venues %}
 
 
-            <div class="box">
-                <a href="/venues/{{ venue.id }}"><img class="boximage" src="{% static "" %}{{ venue.image.url }}" alt="{{ venue.name }}"></a>
-                <div class="box_social">
-                    {% with social_thing=venue %}
-                        {% include "content/social.html" %}
-                    {% endwith %}
-                </div>
+        <div class="box">
+            <a href="/venues/{{ venue.id }}"><img class="boximage" src="{% static "" %}{{ venue.image.url }}" alt="{{ venue.name }}"></a>
+            <div class="box_social">
+                {% with social_thing=venue %}
+                    {% include "content/social.html" %}
+                {% endwith %}
+            </div>
 
-                <span class="box_text">
-                    <p><a href="/venues/{{ venue.id }}">{{venue.name}}</a></p>
+            <span class="box_text">
+                <p><a href="/venues/{{ venue.id }}">{{venue.name}}</a></p>
 {#                    <p>{{ venue.city }}, {{ venue.country.name }}</p>#}
 
 
-                </span>
+            </span>
 
-            </div>
+        </div>
 
-        {% endfor %}
-    </div>
-
+    {% endfor %}
+</div>
 {% endblock %}

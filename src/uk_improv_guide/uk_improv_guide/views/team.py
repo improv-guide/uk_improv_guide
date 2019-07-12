@@ -15,7 +15,7 @@ def team(request, id: int):
         request,
         "team.html",
         {
-            "title": "XXXXX",
+            "title": title,
             "team": team,
             "events": events,
             "players": players,
