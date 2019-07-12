@@ -12,4 +12,6 @@ django-imagekit
 gunicorn
 requests
 eventlet
+libsass
 django-sass-processor
+django-compressor
