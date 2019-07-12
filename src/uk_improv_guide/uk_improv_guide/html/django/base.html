@@ -1,8 +1,11 @@
 {% load static %}
+{% load sass_tags %}
+
 <html>
     <script src="https://kit.fontawesome.com/b828d01d3e.js"></script>
 <head>
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link href="{% sass_src 'sass/style.scss' %}" rel="stylesheet" type="text/css" />
     <title>{% block title %}{{  title }}{% endblock %}</title>
     {% include "og.html" %}
     {%  include "adsense.html" %}
