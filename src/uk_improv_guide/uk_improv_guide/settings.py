@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "django.contrib.sites",
     "django.contrib.sitemaps",
     "social_django",
+    "sass_processor",
     "uk_improv_guide",
 ]
 
