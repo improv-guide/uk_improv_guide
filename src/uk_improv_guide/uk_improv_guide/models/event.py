@@ -43,6 +43,14 @@ def get_events_after_datetime(dt: datetime.datetime) -> Sequence[Event]:
     return Event.objects.filter(start_time__gte=dt).order_by("start_time")
 
 
+def get_events_between_dates(
+    dt0: datetime.datetime, dt1: datetime.datetime
+) -> Sequence[Event]:
+    return Event.objects.filter(start_time__gte=dt0, start_time__lte=dt1).order_by(
+        "start_time"
+    )
+
+
 def get_all_events() -> Sequence[Event]:
     return Event.objects.all()
 

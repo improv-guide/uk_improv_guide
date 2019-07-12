@@ -18,6 +18,7 @@ from django.urls import include, path
 from uk_improv_guide.models import Event, Performer, Team, Venue
 from uk_improv_guide.views.event import event
 from uk_improv_guide.views.events import events
+from uk_improv_guide.views.home import home
 from uk_improv_guide.views.misc import contribute, contribute_item, privacy, terms
 from uk_improv_guide.views.performer import performer
 from uk_improv_guide.views.performers import performers
@@ -33,7 +34,7 @@ from uk_improv_guide.views.venues import venues
 info_dict = {"queryset": Performer.objects.all(), "date_field": "pub_date"}
 
 urlpatterns = [
-    path("", events, name="Events"),
+    path("", home, name="Home"),
     path("events/", events, name="Events"),
     path("events/<int:id>", event, name="Event"),
     path("venues/", venues, name="Venues"),
