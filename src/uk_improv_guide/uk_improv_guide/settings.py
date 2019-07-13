@@ -25,10 +25,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "1n*$a4#0$5g&*esz0zlnfjty30tk$wp1)$6+y#z1b8o0vv(4xv"
+SECRET_KEY = os.environ.get("PRODUCTION_SECRET")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG:bool = True if os.environ.get("DEBUG",None) else False
 
 COUNTRIES_FIRST = ["GB"]
 
@@ -62,6 +62,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'rollbar.contrib.django.middleware.RollbarNotifierMiddleware',
 ]
 
 ROOT_URLCONF = "uk_improv_guide.urls"
@@ -174,3 +175,11 @@ SASS_PROCESSOR_INCLUDE_DIRS = [os.path.join(BASE_DIR, "sass")]
 SASS_PROCESSOR_INCLUDE_FILE_PATTERN = r"^.+\.scss$"
 
 USE_TZ = True
+
+ROLLBAR = {
+    'access_token': '9227e96158a8446c8a6eed836a6aa681',
+    'environment': 'development' if DEBUG else 'production',
+    'root': BASE_DIR,
+}
+import rollbar
+rollbar.init(**ROLLBAR)

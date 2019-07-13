@@ -15,3 +15,5 @@ eventlet
 libsass
 django-sass-processor
 django-compressor
+rollbar
+

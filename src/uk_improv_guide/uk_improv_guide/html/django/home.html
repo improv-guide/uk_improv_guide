@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content_inner %}
-
+{% load static %}
 {% include "content/welcome.html" %}
 
 <h2 class="display-5">Events starting in the next {{hour_gap}} hours.</h2>
@@ -24,7 +24,17 @@
 
 <h2 class="display-5">Featured Teams</h2>
 
+
 <h2 class="display-5">Featured Teachers</h2>
 
+<div class="home_page_teachers">
+    {% for teacher in teachers %}
+        <div class="teacher">
+            <img class="teacher_image" src="{{teacher.image.url}}"/>
+            <a href="{% static "/performers/" %}{{teacher.id}}">{{teacher.full_name}}</a>
+        </div>
+    {% endfor %}
+
+</div>
 
 {% endblock %}

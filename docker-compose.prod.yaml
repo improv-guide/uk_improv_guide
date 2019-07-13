@@ -3,14 +3,15 @@ version: '3.7'
 x-base-dev: &base-dev
   restart: on-failure
 
-x-base-database: &base-database
+x-common: &common
   POSTGRES_USER: ${POSTGRES_USER}
   POSTGRES_DB: ${POSTGRES_DB}
   POSTGRES_PORT: ${POSTGRES_PORT}
   POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
   POSTGRES_HOST: ${POSTGRES_HOST}
   SLACK_WEB_HOOK: ${SLACK_WEB_HOOK}
-
+  PRODUCTION_SECRET: ${PRODUCTION_SECRET}
+  
 x-base-image: &base-image
   image: "salimfadhley/uk_improv_guide:${IMPROV_GUIDE_VERSION}"
 
@@ -30,7 +31,7 @@ services:
     depends_on:
       - db
     environment:
-      <<: *base-database
+      <<: *common
       SITE_PORT: ${SITE_PORT}
     networks:
       - internal
