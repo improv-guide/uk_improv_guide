@@ -25,6 +25,17 @@
 <h2 class="display-5">Featured Teams</h2>
 
 
+<div class="home_page_teams">
+    {% for team in teams %}
+    <div class="team">
+        <img class="team_image" src="{{team.image.url}}"/>
+        <a href="{% static "/teams/" %}{{team.id}}">{{team.name}}</a>
+    </div>
+    {% endfor %}
+</div>
+
+
+
 <h2 class="display-5">Featured Teachers</h2>
 
 <div class="home_page_teachers">
@@ -34,7 +45,6 @@
             <a href="{% static "/performers/" %}{{teacher.id}}">{{teacher.full_name}}</a>
         </div>
     {% endfor %}
-
 </div>
 
 {% endblock %}

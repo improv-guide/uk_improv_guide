@@ -14,6 +14,8 @@ import os
 
 import pkg_resources
 
+import rollbar
+
 SITE_NAME: str = "European Improv Gude"
 SITE_CANONICAL_URL = "http://improv.guide"
 
@@ -28,7 +30,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get("PRODUCTION_SECRET")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG:bool = True if os.environ.get("DEBUG",None) else False
+DEBUG: bool = True if os.environ.get("DEBUG", None) else False
 
 COUNTRIES_FIRST = ["GB"]
 
@@ -62,7 +64,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    'rollbar.contrib.django.middleware.RollbarNotifierMiddleware',
+    "rollbar.contrib.django.middleware.RollbarNotifierMiddleware",
 ]
 
 ROOT_URLCONF = "uk_improv_guide.urls"
@@ -177,9 +179,8 @@ SASS_PROCESSOR_INCLUDE_FILE_PATTERN = r"^.+\.scss$"
 USE_TZ = True
 
 ROLLBAR = {
-    'access_token': '9227e96158a8446c8a6eed836a6aa681',
-    'environment': 'development' if DEBUG else 'production',
-    'root': BASE_DIR,
+    "access_token": "9227e96158a8446c8a6eed836a6aa681",
+    "environment": "development" if DEBUG else "production",
+    "root": BASE_DIR,
 }
-import rollbar
 rollbar.init(**ROLLBAR)

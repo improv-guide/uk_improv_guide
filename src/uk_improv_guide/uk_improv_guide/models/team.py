@@ -36,6 +36,11 @@ class Team(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
         return f"/teams/{self.id}"
 
 
+def get_featured_teams(order: str = "?", limit: int = 5) -> Sequence[Performer]:
+    teams = Team.objects.exclude(image="")
+    return teams.order_by(order)[:limit]
+
+
 def get_all_teams() -> Sequence[Team]:
     return Team.objects.all().order_by("name")
 
