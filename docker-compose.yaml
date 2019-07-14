@@ -14,9 +14,6 @@ x-base-database: &base-database
 
 x-base-image: &base-image
   image: "salimfadhley/uk_improv_guide:${IMPROV_GUIDE_VERSION}"
-  build:
-    context: .
-    target: uk_improv_guide
 
 services:
 
