@@ -59,6 +59,20 @@ h1 {
   display: block;
 }
 
+.home_page_teams {
+  color: greenyellow;
+  border-bottom-style: dot-dot-dash;
+  border-width: 2px;
+  border-color: #003366;
+}
+
+.home_page_teachers {
+  color: greenyellow;
+  border-bottom-style: dot-dot-dash;
+  border-width: 2px;
+  border-color: blue;
+}
+
 .team_image .teacher_image {
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
