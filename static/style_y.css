@@ -17,12 +17,9 @@ nav {
   justify-content: center; }
   nav a {
     padding: 20px 10px;
-    color: white;
-    font-weight: 700; }
+    color: white; }
   nav div {
-    padding: 20px 10px;
-    color: white;
-    font-weight: 700; }
+    color: white; }
 
 h1 {
   font-size: 50px;
@@ -78,3 +75,5 @@ h1 {
 
 .footer {
   padding-top: 20px; }
+
+/*# sourceMappingURL=style_y.css.map */
