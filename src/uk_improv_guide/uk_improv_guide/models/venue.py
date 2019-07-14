@@ -35,6 +35,9 @@ class Venue(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
     )
     image = models.ImageField(upload_to="venue/")
 
+    class Meta:
+        ordering = ['name']
+
     def __str__(self) -> str:
         return f"{self.name}, {self.city}, {self.country}"
 

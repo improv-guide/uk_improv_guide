@@ -29,6 +29,9 @@ class School(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model
     website_link = WEBSITE_LINK
     country = CountryField(blank_label="(select country)", default="GB")
 
+    class Meta:
+        ordering = ['name']
+
     def __str__(self):
         return self.name
 
