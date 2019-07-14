@@ -22,14 +22,14 @@
     </ul>
 </div>
 
-<h2 class="display-5">Featured Teams</h2>
+<h2 class="display-5">Featured <a href="/teams/">Teams</a></h2>
 
 
 <div class="home_page_teams">
     {% for team in teams %}
     <div class="team">
-        <img class="team_image" src="{{team.image.url}}"/>
-        <a href="{% static "/teams/" %}{{team.id}}">{{team.name}}</a>
+        <img class="team_image" src="{% get_static_prefix %}{{team.image.url}}"/>
+        <a href="/teams/{{team.id}}">{{team.name}}</a>
     </div>
     {% endfor %}
 </div>
@@ -41,8 +41,8 @@
 <div class="home_page_teachers">
     {% for teacher in teachers %}
         <div class="teacher">
-            <img class="teacher_image" src="{{teacher.image.url}}"/>
-            <a href="{% static "/performers/" %}{{teacher.id}}">{{teacher.full_name}}</a>
+            <img class="teacher_image" src="{% get_static_prefix %}{{teacher.image.url}}"/>
+            <a href="/performers/{{teacher.id}}">{{teacher.full_name}}</a>
         </div>
     {% endfor %}
 </div>
