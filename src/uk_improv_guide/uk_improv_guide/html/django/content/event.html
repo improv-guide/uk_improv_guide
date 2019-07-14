@@ -1,4 +1,4 @@
-<a href="/events/{{event.id}}">{{event.name}}</a> {{ event.start_time }} @ <a href="/venues/{{ venue.id }}">{{ event.venue.name }}</a> with:
+<a href="/events/{{event.id}}">{{event.name}}</a> {{ event.start_time }} @ <a href="/venues/{{ event.venue.id }}">{{ event.venue.name }}</a> with:
 <ul>
     {% for team in event.teams.all %}
     <li><a href="/teams/{{ team.id }}">{{ team.name }}</a></li>
