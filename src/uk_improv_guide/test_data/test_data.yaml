@@ -799,21 +799,6 @@
     imdb_link: ''
     teaches_for: []
 - model: uk_improv_guide.performer
-  pk: 45
-  fields:
-    twitter_handle: ''
-    facebook_link: ''
-    website_link: ''
-    contact_email_address: ''
-    instagram_link: ''
-    first_name: Dan
-    middle_names: ''
-    family_name: Kelly
-    image: ''
-    alias: ''
-    imdb_link: ''
-    teaches_for: []
-- model: uk_improv_guide.performer
   pk: 46
   fields:
     twitter_handle: ''
@@ -1619,14 +1604,14 @@
   pk: 100
   fields:
     twitter_handle: ''
-    facebook_link: ''
+    facebook_link: https://www.facebook.com/dan.kelly.963871
     website_link: ''
     contact_email_address: ''
     instagram_link: ''
     first_name: Dan
     middle_names: ''
     family_name: Kelly
-    image: ''
+    image: performer/dan_kelley.jpg
     alias: ''
     imdb_link: ''
     teaches_for: []
@@ -2172,7 +2157,7 @@
     name: Uber Pool
     image: ''
     players:
-    - 45
+    - 100
     - 46
 - model: uk_improv_guide.team
   pk: 24
