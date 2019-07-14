@@ -8,7 +8,7 @@ from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.sitemaps import register_model_for_site_map
 from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
 from uk_improv_guide.models.event_series import EventSeries
-from uk_improv_guide.models.fields.fields import EVENTBRITE_LINK, FACEBOOK_LINK
+from uk_improv_guide.models.fields.fields import EVENTBRITE_LINK, FACEBOOK_LINK, WEBSITE_LINK
 from uk_improv_guide.models.team import Team
 from uk_improv_guide.models.venue import Venue
 
@@ -25,6 +25,7 @@ class Event(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
     start_time = models.DateTimeField(verbose_name="Show start time")
     facebook_link = FACEBOOK_LINK
     eventbrite_link = EVENTBRITE_LINK
+    website_link = WEBSITE_LINK
     venue = models.ForeignKey(Venue, on_delete=models.SET_NULL, null=True)
     series = models.ForeignKey(
         EventSeries, on_delete=models.SET_NULL, blank=True, null=True

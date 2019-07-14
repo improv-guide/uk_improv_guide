@@ -3,7 +3,7 @@
 {% load static %}
 {% include "content/welcome.html" %}
 
-<h2 class="display-5">Events starting in the next {{hour_gap}} hours.</h2>
+<h2 class="display-5">Events starting in the next {{event_days}} days.</h2>
 
 
 
@@ -11,15 +11,11 @@
     <ul>
         {% for event in events %}
         <li>
-            <a href="/events/{{event.id}}">{{event.name}}</a> {{ event.start_time }} @ <a href="/venues/{{ venue.id }}">{{ event.venue.name }}</a> with:
-            <ul>
-                {% for team in event.teams.all %}
-                <li><a href="/teams/{{ team.id }}">{{ team.name }}</a></li>
-                {% endfor %}
-            </ul>
+            {% include "content/event.html" %}
         </li>
         {% endfor %}
     </ul>
+    <a href="/events/">More events...</a>
 </div>
 
 <h2 class="display-5">Featured <a href="/teams/">Teams</a></h2>

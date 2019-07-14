@@ -10,7 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 import os
+
 import pkg_resources
+
 import rollbar
 
 SITE_NAME: str = "European Improv Gude"
@@ -170,7 +172,7 @@ LOGIN_REDIRECT_URL: str = "/"
 
 SASS_PROCESSOR_ROOT = _static_dir
 
-SASS_PROCESSOR_ENABLED:bool = True
+SASS_PROCESSOR_ENABLED: bool = True
 
 USE_TZ = True
 

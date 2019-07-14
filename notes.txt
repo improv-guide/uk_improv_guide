@@ -30,3 +30,5 @@ LOOP
     EXECUTE 'DROP TABLE IF EXISTS ' || quote_ident(tabname.tablename) || ' CASCADE';
 END LOOP;
 END $$;
+
+https://scotch.io/tutorials/django-authentication-with-facebook-instagram-and-linkedin#toc-introduction

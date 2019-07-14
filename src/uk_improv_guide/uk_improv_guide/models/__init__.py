@@ -9,4 +9,6 @@ from .school import School
 from .team import Team
 from .venue import Venue
 
+from .signals import create_user_profile
+
 ALL_MODELS: Set[models.Model] = {Event, Performer, Team, Venue, EventSeries, School}
