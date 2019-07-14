@@ -60,7 +60,15 @@ h1 {
   border-width: 2px;
   border-color: blue; }
 
-.team_image .teacher_image {
+.team_image {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover; }
+
+.teacher_image {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
