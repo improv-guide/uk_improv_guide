@@ -19,6 +19,16 @@
     image: event_series/DDG_logo_-_Copy.png
     name: DDG Improv Jam (Duck Duck Goose)
 - model: uk_improv_guide.eventseries
+  pk: 702f88e9-8746-4c30-9792-c830c5e32626
+  fields:
+    image: event_series/FB_IMG_1562795648289.jpg
+    name: Punderstandably Improv
+- model: uk_improv_guide.eventseries
+  pk: 71453d71-177d-4a1f-9a26-141afee0bc75
+  fields:
+    image: ''
+    name: WE JUST LOVE TO PLAY!
+- model: uk_improv_guide.eventseries
   pk: 8921978b-be00-4845-a8b0-787f8c9ef1fb
   fields:
     image: ''
@@ -59,6 +69,17 @@
     instagram_link: ''
     name: Free Association
     image: school/fa_logo.png
+    country: GB
+- model: uk_improv_guide.school
+  pk: 4322f66b-c7f9-4c62-917b-363895f7381c
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: https://www.themaydays.co.uk
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Maydays
+    image: ''
     country: GB
 - model: uk_improv_guide.school
   pk: 44254cc3-d017-4296-82fb-58504f10b3ac
@@ -103,6 +124,17 @@
     instagram_link: https://www.instagram.com/ddgimprov/
     name: DDG Improv (Duck Duck Goose)
     image: school/DDG_logo_-_Copy.png
+    country: GB
+- model: uk_improv_guide.school
+  pk: df620f1c-c33b-4e6d-898a-4a4a8523ddb1
+  fields:
+    twitter_handle: '@rhymesimprov'
+    facebook_link: https://www.facebook.com/rhymesimprov/
+    website_link: http://rhymesimprov.com
+    contact_email_address: contact@rhymesimprov.com
+    instagram_link: https://www.instagram.com/rhymesimprov/
+    name: Rhymes Improv
+    image: school/rhymes-logo-april.png
     country: GB
 - model: uk_improv_guide.performer
   pk: 1
@@ -1053,7 +1085,8 @@
     image: performer/james_lloyd.jpg
     alias: ''
     imdb_link: ''
-    teaches_for: []
+    teaches_for:
+    - df620f1c-c33b-4e6d-898a-4a4a8523ddb1
 - model: uk_improv_guide.performer
   pk: 64
   fields:
@@ -1717,6 +1750,113 @@
     alias: ''
     imdb_link: ''
     teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 109
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/tuckshopsuper
+    website_link: ''
+    contact_email_address: buckbucktucker@gmail.com
+    instagram_link: ''
+    first_name: Ben
+    middle_names: ''
+    family_name: tucker
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 4322f66b-c7f9-4c62-917b-363895f7381c
+- model: uk_improv_guide.performer
+  pk: 110
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: https://www.youtube.com/channel/UCXbsC2dN3t_Py1utngxz5TA
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Simon
+    middle_names: ''
+    family_name: Goodway
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 4322f66b-c7f9-4c62-917b-363895f7381c
+- model: uk_improv_guide.performer
+  pk: 111
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Chris
+    middle_names: ''
+    family_name: East
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 112
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Vinesh
+    middle_names: ''
+    family_name: Kana
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 113
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Chrissy
+    middle_names: ''
+    family_name: Williams
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 114
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: David
+    middle_names: ''
+    family_name: Thompson
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 115
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Gem
+    middle_names: ''
+    family_name: Carmella
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -1950,9 +2090,15 @@
     name: The Bathhouse Children
     image: team/horror.jpg
     players:
+    - 112
+    - 115
     - 17
+    - 113
     - 30
+    - 44
+    - 111
     - 73
+    - 114
 - model: uk_improv_guide.team
   pk: 18
   fields:
@@ -2075,11 +2221,11 @@
     - 60
     - 61
     - 62
-    - 63
     - 65
     - 64
     - 59
     - 55
+    - 63
 - model: uk_improv_guide.team
   pk: 27
   fields:
@@ -2285,6 +2431,119 @@
     instagram_link: ''
     name: The Stccatos
     image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 42
+  fields:
+    twitter_handle: '@rhymesimprov'
+    facebook_link: https://www.facebook.com/rhymesimprov/
+    website_link: http://www.rhymesimprov.com
+    contact_email_address: contact@rhymesimprov.com
+    instagram_link: https://www.instagram.com/rhymesimprov/
+    name: Rhymes Against Humanity
+    image: team/rhymes-logo-april.png
+    players:
+    - 63
+- model: uk_improv_guide.team
+  pk: 43
+  fields:
+    twitter_handle: '@PS_Improv'
+    facebook_link: https://www.facebook.com/PSImprov/
+    website_link: ''
+    contact_email_address: bartolocreations182@gmail.com
+    instagram_link: ''
+    name: Punderstandably Improv
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 44
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: City Impro
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 45
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Honey Badger
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 46
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Ol Bill
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 47
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Battenberg Improv
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 48
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Banana Hut Gang
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 49
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/benandsimondoimprovtogether/
+    website_link: https://www.youtube.com/channel/UCXbsC2dN3t_Py1utngxz5TA
+    contact_email_address: ''
+    instagram_link: ''
+    name: Ben & Simon do improv together
+    image: team/23905472_1910796929235538_4019770804405241298_n.jpg
+    players:
+    - 109
+    - 110
+- model: uk_improv_guide.team
+  pk: 50
+  fields:
+    twitter_handle: '@improbotics'
+    facebook_link: https://www.facebook.com/ImproboticsLtd/
+    website_link: https://improbotics.org/
+    contact_email_address: ''
+    instagram_link: ''
+    name: Improbotics
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 51
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/xplusone1940/
+    website_link: https://xplusonetheshow.com/
+    contact_email_address: ''
+    instagram_link: ''
+    name: X Plus One
+    image: team/x_plus_one_logo.png
     players: []
 - model: uk_improv_guide.venue
   pk: 1
@@ -2571,10 +2830,26 @@
     country: GB
     school: 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
     image: venue/The_Comedy_Pub_Hoopla_Megajam.jpg
+- model: uk_improv_guide.venue
+  pk: 20
+  fields:
+    twitter_handle: ''
+    name: Maydays Studio Brighton
+    facebook_link: https://www.facebook.com/themaydaysstudio/?ref=br_rs
+    website_link: https://www.themaydays.co.uk/
+    google_maps_link: https://www.google.com/maps?ll=50.822709,-0.150896&z=16&t=m&hl=en-GB&gl=GB&mapclient=embed&q=12+Regency+Square+Brighton+BN1+2FG
+    address: 12A Regency Square, Brighton,
+    city: London
+    postcode: BN1 2FG
+    email_address: ''
+    country: GB
+    school: 4322f66b-c7f9-4c62-917b-363895f7381c
+    image: venue/MaydaysLogoWebsite.png
 - model: uk_improv_guide.event
   pk: 1
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: MOOP Inaugural
     image: ''
@@ -2590,6 +2865,7 @@
   pk: 2
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: 'Moop Presents: The Caretakers'
     image: ''
@@ -2604,6 +2880,7 @@
   pk: 3
   fields:
     facebook_link: https://www.facebook.com/events/463709171045195/
+    website_link: ''
     eventbrite_link: ''
     name: Lester City Super Sunday
     image: ''
@@ -2619,6 +2896,7 @@
   pk: 4
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: DDG Summer Finale & Jam!
     image: ''
@@ -2631,6 +2909,7 @@
   pk: 5
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: Just Friends
     image: ''
@@ -2645,6 +2924,7 @@
   pk: 6
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: Mean People - Improv Comedy - LAST of the Summer!
     image: ''
@@ -2657,6 +2937,7 @@
   pk: 7
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: Big Friday
     image: ''
@@ -2671,6 +2952,7 @@
   pk: 8
   fields:
     facebook_link: https://www.facebook.com/events/1043479525857095/
+    website_link: ''
     eventbrite_link: ''
     name: Hoof
     image: ''
@@ -2686,6 +2968,7 @@
   pk: 9
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: Important Art
     image: event/IMPORTANTART.png
@@ -2701,6 +2984,7 @@
   pk: 10
   fields:
     facebook_link: https://www.facebook.com/events/2172032679574953/
+    website_link: ''
     eventbrite_link: https://www.eventbrite.co.uk/e/amorphous-horses-happy-place-tickets-64730079410
     name: Amorphous Horse's Happy Place
     image: ''
@@ -2714,6 +2998,7 @@
   pk: 11
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: https://www.eventbrite.co.uk/e/hoopla-bumper-blyton-do-not-adjust-your-stage-glitch-tickets-63967300919
     name: Bumper Blyton, Do Not Adjust Your Stage & Glitch!
     image: ''
@@ -2729,6 +3014,7 @@
   pk: 12
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: Cage Match
     image: ''
@@ -2739,23 +3025,10 @@
     teams:
     - 30
 - model: uk_improv_guide.event
-  pk: 13
-  fields:
-    facebook_link: ''
-    eventbrite_link: ''
-    name: PUNDERFEST
-    image: ''
-    event_type: S
-    start_time: 2019-08-16 20:00:00+00:00
-    venue: 2
-    series: null
-    teams:
-    - 30
-    - 32
-- model: uk_improv_guide.event
   pk: 14
   fields:
     facebook_link: https://www.facebook.com/events/467238420698796
+    website_link: ''
     eventbrite_link: ''
     name: 'The Parentheticals: Improdyssey (Camden Fringe)'
     image: event/Square_group_image.jpg
@@ -2769,6 +3042,7 @@
   pk: 15
   fields:
     facebook_link: https://www.facebook.com/events/467238420698796
+    website_link: ''
     eventbrite_link: ''
     name: 'The Parentheticals: Improdyssey (Camden Fringe)'
     image: event/Square_group_image_nTXkZQf.jpg
@@ -2782,6 +3056,7 @@
   pk: 16
   fields:
     facebook_link: https://www.facebook.com/events/314916575838327
+    website_link: ''
     eventbrite_link: https://www.eventbrite.co.uk/e/ddg-improv-beginners-improv-comedy-course-tickets-58928126613
     name: 'DDG Improv: Beginner''s Improv Comedy Course'
     image: event/DDG_Beginners_Course.jpg
@@ -2794,6 +3069,7 @@
   pk: 17
   fields:
     facebook_link: https://www.facebook.com/events/789272194778577/
+    website_link: ''
     eventbrite_link: https://www.eventbrite.co.uk/e/ddg-improv-performance-improv-comedy-course-tickets-58927880878
     name: 'DDG Improv: Performance Improv Comedy Course'
     image: event/DDG_Performance_Course.jpg
@@ -2806,8 +3082,9 @@
   pk: 18
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
-    name: DDG Improv Jam (Historyonics; Plus One; Improbotics)
+    name: DDG Improv Jam
     image: event/DDG_logo_-_Copy.png
     event_type: J
     start_time: 2019-07-15 20:00:00+00:00
@@ -2815,10 +3092,13 @@
     series: 3aacbd0b-8536-4a9f-8d66-6e85a7869438
     teams:
     - 34
+    - 50
+    - 51
 - model: uk_improv_guide.event
   pk: 19
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: DDG Improv Jam (Authentic Dylan; Patrol; DuckDuckTales)
     image: event/DDG_logo_-_Copy_eo4Fxy4.png
@@ -2831,6 +3111,7 @@
   pk: 20
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: 'MissImp Presents: Improv ComicCon!'
     image: event/Improv-ComicCon-FB-1.jpg
@@ -2845,6 +3126,7 @@
   pk: 21
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: Austentatious
     image: ''
@@ -2858,6 +3140,7 @@
   pk: 22
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: Austentatious
     image: ''
@@ -2871,6 +3154,7 @@
   pk: 23
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: Austentatious
     image: ''
@@ -2884,6 +3168,7 @@
   pk: 24
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: Austentatious
     image: ''
@@ -2897,6 +3182,7 @@
   pk: 25
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: Austentatious
     image: ''
@@ -2910,6 +3196,7 @@
   pk: 26
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: Austentatious
     image: ''
@@ -2923,6 +3210,7 @@
   pk: 27
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: Austentatious
     image: ''
@@ -2936,6 +3224,7 @@
   pk: 28
   fields:
     facebook_link: ''
+    website_link: ''
     eventbrite_link: ''
     name: Austentatious
     image: ''
@@ -2949,6 +3238,7 @@
   pk: 29
   fields:
     facebook_link: https://www.facebook.com/events/637992360029091
+    website_link: ''
     eventbrite_link: ''
     name: Sunday Improv Combo
     image: event/sunday_combo.jpg
@@ -2960,6 +3250,55 @@
     - 9
     - 40
     - 41
+- model: uk_improv_guide.event
+  pk: 30
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: PUNDERFEST 2019
+    image: ''
+    event_type: S
+    start_time: 2019-08-16 19:00:00+00:00
+    venue: 2
+    series: 702f88e9-8746-4c30-9792-c830c5e32626
+    teams:
+    - 14
+    - 30
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+- model: uk_improv_guide.event
+  pk: 31
+  fields:
+    facebook_link: https://www.facebook.com/events/2434737636593338/?ti=as
+    website_link: ''
+    eventbrite_link: ''
+    name: 'Punderstandably Improv Presents: Improv Towers The Improvised Game Show'
+    image: event/cover-photo-1.png
+    event_type: S
+    start_time: 2019-07-16 20:00:00+00:00
+    venue: 2
+    series: 702f88e9-8746-4c30-9792-c830c5e32626
+    teams:
+    - 43
+- model: uk_improv_guide.event
+  pk: 32
+  fields:
+    facebook_link: https://www.facebook.com/Scoops-Improv-Comedy-Brighton-602732320093495/?ref=br_rs
+    website_link: ''
+    eventbrite_link: https://www.brownpapertickets.com/event/3432493
+    name: Scoops
+    image: ''
+    event_type: S
+    start_time: 2019-07-19 19:30:00+00:00
+    venue: 20
+    series: 71453d71-177d-4a1f-9a26-141afee0bc75
+    teams:
+    - 49
 - model: auth.permission
   pk: 1
   fields:
@@ -3785,7 +4124,7 @@
   pk: 1
   fields:
     password: pbkdf2_sha256$150000$NJN6PvxDrDXj$z/e4TbvtO1y2kdL5wa/eg/PjdJLlspPtTcQFAZXLohw=
-    last_login: 2019-07-09 22:27:30.663507+00:00
+    last_login: 2019-07-14 14:36:15.690988+00:00
     is_superuser: true
     username: admin
     first_name: ''
@@ -3809,6 +4148,134 @@
     is_staff: true
     is_active: true
     date_joined: 2019-07-08 21:22:38+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 4
+  fields:
+    password: pbkdf2_sha256$150000$LAA4uOC1QH8i$jGNOFcboactxGsZKG579Pb5r5iKaHjGVQTFmPgs1uII=
+    last_login: null
+    is_superuser: false
+    username: thespianage
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-10 18:32:22+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 5
+  fields:
+    password: pbkdf2_sha256$150000$kFucJRGlC2TB$S9MEiFtY0Iacwn9G7wYi7RpcPTBQAwg0XpmHIICny1g=
+    last_login: null
+    is_superuser: false
+    username: lukem
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-10 19:03:16+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 6
+  fields:
+    password: pbkdf2_sha256$150000$n7hBCNAFJZrg$qMqQKIDC28i3Dt5OP31mXmNA9e/As0SIkLRwLai/pDU=
+    last_login: 2019-07-10 21:43:52.984442+00:00
+    is_superuser: false
+    username: lloydie
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-10 21:41:12+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 7
+  fields:
+    password: pbkdf2_sha256$150000$X5BdgdYmYcrb$6o+yVVPh9e3Ghwe1EuDlJwMKvR1KazwdAnt5h3rfXXg=
+    last_login: 2019-07-10 21:53:24.283810+00:00
+    is_superuser: false
+    username: holzy
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-10 21:48:58+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 8
+  fields:
+    password: pbkdf2_sha256$150000$eqbm67EONBDv$a/zk3MgU62tkOcEh9SQHILF4ESE7v/J1gU8Vz2JF+MY=
+    last_login: null
+    is_superuser: false
+    username: miriam
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-10 22:00:08+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 9
+  fields:
+    password: pbkdf2_sha256$150000$n9s4VYCCFSZg$o+/QnEI85Tw9Or/2kaQVWq57C9dJkkFafzqD8HiigFc=
+    last_login: null
+    is_superuser: false
+    username: robinw
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-11 06:45:22+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 10
+  fields:
+    password: pbkdf2_sha256$150000$xi5tw4ccFDRd$Avq06TfRyI3AcEQ8O2+2XGfHwrqQ/663zkYoSi97ySw=
+    last_login: 2019-07-11 10:26:41.298410+00:00
+    is_superuser: false
+    username: scoops
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-11 10:17:09+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 11
+  fields:
+    password: pbkdf2_sha256$150000$6efui9lVlWIn$JxX8bJFK4nFhGXTTvJoydjYuVe1L88OOWYwUnGerZwE=
+    last_login: null
+    is_superuser: false
+    username: marc
+    first_name: Marc
+    last_name: Salmon
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-11 12:21:01+00:00
     groups:
     - 2
     user_permissions: []
