@@ -1,0 +1,57 @@
+body {
+  background: #f5f5f5; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0; }
+
+nav {
+  background: dodgerblue;
+  display: flex;
+  justify-content: center; }
+  nav a {
+    padding: 20px 10px;
+    color: white;
+    font-weight: 700; }
+  nav div {
+    padding: 20px 10px;
+    color: white;
+    font-weight: 700; }
+
+h1 {
+  font-size: 50px;
+  display: block;
+  text-align: center; }
+
+.listings > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.listings > ul > li {
+  width: 25%;
+  padding: 10px;
+  margin: 10px;
+  background: lightblue;
+  border-radius: 10px; }
+
+.listings ul > li > ul {
+  display: block; }
+
+.listings ul > li > a {
+  display: block; }
+
+.team_image .teacher_image {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover; }
