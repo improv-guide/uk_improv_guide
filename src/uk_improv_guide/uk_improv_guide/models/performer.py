@@ -84,8 +84,13 @@ class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mo
         return self.name_in_list_order()
 
 
-def get_all_performers() -> Sequence[Performer]:
-    return Performer.objects.all().order_by("family_name", "first_name")
+def get_all_performers(teachers_only=False) -> Sequence[Performer]:
+    performers = Performer.objects.all().order_by("family_name", "first_name")
+
+    if teachers_only:
+        performers = performers.exclude(teaches_for=None)
+
+    return performers
 
 
 def get_featured_performers(

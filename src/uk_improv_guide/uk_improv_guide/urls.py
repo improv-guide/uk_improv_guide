@@ -26,6 +26,7 @@ from uk_improv_guide.views.register import register
 from uk_improv_guide.views.school import school
 from uk_improv_guide.views.schools import schools
 from uk_improv_guide.views.sitemap import robots_txt, sitemap
+from uk_improv_guide.views.teachers import teachers
 from uk_improv_guide.views.team import team
 from uk_improv_guide.views.teams import teams
 from uk_improv_guide.views.venue import venue
@@ -43,6 +44,8 @@ urlpatterns = [
     path("teams/<int:id>", team, name="Team"),
     path("performers/", performers, name="Performer"),
     path("performers/<int:id>", performer, name="Performer"),
+    path("teachers/", teachers, name="teachers"),
+    path("teachers/<int:id>", performer, name="teacher"),
     path("schools/", schools),
     path("schools/<str:id>", school),
     path("privacy/", privacy),
