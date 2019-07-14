@@ -12,8 +12,19 @@
         {% include "content/social.html" %}
     {% endwith %}
 
+    {% if performer.teaches_for %}
+    <h3>{{performer.first_name}} teaches at these schools...</h3>
+
+    <ul>
+        {% for school in performer.teaches_for.all %}
+        <li><a href="/schools/{{school.id}}">{{ school.name }}</a></li>
+        {%  endfor %}
+    </ul>
+
+    {% endif %}
+
     {% if teams %}
-    <h3>Plays in these teams:</h3>
+    <h3>{{performer.first_name}} plays in these teams...</h3>
     <ul>
         {% for team in teams %}
         <li><a href="/teams/{{team.id}}">{{ team.name }}</a></li>
