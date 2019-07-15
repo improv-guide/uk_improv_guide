@@ -1,3 +1,16 @@
+## World Improv Guide
+
+## Important URLs
+
+* [Production Site](http://improv.guide)
+* Trello Board
+* [WhatsApp Group](https://chat.whatsapp.com/La3ctCUSo6SFzStqH3dSht)
+* Slack Workspace
+
+## Developer Guide
+
+These instructions will get you started as a developer.
+
 ### Developer Requirements
 
 * Docker CE
