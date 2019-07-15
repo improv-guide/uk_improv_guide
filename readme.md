@@ -6,6 +6,7 @@
 * Trello Board
 * [WhatsApp Group](https://chat.whatsapp.com/La3ctCUSo6SFzStqH3dSht)
 * Slack Workspace
+* [GitHub Project](https://github.com/salimfadhley/uk_improv_guide)
 
 ## Developer Guide
 
