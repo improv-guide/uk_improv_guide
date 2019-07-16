@@ -3,7 +3,7 @@
 ## Important URLs
 
 * [Production Site](http://improv.guide)
-* Trello Board
+* [Trello Board](https://trello.com/b/aZ48umXI/general)
 * [WhatsApp Group](https://chat.whatsapp.com/La3ctCUSo6SFzStqH3dSht)
 * [GitHub Project](https://github.com/salimfadhley/uk_improv_guide)
 * [Slack Workspace](https://improvguide.slack.com/messages/CKVGVGBL2)
