@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-python manage.py dumpdata --format=yaml --exclude=admin.logentry --exclude=auth.permission  --exclude=reversion.revision --exclude=reversion.version --exclude=sessions.session --exclude=contenttypes.contenttype > ./test_data/test_data.yaml
+python manage.py dumpdata uk_improv_guide --format=yaml > ./test_data/uk_improv_guide.yaml
