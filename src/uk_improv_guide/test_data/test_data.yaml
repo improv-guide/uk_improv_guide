@@ -58,6 +58,11 @@
   fields:
     image: event_series/angelo_brewing.jpg
     name: Glossop Improv Workshop
+- model: uk_improv_guide.eventseries
+  pk: db4fb9d3-1db9-49e0-849c-e87f1d516fb8
+  fields:
+    image: ''
+    name: Keith Presents
 - model: uk_improv_guide.school
   pk: 1858aee6-79ea-4ded-a235-f205fe400678
   fields:
@@ -658,7 +663,8 @@
     image: ''
     alias: ''
     imdb_link: ''
-    teaches_for: []
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
 - model: uk_improv_guide.performer
   pk: 33
   fields:
@@ -765,7 +771,8 @@
     image: ''
     alias: ''
     imdb_link: ''
-    teaches_for: []
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
 - model: uk_improv_guide.performer
   pk: 40
   fields:
@@ -1788,12 +1795,11 @@
     instagram_link: ''
     first_name: Ben
     middle_names: ''
-    family_name: tucker
+    family_name: Tucker
     image: ''
     alias: ''
     imdb_link: ''
-    teaches_for:
-    - 4322f66b-c7f9-4c62-917b-363895f7381c
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 110
   fields:
@@ -1808,8 +1814,7 @@
     image: ''
     alias: ''
     imdb_link: ''
-    teaches_for:
-    - 4322f66b-c7f9-4c62-917b-363895f7381c
+    teaches_for: []
 - model: uk_improv_guide.performer
   pk: 111
   fields:
@@ -2471,6 +2476,171 @@
     alias: ''
     imdb_link: ''
     teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 157
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Laura
+    middle_names: ''
+    family_name: Capaldi
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 158
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Sam
+    middle_names: ''
+    family_name: Pearce
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 159
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jess
+    middle_names: ''
+    family_name: Rogers
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 160
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jonathan
+    middle_names: ''
+    family_name: Scott
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 161
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Chris
+    middle_names: ''
+    family_name: Warner
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 162
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Alex
+    middle_names: ''
+    family_name: Magliaro
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 163
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Unai
+    middle_names: ''
+    family_name: Garcia
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 164
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: James
+    middle_names: ''
+    family_name: Barr
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 165
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Ian
+    middle_names: T
+    family_name: Day
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 166
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Katie
+    middle_names: ''
+    family_name: Davison
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 167
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jay
+    middle_names: ''
+    family_name: Bennett
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -2660,12 +2830,12 @@
   pk: 14
   fields:
     twitter_handle: ''
-    facebook_link: ''
+    facebook_link: https://www.facebook.com/SwipeRightImprov/
     website_link: ''
     contact_email_address: ''
     instagram_link: ''
     name: Swipe Right
-    image: ''
+    image: team/swipe_right.jpg
     players: []
 - model: uk_improv_guide.team
   pk: 15
@@ -3090,14 +3260,16 @@
 - model: uk_improv_guide.team
   pk: 46
   fields:
-    twitter_handle: ''
-    facebook_link: ''
+    twitter_handle: '@theolbillimprov'
+    facebook_link: https://www.facebook.com/theolbillimprov/
     website_link: ''
-    contact_email_address: ''
-    instagram_link: ''
-    name: The Ol Bill
-    image: ''
-    players: []
+    contact_email_address: theolbillimprov@gmail.com
+    instagram_link: http://instagram.com/theolbillimprov
+    name: The Ol' Bill
+    image: team/Screenshot_2019-07-16_at_15.00.30.png
+    players:
+    - 163
+    - 129
 - model: uk_improv_guide.team
   pk: 47
   fields:
@@ -3112,14 +3284,21 @@
 - model: uk_improv_guide.team
   pk: 48
   fields:
-    twitter_handle: ''
-    facebook_link: ''
-    website_link: ''
+    twitter_handle: '@bananahutgang'
+    facebook_link: https://www.facebook.com/bananahutgang/
+    website_link: http://www.bananahutgang.com
     contact_email_address: ''
-    instagram_link: ''
+    instagram_link: http://www.instagram/bananahutgang
     name: Banana Hut Gang
-    image: ''
-    players: []
+    image: team/banana_hut_gang.jpg
+    players:
+    - 157
+    - 162
+    - 158
+    - 159
+    - 160
+    - 150
+    - 161
 - model: uk_improv_guide.team
   pk: 49
   fields:
@@ -3256,6 +3435,25 @@
     image: team/nuts.jpg
     players:
     - 154
+- model: uk_improv_guide.team
+  pk: 58
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/keithimprov
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Keith
+    image: team/keith_crystal.jpg
+    players:
+    - 164
+    - 167
+    - 33
+    - 166
+    - 165
+    - 32
+    - 39
+    - 50
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -4141,6 +4339,48 @@
     series: null
     teams:
     - 57
+- model: uk_improv_guide.event
+  pk: 38
+  fields:
+    facebook_link: https://www.facebook.com/events/809058409495368
+    website_link: ''
+    eventbrite_link: ''
+    name: The Healing Power of Theatre
+    image: ''
+    event_type: S
+    start_time: 2019-07-27 21:00:00+00:00
+    venue: 1
+    series: db4fb9d3-1db9-49e0-849c-e87f1d516fb8
+    teams:
+    - 58
+- model: uk_improv_guide.event
+  pk: 39
+  fields:
+    facebook_link: https://www.facebook.com/events/487422068492441/
+    website_link: http://www.bananahutgang.com
+    eventbrite_link: https://sedos.co.uk/secure/boxoffice/production.php
+    name: Choose Your Own... Improv! Edinburgh Preview
+    image: ''
+    event_type: S
+    start_time: 2019-08-05 19:30:00+00:00
+    venue: 2
+    series: null
+    teams:
+    - 48
+- model: uk_improv_guide.event
+  pk: 40
+  fields:
+    facebook_link: https://www.facebook.com/events/487422068492441/
+    website_link: http://www.bananahutgang.com
+    eventbrite_link: https://sedos.co.uk/secure/boxoffice/production.php
+    name: Choose Your Own... Improv! Edinburgh Preview
+    image: ''
+    event_type: S
+    start_time: 2019-08-07 19:30:00+00:00
+    venue: 2
+    series: null
+    teams:
+    - 48
 - model: auth.permission
   pk: 1
   fields:
@@ -4966,7 +5206,7 @@
   pk: 1
   fields:
     password: pbkdf2_sha256$150000$NJN6PvxDrDXj$z/e4TbvtO1y2kdL5wa/eg/PjdJLlspPtTcQFAZXLohw=
-    last_login: 2019-07-15 18:52:51.529712+00:00
+    last_login: 2019-07-17 06:16:06.049266+00:00
     is_superuser: true
     username: admin
     first_name: ''
@@ -5300,8 +5540,8 @@
 - model: auth.user
   pk: 23
   fields:
-    password: pbkdf2_sha256$150000$Ya8EVGnpPxE4$a3y2GKaSnwXkWy9IRWOnGnPuFa0XHZLhskWWKdgKtQY=
-    last_login: null
+    password: pbkdf2_sha256$150000$Zz8Qv8DEd41S$LSdhQAGiKo3iyD9pj7OL+bb+83snSWLIDDG3obhztP4=
+    last_login: 2019-07-17 06:20:54.381822+00:00
     is_superuser: false
     username: Nicky
     first_name: ''
@@ -5310,6 +5550,54 @@
     is_staff: true
     is_active: true
     date_joined: 2019-07-15 21:53:56.498197+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 24
+  fields:
+    password: pbkdf2_sha256$150000$04BX3JXqDTyd$VNl3DoESlvJUARIW2shBIKNlhYjYYBizuTG/dES6vJY=
+    last_login: 2019-07-16 13:27:28.445985+00:00
+    is_superuser: false
+    username: Bananahutgang
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-16 13:22:13.528194+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 25
+  fields:
+    password: pbkdf2_sha256$150000$QestaOuzF4gH$P/SoHgiCGr4M1Vk+OFDjb8il8/dUzIW3qO4c5rKWmNk=
+    last_login: 2019-07-16 21:12:28.758840+00:00
+    is_superuser: false
+    username: Unaiaia
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-16 13:53:20.991392+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 26
+  fields:
+    password: pbkdf2_sha256$150000$bHmtUyniFpJU$jGGwIfCJ1p+x0oU6Qjr8MztlV0ibFM9s0LKKl3dAATU=
+    last_login: 2019-07-16 14:16:09.842022+00:00
+    is_superuser: false
+    username: simongoodway
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-16 14:15:59.915225+00:00
     groups:
     - 2
     user_permissions: []
