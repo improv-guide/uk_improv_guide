@@ -19,6 +19,11 @@
     image: event_series/DDG_logo_-_Copy.png
     name: DDG Improv Jam (Duck Duck Goose)
 - model: uk_improv_guide.eventseries
+  pk: 44341490-201d-4acb-9462-33768a6a404b
+  fields:
+    image: event_series/TTS_2019.jpg
+    name: 'The Maydays present: Tonight''s Top Story'
+- model: uk_improv_guide.eventseries
   pk: 702f88e9-8746-4c30-9792-c830c5e32626
   fields:
     image: event_series/FB_IMG_1562795648289.jpg
@@ -38,6 +43,11 @@
   fields:
     image: ''
     name: Free Association Cage Match
+- model: uk_improv_guide.eventseries
+  pk: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+  fields:
+    image: event_series/HNA_NEW_2019less1MB.png
+    name: 'The Maydays present: Happily Never After'
 - model: uk_improv_guide.eventseries
   pk: a2bc0d74-5936-4940-b44b-e9e6cfc512b7
   fields:
@@ -63,6 +73,11 @@
   fields:
     image: ''
     name: Keith Presents
+- model: uk_improv_guide.eventseries
+  pk: f0a81c24-dfb9-4786-adbe-e47cd047caa2
+  fields:
+    image: event_series/Confessions_2019.jpg
+    name: 'The Maydays present: Confessions'
 - model: uk_improv_guide.school
   pk: 1858aee6-79ea-4ded-a235-f205fe400678
   fields:
@@ -108,6 +123,17 @@
     image: ''
     country: GB
 - model: uk_improv_guide.school
+  pk: 4dee8992-84d4-48e8-bd61-e67b01501848
+  fields:
+    twitter_handle: '@theActorsCentre'
+    facebook_link: https://www.facebook.com/TheActorsCentre/
+    website_link: https://www.actorscentre.co.uk
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/theactorscentre_/
+    name: The Actors Centre
+    image: school/new-yellow.png
+    country: GB
+- model: uk_improv_guide.school
   pk: 528bc2b9-5c6a-4738-a7c7-80ff0acf4ffc
   fields:
     twitter_handle: ''
@@ -144,12 +170,12 @@
   pk: 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
   fields:
     twitter_handle: '@hooplaimpro'
-    facebook_link: ''
-    website_link: ''
+    facebook_link: https://www.facebook.com/hooplaimpro
+    website_link: https://hooplaimpro.com
     contact_email_address: ''
-    instagram_link: ''
+    instagram_link: http://instagram.com/hooplaimpro
     name: Hoopla!
-    image: ''
+    image: school/55726144_10161564491835456_3338731911747993600_o.jpg
     country: GB
 - model: uk_improv_guide.school
   pk: cce53e29-49ac-49e8-afb1-f2df304cc1e7
@@ -420,10 +446,12 @@
     first_name: Monica
     middle_names: ''
     family_name: Gaga
-    image: ''
+    image: performer/monica_gaga.jpg
     alias: ''
     imdb_link: ''
-    teaches_for: []
+    teaches_for:
+    - dbcb6379-a8b2-418f-938b-602623baa2be
+    - 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
 - model: uk_improv_guide.performer
   pk: 17
   fields:
@@ -2573,11 +2601,11 @@
     facebook_link: ''
     website_link: ''
     contact_email_address: ''
-    instagram_link: ''
+    instagram_link: http://instagram.com/unaiaia
     first_name: Unai
     middle_names: ''
     family_name: Garcia
-    image: ''
+    image: performer/Screenshot_2019-07-17_at_14.11.25.png
     alias: ''
     imdb_link: ''
     teaches_for: []
@@ -2637,6 +2665,55 @@
     first_name: Jay
     middle_names: ''
     family_name: Bennett
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 168
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jonah
+    middle_names: ''
+    family_name: Fazel
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
+    - 4dee8992-84d4-48e8-bd61-e67b01501848
+    - 5b8100d9-7a66-4e1a-babf-f367a944eece
+- model: uk_improv_guide.performer
+  pk: 169
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Amy
+    middle_names: ''
+    family_name: Cooke-Hodgson
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
+- model: uk_improv_guide.performer
+  pk: 170
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Louise
+    middle_names: ''
+    family_name: Allen
     image: ''
     alias: ''
     imdb_link: ''
@@ -2991,11 +3068,11 @@
 - model: uk_improv_guide.team
   pk: 26
   fields:
-    twitter_handle: ''
+    twitter_handle: '@Maydays'
     facebook_link: https://www.facebook.com/maydaysimprov/
     website_link: https://www.themaydays.co.uk/
-    contact_email_address: ''
-    instagram_link: ''
+    contact_email_address: mayday@themaydays.co.uk
+    instagram_link: https://www.instagram.com/themaydays/
     name: The Maydays
     image: team/the_maydays_u0VfEVH.jpg
     players:
@@ -3031,14 +3108,19 @@
 - model: uk_improv_guide.team
   pk: 28
   fields:
-    twitter_handle: ''
+    twitter_handle: '@bumperBlyton'
     facebook_link: ''
     website_link: https://www.bumperblyton.com/
-    contact_email_address: ''
-    instagram_link: ''
+    contact_email_address: blytonimpro@gmail.com
+    instagram_link: https://www.instagram.com/bumperblyton/
     name: Bumper Blyton
     image: ''
-    players: []
+    players:
+    - 79
+    - 169
+    - 168
+    - 57
+    - 60
 - model: uk_improv_guide.team
   pk: 29
   fields:
@@ -3159,18 +3241,18 @@
     contact_email_address: ''
     instagram_link: ''
     name: Four Far Away
-    image: ''
+    image: team/four_far_away_xYCUDwZ.jpg
     players: []
 - model: uk_improv_guide.team
   pk: 38
   fields:
     twitter_handle: ''
-    facebook_link: ''
+    facebook_link: https://www.facebook.com/MischiefManagedImprov/
     website_link: ''
     contact_email_address: ''
     instagram_link: ''
     name: Mischief Managed Improv
-    image: ''
+    image: team/mischief_managed.jpg
     players: []
 - model: uk_improv_guide.team
   pk: 39
@@ -3187,12 +3269,12 @@
   pk: 40
   fields:
     twitter_handle: ''
-    facebook_link: ''
+    facebook_link: https://www.facebook.com/OtherChilds/
     website_link: ''
     contact_email_address: ''
     instagram_link: ''
     name: Other People's Children
-    image: ''
+    image: team/other_peoples_children.jpg
     players: []
 - model: uk_improv_guide.team
   pk: 41
@@ -3742,15 +3824,15 @@
 - model: uk_improv_guide.venue
   pk: 20
   fields:
-    twitter_handle: ''
-    name: Maydays Studio Brighton
+    twitter_handle: Maydays
+    name: The Maydays Studio
     facebook_link: https://www.facebook.com/themaydaysstudio/?ref=br_rs
     website_link: https://www.themaydays.co.uk/
-    google_maps_link: https://www.google.com/maps?ll=50.822709,-0.150896&z=16&t=m&hl=en-GB&gl=GB&mapclient=embed&q=12+Regency+Square+Brighton+BN1+2FG
+    google_maps_link: https://www.google.com/maps/place/The+Maydays/@50.8227093,-0.153085,17z/data=!3m1!4b1!4m5!3m4!1s0x48758512f1c106e7:0xcc161ab8ddcb32dd!8m2!3d50.8227093!4d-0.1508963
     address: 12A Regency Square, Brighton,
-    city: London
+    city: Brighton
     postcode: BN1 2FG
-    email_address: ''
+    email_address: mayday@themaydays.co.uk
     country: GB
     school: 4322f66b-c7f9-4c62-917b-363895f7381c
     image: venue/MaydaysLogoWebsite.png
@@ -3814,6 +3896,66 @@
     country: GB
     school: cce53e29-49ac-49e8-afb1-f2df304cc1e7
     image: venue/4122569_16fb7c6f.jpg
+- model: uk_improv_guide.venue
+  pk: 25
+  fields:
+    twitter_handle: ''
+    name: The Ned Ludd
+    facebook_link: https://www.facebook.com/TheNedLudd/
+    website_link: https://www.godine.co.uk/the-ned-ludd-nottingham
+    google_maps_link: ''
+    address: 27 Friar Lane
+    city: Nottingham
+    postcode: NG1 6DA
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/the-ned-ludd.jpg
+- model: uk_improv_guide.venue
+  pk: 26
+  fields:
+    twitter_handle: '@GildedBalloon'
+    name: Gilded Balloon Teviot
+    facebook_link: ''
+    website_link: ''
+    google_maps_link: ''
+    address: Gilded Balloon Teviot, Teviot Row House, 13 Bristo Place
+    city: Edinburgh
+    postcode: EH8 9AJ
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/Screenshot_2019-07-17_at_13.11.51.png
+- model: uk_improv_guide.venue
+  pk: 27
+  fields:
+    twitter_handle: '@KomediaBrighton'
+    name: Komedia
+    facebook_link: ''
+    website_link: ''
+    google_maps_link: ''
+    address: 44-47 Gardner Street
+    city: Brighton
+    postcode: BN1 1UN
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/Screenshot_2019-07-17_at_13.39.00.png
+- model: uk_improv_guide.venue
+  pk: 28
+  fields:
+    twitter_handle: '@ThePleasance'
+    name: The Pleasance Theatre Trust
+    facebook_link: ''
+    website_link: ''
+    google_maps_link: ''
+    address: Carpenters Mews, North Road
+    city: London
+    postcode: N7 9EF
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/Screenshot_2019-07-17_at_14.10.52.png
 - model: uk_improv_guide.event
   pk: 1
   fields:
@@ -4381,6 +4523,454 @@
     series: null
     teams:
     - 48
+- model: uk_improv_guide.event
+  pk: 41
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Friday Night Improv
+    image: ''
+    event_type: S
+    start_time: 2019-08-31 19:00:00+00:00
+    venue: 25
+    series: null
+    teams:
+    - 37
+- model: uk_improv_guide.event
+  pk: 42
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-26 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 43
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB.png
+    event_type: S
+    start_time: 2019-08-25 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 44
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-24 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 45
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-23 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 46
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-22 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 47
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-21 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 48
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-20 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 49
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-19 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 50
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-18 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 51
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-17 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 52
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-16 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 53
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_HvY1XfK.png
+    event_type: S
+    start_time: 2019-08-15 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 54
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-14 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 56
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-12 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 57
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_k9NdnRy.png
+    event_type: S
+    start_time: 2019-08-11 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 58
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_TRPVzH5.png
+    event_type: S
+    start_time: 2019-08-10 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 59
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_PhqWfPj.png
+    event_type: S
+    start_time: 2019-08-09 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 60
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_e4QNhQE.png
+    event_type: S
+    start_time: 2019-08-08 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 61
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-07 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 62
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_ZtNnC90.png
+    event_type: S
+    start_time: 2019-08-06 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 63
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-05 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 64
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_qa3pmhY.png
+    event_type: S
+    start_time: 2019-08-04 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 65
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_0sF7rO3.png
+    event_type: S
+    start_time: 2019-08-03 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 66
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-02 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 67
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_lOZTWpC.png
+    event_type: S
+    start_time: 2019-08-01 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 68
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-07-31 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 69
+  fields:
+    facebook_link: https://www.facebook.com/events/301957250744451/
+    website_link: https://www.themaydays.co.uk/event/confessions-2019-09-06/
+    eventbrite_link: ''
+    name: 'The Maydays present: Confessions'
+    image: event/Confessions_2019.jpg
+    event_type: S
+    start_time: 2019-09-06 19:00:00+00:00
+    venue: 27
+    series: f0a81c24-dfb9-4786-adbe-e47cd047caa2
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 70
+  fields:
+    facebook_link: https://www.facebook.com/events/301957250744451/
+    website_link: https://www.themaydays.co.uk/event/confessions-2019-11-01/
+    eventbrite_link: ''
+    name: 'The Maydays present: Confessions'
+    image: event/Confessions_2019_FyIBWrx.jpg
+    event_type: S
+    start_time: 2019-11-01 19:00:00+00:00
+    venue: 27
+    series: f0a81c24-dfb9-4786-adbe-e47cd047caa2
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 71
+  fields:
+    facebook_link: https://www.facebook.com/events/1295812147238136/
+    website_link: https://www.themaydays.co.uk/event/tonights-top-story-2019-10-04/
+    eventbrite_link: ''
+    name: 'The Maydays present: Tonight''s Top Story'
+    image: event/TTS_2019.jpg
+    event_type: S
+    start_time: 2019-10-04 19:00:00+00:00
+    venue: 27
+    series: 44341490-201d-4acb-9462-33768a6a404b
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 72
+  fields:
+    facebook_link: https://www.facebook.com/events/1295812147238136/
+    website_link: https://www.themaydays.co.uk/event/tonights-top-story-2019-11-29/
+    eventbrite_link: ''
+    name: 'The Maydays present: Tonight''s Top Story'
+    image: event/TTS_2019_oxP9lyr.jpg
+    event_type: S
+    start_time: 2019-11-29 19:00:00+00:00
+    venue: 27
+    series: 44341490-201d-4acb-9462-33768a6a404b
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 73
+  fields:
+    facebook_link: https://www.facebook.com/events/362178317825493/
+    website_link: https://www.themaydays.co.uk/event/happily-never-after-london-horror-festival/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ London Horror Festival'
+    image: event/HNA_NEW_2019less1MB_NyE7qXl.png
+    event_type: S
+    start_time: 2019-10-31 19:00:00+00:00
+    venue: 28
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
 - model: auth.permission
   pk: 1
   fields:
@@ -5598,6 +6188,54 @@
     is_staff: true
     is_active: true
     date_joined: 2019-07-16 14:15:59.915225+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 27
+  fields:
+    password: pbkdf2_sha256$150000$ypYsRRiEkbLn$uoFaZSFX+vQHNe8u+MsgdJVLRFTQt0/hY06XQIeWVYY=
+    last_login: 2019-07-17 09:27:30.474250+00:00
+    is_superuser: false
+    username: Jonah
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-17 08:30:25.228591+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 28
+  fields:
+    password: pbkdf2_sha256$150000$pRYHcJuxWC8U$7tTdZ5xb8RPN5iSn++YK0TcBL4DpPICBeXHU5BJwXHs=
+    last_login: 2019-07-17 11:36:37.137462+00:00
+    is_superuser: false
+    username: The_Maydays
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-17 11:35:08.435883+00:00
+    groups:
+    - 2
+    user_permissions: []
+- model: auth.user
+  pk: 29
+  fields:
+    password: pbkdf2_sha256$150000$kqaegPHfyK7V$4vAL1Vf+tsnZJkp1s2WNwsu9KXVYoz8zifrLz7men94=
+    last_login: 2019-07-17 16:05:11.709426+00:00
+    is_superuser: false
+    username: MonicaGaga
+    first_name: ''
+    last_name: ''
+    email: ''
+    is_staff: true
+    is_active: true
+    date_joined: 2019-07-17 16:03:35.978661+00:00
     groups:
     - 2
     user_permissions: []
