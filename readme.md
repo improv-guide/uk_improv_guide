@@ -16,9 +16,9 @@ These instructions will get you started as a developer.
 
 ### Developer Requirements
 
-* Docker CE
-* Git
-* An IDE of your choice (I use IntelliJ Ultimate)
+* [Docker CE or Docker Desktop](https://www.docker.com/products/docker-desktop)
+* [Git](https://git-scm.com/)
+* An IDE of your choice (I use [IntelliJ Ultimate](https://www.jetbrains.com/idea/), but Visual Studio Code, Sublime Text is all good!)
 
 ### How to install
 
@@ -28,10 +28,11 @@ Create a file at `~/.secret/uk_improv_guide.sh`. It should contain the following
 #! /bin/bash
 export POSTGRES_PASSWORD=abc1aa
 export SLACK_WEB_HOOK=http://example.com
-export PRODUCTION_SECRET="dsfdsdffsdfsf"
+export PRODUCTION_SECRET="dsfdsdffsdfsf" 
 ```
+The password and production secrets can be any random text.
 
-Run the script:
+Run the development "up" script:
 
 ```
 ./up_dev.sh
