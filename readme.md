@@ -54,6 +54,10 @@ Just do all of the above in a Git Bash session.
 
 ## Common problems
 
+### The port Docker wants to use (8000 or 8080) is in use!
+
+Get rid of your firewall. Most Windows firewalls are incompatible with Docker.
+
 ### You want to look at the database?
 
 Login to [adminer](http://localhost:8080). Use these login credentials:
