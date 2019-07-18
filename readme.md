@@ -48,6 +48,8 @@ This installs a snapshot of production data into the locally running app.
 
 ### Special Windows instructions
 
+When you install Git, make sure you set it to "Check out as is, Commit UNIX-style"
+
 Just do all of the above in a Git Bash session. 
 
 ## Common problems
