@@ -5,28 +5,8 @@
     {% for venue in venues %}
 
     <li class="venue">
-        <span class="venue_name"><a href="/venues/{{venue.id}}">{{venue.name}}</a></span>
-
-
+        <span class="venue_name"><a href="/venues/{{venue.id}}">{{venue.name}}</a></span><span class="city">,{{venue.city}}</span><span class="country">, {{venue.country.name}}</span>
     </li>
-
-
-    <div class="box">
-        <a href="/venues/{{ venue.id }}"><img class="boximage" src="{% static "" %}{{ venue.image.url }}" alt="{{ venue.name }}"></a>
-        <div class="box_social">
-            {% with social_thing=venue %}
-            {% include "content/social.html" %}
-            {% endwith %}
-        </div>
-
-        <span class="box_text">
-                <p><a href="/venues/{{ venue.id }}">{{venue.name}}</a></p>
-{#                    <p>{{ venue.city }}, {{ venue.country.name }}</p>#}
-
-
-            </span>
-
-    </div>
 
     {% endfor %}
 </ul>

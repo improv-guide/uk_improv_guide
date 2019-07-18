@@ -30,7 +30,7 @@ services:
 
   bash:
     <<: *base-image
-    entrypoint: /bin/bash
+    entrypoint: ["/bin/bash"]
     volumes:
       - ./src:/src
     depends_on:
