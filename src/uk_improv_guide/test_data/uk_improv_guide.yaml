@@ -653,21 +653,6 @@
     imdb_link: ''
     teaches_for: []
 - model: uk_improv_guide.performer
-  pk: 31
-  fields:
-    twitter_handle: ''
-    facebook_link: https://www.facebook.com/philippa.peacock
-    website_link: ''
-    contact_email_address: ''
-    instagram_link: ''
-    first_name: Phillippa
-    middle_names: ''
-    family_name: Peacock
-    image: ''
-    alias: ''
-    imdb_link: ''
-    teaches_for: []
-- model: uk_improv_guide.performer
   pk: 32
   fields:
     twitter_handle: ''
@@ -2708,6 +2693,157 @@
     alias: ''
     imdb_link: ''
     teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 171
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Philippa
+    middle_names: ''
+    family_name: Peacock
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 172
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Holly
+    middle_names: ''
+    family_name: Meechan
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 173
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Heather
+    middle_names: ''
+    family_name: Johnson
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 174
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Anna
+    middle_names: ''
+    family_name: Clover
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 175
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Alice
+    middle_names: ''
+    family_name: Weleminsky-Smith
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 176
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Andy
+    middle_names: ''
+    family_name: Lerhman
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 177
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Christiaan
+    middle_names: ''
+    family_name: Hendrikson
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 178
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/daniel.subin.1
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Daniel
+    middle_names: ''
+    family_name: Subin
+    image: performer/daniel_subin.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 179
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: David
+    middle_names: ''
+    family_name: Elms
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
+- model: uk_improv_guide.performer
+  pk: 180
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jez
+    middle_names: ''
+    family_name: Scharf
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
 - model: uk_improv_guide.team
   pk: 1
   fields:
@@ -2785,6 +2921,7 @@
     players:
     - 15
     - 14
+    - 178
 - model: uk_improv_guide.team
   pk: 6
   fields:
@@ -2976,15 +3113,21 @@
 - model: uk_improv_guide.team
   pk: 20
   fields:
-    twitter_handle: ''
+    twitter_handle: '@rhinoprov'
     facebook_link: https://www.facebook.com/rhinocerosimprov/
-    website_link: ''
-    contact_email_address: ''
-    instagram_link: ''
-    name: Rhinoseros
-    image: team/rhinoseros_logo.png
+    website_link: http://www.rhinocerosimprov.com
+    contact_email_address: rhinoceros.improv@gmail.com
+    instagram_link: https://www.instagram.com/rhinocerosimprov/
+    name: Rhinoceros
+    image: team/RHINO_NAME_ONLY_2.jpeg
     players:
-    - 31
+    - 174
+    - 177
+    - 173
+    - 176
+    - 172
+    - 171
+    - 175
 - model: uk_improv_guide.team
   pk: 21
   fields:
@@ -3526,6 +3669,32 @@
     - 32
     - 39
     - 50
+- model: uk_improv_guide.team
+  pk: 59
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Kid Smokers
+    image: team/kid_smokers.jpg
+    players:
+    - 179
+    - 180
+    - 178
+- model: uk_improv_guide.team
+  pk: 60
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Long Weekend
+    image: ''
+    players:
+    - 178
 - model: uk_improv_guide.venue
   pk: 1
   fields:
@@ -3946,6 +4115,21 @@
     country: GB
     school: null
     image: venue/Screenshot_2019-07-17_at_14.10.52.png
+- model: uk_improv_guide.venue
+  pk: 29
+  fields:
+    twitter_handle: ''
+    name: Queen's Head Wymondham
+    facebook_link: ''
+    website_link: https://www.queensheadnorfolk.co.uk/
+    google_maps_link: https://goo.gl/maps/YSjWWz9Pnz4P1dtn7
+    address: 2 Bridewell Street
+    city: Wymondham
+    postcode: NR18 0AR
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/queens_head_w.jpg
 - model: uk_improv_guide.event
   pk: 1
   fields:
@@ -4961,3 +5145,16 @@
     series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
     teams:
     - 26
+- model: uk_improv_guide.event
+  pk: 74
+  fields:
+    facebook_link: https://www.facebook.com/events/624740364675180/
+    website_link: ''
+    eventbrite_link: ''
+    name: Wymondham Improv Comedy Workshop
+    image: ''
+    event_type: W
+    start_time: 2019-07-25 19:00:00+00:00
+    venue: 29
+    series: null
+    teams: []
