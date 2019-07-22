@@ -13,7 +13,7 @@ gunicorn
 requests
 eventlet
 libsass
-django-sass-processor
+django-sass-processor==0.7.3
 django-compressor
 rollbar
 
