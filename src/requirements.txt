@@ -12,7 +12,7 @@ django-imagekit
 gunicorn
 requests
 eventlet
-libsass
+libsass==0.19.2
 django-sass-processor
 django-compressor
 rollbar
