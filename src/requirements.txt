@@ -9,7 +9,7 @@ pyyaml
 django-countries==5.3.3
 Pillow==6.1.0
 django-imagekit
-gunicorn
+gunicorn==19.9.0
 requests
 eventlet
 libsass
