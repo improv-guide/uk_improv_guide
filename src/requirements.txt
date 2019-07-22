@@ -15,5 +15,5 @@ eventlet
 libsass
 django-sass-processor
 django-compressor
-rollbar
+rollbar==0.14.7
 
