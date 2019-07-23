@@ -1,4 +1,4 @@
-## World Improv Guide
+## Improv Guide
 
 ## Important URLs
 
