@@ -4,7 +4,7 @@ import os
 from setuptools import setup
 
 PROJECT_ROOT, _ = os.path.split(__file__)
-REVISION = "0.0.0"
+REVISION = os.environ.get("IMPROV_GUIDE_VERSION", "0.0.0")
 PROJECT_NAME = "uk_improv_guide"
 PROJECT_AUTHORS = "Salim Fadhley"
 PROJECT_EMAILS = "salimfadhley@gmail.com"
