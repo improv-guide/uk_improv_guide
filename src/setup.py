@@ -35,6 +35,6 @@ setup(
     long_description=DESCRIPTION,
     license="MIT",
     entry_points={
-        "console_scripts": ["flash = blink1.flash:flash", "shine = blink1.shine:shine"]
+        "console_scripts": ["manage = uk_improv_guide.manage:main"]
     },
 )
