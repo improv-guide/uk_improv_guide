@@ -13,7 +13,7 @@ gunicorn==19.9.0
 django-imagekit==4.0.2
 eventlet==0.25.0
 libsass==0.19.2
-django-sass-processor
+django-sass-processor==0.7.3
 django-compressor==2.3
 rollbar
 
