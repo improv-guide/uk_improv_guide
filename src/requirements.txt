@@ -12,7 +12,7 @@ requests==2.22.0
 gunicorn==19.9.0
 django-imagekit==4.0.2
 eventlet==0.25.0
-libsass
+libsass==0.19.2
 django-sass-processor
 django-compressor
 rollbar
