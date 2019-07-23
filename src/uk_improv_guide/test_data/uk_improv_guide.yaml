@@ -1,0 +1,5160 @@
+- model: uk_improv_guide.eventseries
+  pk: 1aaf4020-4e05-453e-b6ae-84e61a2eae22
+  fields:
+    image: event_series/IMPORTANTART.png
+    name: Important Art
+- model: uk_improv_guide.eventseries
+  pk: 3aacbd0b-8536-4a9f-8d66-6e85a7869438
+  fields:
+    image: event_series/DDG_logo_-_Copy.png
+    name: DDG Improv Jam (Duck Duck Goose)
+- model: uk_improv_guide.eventseries
+  pk: 44341490-201d-4acb-9462-33768a6a404b
+  fields:
+    image: event_series/TTS_2019.jpg
+    name: 'The Maydays present: Tonight''s Top Story'
+- model: uk_improv_guide.eventseries
+  pk: 702f88e9-8746-4c30-9792-c830c5e32626
+  fields:
+    image: event_series/FB_IMG_1562795648289.jpg
+    name: Punderstandably Improv
+- model: uk_improv_guide.eventseries
+  pk: 71453d71-177d-4a1f-9a26-141afee0bc75
+  fields:
+    image: ''
+    name: WE JUST LOVE TO PLAY!
+- model: uk_improv_guide.eventseries
+  pk: 7e6c18d2-2a7a-42a0-ac9b-d23da3b2d0a7
+  fields:
+    image: ''
+    name: Theatre on the Edge
+- model: uk_improv_guide.eventseries
+  pk: 8921978b-be00-4845-a8b0-787f8c9ef1fb
+  fields:
+    image: ''
+    name: Free Association Cage Match
+- model: uk_improv_guide.eventseries
+  pk: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+  fields:
+    image: event_series/HNA_NEW_2019less1MB.png
+    name: 'The Maydays present: Happily Never After'
+- model: uk_improv_guide.eventseries
+  pk: a2bc0d74-5936-4940-b44b-e9e6cfc512b7
+  fields:
+    image: event_series/missimp.png
+    name: MissImp Presents
+- model: uk_improv_guide.eventseries
+  pk: ae0e1240-ede4-4918-a182-a31910a62fdc
+  fields:
+    image: ''
+    name: Austentatious
+- model: uk_improv_guide.eventseries
+  pk: b165abbe-585c-4fdb-8438-539785d22716
+  fields:
+    image: event_series/amorphous_horse.jpg
+    name: Amorphous Horse's Happy Place
+- model: uk_improv_guide.eventseries
+  pk: daaceb21-6200-401d-80bb-b792ae886a32
+  fields:
+    image: event_series/angelo_brewing.jpg
+    name: Glossop Improv Workshop
+- model: uk_improv_guide.eventseries
+  pk: db4fb9d3-1db9-49e0-849c-e87f1d516fb8
+  fields:
+    image: ''
+    name: Keith Presents
+- model: uk_improv_guide.eventseries
+  pk: f0a81c24-dfb9-4786-adbe-e47cd047caa2
+  fields:
+    image: event_series/Confessions_2019.jpg
+    name: 'The Maydays present: Confessions'
+- model: uk_improv_guide.school
+  pk: 1858aee6-79ea-4ded-a235-f205fe400678
+  fields:
+    twitter_handle: '@MissImp_Notts'
+    facebook_link: https://www.facebook.com/missimp.co.uk
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: MissImp
+    image: ''
+    country: GB
+- model: uk_improv_guide.school
+  pk: 3bc46024-c973-4709-ba65-aace19f97fd9
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Free Association
+    image: school/fa_logo.png
+    country: GB
+- model: uk_improv_guide.school
+  pk: 4322f66b-c7f9-4c62-917b-363895f7381c
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: https://www.themaydays.co.uk
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Maydays
+    image: ''
+    country: GB
+- model: uk_improv_guide.school
+  pk: 44254cc3-d017-4296-82fb-58504f10b3ac
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Islington Comedy Club
+    image: ''
+    country: GB
+- model: uk_improv_guide.school
+  pk: 4dee8992-84d4-48e8-bd61-e67b01501848
+  fields:
+    twitter_handle: '@theActorsCentre'
+    facebook_link: https://www.facebook.com/TheActorsCentre/
+    website_link: https://www.actorscentre.co.uk
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/theactorscentre_/
+    name: The Actors Centre
+    image: school/new-yellow.png
+    country: GB
+- model: uk_improv_guide.school
+  pk: 528bc2b9-5c6a-4738-a7c7-80ff0acf4ffc
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: London Improv Theatre
+    image: school/london_improv_theatre.png
+    country: GB
+- model: uk_improv_guide.school
+  pk: 5b8100d9-7a66-4e1a-babf-f367a944eece
+  fields:
+    twitter_handle: nurserytheatre
+    facebook_link: https://www.facebook.com/NurseryTheatre/
+    website_link: https://thenurserytheatre.com/
+    contact_email_address: mail@thenurserytheatre.com
+    instagram_link: https://www.instagram.com/nurserytheatre/
+    name: The Nursery Theatre
+    image: school/The-Nursery-Theatre-Facebook-Preview-Thumbnail_NTXu1iV.jpg
+    country: GB
+- model: uk_improv_guide.school
+  pk: 6e97d006-ac3d-4d6c-96f2-db3f85a92c68
+  fields:
+    twitter_handle: '@redimprov'
+    facebook_link: https://www.facebook.com/RedCapeImprov/
+    website_link: ''
+    contact_email_address: redcapeimprov@gmail.com
+    instagram_link: ''
+    name: Red Cape Improv
+    image: school/40395508_300488080747883_2677231910790365184_n.jpg
+    country: GB
+- model: uk_improv_guide.school
+  pk: 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
+  fields:
+    twitter_handle: '@hooplaimpro'
+    facebook_link: https://www.facebook.com/hooplaimpro
+    website_link: https://hooplaimpro.com
+    contact_email_address: ''
+    instagram_link: http://instagram.com/hooplaimpro
+    name: Hoopla!
+    image: school/55726144_10161564491835456_3338731911747993600_o.jpg
+    country: GB
+- model: uk_improv_guide.school
+  pk: cce53e29-49ac-49e8-afb1-f2df304cc1e7
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/glossopimprov
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Glossop Improv
+    image: ''
+    country: GB
+- model: uk_improv_guide.school
+  pk: dbcb6379-a8b2-418f-938b-602623baa2be
+  fields:
+    twitter_handle: duckduckg
+    facebook_link: https://www.facebook.com/duckduckg
+    website_link: http://ddgimprov.com
+    contact_email_address: ddgimprov@gmail.com
+    instagram_link: https://www.instagram.com/ddgimprov/
+    name: DDG Improv (Duck Duck Goose)
+    image: school/DDG_logo_-_Copy.png
+    country: GB
+- model: uk_improv_guide.school
+  pk: df620f1c-c33b-4e6d-898a-4a4a8523ddb1
+  fields:
+    twitter_handle: '@rhymesimprov'
+    facebook_link: https://www.facebook.com/rhymesimprov/
+    website_link: http://rhymesimprov.com
+    contact_email_address: contact@rhymesimprov.com
+    instagram_link: https://www.instagram.com/rhymesimprov/
+    name: Rhymes Improv
+    image: school/rhymes-logo-april.png
+    country: GB
+- model: uk_improv_guide.performer
+  pk: 1
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Marc
+    middle_names: ''
+    family_name: Salmon
+    image: performer/marc_salmon.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 2
+  fields:
+    twitter_handle: '@fadhl3y'
+    facebook_link: https://www.facebook.com/salimfadhley
+    website_link: ''
+    contact_email_address: salimfadhley@gmail.com
+    instagram_link: ''
+    first_name: Salim
+    middle_names: ''
+    family_name: Fadhley
+    image: performer/salim_fadhley.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 3
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: brookeroberthoerr@hotmail.com
+    instagram_link: ''
+    first_name: Brooke
+    middle_names: ''
+    family_name: Hoerr
+    image: performer/brooke_hoerr.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 4
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/miriam.craig.50
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Miriam
+    middle_names: ''
+    family_name: Craig
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 5
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/eli.cohn.7
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Eli
+    middle_names: ''
+    family_name: Cohn
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 6
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/colin.rothwell
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Colin
+    middle_names: ''
+    family_name: Rothwell
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 7
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/monika.hadalska
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Monika
+    middle_names: ''
+    family_name: Hadalska
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 8
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/katie.handley.92
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Katie
+    middle_names: ''
+    family_name: Handley
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 9
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/al.jarrett.988
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Al
+    middle_names: ''
+    family_name: Jarrett
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 10
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/michaelandrew.me
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Michael
+    middle_names: ''
+    family_name: Andrew
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 11
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/fiona.richmondpark
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Fiona Marie
+    middle_names: ''
+    family_name: Simpson
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 12
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/rosanna.thomaswood.9
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Rosanna
+    middle_names: ''
+    family_name: Wood
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 13
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jack
+    middle_names: ''
+    family_name: Vaughn
+    image: ''
+    alias: ''
+    imdb_link: https://www.imdb.com/name/nm0891049/
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 14
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/simonfazey/
+    first_name: Simon
+    middle_names: ''
+    family_name: Fazey
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 15
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/samuel.deschamps.12
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Samuel
+    middle_names: Geronimo
+    family_name: Deschamps
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 16
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/msmonicagaga
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Monica
+    middle_names: ''
+    family_name: Gaga
+    image: performer/monica_gaga.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - dbcb6379-a8b2-418f-938b-602623baa2be
+    - 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
+- model: uk_improv_guide.performer
+  pk: 17
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/michael.kunze.9
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Michael
+    middle_names: ''
+    family_name: Kunze
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 18
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/events/457990218346091/
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Mimi
+    middle_names: ''
+    family_name: Bauer
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 19
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Alex
+    middle_names: ''
+    family_name: Bradbury
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 20
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Caroline
+    middle_names: ''
+    family_name: Amer
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 21
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Chloe
+    middle_names: ''
+    family_name: Godman
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 22
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Daisy
+    middle_names: ''
+    family_name: Badger
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 23
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: David
+    middle_names: ''
+    family_name: Veniar
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 24
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/garethanthonyoconnor
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Gareth
+    middle_names: ''
+    family_name: O'Connor
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 25
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Lila
+    middle_names: ''
+    family_name: Baker-Ward
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 26
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Nick
+    middle_names: ''
+    family_name: Adamson
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 27
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Ben
+    middle_names: ''
+    family_name: Nolan
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 28
+  fields:
+    twitter_handle: '@yeshaleymcgee'
+    facebook_link: https://www.facebook.com/mcgeemcgeemcgee
+    website_link: http://www.haleymcgee.ca/
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Haley
+    middle_names: ''
+    family_name: McGee
+    image: performer/haley_mcgee.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 29
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/robin.wiggs.1
+    website_link: ''
+    contact_email_address: wiggsrobin@aim.com
+    instagram_link: https://www.instagram.com/wiggsrobin/
+    first_name: Robin
+    middle_names: ''
+    family_name: Wiggs
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 30
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/jessica.ulrich.98
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jessica
+    middle_names: ''
+    family_name: Ulrich
+    image: performer/jess_ulrich.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 32
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/thechrisgau
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Chris
+    middle_names: ''
+    family_name: Gau
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
+- model: uk_improv_guide.performer
+  pk: 33
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/katharine.bennettfox
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Katherine
+    middle_names: ''
+    family_name: Bennett-Fox
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
+- model: uk_improv_guide.performer
+  pk: 34
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Sophia
+    middle_names: ''
+    family_name: Brio
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
+- model: uk_improv_guide.performer
+  pk: 35
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/kirsty.cooke
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Kirsty
+    middle_names: ''
+    family_name: Cooke
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 36
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Tom
+    middle_names: ''
+    family_name: Levinge
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 37
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Dom
+    middle_names: ''
+    family_name: Dashton
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 38
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Morrish
+    middle_names: ''
+    family_name: Jules
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 39
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Charlie
+    middle_names: ''
+    family_name: Kemp
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
+- model: uk_improv_guide.performer
+  pk: 40
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Luke
+    middle_names: ''
+    family_name: Healey
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 41
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Alisha
+    middle_names: ''
+    family_name: May
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 42
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Fahad
+    middle_names: ''
+    family_name: Bandar
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 43
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Will
+    middle_names: ''
+    family_name: Truefitt
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 44
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Samantha
+    middle_names: ''
+    family_name: Hannah
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 46
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Liz
+    middle_names: ''
+    family_name: Guterbock
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 47
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Sophie
+    middle_names: ''
+    family_name: Dickson
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 48
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Matthew
+    middle_names: ''
+    family_name: Gundel
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 49
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Nicholas
+    middle_names: ''
+    family_name: Everritt
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 50
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Amanda
+    middle_names: ''
+    family_name: Stauffer
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 51
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Patrick
+    middle_names: ''
+    family_name: Dishman
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 52
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Theo
+    middle_names: ''
+    family_name: McCabe
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 53
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Graham
+    middle_names: ''
+    family_name: Dickson
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
+- model: uk_improv_guide.performer
+  pk: 54
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Damian
+    middle_names: ''
+    family_name: Arnold
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 55
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/heather.urquhart.184
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Heather
+    middle_names: ''
+    family_name: Urquhart
+    image: performer/heather_urquhart.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
+- model: uk_improv_guide.performer
+  pk: 56
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/joe.samuel.37669
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Joe
+    middle_names: ''
+    family_name: Samuel
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 57
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/liz.peters.9216
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Liz
+    middle_names: ''
+    family_name: Peters
+    image: performer/liz_peters.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 58
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jules
+    middle_names: ''
+    family_name: Munns
+    image: performer/jules_munns.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 59
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/katy.schutte.1
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Katy
+    middle_names: ''
+    family_name: Schutte
+    image: performer/katy_schutte.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
+- model: uk_improv_guide.performer
+  pk: 60
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/rhiannon.vivian.7
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Rhiannon
+    middle_names: ''
+    family_name: Vivian
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 61
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/john.cremer.7
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: John
+    middle_names: ''
+    family_name: Cremer
+    image: performer/john_cremer.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 62
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/rebecca.macmillan.58
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Rebecca
+    middle_names: ''
+    family_name: MacMillan
+    image: performer/rebecca_macmillan.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 63
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/lloydiejl
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Lloydie
+    middle_names: James
+    family_name: Lloyd
+    image: performer/james_lloyd.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - df620f1c-c33b-4e6d-898a-4a4a8523ddb1
+- model: uk_improv_guide.performer
+  pk: 64
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/mrchrismead
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Chris
+    middle_names: ''
+    family_name: Mead
+    image: performer/chris_mead.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
+- model: uk_improv_guide.performer
+  pk: 65
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/jenny.rowe.908
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jenny
+    middle_names: ''
+    family_name: Rowe
+    image: performer/jenny_rowe.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 66
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Claire
+    middle_names: ''
+    family_name: Plested
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 67
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: http://www.shaunlowthian.com/
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Shaun
+    middle_names: ''
+    family_name: Lowthian
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
+- model: uk_improv_guide.performer
+  pk: 68
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Helen
+    middle_names: ''
+    family_name: O'Donnell
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 69
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Matthew
+    middle_names: ''
+    family_name: Stevens
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 70
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Rhys
+    middle_names: ''
+    family_name: Collier
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
+- model: uk_improv_guide.performer
+  pk: 71
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Nick
+    middle_names: ''
+    family_name: Oram
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 72
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Tim
+    middle_names: ''
+    family_name: Grenwick
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 73
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/arthurgillarsen
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/arthur_gil_larsen/
+    first_name: Arthur
+    middle_names: ''
+    family_name: Gil Larsen
+    image: performer/agl.jpg
+    alias: ''
+    imdb_link: https://www.imdb.com/name/nm4055497/?ref_=nv_sr_1?ref_=nv_sr_1
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 74
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: David
+    middle_names: ''
+    family_name: Buckley
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 75
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Robert
+    middle_names: ''
+    family_name: Rampton
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 76
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Adrian
+    middle_names: ''
+    family_name: Lane
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 77
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Amber
+    middle_names: ''
+    family_name: Barrow
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 78
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Stephen
+    middle_names: ''
+    family_name: Kovalcik
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 79
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Amy
+    middle_names: ''
+    family_name: Cooke-Hodgson
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 80
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Andrew
+    middle_names: ''
+    family_name: Hunter-Murray
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 81
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Cariad
+    middle_names: ''
+    family_name: Lloyd
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 82
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Charlotte
+    middle_names: ''
+    family_name: Gittins
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 83
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Daniel
+    middle_names: Nils
+    family_name: Roberts
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 84
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Joseph
+    middle_names: ''
+    family_name: Morpurgo
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 85
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Rachel
+    middle_names: ''
+    family_name: Parris
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 86
+  fields:
+    twitter_handle: brenway
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Brendan
+    middle_names: ''
+    family_name: Way
+    image: performer/DSCF1304.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 87
+  fields:
+    twitter_handle: vicwardian
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/vicwardian/
+    first_name: Vic
+    middle_names: ''
+    family_name: Hogg
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 89
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/lovely_madeleine/
+    first_name: Madeleine
+    middle_names: ''
+    family_name: Hunter
+    image: ''
+    alias: Maddy
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 90
+  fields:
+    twitter_handle: loudemile
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/ludmilabogatchek/
+    first_name: Lou
+    middle_names: ''
+    family_name: Bogatchek
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 91
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Alison
+    middle_names: ''
+    family_name: Kent
+    image: ''
+    alias: Ali
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 92
+  fields:
+    twitter_handle: DanScrooge
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Daniel
+    middle_names: ''
+    family_name: Luxton
+    image: ''
+    alias: Dan
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 93
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Steff
+    middle_names: ''
+    family_name: Prince
+    image: ''
+    alias: Steff Man
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 94
+  fields:
+    twitter_handle: vanessa_tsu
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/vanessatsu/
+    first_name: Vanessa
+    middle_names: ''
+    family_name: Tsu
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 95
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: https://www.instagram.com/timothy3032/
+    first_name: Tim
+    middle_names: ''
+    family_name: Williams
+    image: ''
+    alias: Timothy
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 96
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Dominic
+    middle_names: ''
+    family_name: Ashton
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 97
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Emma
+    middle_names: ''
+    family_name: Pritchard
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 98
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Ambika
+    middle_names: ''
+    family_name: Mod
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 99
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Ishan
+    middle_names: ''
+    family_name: Ganjor
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 100
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/dan.kelly.963871
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Dan
+    middle_names: ''
+    family_name: Kelly
+    image: performer/dan_kelley.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 101
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Lottie
+    middle_names: ''
+    family_name: Field
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 102
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Rob
+    middle_names: ''
+    family_name: Sladden
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 103
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Deep
+    middle_names: ''
+    family_name: Lidder
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 104
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Liz
+    middle_names: ''
+    family_name: Gutterbock
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 105
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jenny
+    middle_names: ''
+    family_name: Donoghue
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 106
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Kathryn
+    middle_names: ''
+    family_name: Higgins
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 107
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Victoria
+    middle_names: ''
+    family_name: Beardwood
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 108
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Franchesca
+    middle_names: ''
+    family_name: Reid
+    image: performer/franchesca_reid.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 109
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/tuckshopsuper
+    website_link: ''
+    contact_email_address: buckbucktucker@gmail.com
+    instagram_link: ''
+    first_name: Ben
+    middle_names: ''
+    family_name: Tucker
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 110
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: https://www.youtube.com/channel/UCXbsC2dN3t_Py1utngxz5TA
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Simon
+    middle_names: ''
+    family_name: Goodway
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 111
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Chris
+    middle_names: ''
+    family_name: East
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 112
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Vinesh
+    middle_names: ''
+    family_name: Kana
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 113
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Chrissy
+    middle_names: ''
+    family_name: Williams
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 114
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: David
+    middle_names: ''
+    family_name: Thompson
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 115
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Gem
+    middle_names: ''
+    family_name: Carmella
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 116
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/arfiemansfield
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Arfie
+    middle_names: ''
+    family_name: Mansfield
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 117
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Avina
+    middle_names: ''
+    family_name: Wallace
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 118
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Boyd
+    middle_names: ''
+    family_name: Branch
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 119
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/harry.turnbull.5
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Harry
+    middle_names: ''
+    family_name: Turnbull
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 120
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Holly
+    middle_names: ''
+    family_name: Mallett
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 121
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: James
+    middle_names: ''
+    family_name: Whittaker
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 122
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Julia
+    middle_names: ''
+    family_name: Eckhoff
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 123
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Kat
+    middle_names: ''
+    family_name: Murray-Clarke
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 124
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Kit
+    middle_names: ''
+    family_name: Harman
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 125
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Lisa
+    middle_names: ''
+    family_name: Klevemark
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 126
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Marouen
+    middle_names: ''
+    family_name: Mraihi
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 127
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Paul
+    middle_names: ''
+    family_name: Little
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 128
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Pitor
+    middle_names: ''
+    family_name: Mirowski
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 129
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Rhiannon
+    middle_names: ''
+    family_name: Jenkins
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 130
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Roel
+    middle_names: ''
+    family_name: Fox
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 131
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Sarah
+    middle_names: ''
+    family_name: Castell
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 132
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Sarah
+    middle_names: ''
+    family_name: Davies
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 133
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Sharma
+    middle_names: ''
+    family_name: Rahman
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 134
+  fields:
+    twitter_handle: '@carlakeen'
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: carlakeen@gmail.com
+    instagram_link: ''
+    first_name: Carla
+    middle_names: ''
+    family_name: Keen
+    image: performer/Carla_KEEN.jpg
+    alias: Carla Keen
+    imdb_link: ''
+    teaches_for:
+    - 6e97d006-ac3d-4d6c-96f2-db3f85a92c68
+- model: uk_improv_guide.performer
+  pk: 135
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: James
+    middle_names: ''
+    family_name: Stedman
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 136
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Mark
+    middle_names: ''
+    family_name: Whitehouse
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 137
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Erica
+    middle_names: ''
+    family_name: Dupuy
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 138
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Rebecca
+    middle_names: ''
+    family_name: Huber
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 139
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Kenneth Mykel
+    middle_names: ''
+    family_name: Smith
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 140
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Stephanie
+    middle_names: ''
+    family_name: Smith
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 141
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Daemon
+    middle_names: ''
+    family_name: Blaszczyk
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 142
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Matt
+    middle_names: ''
+    family_name: Routzahn
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 143
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: David
+    middle_names: ''
+    family_name: Gallop
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 144
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Ned
+    middle_names: ''
+    family_name: Strasbaugh
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 145
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Brian
+    middle_names: ''
+    family_name: Cotter
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 146
+  fields:
+    twitter_handle: '@BartoloCreation'
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Holly
+    middle_names: ''
+    family_name: Bartolo
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 147
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Yiannis
+    middle_names: ''
+    family_name: Cove
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 148
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jake
+    middle_names: ''
+    family_name: Clements
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 149
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Sonja
+    middle_names: ''
+    family_name: W
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 150
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: James
+    middle_names: ''
+    family_name: Stone
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 151
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Becky
+    middle_names: ''
+    family_name: Channon
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 152
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Amanda
+    middle_names: ''
+    family_name: Green
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 153
+  fields:
+    twitter_handle: '@JessNapHodg'
+    facebook_link: https://www.facebook.com/jessicanapthine
+    website_link: ''
+    contact_email_address: jnhimprov@gmail.com
+    instagram_link: ''
+    first_name: Jess
+    middle_names: ''
+    family_name: Napthine-Hodgkinson
+    image: performer/jess.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 154
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Liberty
+    middle_names: ''
+    family_name: Martin
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 157
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Laura
+    middle_names: ''
+    family_name: Capaldi
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 158
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Sam
+    middle_names: ''
+    family_name: Pearce
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 159
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jess
+    middle_names: ''
+    family_name: Rogers
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 160
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jonathan
+    middle_names: ''
+    family_name: Scott
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 161
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Chris
+    middle_names: ''
+    family_name: Warner
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 162
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Alex
+    middle_names: ''
+    family_name: Magliaro
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 163
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: http://instagram.com/unaiaia
+    first_name: Unai
+    middle_names: ''
+    family_name: Garcia
+    image: performer/Screenshot_2019-07-17_at_14.11.25.png
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 164
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: James
+    middle_names: ''
+    family_name: Barr
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 165
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Ian
+    middle_names: T
+    family_name: Day
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 166
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Katie
+    middle_names: ''
+    family_name: Davison
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 167
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jay
+    middle_names: ''
+    family_name: Bennett
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 168
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jonah
+    middle_names: ''
+    family_name: Fazel
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
+    - 4dee8992-84d4-48e8-bd61-e67b01501848
+    - 5b8100d9-7a66-4e1a-babf-f367a944eece
+- model: uk_improv_guide.performer
+  pk: 169
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Amy
+    middle_names: ''
+    family_name: Cooke-Hodgson
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
+- model: uk_improv_guide.performer
+  pk: 170
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Louise
+    middle_names: ''
+    family_name: Allen
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 171
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Philippa
+    middle_names: ''
+    family_name: Peacock
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 172
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Holly
+    middle_names: ''
+    family_name: Meechan
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 173
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Heather
+    middle_names: ''
+    family_name: Johnson
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 174
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Anna
+    middle_names: ''
+    family_name: Clover
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 175
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Alice
+    middle_names: ''
+    family_name: Weleminsky-Smith
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 176
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Andy
+    middle_names: ''
+    family_name: Lerhman
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 177
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Christiaan
+    middle_names: ''
+    family_name: Hendrikson
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 178
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/daniel.subin.1
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Daniel
+    middle_names: ''
+    family_name: Subin
+    image: performer/daniel_subin.jpg
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.performer
+  pk: 179
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: David
+    middle_names: ''
+    family_name: Elms
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for:
+    - 3bc46024-c973-4709-ba65-aace19f97fd9
+- model: uk_improv_guide.performer
+  pk: 180
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    first_name: Jez
+    middle_names: ''
+    family_name: Scharf
+    image: ''
+    alias: ''
+    imdb_link: ''
+    teaches_for: []
+- model: uk_improv_guide.team
+  pk: 1
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/thecaretakerscomedy/?modal=admin_todo_tour
+    website_link: ''
+    contact_email_address: salimfadhley@gmail.com
+    instagram_link: ''
+    name: Caretakers
+    image: team/caretakers_4qADhft.jpg
+    players:
+    - 42
+    - 2
+    - 44
+    - 3
+    - 41
+    - 1
+    - 43
+    - 30
+- model: uk_improv_guide.team
+  pk: 2
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/MOOP-Mistakes-Of-Our-Past-287021065313239/
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: MOOP
+    image: team/moop.jpg
+    players:
+    - 10
+    - 5
+    - 4
+    - 7
+    - 8
+    - 3
+    - 9
+    - 6
+    - 1
+    - 11
+    - 13
+    - 12
+- model: uk_improv_guide.team
+  pk: 3
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Foreseeable Future
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 4
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Backstreet Boogaloo
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 5
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/lestercityimprov/
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Lester City
+    image: ''
+    players:
+    - 15
+    - 14
+    - 178
+- model: uk_improv_guide.team
+  pk: 6
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/DoTheRightScene/
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Do The Right Scene
+    image: ''
+    players:
+    - 16
+- model: uk_improv_guide.team
+  pk: 7
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/justfriendsimpro/
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Just Friends
+    image: ''
+    players:
+    - 18
+    - 17
+- model: uk_improv_guide.team
+  pk: 8
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/amorphoushorse/
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Amorphous Horse
+    image: team/amorphous_horse.jpg
+    players:
+    - 19
+    - 4
+- model: uk_improv_guide.team
+  pk: 9
+  fields:
+    twitter_handle: '@barebackkings'
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Bareback Kings
+    image: team/bareback_kings.jpg
+    players:
+    - 108
+- model: uk_improv_guide.team
+  pk: 10
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/meanpeoplecomedy/
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Mean People
+    image: ''
+    players:
+    - 26
+    - 20
+    - 22
+    - 25
+    - 21
+    - 24
+    - 1
+    - 23
+- model: uk_improv_guide.team
+  pk: 11
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/HoofComedy/
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: HOOF
+    image: ''
+    players:
+    - 35
+    - 37
+    - 38
+    - 36
+    - 27
+- model: uk_improv_guide.team
+  pk: 12
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Urban Heat Island
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 13
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Foreseeable Future
+    image: ''
+    players:
+    - 28
+- model: uk_improv_guide.team
+  pk: 14
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/SwipeRightImprov/
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Swipe Right
+    image: team/swipe_right.jpg
+    players: []
+- model: uk_improv_guide.team
+  pk: 15
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/XMetYImprov/
+    website_link: ''
+    contact_email_address: wiggsrobin@aim.com
+    instagram_link: ''
+    name: When X met Y
+    image: ''
+    players:
+    - 29
+- model: uk_improv_guide.team
+  pk: 16
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Gatekeepers
+    image: ''
+    players:
+    - 26
+    - 40
+    - 24
+- model: uk_improv_guide.team
+  pk: 17
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Bathhouse Children
+    image: team/horror.jpg
+    players:
+    - 115
+    - 111
+    - 73
+    - 44
+    - 112
+    - 17
+    - 114
+    - 30
+    - 113
+- model: uk_improv_guide.team
+  pk: 18
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/thetuesdaygroupimprov
+    website_link: ''
+    contact_email_address: ged@thetuesdaygroup.org.uk
+    instagram_link: ''
+    name: The Tuesday Group
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 19
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Art of Happiness
+    image: team/art_of_happiness.jpg
+    players:
+    - 30
+- model: uk_improv_guide.team
+  pk: 20
+  fields:
+    twitter_handle: '@rhinoprov'
+    facebook_link: https://www.facebook.com/rhinocerosimprov/
+    website_link: http://www.rhinocerosimprov.com
+    contact_email_address: rhinoceros.improv@gmail.com
+    instagram_link: https://www.instagram.com/rhinocerosimprov/
+    name: Rhinoceros
+    image: team/RHINO_NAME_ONLY_2.jpeg
+    players:
+    - 174
+    - 177
+    - 173
+    - 176
+    - 172
+    - 171
+    - 175
+- model: uk_improv_guide.team
+  pk: 21
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/thewilsonsimprov/
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Wilsons
+    image: ''
+    players:
+    - 33
+    - 34
+    - 32
+- model: uk_improv_guide.team
+  pk: 22
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Charlie Kemp & KBF
+    image: ''
+    players:
+    - 33
+    - 39
+- model: uk_improv_guide.team
+  pk: 23
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Uber Pool
+    image: ''
+    players:
+    - 46
+    - 100
+- model: uk_improv_guide.team
+  pk: 24
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Mechanik de Theatre
+    image: ''
+    players:
+    - 47
+    - 51
+    - 49
+    - 48
+    - 52
+    - 50
+- model: uk_improv_guide.team
+  pk: 25
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Founding Fathers
+    image: ''
+    players:
+    - 54
+    - 53
+- model: uk_improv_guide.team
+  pk: 26
+  fields:
+    twitter_handle: '@Maydays'
+    facebook_link: https://www.facebook.com/maydaysimprov/
+    website_link: https://www.themaydays.co.uk/
+    contact_email_address: mayday@themaydays.co.uk
+    instagram_link: https://www.instagram.com/themaydays/
+    name: The Maydays
+    image: team/the_maydays_u0VfEVH.jpg
+    players:
+    - 61
+    - 63
+    - 62
+    - 64
+    - 58
+    - 57
+    - 65
+    - 56
+    - 59
+    - 55
+    - 60
+- model: uk_improv_guide.team
+  pk: 27
+  fields:
+    twitter_handle: ''
+    facebook_link: http://facebook.com/dnayscomedy
+    website_link: http://www.dnays.com
+    contact_email_address: ''
+    instagram_link: ''
+    name: Do Not Adjust Your Stage
+    image: team/dnays.jpg
+    players:
+    - 70
+    - 72
+    - 67
+    - 68
+    - 71
+    - 66
+    - 69
+- model: uk_improv_guide.team
+  pk: 28
+  fields:
+    twitter_handle: '@bumperBlyton'
+    facebook_link: ''
+    website_link: https://www.bumperblyton.com/
+    contact_email_address: blytonimpro@gmail.com
+    instagram_link: https://www.instagram.com/bumperblyton/
+    name: Bumper Blyton
+    image: ''
+    players:
+    - 79
+    - 169
+    - 168
+    - 57
+    - 60
+- model: uk_improv_guide.team
+  pk: 29
+  fields:
+    twitter_handle: '@Glitchimprov'
+    facebook_link: ''
+    website_link: http://www.glitchimprov.com/
+    contact_email_address: ''
+    instagram_link: ''
+    name: Glitch
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 30
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.messenger.com/t/improvfieldtrip
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Field Trip
+    image: team/field_trip_logo.png
+    players:
+    - 22
+    - 77
+    - 74
+    - 73
+    - 78
+    - 76
+    - 75
+    - 43
+- model: uk_improv_guide.team
+  pk: 31
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: https://www.austentatiousimpro.com
+    contact_email_address: ''
+    instagram_link: ''
+    name: Austentatious
+    image: team/austintatious.jpeg
+    players:
+    - 79
+    - 53
+    - 82
+    - 80
+    - 81
+    - 84
+    - 85
+    - 83
+- model: uk_improv_guide.team
+  pk: 33
+  fields:
+    twitter_handle: tparentheticals
+    facebook_link: https://www.facebook.com/parentheticalsimprov/
+    website_link: https://theparentheticals.co.uk/
+    contact_email_address: parentheticalsimprov@gmail.com
+    instagram_link: ''
+    name: The Parentheticals
+    image: team/IMG-20170806-WA0007.jpg
+    players:
+    - 86
+- model: uk_improv_guide.team
+  pk: 34
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Historyonics
+    image: ''
+    players:
+    - 92
+    - 95
+- model: uk_improv_guide.team
+  pk: 35
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Millicent Tendrils Experience
+    image: ''
+    players:
+    - 96
+    - 101
+    - 99
+    - 40
+    - 100
+    - 98
+    - 97
+- model: uk_improv_guide.team
+  pk: 36
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Fortitude
+    image: team/THEFORTITUDEFINAL2.jpg
+    players:
+    - 26
+    - 107
+    - 105
+    - 14
+    - 104
+    - 106
+    - 103
+    - 102
+- model: uk_improv_guide.team
+  pk: 37
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Four Far Away
+    image: team/four_far_away_xYCUDwZ.jpg
+    players: []
+- model: uk_improv_guide.team
+  pk: 38
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/MischiefManagedImprov/
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Mischief Managed Improv
+    image: team/mischief_managed.jpg
+    players: []
+- model: uk_improv_guide.team
+  pk: 39
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Smash Night Social Club
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 40
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/OtherChilds/
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Other People's Children
+    image: team/other_peoples_children.jpg
+    players: []
+- model: uk_improv_guide.team
+  pk: 41
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Stccatos
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 42
+  fields:
+    twitter_handle: '@rhymesimprov'
+    facebook_link: https://www.facebook.com/rhymesimprov/
+    website_link: http://www.rhymesimprov.com
+    contact_email_address: contact@rhymesimprov.com
+    instagram_link: https://www.instagram.com/rhymesimprov/
+    name: Rhymes Against Humanity
+    image: team/rhymes-logo-april.png
+    players:
+    - 63
+- model: uk_improv_guide.team
+  pk: 43
+  fields:
+    twitter_handle: '@PS_Improv'
+    facebook_link: https://www.facebook.com/PSImprov/
+    website_link: ''
+    contact_email_address: bartolocreations182@gmail.com
+    instagram_link: ''
+    name: Punderstandably Improv
+    image: team/punders_logo.jpg
+    players:
+    - 146
+    - 151
+    - 148
+    - 147
+    - 152
+    - 150
+    - 149
+- model: uk_improv_guide.team
+  pk: 44
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: City Impro
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 45
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Honey Badger
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 46
+  fields:
+    twitter_handle: '@theolbillimprov'
+    facebook_link: https://www.facebook.com/theolbillimprov/
+    website_link: ''
+    contact_email_address: theolbillimprov@gmail.com
+    instagram_link: http://instagram.com/theolbillimprov
+    name: The Ol' Bill
+    image: team/Screenshot_2019-07-16_at_15.00.30.png
+    players:
+    - 163
+    - 129
+- model: uk_improv_guide.team
+  pk: 47
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Battenberg Improv
+    image: ''
+    players: []
+- model: uk_improv_guide.team
+  pk: 48
+  fields:
+    twitter_handle: '@bananahutgang'
+    facebook_link: https://www.facebook.com/bananahutgang/
+    website_link: http://www.bananahutgang.com
+    contact_email_address: ''
+    instagram_link: http://www.instagram/bananahutgang
+    name: Banana Hut Gang
+    image: team/banana_hut_gang.jpg
+    players:
+    - 157
+    - 162
+    - 158
+    - 159
+    - 160
+    - 150
+    - 161
+- model: uk_improv_guide.team
+  pk: 49
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/benandsimondoimprovtogether/
+    website_link: https://www.youtube.com/channel/UCXbsC2dN3t_Py1utngxz5TA
+    contact_email_address: ''
+    instagram_link: ''
+    name: Ben & Simon do improv together
+    image: team/23905472_1910796929235538_4019770804405241298_n.jpg
+    players:
+    - 110
+    - 109
+- model: uk_improv_guide.team
+  pk: 50
+  fields:
+    twitter_handle: '@improbotics'
+    facebook_link: https://www.facebook.com/ImproboticsLtd/
+    website_link: https://improbotics.org/
+    contact_email_address: ''
+    instagram_link: ''
+    name: Improbotics (London)
+    image: team/improbotics.jpg
+    players:
+    - 118
+    - 131
+    - 132
+    - 122
+    - 130
+    - 124
+    - 129
+    - 125
+    - 127
+    - 120
+    - 116
+    - 128
+    - 126
+    - 123
+    - 133
+    - 119
+    - 117
+    - 121
+- model: uk_improv_guide.team
+  pk: 51
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/xplusone1940/
+    website_link: https://xplusonetheshow.com/
+    contact_email_address: ''
+    instagram_link: ''
+    name: X Plus One
+    image: team/x_plus_one_logo.png
+    players: []
+- model: uk_improv_guide.team
+  pk: 52
+  fields:
+    twitter_handle: '@UnplannedM'
+    facebook_link: https://www.facebook.com/unplannedministry/
+    website_link: ''
+    contact_email_address: unplannedministry@gmail.com
+    instagram_link: ''
+    name: The Ministry of Unplanned Occurrences
+    image: team/56942544_649349168850334_4860896754133893120_n.jpg
+    players:
+    - 137
+    - 134
+    - 135
+    - 136
+- model: uk_improv_guide.team
+  pk: 53
+  fields:
+    twitter_handle: lmrimprov
+    facebook_link: http://facebook.com/lastminutereplacements
+    website_link: http://www.thelastminutereplacements.com
+    contact_email_address: lmrimprov@gmail.com
+    instagram_link: ''
+    name: The Last Minute Replacements
+    image: ''
+    players:
+    - 141
+    - 145
+    - 143
+    - 138
+    - 142
+    - 139
+    - 140
+    - 144
+- model: uk_improv_guide.team
+  pk: 54
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/shortformbrainstorm/
+    website_link: http://www.phoenixvillecomedy.com/sfb
+    contact_email_address: shortformbrainstorm@phoenixvillecomedy.com
+    instagram_link: ''
+    name: Short Form Brainstorm
+    image: team/short_form_brainstorm.jpg
+    players:
+    - 145
+    - 143
+    - 138
+- model: uk_improv_guide.team
+  pk: 55
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/glossopimprov
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Glossop Improv
+    image: team/Glossop_Improv.jpg
+    players:
+    - 153
+- model: uk_improv_guide.team
+  pk: 56
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/DescendantsImpro/
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: The Descendants
+    image: team/the_decendants.jpg
+    players: []
+- model: uk_improv_guide.team
+  pk: 57
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/nutsthenakedtruthnottheladsmag/
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Nuts, The naked truth, not the lads mag
+    image: team/nuts.jpg
+    players:
+    - 154
+- model: uk_improv_guide.team
+  pk: 58
+  fields:
+    twitter_handle: ''
+    facebook_link: https://www.facebook.com/keithimprov
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Keith
+    image: team/keith_crystal.jpg
+    players:
+    - 164
+    - 167
+    - 33
+    - 166
+    - 165
+    - 32
+    - 39
+    - 50
+- model: uk_improv_guide.team
+  pk: 59
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Kid Smokers
+    image: team/kid_smokers.jpg
+    players:
+    - 179
+    - 180
+    - 178
+- model: uk_improv_guide.team
+  pk: 60
+  fields:
+    twitter_handle: ''
+    facebook_link: ''
+    website_link: ''
+    contact_email_address: ''
+    instagram_link: ''
+    name: Long Weekend
+    image: ''
+    players:
+    - 178
+- model: uk_improv_guide.venue
+  pk: 1
+  fields:
+    twitter_handle: ''
+    name: Free Association
+    facebook_link: https://www.facebook.com/FAimprov/
+    website_link: https://thefreeassociation.co.uk/
+    google_maps_link: https://goo.gl/maps/9freHPdWUE3AVvZx9
+    address: 113 Southgate Road
+    city: London
+    postcode: N1 3JS
+    email_address: ''
+    country: GB
+    school: 3bc46024-c973-4709-ba65-aace19f97fd9
+    image: venue/de_bauvoir_arms.jpg
+- model: uk_improv_guide.venue
+  pk: 2
+  fields:
+    twitter_handle: ''
+    name: The Miller
+    facebook_link: ''
+    website_link: https://www.hooplaimpro.com/
+    google_maps_link: https://goo.gl/maps/MhK6k8xJFNkoXnra8
+    address: The Miller, 96 Snowsfields
+    city: London
+    postcode: SE13SS
+    email_address: ''
+    country: GB
+    school: 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
+    image: venue/the_miller_AZABhoL.jpg
+- model: uk_improv_guide.venue
+  pk: 3
+  fields:
+    twitter_handle: ''
+    name: Nell of Old Drury
+    facebook_link: https://www.facebook.com/nellofolddrury/
+    website_link: http://www.nellofolddrury.com/
+    google_maps_link: https://goo.gl/maps/TCqmNM3Qzro4ZwZ16
+    address: 29 Catherine St
+    city: London
+    postcode: WC2B 5JS
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/nell_of_old_drury.jpeg
+- model: uk_improv_guide.venue
+  pk: 4
+  fields:
+    twitter_handle: ''
+    name: 'The Canvas: Cafe & Creative Venue'
+    facebook_link: https://www.facebook.com/TheCanvasCafeE1/
+    website_link: https://www.thecanvascafe.org/vegan-cafe
+    google_maps_link: https://g.page/TheCanvasCafe
+    address: 42 Hanbury St, Spitalfields
+    city: London
+    postcode: E1 5JL
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/the_canvas_creative_venue.jpg
+- model: uk_improv_guide.venue
+  pk: 5
+  fields:
+    twitter_handle: ''
+    name: Effra Social
+    facebook_link: ''
+    website_link: ''
+    google_maps_link: https://goo.gl/maps/wArrbV3izLQANfGW7
+    address: 89 Effra Road, Brixton
+    city: London
+    postcode: SW2 1DF
+    email_address: ''
+    country: GB
+    school: dbcb6379-a8b2-418f-938b-602623baa2be
+    image: venue/effra_social.jpg
+- model: uk_improv_guide.venue
+  pk: 6
+  fields:
+    twitter_handle: ''
+    name: The London Irish Centre
+    facebook_link: https://www.facebook.com/londonirishcentre/
+    website_link: https://www.londonirishcentre.org/
+    google_maps_link: https://goo.gl/maps/2TwafworxbuN5fNu8
+    address: 50-52 Camden Square
+    city: London
+    postcode: NW1 9XB
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/london_irish_centre.png
+- model: uk_improv_guide.venue
+  pk: 7
+  fields:
+    twitter_handle: ''
+    name: The North London Tavern
+    facebook_link: https://www.facebook.com/rhinocerosimprov/
+    website_link: http://www.northlondontavern.co.uk/
+    google_maps_link: https://goo.gl/maps/7gR6CKtURKAtrdwh9
+    address: 375 Kilburn High Rd
+    city: London
+    postcode: NW6 7QB
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/the_north_london_tavern.jpg
+- model: uk_improv_guide.venue
+  pk: 8
+  fields:
+    twitter_handle: ''
+    name: The Taproom
+    facebook_link: https://www.facebook.com/TaproomN1/
+    website_link: http://www.thetaprooms.co.uk/
+    google_maps_link: https://goo.gl/maps/BmKT9DwFYCH3fjVr5
+    address: 163 Upper St, Islington
+    city: London
+    postcode: N1 1US
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/the_taproom_n1.jpg
+- model: uk_improv_guide.venue
+  pk: 9
+  fields:
+    twitter_handle: ''
+    name: The Castle
+    facebook_link: https://www.facebook.com/thecastlelondon/
+    website_link: http://www.thecastlelondon.com/
+    google_maps_link: https://goo.gl/maps/D6fC3htVnB6KXDRM6
+    address: 44 Commercial Road
+    city: London
+    postcode: E1 1LN
+    email_address: thecastle44@gmail.com
+    country: GB
+    school: null
+    image: venue/the_castle.jpg
+- model: uk_improv_guide.venue
+  pk: 10
+  fields:
+    twitter_handle: ''
+    name: Free Association's Comedy Room
+    facebook_link: ''
+    website_link: https://www.thelordstanley.com/
+    google_maps_link: https://goo.gl/maps/SwofZHit1FnSArNe6
+    address: 51 Camden Park Rd
+    city: London
+    postcode: NW1 9BH
+    email_address: ''
+    country: GB
+    school: 3bc46024-c973-4709-ba65-aace19f97fd9
+    image: venue/the_lord_stanley.jpg
+- model: uk_improv_guide.venue
+  pk: 11
+  fields:
+    twitter_handle: ''
+    name: The Bill Murray
+    facebook_link: ''
+    website_link: ''
+    google_maps_link: ''
+    address: 39 Queen's Head St
+    city: London
+    postcode: N1 8NQ
+    email_address: ''
+    country: GB
+    school: 44254cc3-d017-4296-82fb-58504f10b3ac
+    image: venue/the_bill_murray.jpg
+- model: uk_improv_guide.venue
+  pk: 12
+  fields:
+    twitter_handle: ''
+    name: Angel Comedy Club
+    facebook_link: ''
+    website_link: ''
+    google_maps_link: https://goo.gl/maps/qLwLjiQQj2LhZLSd9
+    address: 2 Camden Passage, The Angel, London
+    city: London
+    postcode: N1 8DY
+    email_address: ''
+    country: GB
+    school: 44254cc3-d017-4296-82fb-58504f10b3ac
+    image: venue/angel_comedy_club.jpg
+- model: uk_improv_guide.venue
+  pk: 13
+  fields:
+    twitter_handle: etceteratheatre
+    name: Etcetera Theatre
+    facebook_link: https://www.facebook.com/etceteratheatre
+    website_link: http://www.etceteratheatre.com/
+    google_maps_link: ''
+    address: 265 Camden High Street (Above the Oxford Arms), Camden
+    city: London
+    postcode: NW1 7BU
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/Etcetera_Theatre_2017.png
+- model: uk_improv_guide.venue
+  pk: 14
+  fields:
+    twitter_handle: ''
+    name: The Cavendish Arms
+    facebook_link: https://www.facebook.com/thecavendisharms/
+    website_link: http://www.thecavendisharmsstockwell.co.uk/
+    google_maps_link: https://goo.gl/maps/nhNbza85Xy6Etnrw5
+    address: 128 Hartington Rd
+    city: London
+    postcode: SW8 2HJ
+    email_address: info@thecavendisharmsstockwell.co.uk
+    country: GB
+    school: null
+    image: venue/cavendish_arms_stage.jpg
+- model: uk_improv_guide.venue
+  pk: 15
+  fields:
+    twitter_handle: '@NottmPlayhouse'
+    name: Nottingham Playhouse
+    facebook_link: http://www.facebook.com/nottinghamplayhouse
+    website_link: https://www.nottinghamplayhouse.co.uk/
+    google_maps_link: ''
+    address: Wellington Circus,
+    city: Nottingham
+    postcode: NG1 5AF
+    email_address: ''
+    country: GB
+    school: 1858aee6-79ea-4ded-a235-f205fe400678
+    image: venue/nottingham_playhouse.jpg
+- model: uk_improv_guide.venue
+  pk: 16
+  fields:
+    twitter_handle: '@angelmbrewery'
+    name: The Angel
+    facebook_link: ''
+    website_link: http://www.angelmicrobrewery.com/
+    google_maps_link: https://goo.gl/maps/nHHzCHFAQbwGWj4BA
+    address: 7 Stoney Street
+    city: Nottingham
+    postcode: NG1 1LG
+    email_address: thechapel.amb@gmail.com
+    country: GB
+    school: 1858aee6-79ea-4ded-a235-f205fe400678
+    image: venue/the_angel.jpeg
+- model: uk_improv_guide.venue
+  pk: 17
+  fields:
+    twitter_handle: ''
+    name: Fortune Theatre
+    facebook_link: ''
+    website_link: https://www.atgtickets.com/venues/fortune-theatre/
+    google_maps_link: ''
+    address: Russell Street
+    city: London
+    postcode: WC2B 5HH
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/FortuneTheatre.jpg
+- model: uk_improv_guide.venue
+  pk: 18
+  fields:
+    twitter_handle: ''
+    name: London Improv Theatre
+    facebook_link: https://www.facebook.com/thelondonimprovtheatre
+    website_link: https://www.londonimprovtheatre.com
+    google_maps_link: https://goo.gl/maps/teXFmukUJRifMF3s6
+    address: 104-A Finchley Road
+    city: London
+    postcode: NW3 5JJ
+    email_address: ''
+    country: GB
+    school: 528bc2b9-5c6a-4738-a7c7-80ff0acf4ffc
+    image: venue/london_improv_theatre.png
+- model: uk_improv_guide.venue
+  pk: 19
+  fields:
+    twitter_handle: TheComedyPub
+    name: The Comedy Pub
+    facebook_link: http://www.facebook.com/TheComedyPub
+    website_link: https://www.craft-pubs.co.uk/comedy
+    google_maps_link: ''
+    address: 7 Oxendon Street
+    city: London
+    postcode: SW1Y 4EE
+    email_address: ''
+    country: GB
+    school: 9c8b27ea-ac86-4d75-99dc-8b6a6307c43d
+    image: venue/The_Comedy_Pub_Hoopla_Megajam.jpg
+- model: uk_improv_guide.venue
+  pk: 20
+  fields:
+    twitter_handle: Maydays
+    name: The Maydays Studio
+    facebook_link: https://www.facebook.com/themaydaysstudio/?ref=br_rs
+    website_link: https://www.themaydays.co.uk/
+    google_maps_link: https://www.google.com/maps/place/The+Maydays/@50.8227093,-0.153085,17z/data=!3m1!4b1!4m5!3m4!1s0x48758512f1c106e7:0xcc161ab8ddcb32dd!8m2!3d50.8227093!4d-0.1508963
+    address: 12A Regency Square, Brighton,
+    city: Brighton
+    postcode: BN1 2FG
+    email_address: mayday@themaydays.co.uk
+    country: GB
+    school: 4322f66b-c7f9-4c62-917b-363895f7381c
+    image: venue/MaydaysLogoWebsite.png
+- model: uk_improv_guide.venue
+  pk: 21
+  fields:
+    twitter_handle: ''
+    name: The Quarry Theatre
+    facebook_link: ''
+    website_link: ''
+    google_maps_link: ''
+    address: St Peter's Street
+    city: Bedford
+    postcode: MK40 2NN
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/41659981_2107105899323239_3812846406591315968_n.jpg
+- model: uk_improv_guide.venue
+  pk: 22
+  fields:
+    twitter_handle: improvcha
+    name: Improv Chattanooga
+    facebook_link: https://www.facebook.com/improvchattanooga
+    website_link: https://www.improvchattanooga.com
+    google_maps_link: https://www.google.com/maps/place/Improv+Chattanooga/@35.0323555,-85.305576,17z/data=!3m1!4b1!4m5!3m4!1s0x88605dd830e2435b:0x69427fc73bae269f!8m2!3d35.0323555!4d-85.303382
+    address: 1800 Rossville Ave, Suite 118
+    city: Chattanooga
+    postcode: '37408'
+    email_address: info@improvchattanooga.com
+    country: US
+    school: null
+    image: venue/Improv-Chatt-Logo.png
+- model: uk_improv_guide.venue
+  pk: 23
+  fields:
+    twitter_handle: ''
+    name: The Colonial Theatre
+    facebook_link: https://www.facebook.com/thecolonialtheatre/?ref=br_rs
+    website_link: https://thecolonialtheatre.com/
+    google_maps_link: https://www.google.com/maps/dir//the+colonial+theatre/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89c691fa94b12cf3:0x48be1d602b9f4899?sa=X&ved=2ahUKEwj3ooO1jbfjAhUQqZ4KHYF4Dc4Q9RcwEHoECA8QDg
+    address: 227 Bridge Street
+    city: Phoenixville
+    postcode: '19460'
+    email_address: ''
+    country: US
+    school: null
+    image: venue/lmr.jpg
+- model: uk_improv_guide.venue
+  pk: 24
+  fields:
+    twitter_handle: ''
+    name: Partington Theatre
+    facebook_link: https://www.facebook.com/partingtonplayers/
+    website_link: http://partingtonplayers.org.uk/
+    google_maps_link: ''
+    address: Henry St
+    city: Glossop
+    postcode: SK13 8BW
+    email_address: ''
+    country: GB
+    school: cce53e29-49ac-49e8-afb1-f2df304cc1e7
+    image: venue/4122569_16fb7c6f.jpg
+- model: uk_improv_guide.venue
+  pk: 25
+  fields:
+    twitter_handle: ''
+    name: The Ned Ludd
+    facebook_link: https://www.facebook.com/TheNedLudd/
+    website_link: https://www.godine.co.uk/the-ned-ludd-nottingham
+    google_maps_link: ''
+    address: 27 Friar Lane
+    city: Nottingham
+    postcode: NG1 6DA
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/the-ned-ludd.jpg
+- model: uk_improv_guide.venue
+  pk: 26
+  fields:
+    twitter_handle: '@GildedBalloon'
+    name: Gilded Balloon Teviot
+    facebook_link: ''
+    website_link: ''
+    google_maps_link: ''
+    address: Gilded Balloon Teviot, Teviot Row House, 13 Bristo Place
+    city: Edinburgh
+    postcode: EH8 9AJ
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/Screenshot_2019-07-17_at_13.11.51.png
+- model: uk_improv_guide.venue
+  pk: 27
+  fields:
+    twitter_handle: '@KomediaBrighton'
+    name: Komedia
+    facebook_link: ''
+    website_link: ''
+    google_maps_link: ''
+    address: 44-47 Gardner Street
+    city: Brighton
+    postcode: BN1 1UN
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/Screenshot_2019-07-17_at_13.39.00.png
+- model: uk_improv_guide.venue
+  pk: 28
+  fields:
+    twitter_handle: '@ThePleasance'
+    name: The Pleasance Theatre Trust
+    facebook_link: ''
+    website_link: ''
+    google_maps_link: ''
+    address: Carpenters Mews, North Road
+    city: London
+    postcode: N7 9EF
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/Screenshot_2019-07-17_at_14.10.52.png
+- model: uk_improv_guide.venue
+  pk: 29
+  fields:
+    twitter_handle: ''
+    name: Queen's Head Wymondham
+    facebook_link: ''
+    website_link: https://www.queensheadnorfolk.co.uk/
+    google_maps_link: https://goo.gl/maps/YSjWWz9Pnz4P1dtn7
+    address: 2 Bridewell Street
+    city: Wymondham
+    postcode: NR18 0AR
+    email_address: ''
+    country: GB
+    school: null
+    image: venue/queens_head_w.jpg
+- model: uk_improv_guide.event
+  pk: 1
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: MOOP Inaugural
+    image: ''
+    event_type: S
+    start_time: 2019-06-24 20:00:00+00:00
+    venue: 3
+    series: null
+    teams:
+    - 4
+    - 2
+    - 3
+- model: uk_improv_guide.event
+  pk: 2
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: 'Moop Presents: The Caretakers'
+    image: ''
+    event_type: S
+    start_time: 2019-07-22 20:00:00+00:00
+    venue: 3
+    series: null
+    teams:
+    - 1
+    - 2
+- model: uk_improv_guide.event
+  pk: 3
+  fields:
+    facebook_link: https://www.facebook.com/events/463709171045195/
+    website_link: ''
+    eventbrite_link: ''
+    name: Lester City Super Sunday
+    image: ''
+    event_type: S
+    start_time: 2019-06-23 19:30:00+00:00
+    venue: 1
+    series: null
+    teams:
+    - 8
+    - 1
+    - 5
+- model: uk_improv_guide.event
+  pk: 4
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: DDG Summer Finale & Jam!
+    image: ''
+    event_type: J
+    start_time: 2019-07-29 20:00:00+00:00
+    venue: 5
+    series: 3aacbd0b-8536-4a9f-8d66-6e85a7869438
+    teams: []
+- model: uk_improv_guide.event
+  pk: 5
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Just Friends
+    image: ''
+    event_type: S
+    start_time: 2019-07-12 19:30:00+00:00
+    venue: 4
+    series: null
+    teams:
+    - 7
+    - 9
+- model: uk_improv_guide.event
+  pk: 6
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Mean People - Improv Comedy - LAST of the Summer!
+    image: ''
+    event_type: S
+    start_time: 2019-06-26 20:30:00+00:00
+    venue: 6
+    series: null
+    teams: []
+- model: uk_improv_guide.event
+  pk: 7
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Big Friday
+    image: ''
+    event_type: S
+    start_time: 2019-06-28 19:30:00+00:00
+    venue: 7
+    series: null
+    teams:
+    - 20
+    - 21
+- model: uk_improv_guide.event
+  pk: 8
+  fields:
+    facebook_link: https://www.facebook.com/events/1043479525857095/
+    website_link: ''
+    eventbrite_link: ''
+    name: Hoof
+    image: ''
+    event_type: S
+    start_time: 2019-07-03 20:00:00+00:00
+    venue: 8
+    series: null
+    teams:
+    - 22
+    - 11
+    - 21
+- model: uk_improv_guide.event
+  pk: 9
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Important Art
+    image: event/IMPORTANTART.png
+    event_type: S
+    start_time: 2019-07-04 21:00:00+00:00
+    venue: 1
+    series: 1aaf4020-4e05-453e-b6ae-84e61a2eae22
+    teams:
+    - 25
+    - 24
+    - 23
+- model: uk_improv_guide.event
+  pk: 10
+  fields:
+    facebook_link: https://www.facebook.com/events/2172032679574953/
+    website_link: ''
+    eventbrite_link: https://www.eventbrite.co.uk/e/amorphous-horses-happy-place-tickets-64730079410
+    name: Amorphous Horse's Happy Place
+    image: ''
+    event_type: S
+    start_time: 2019-07-25 19:15:00+00:00
+    venue: 9
+    series: b165abbe-585c-4fdb-8438-539785d22716
+    teams:
+    - 8
+- model: uk_improv_guide.event
+  pk: 11
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: https://www.eventbrite.co.uk/e/hoopla-bumper-blyton-do-not-adjust-your-stage-glitch-tickets-63967300919
+    name: Bumper Blyton, Do Not Adjust Your Stage & Glitch!
+    image: ''
+    event_type: S
+    start_time: 2019-07-13 20:00:00+00:00
+    venue: 2
+    series: null
+    teams:
+    - 28
+    - 27
+    - 29
+- model: uk_improv_guide.event
+  pk: 12
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Cage Match
+    image: ''
+    event_type: S
+    start_time: 2019-07-25 21:00:00+00:00
+    venue: 1
+    series: 8921978b-be00-4845-a8b0-787f8c9ef1fb
+    teams:
+    - 30
+- model: uk_improv_guide.event
+  pk: 14
+  fields:
+    facebook_link: https://www.facebook.com/events/467238420698796
+    website_link: ''
+    eventbrite_link: ''
+    name: 'The Parentheticals: Improdyssey (Camden Fringe)'
+    image: event/Square_group_image.jpg
+    event_type: S
+    start_time: 2019-08-11 20:30:00+00:00
+    venue: 13
+    series: null
+    teams:
+    - 33
+- model: uk_improv_guide.event
+  pk: 15
+  fields:
+    facebook_link: https://www.facebook.com/events/467238420698796
+    website_link: ''
+    eventbrite_link: ''
+    name: 'The Parentheticals: Improdyssey (Camden Fringe)'
+    image: event/Square_group_image_nTXkZQf.jpg
+    event_type: S
+    start_time: 2019-08-12 20:30:00+00:00
+    venue: 13
+    series: null
+    teams:
+    - 33
+- model: uk_improv_guide.event
+  pk: 16
+  fields:
+    facebook_link: https://www.facebook.com/events/314916575838327
+    website_link: ''
+    eventbrite_link: https://www.eventbrite.co.uk/e/ddg-improv-beginners-improv-comedy-course-tickets-58928126613
+    name: 'DDG Improv: Beginner''s Improv Comedy Course'
+    image: event/DDG_Beginners_Course.jpg
+    event_type: W
+    start_time: 2019-09-02 18:45:00+00:00
+    venue: 5
+    series: null
+    teams: []
+- model: uk_improv_guide.event
+  pk: 17
+  fields:
+    facebook_link: https://www.facebook.com/events/789272194778577/
+    website_link: ''
+    eventbrite_link: https://www.eventbrite.co.uk/e/ddg-improv-performance-improv-comedy-course-tickets-58927880878
+    name: 'DDG Improv: Performance Improv Comedy Course'
+    image: event/DDG_Performance_Course.jpg
+    event_type: W
+    start_time: 2019-10-28 18:45:00+00:00
+    venue: 5
+    series: null
+    teams: []
+- model: uk_improv_guide.event
+  pk: 18
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: DDG Improv Jam
+    image: event/DDG_logo_-_Copy.png
+    event_type: J
+    start_time: 2019-07-15 20:00:00+00:00
+    venue: 5
+    series: 3aacbd0b-8536-4a9f-8d66-6e85a7869438
+    teams:
+    - 34
+    - 50
+    - 51
+- model: uk_improv_guide.event
+  pk: 19
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: DDG Improv Jam (Authentic Dylan; Patrol; DuckDuckTales)
+    image: event/DDG_logo_-_Copy_eo4Fxy4.png
+    event_type: J
+    start_time: 2019-07-22 20:00:00+00:00
+    venue: 5
+    series: 3aacbd0b-8536-4a9f-8d66-6e85a7869438
+    teams: []
+- model: uk_improv_guide.event
+  pk: 20
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: 'MissImp Presents: Improv ComicCon!'
+    image: event/Improv-ComicCon-FB-1.jpg
+    event_type: S
+    start_time: 2019-07-20 19:00:00+00:00
+    venue: 16
+    series: a2bc0d74-5936-4940-b44b-e9e6cfc512b7
+    teams:
+    - 37
+    - 38
+- model: uk_improv_guide.event
+  pk: 21
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-11-18 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 22
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-11-25 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 23
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-12-01 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 24
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-12-02 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 25
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-12-08 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 26
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-12-09 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 27
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-12-15 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 28
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Austentatious
+    image: ''
+    event_type: S
+    start_time: 2019-12-16 19:39:00+00:00
+    venue: 17
+    series: ae0e1240-ede4-4918-a182-a31910a62fdc
+    teams:
+    - 31
+- model: uk_improv_guide.event
+  pk: 29
+  fields:
+    facebook_link: https://www.facebook.com/events/637992360029091
+    website_link: ''
+    eventbrite_link: ''
+    name: Sunday Improv Combo
+    image: event/sunday_combo.jpg
+    event_type: S
+    start_time: 2019-07-21 18:30:00+00:00
+    venue: 18
+    series: null
+    teams:
+    - 40
+    - 9
+    - 41
+- model: uk_improv_guide.event
+  pk: 30
+  fields:
+    facebook_link: https://www.facebook.com/events/925260307822239/
+    website_link: ''
+    eventbrite_link: ''
+    name: PUNDERFEST 2019
+    image: event/punderfest_real.jpg
+    event_type: S
+    start_time: 2019-08-16 19:00:00+00:00
+    venue: 2
+    series: 702f88e9-8746-4c30-9792-c830c5e32626
+    teams:
+    - 48
+    - 47
+    - 44
+    - 30
+    - 45
+    - 43
+    - 14
+    - 46
+- model: uk_improv_guide.event
+  pk: 31
+  fields:
+    facebook_link: https://www.facebook.com/events/2434737636593338/?ti=as
+    website_link: ''
+    eventbrite_link: ''
+    name: 'Punderstandably Improv Presents: Improv Towers The Improvised Game Show'
+    image: event/cover-photo-1.png
+    event_type: S
+    start_time: 2019-07-16 20:00:00+00:00
+    venue: 2
+    series: 702f88e9-8746-4c30-9792-c830c5e32626
+    teams:
+    - 43
+    - 56
+- model: uk_improv_guide.event
+  pk: 32
+  fields:
+    facebook_link: https://www.facebook.com/Scoops-Improv-Comedy-Brighton-602732320093495/?ref=br_rs
+    website_link: ''
+    eventbrite_link: https://www.brownpapertickets.com/event/3432493
+    name: Scoops
+    image: ''
+    event_type: S
+    start_time: 2019-07-19 19:30:00+00:00
+    venue: 20
+    series: 71453d71-177d-4a1f-9a26-141afee0bc75
+    teams:
+    - 49
+- model: uk_improv_guide.event
+  pk: 33
+  fields:
+    facebook_link: https://www.facebook.com/events/653552271787508/
+    website_link: https://phoenixvillecomedy.com/sfb/
+    eventbrite_link: https://www.eventbrite.com/e/family-improv-game-night-at-the-colonial-tickets-64198219603
+    name: 'Family Improv Game Night: age 9+'
+    image: ''
+    event_type: J
+    start_time: 2019-08-04 16:00:00+00:00
+    venue: 23
+    series: null
+    teams:
+    - 4
+    - 54
+- model: uk_improv_guide.event
+  pk: 34
+  fields:
+    facebook_link: https://www.facebook.com/events/634791210333898/
+    website_link: ''
+    eventbrite_link: ''
+    name: Summer Improv Party
+    image: ''
+    event_type: W
+    start_time: 2019-08-03 13:00:00+00:00
+    venue: 24
+    series: null
+    teams: []
+- model: uk_improv_guide.event
+  pk: 35
+  fields:
+    facebook_link: https://www.facebook.com/events/298162251102083/
+    website_link: ''
+    eventbrite_link: ''
+    name: Glossop Improv Workshop
+    image: event/angelo_brewing.jpg
+    event_type: W
+    start_time: 2019-07-19 18:30:00+00:00
+    venue: 24
+    series: daaceb21-6200-401d-80bb-b792ae886a32
+    teams:
+    - 55
+- model: uk_improv_guide.event
+  pk: 36
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Nuts - The naked truth, not the lads mag
+    image: ''
+    event_type: S
+    start_time: 2019-08-10 21:30:00+00:00
+    venue: 6
+    series: null
+    teams:
+    - 57
+- model: uk_improv_guide.event
+  pk: 37
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Nuts - The naked truth, not the lads mag
+    image: event/nuts.jpg
+    event_type: S
+    start_time: 2019-08-09 21:30:00+00:00
+    venue: 6
+    series: null
+    teams:
+    - 57
+- model: uk_improv_guide.event
+  pk: 38
+  fields:
+    facebook_link: https://www.facebook.com/events/809058409495368
+    website_link: ''
+    eventbrite_link: ''
+    name: The Healing Power of Theatre
+    image: ''
+    event_type: S
+    start_time: 2019-07-27 21:00:00+00:00
+    venue: 1
+    series: db4fb9d3-1db9-49e0-849c-e87f1d516fb8
+    teams:
+    - 58
+- model: uk_improv_guide.event
+  pk: 39
+  fields:
+    facebook_link: https://www.facebook.com/events/487422068492441/
+    website_link: http://www.bananahutgang.com
+    eventbrite_link: https://sedos.co.uk/secure/boxoffice/production.php
+    name: Choose Your Own... Improv! Edinburgh Preview
+    image: ''
+    event_type: S
+    start_time: 2019-08-05 19:30:00+00:00
+    venue: 2
+    series: null
+    teams:
+    - 48
+- model: uk_improv_guide.event
+  pk: 40
+  fields:
+    facebook_link: https://www.facebook.com/events/487422068492441/
+    website_link: http://www.bananahutgang.com
+    eventbrite_link: https://sedos.co.uk/secure/boxoffice/production.php
+    name: Choose Your Own... Improv! Edinburgh Preview
+    image: ''
+    event_type: S
+    start_time: 2019-08-07 19:30:00+00:00
+    venue: 2
+    series: null
+    teams:
+    - 48
+- model: uk_improv_guide.event
+  pk: 41
+  fields:
+    facebook_link: ''
+    website_link: ''
+    eventbrite_link: ''
+    name: Friday Night Improv
+    image: ''
+    event_type: S
+    start_time: 2019-08-31 19:00:00+00:00
+    venue: 25
+    series: null
+    teams:
+    - 37
+- model: uk_improv_guide.event
+  pk: 42
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-26 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 43
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB.png
+    event_type: S
+    start_time: 2019-08-25 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 44
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-24 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 45
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-23 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 46
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-22 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 47
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-21 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 48
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-20 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 49
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-19 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 50
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-18 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 51
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-17 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 52
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-16 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 53
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_HvY1XfK.png
+    event_type: S
+    start_time: 2019-08-15 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 54
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-14 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 56
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-12 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 57
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_k9NdnRy.png
+    event_type: S
+    start_time: 2019-08-11 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 58
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_TRPVzH5.png
+    event_type: S
+    start_time: 2019-08-10 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 59
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_PhqWfPj.png
+    event_type: S
+    start_time: 2019-08-09 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 60
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_e4QNhQE.png
+    event_type: S
+    start_time: 2019-08-08 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 61
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-07 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 62
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_ZtNnC90.png
+    event_type: S
+    start_time: 2019-08-06 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 63
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-05 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 64
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_qa3pmhY.png
+    event_type: S
+    start_time: 2019-08-04 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 65
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_0sF7rO3.png
+    event_type: S
+    start_time: 2019-08-03 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 66
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-08-02 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 67
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: event/HNA_NEW_2019less1MB_lOZTWpC.png
+    event_type: S
+    start_time: 2019-08-01 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 68
+  fields:
+    facebook_link: http://www.facebook.com/events/1282375831915925/
+    website_link: http://www.themaydays.co.uk/event/hna-2019-08-26/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ Edinburgh Fringe 2019'
+    image: ''
+    event_type: S
+    start_time: 2019-07-31 14:45:00+00:00
+    venue: 26
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 69
+  fields:
+    facebook_link: https://www.facebook.com/events/301957250744451/
+    website_link: https://www.themaydays.co.uk/event/confessions-2019-09-06/
+    eventbrite_link: ''
+    name: 'The Maydays present: Confessions'
+    image: event/Confessions_2019.jpg
+    event_type: S
+    start_time: 2019-09-06 19:00:00+00:00
+    venue: 27
+    series: f0a81c24-dfb9-4786-adbe-e47cd047caa2
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 70
+  fields:
+    facebook_link: https://www.facebook.com/events/301957250744451/
+    website_link: https://www.themaydays.co.uk/event/confessions-2019-11-01/
+    eventbrite_link: ''
+    name: 'The Maydays present: Confessions'
+    image: event/Confessions_2019_FyIBWrx.jpg
+    event_type: S
+    start_time: 2019-11-01 19:00:00+00:00
+    venue: 27
+    series: f0a81c24-dfb9-4786-adbe-e47cd047caa2
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 71
+  fields:
+    facebook_link: https://www.facebook.com/events/1295812147238136/
+    website_link: https://www.themaydays.co.uk/event/tonights-top-story-2019-10-04/
+    eventbrite_link: ''
+    name: 'The Maydays present: Tonight''s Top Story'
+    image: event/TTS_2019.jpg
+    event_type: S
+    start_time: 2019-10-04 19:00:00+00:00
+    venue: 27
+    series: 44341490-201d-4acb-9462-33768a6a404b
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 72
+  fields:
+    facebook_link: https://www.facebook.com/events/1295812147238136/
+    website_link: https://www.themaydays.co.uk/event/tonights-top-story-2019-11-29/
+    eventbrite_link: ''
+    name: 'The Maydays present: Tonight''s Top Story'
+    image: event/TTS_2019_oxP9lyr.jpg
+    event_type: S
+    start_time: 2019-11-29 19:00:00+00:00
+    venue: 27
+    series: 44341490-201d-4acb-9462-33768a6a404b
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 73
+  fields:
+    facebook_link: https://www.facebook.com/events/362178317825493/
+    website_link: https://www.themaydays.co.uk/event/happily-never-after-london-horror-festival/
+    eventbrite_link: ''
+    name: 'The Maydays present: Happily Never After @ London Horror Festival'
+    image: event/HNA_NEW_2019less1MB_NyE7qXl.png
+    event_type: S
+    start_time: 2019-10-31 19:00:00+00:00
+    venue: 28
+    series: 8e5519b7-3f3c-4bc9-9549-f3e7a6024470
+    teams:
+    - 26
+- model: uk_improv_guide.event
+  pk: 74
+  fields:
+    facebook_link: https://www.facebook.com/events/624740364675180/
+    website_link: ''
+    eventbrite_link: ''
+    name: Wymondham Improv Comedy Workshop
+    image: ''
+    event_type: W
+    start_time: 2019-07-25 19:00:00+00:00
+    venue: 29
+    series: null
+    teams: []

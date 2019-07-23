@@ -28,6 +28,19 @@ services:
     networks:
       - internal
 
+  bash:
+    <<: *base-image
+    entrypoint: ["/bin/bash"]
+    volumes:
+      - ./src:/src
+    depends_on:
+      - db
+    environment:
+      <<: *base-database
+    networks:
+      - internal
+
+
   db:
     <<: *base-dev
     image: postgres:10.9
