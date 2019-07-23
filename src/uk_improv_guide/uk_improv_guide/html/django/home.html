@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% block content_inner %}
 {% load static %}
-{% include "content/welcome.html" %}
 
 <h2 class="display-5">Events starting in the next {{event_days}} days.</h2>
 
@@ -14,6 +13,7 @@
             {% include "content/event.html" %}
         </li>
         {% endfor %}
+    </ul>
     </ul>
     <a href="/events/">More events...</a>
 </div>

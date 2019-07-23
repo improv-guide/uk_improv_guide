@@ -12,7 +12,7 @@ def home(request, event_days: int = 7):
     now: datetime.datetime = datetime.datetime.now()
     later: datetime = now + datetime.timedelta(hours=24 * event_days)
     events: Sequence[Event] = get_events_between_dates(now, later)
-    title: str = "World Improv Guide"
+    title: str = "Improv Guide"
     return render(
         request,
         "home.html",

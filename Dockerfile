@@ -1,5 +1,6 @@
 FROM salimfadhley/testpython AS uk_improv_guide_python_base
-RUN apt-get update && apt-get install mysql-client bash -y
+RUN apt-get update && apt-get install mysql-client bash -y \
+    && rm -rf /var/lib/apt/lists/*
 COPY /src/requirements_dev.txt /src/
 RUN python -m pip install -r /src/requirements_dev.txt
 COPY /src/requirements.txt /src/
