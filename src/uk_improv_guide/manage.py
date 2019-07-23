@@ -9,13 +9,17 @@ from django.core.management import execute_from_command_line
 log = logging.getLogger(__name__)
 
 
-def main():
+def start():
     log.info("Starting application.")
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "uk_improv_guide.settings")
     execute_from_command_line(sys.argv)
 
 
-if __name__ == "__main__":
+def main():
     logging.basicConfig()
     logging.getLogger("").setLevel(logging.INFO)
+    start()
+
+if __name__ == "__main__":
     main()
+
