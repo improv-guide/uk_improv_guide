@@ -4,12 +4,12 @@ import os
 from setuptools import setup
 
 PROJECT_ROOT, _ = os.path.split(__file__)
-REVISION = "0.0.0"
+REVISION = "0.1.25"
 PROJECT_NAME = "uk_improv_guide"
 PROJECT_AUTHORS = "Salim Fadhley"
 PROJECT_EMAILS = "salimfadhley@gmail.com"
 PROJECT_URL = "https://github.com/salimfadhley/uk_improv_guide"
-SHORT_DESCRIPTION = "Demonstration"
+SHORT_DESCRIPTION = "UK Improv Guide"
 
 try:
     DESCRIPTION = open(os.path.join(PROJECT_ROOT, "readme.md")).read()
@@ -35,6 +35,6 @@ setup(
     long_description=DESCRIPTION,
     license="MIT",
     entry_points={
-        "console_scripts": ["flash = blink1.flash:flash", "shine = blink1.shine:shine"]
+        "console_scripts": ["manage = uk_improv_guide.manage:main"]
     },
 )
