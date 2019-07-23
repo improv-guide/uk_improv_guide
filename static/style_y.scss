@@ -103,3 +103,9 @@ h1 {
   height: 250px;
   object-fit: cover;
 }
+
+.performers_list {
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
