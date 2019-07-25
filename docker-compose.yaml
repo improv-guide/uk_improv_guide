@@ -13,7 +13,7 @@ x-base-database: &base-database
   PRODUCTION_SECRET: ${PRODUCTION_SECRET}
 
 x-base-image: &base-image
-  image: "salimfadhley/uk_improv_guide:${IMPROV_GUIDE_VERSION}"
+  image: "salimfadhley/uk-improv-guide:${IMPROV_GUIDE_VERSION}"
 
 services:
 
