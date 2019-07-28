@@ -40,7 +40,6 @@ services:
     networks:
       - internal
 
-
   db:
     <<: *base-dev
     image: postgres:10.9
@@ -57,7 +56,6 @@ services:
 
 volumes:
   postgres_data:
-
 
 networks:
   internal:

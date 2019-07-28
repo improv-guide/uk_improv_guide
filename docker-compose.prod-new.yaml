@@ -19,10 +19,12 @@ services:
 
   prod:
     image: "salimfadhley/uk-improv-guide:${IMPROV_GUIDE_VERSION}"
-
+    build:
+      context: .
+      target: uk-improv-guide
     volumes:
-      - static:/src/uk-improv-guide/static
-    working_dir: "/src/uk-improv-guide"
+      - static:/src/uk_improv_guide/static
+    working_dir: "/src/uk_improv_guide"
     entrypoint: ["gunicorn", "--bind=0.0.0.0:80", "uk-improv-guide.wsgi"]
     depends_on:
       - db
@@ -52,7 +54,7 @@ services:
 
 volumes:
   static:
-    postgres_data:
+  postgres_data:
 
 networks:
   internal:
