@@ -4,12 +4,12 @@ import os
 from setuptools import setup
 
 PROJECT_ROOT, _ = os.path.split(__file__)
-REVISION = "0.1.25"
+REVISION = os.environ.get("IMPROV_GUIDE_VERSION", "0.0.0")
 PROJECT_NAME = "uk_improv_guide"
 PROJECT_AUTHORS = "Salim Fadhley"
 PROJECT_EMAILS = "salimfadhley@gmail.com"
 PROJECT_URL = "https://github.com/salimfadhley/uk_improv_guide"
-SHORT_DESCRIPTION = "UK Improv Guide"
+SHORT_DESCRIPTION = "Demonstration"
 
 try:
     DESCRIPTION = open(os.path.join(PROJECT_ROOT, "readme.md")).read()

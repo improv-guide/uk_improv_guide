@@ -12,7 +12,7 @@
         {% include "content/social.html" %}
     {% endwith %}
 
-    {% if performer.teaches_for.exists %}
+    {% if performer.teaches_for.all.exists %}
     <h3>{{performer.first_name}} teaches at these schools...</h3>
 
     <ul>

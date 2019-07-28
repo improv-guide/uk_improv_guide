@@ -13,10 +13,10 @@ x-common_settings: &common
   DEBUG: "Yes"
   PRODUCTION_SECRET: ${PRODUCTION_SECRET}
 x-base-image: &base-image
-  image: "salimfadhley/uk_improv_guide:${IMPROV_GUIDE_VERSION}"
+  image: "salimfadhley/uk-improv-guide:${IMPROV_GUIDE_VERSION}"
   build:
     context: .
-    target: uk_improv_guide
+    target: uk-improv-guide
 
 
 services:
@@ -27,9 +27,9 @@ services:
 
     volumes:
       - ./src:/src
-      - ./static:/src/uk_improv_guide/static
-    working_dir: "/src/uk_improv_guide"
-    entrypoint: ["/src/uk_improv_guide/start_dev.sh"]
+      - ./static:/src/uk-improv-guide/static
+    working_dir: "/src/uk-improv-guide"
+    entrypoint: ["/src/uk-improv-guide/start_dev.sh"]
     ports:
       - "8000:8000"
     depends_on:
@@ -65,17 +65,11 @@ services:
     networks:
       - internal
 
-  portainer:
-    <<: *base-dev
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - portainer_data:/data
-    image: portainer/portainer
-    ports:
-      - "9000:9000"
+  nginx:
+    image: salimfadhley/uk-improv-guide-nginx:0.0.1
+    build:
+      context: .
+      target: uk-improv-guide-nginx
 
 networks:
   internal:
-
-volumes:
-  portainer_data:
