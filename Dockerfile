@@ -14,8 +14,10 @@ RUN useradd python
 
 FROM uk-improv-guide-python-base AS uk-improv-guide
 COPY /src /src
+COPY /static /src/uk-improv-guide/static
 WORKDIR /src/uk_improv_guide
 RUN chmod +x *.sh
 RUN chmod +x manage.py
 RUN python -m pip install -e /src
+ENTRYPOINT ["gunicorn", "--bind=0.0.0.0:80", "uk_improv_guide.wsgi"]
 

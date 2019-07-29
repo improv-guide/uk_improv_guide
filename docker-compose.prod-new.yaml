@@ -1,6 +1,9 @@
 version: '3.7'
 
+#  ./static:/src/uk-improv-guide/static
+
 services:
+
   nginx:
     image: "salimfadhley/uk-improv-guide-nginx:${IMPROV_GUIDE_VERSION}"
     build:
@@ -10,7 +13,7 @@ services:
     volumes:
       - static:/usr/share/nginx/html/static:ro
     ports:
-      - 81:80
+      - 80:80
       - 443:443
     networks:
       - internal
@@ -25,7 +28,8 @@ services:
     volumes:
       - static:/src/uk_improv_guide/static
     working_dir: "/src/uk_improv_guide"
-    entrypoint: ["gunicorn", "--bind=0.0.0.0:80", "uk-improv-guide.wsgi"]
+    ports:
+      - "81:80"
     depends_on:
       - db
     environment:
@@ -52,7 +56,23 @@ services:
     networks:
       - internal
 
+
+  syncthing:
+    image: linuxserver/syncthing
+    environment:
+      - TZ=Europe/London
+    volumes:
+      - syncthing_config:/config
+      - static:/data1
+    ports:
+      - 8384:8384
+      - 22000:22000
+      - 21027:21027/udp
+    restart: unless-stopped
+
+
 volumes:
+  syncthing_config:
   static:
   postgres_data:
 
