@@ -9,7 +9,6 @@ services:
     build:
       context: .
       target: uk-improv-guide-nginx
-    container_name: production_nginx
     volumes:
       - static:/usr/share/nginx/html/static:ro
     ports:
@@ -19,6 +18,11 @@ services:
       - internal
     depends_on:
       - prod
+    deploy:
+      replicas: 2
+      placement:
+        constraints:
+          - node.role == manager
 
   prod:
     image: "salimfadhley/uk-improv-guide:${IMPROV_GUIDE_VERSION}"
@@ -29,7 +33,7 @@ services:
       - static:/src/uk_improv_guide/static
     working_dir: "/src/uk_improv_guide"
     ports:
-      - "81:80"
+      - "80:80"
     depends_on:
       - db
     environment:
