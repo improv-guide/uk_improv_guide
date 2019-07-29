@@ -69,6 +69,11 @@ services:
       - 22000:22000
       - 21027:21027/udp
     restart: unless-stopped
+    deploy:
+      replicas: 2
+      placement:
+        constraints:
+          - node.role == worker
 
 
 volumes:
