@@ -48,35 +48,35 @@ services:
 #    networks:
 #      - internal
 #
-#  db:
-#    image: postgres:10.9
-#    volumes:
-#      - "postgres_data:/var/lib/postgresql/data"
-#    environment:
-#      POSTGRES_USER: ${POSTGRES_USER}
-#      POSTGRES_DB: ${POSTGRES_DB}
-#      POSTGRES_PORT: ${POSTGRES_PORT}
-#      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-#    networks:
-#      - internal
-
-
-  syncthing:
-    image: linuxserver/syncthing
-    environment:
-      - TZ=Europe/London
+  db:
+    image: postgres:10.9
     volumes:
-      - syncthing_config:/config
-      - static:/data1
-    ports:
-      - 8384:8384
-      - 22000:22000
-      - 21027:21027/udp
-    deploy:
-      replicas: 2
-      placement:
-        constraints:
-          - node.role == worker
+      - "postgres_data:/var/lib/postgresql/data"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_PORT: ${POSTGRES_PORT}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    networks:
+      - internal
+
+
+#  syncthing:
+#    image: linuxserver/syncthing
+#    environment:
+#      - TZ=Europe/London
+#    volumes:
+#      - syncthing_config:/config
+#      - static:/data1
+#    ports:
+#      - 8384:8384
+#      - 22000:22000
+#      - 21027:21027/udp
+#    deploy:
+#      replicas: 2
+#      placement:
+#        constraints:
+#          - node.role == worker
 
 
 volumes:
