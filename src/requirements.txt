@@ -1,6 +1,6 @@
 jinja2==2.10.1
 psycopg2==2.8.3
-django==2.2.3
+django==2.2.2
 django-reversion
 pytz
 django-recaptcha

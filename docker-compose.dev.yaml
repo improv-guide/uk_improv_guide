@@ -1,75 +1,72 @@
 version: '3.7'
 
-x-base-dev: &base-dev
-  restart: on-failure
-
-x-common_settings: &common
-  POSTGRES_USER: ${POSTGRES_USER}
-  POSTGRES_DB: ${POSTGRES_DB}
-  POSTGRES_PORT: ${POSTGRES_PORT}
-  POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-  POSTGRES_HOST: ${POSTGRES_HOST}
-  SLACK_WEB_HOOK: ${SLACK_WEB_HOOK}
-  DEBUG: "Yes"
-  PRODUCTION_SECRET: ${PRODUCTION_SECRET}
-x-base-image: &base-image
-  image: "salimfadhley/uk-improv-guide:${IMPROV_GUIDE_VERSION}"
-  build:
-    context: .
-    target: uk-improv-guide
-
-
 services:
 
   dev:
-    <<: *base-dev
-    <<: *base-image
-
+    image: "salimfadhley/uk-improv-guide:${IMPROV_GUIDE_VERSION}"
+    build:
+      context: .
+      target: uk-improv-guide
     volumes:
+      - media:/src/uk_improv_guide/static/media
       - ./src:/src
-      - ./static:/src/uk-improv-guide/static
-    working_dir: "/src/uk-improv-guide"
-    entrypoint: ["/src/uk-improv-guide/start_dev.sh"]
+    working_dir: "/src/uk_improv_guide"
+    entrypoint: ["manage.py", "runserver"]
     ports:
       - "8000:8000"
-    depends_on:
-      - db
     environment:
-      <<: *common
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_PORT: ${POSTGRES_PORT}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_HOST: ${POSTGRES_HOST}
+      POSTGRES_SSLMODE: ${POSTGRES_SSLMODE}
+      SLACK_WEB_HOOK: ${SLACK_WEB_HOOK}
+      PRODUCTION_SECRET: ${PRODUCTION_SECRET}
       SITE_PORT: ${SITE_PORT}
     networks:
       - internal
 
-  adminer:
-    image: adminer:4.7.1
-    container_name: "dev_adminer"
-    restart: always
-    ports:
-      - "8080:8080"
-    environment:
-      ADMINER_DEFAULT_SERVER: "db"
-    depends_on:
-      - db
-    networks:
-      - internal
+#  db:
+#    image: postgres:10.9
+#    volumes:
+#      - "postgres_data:/var/lib/postgresql/data"
+#    environment:
+#      POSTGRES_USER: improv
+#      POSTGRES_DB: improv
+#      POSTGRES_PORT: 5432
+#      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+#    networks:
+#      - interna
+#    deploy:
+#      replicas: 1
+#      placement:
+#        constraints:
+#          - node.role == worker
 
 
-  python:
-    <<: *base-image
-    volumes:
-      - ./src:/src
-    depends_on:
-      - db
-    environment:
-      <<: *common
-    networks:
-      - internal
+#  syncthing:
+#    image: linuxserver/syncthing
+#    environment:
+#      - TZ=Europe/London
+#    volumes:
+#      - syncthing_config:/config
+#      - static:/data1
+#    ports:
+#      - 8384:8384
+#      - 22000:22000
+#      - 21027:21027/udp
+#    deploy:
+#      replicas: 2
+#      placement:
+#        constraints:
+#          - node.role == worker
 
-  nginx:
-    image: salimfadhley/uk-improv-guide-nginx:0.0.1
-    build:
-      context: .
-      target: uk-improv-guide-nginx
+
+volumes:
+  syncthing_config:
+  media:
+  postgres_data:
 
 networks:
   internal:

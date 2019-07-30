@@ -10,12 +10,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 import os
+from typing import Mapping, Union
 
 import pkg_resources
 
 import rollbar
 
-SITE_NAME: str = "European Improv Gude"
+SITE_NAME: str = "Improv Gude"
 SITE_CANONICAL_URL = "http://improv.guide"
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -26,7 +27,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("PRODUCTION_SECRET")
+SECRET_KEY:str = os.environ.get("PRODUCTION_SECRET") or "secret_key!"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG: bool = True if os.environ.get("DEBUG", None) else False
@@ -95,16 +96,26 @@ WSGI_APPLICATION = "uk_improv_guide.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ["POSTGRES_DB"],
-        "USER": os.environ["POSTGRES_USER"],
-        "PASSWORD": os.environ["POSTGRES_PASSWORD"],
-        "HOST": os.environ["POSTGRES_HOST"],
-        "PORT": os.environ["POSTGRES_PORT"],
+def get_database_settings()->Mapping[str,Union[str,Mapping[str,str]]]:
+    result = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": os.environ["POSTGRES_DB"],
+            "USER": os.environ["POSTGRES_USER"],
+            "PASSWORD": os.environ["POSTGRES_PASSWORD"],
+            "HOST": os.environ["POSTGRES_HOST"],
+            "PORT": os.environ["POSTGRES_PORT"],
+        }
     }
-}
+
+    if os.environ.get("POSTGRES_SSLMODE"):
+        result["OPTIONS"] = {'sslmode': 'require'}
+
+    return result
+
+DATABASES = get_database_settings()
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators

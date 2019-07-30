@@ -26,6 +26,7 @@ setup(
     version=REVISION,
     author=PROJECT_AUTHORS,
     author_email=PROJECT_EMAILS,
+    package_dir={"":"uk_improv_guide"},
     packages=["uk_improv_guide"],
     zip_safe=True,
     include_package_data=False,
