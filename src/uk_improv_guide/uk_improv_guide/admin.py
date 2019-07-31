@@ -13,7 +13,7 @@ def get_admin_class_for_model(m) -> Type:
         ac = m.model_admin
     except AttributeError:
         admin_name = f"{m.__name__}Admin"
-        log.info(f"No custom admin found for {m}")
+        log.debug(f"No custom admin found for {m}")
         ac = type(admin_name, (VersionAdmin,), {"save_as": True})
         globals()[admin_name] = ac
     return ac

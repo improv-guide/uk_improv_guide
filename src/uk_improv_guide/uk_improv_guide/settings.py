@@ -9,12 +9,16 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
+import logging
 import os
 from typing import Mapping, Union
 
 import pkg_resources
 
 import rollbar
+
+log = logging.getLogger(__name__)
+
 
 SITE_NAME: str = "Improv Gude"
 SITE_CANONICAL_URL = "http://improv.guide"
@@ -97,6 +101,7 @@ WSGI_APPLICATION = "uk_improv_guide.wsgi.application"
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 def get_database_settings()->Mapping[str,Union[str,Mapping[str,str]]]:
+    import pprint
     result = {
         "default": {
             "ENGINE": "django.db.backends.postgresql",
@@ -105,12 +110,13 @@ def get_database_settings()->Mapping[str,Union[str,Mapping[str,str]]]:
             "PASSWORD": os.environ["POSTGRES_PASSWORD"],
             "HOST": os.environ["POSTGRES_HOST"],
             "PORT": os.environ["POSTGRES_PORT"],
+            "OPTIONS": {'sslmode': 'require'} if os.environ["POSTGRES_SSLMODE"] else {},
         }
     }
 
-    if os.environ.get("POSTGRES_SSLMODE"):
-        result["OPTIONS"] = {'sslmode': 'require'}
+    log.info("Pingu is lord!!")
 
+    log.info(f"Using database settings: {pprint.pformat(result)}")
     return result
 
 DATABASES = get_database_settings()
@@ -156,10 +162,7 @@ AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
 ]
 
-
 MEDIA_URL = "media/"
-#
-# print(f"Media Root: {MEDIA_ROOT}")
 
 _static_dir = os.path.join(BASE_DIR, "static")
 

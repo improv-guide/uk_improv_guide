@@ -8,10 +8,10 @@ services:
       context: .
       target: uk-improv-guide
     volumes:
-      - media:/src/uk_improv_guide/static/media
-      - ./src:/src
+      - ./media:/src/uk_improv_guide/static/media
+      - ./src/uk_improv_guide:/src/uk_improv_guide
     working_dir: "/src/uk_improv_guide"
-    entrypoint: ["manage.py", "runserver"]
+    entrypoint: ["/src/start_dev.sh"]
     ports:
       - "8000:8000"
     environment:
@@ -24,49 +24,58 @@ services:
       SLACK_WEB_HOOK: ${SLACK_WEB_HOOK}
       PRODUCTION_SECRET: ${PRODUCTION_SECRET}
       SITE_PORT: ${SITE_PORT}
-    networks:
-      - internal
+    depends_on:
+      - db
 
-#  db:
-#    image: postgres:10.9
-#    volumes:
-#      - "postgres_data:/var/lib/postgresql/data"
-#    environment:
-#      POSTGRES_USER: improv
-#      POSTGRES_DB: improv
-#      POSTGRES_PORT: 5432
-#      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-#    networks:
-#      - interna
-#    deploy:
-#      replicas: 1
-#      placement:
-#        constraints:
-#          - node.role == worker
+  db:
+    image: postgres:11.4
+    volumes:
+      - "postgres_data:/var/lib/postgresql/data"
+    environment:
+      POSTGRES_USER: improv
+      POSTGRES_DB: improv
+      POSTGRES_PORT: 5432
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    deploy:
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == worker
 
+  phppgadmin:
+    restart: always
 
-#  syncthing:
-#    image: linuxserver/syncthing
-#    environment:
-#      - TZ=Europe/London
-#    volumes:
-#      - syncthing_config:/config
-#      - static:/data1
-#    ports:
-#      - 8384:8384
-#      - 22000:22000
-#      - 21027:21027/udp
-#    deploy:
-#      replicas: 2
-#      placement:
-#        constraints:
-#          - node.role == worker
+    image: dockage/phppgadmin:latest
+    ports:
+      - "8080:80"
+    environment:
+      - PHP_PG_ADMIN_SERVER_DESC=local
+      - PHP_PG_ADMIN_SERVER_HOST=db
+      - PHP_PG_ADMIN_SERVER_PORT=5432
+      - PHP_PG_ADMIN_SERVER_SSL_MODE=allow
+      - PHP_PG_ADMIN_SERVER_DEFAULT_DB=improv
+      - PHP_PG_ADMIN_SERVER_PG_DUMP_PATH=/usr/bin/pg_dump
+      - PHP_PG_ADMIN_SERVER_PG_DUMPALL_PATH=/usr/bin/pg_dumpall
+
+      - PHP_PG_ADMIN_DEFAULT_LANG=auto
+      - PHP_PG_ADMIN_AUTO_COMPLETE=default on
+      - PHP_PG_ADMIN_EXTRA_LOGIN_SECURITY=false
+      - PHP_PG_ADMIN_OWNED_ONLY=false
+      - PHP_PG_ADMIN_SHOW_COMMENTS=true
+      - PHP_PG_ADMIN_SHOW_ADVANCED=false
+      - PHP_PG_ADMIN_SHOW_SYSTEM=false
+      - PHP_PG_ADMIN_MIN_PASSWORD_LENGTH=1
+      - PHP_PG_ADMIN_LEFT_WIDTH=200
+      - PHP_PG_ADMIN_THEME=default
+      - PHP_PG_ADMIN_SHOW_OIDS=false
+      - PHP_PG_ADMIN_MAX_ROWS=30
+      - PHP_PG_ADMIN_MAX_CHARS=50
+      - PHP_PG_ADMIN_USE_XHTML_STRICT=false
+      - PHP_PG_ADMIN_HELP_BASE=http://www.postgresql.org/docs/%s/interactive/
+      - PHP_PG_ADMIN_AJAX_REFRESH=3
+    depends_on:
+      - db
 
 
 volumes:
-  syncthing_config:
-  media:
   postgres_data:
-
-networks:
-  internal:
