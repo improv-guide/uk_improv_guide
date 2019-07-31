@@ -97,11 +97,7 @@ TEMPLATES = [
 WSGI_APPLICATION = "uk_improv_guide.wsgi.application"
 
 
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
 def get_database_settings()->Mapping[str,Union[str,Mapping[str,str]]]:
-    import pprint
     result = {
         "default": {
             "ENGINE": "django.db.backends.postgresql",
@@ -110,13 +106,9 @@ def get_database_settings()->Mapping[str,Union[str,Mapping[str,str]]]:
             "PASSWORD": os.environ["POSTGRES_PASSWORD"],
             "HOST": os.environ["POSTGRES_HOST"],
             "PORT": os.environ["POSTGRES_PORT"],
-            "OPTIONS": {'sslmode': 'require'} if os.environ["POSTGRES_SSLMODE"] else {},
+            "OPTIONS": {'sslmode': "allow"},
         }
     }
-
-    log.info("Pingu is lord!!")
-
-    log.info(f"Using database settings: {pprint.pformat(result)}")
     return result
 
 DATABASES = get_database_settings()
