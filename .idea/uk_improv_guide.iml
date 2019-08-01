@@ -6,7 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/uk_improv_guide" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test_uk_improv_guide" isTestSource="true" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Remote Python 3.7.3 Docker Compose (site at [/home/sal/workspace/improv_guide/uk_improv_guide/docker-compose.dev.yaml])" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
