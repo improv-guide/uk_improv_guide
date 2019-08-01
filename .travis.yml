@@ -1,8 +1,12 @@
 language: python
 services:
   - docker
+stages:
+  - name: deploy
+    if: branch = master
 python:
 - '3.6'
 install:
   - docker-compose build
+deploy:
   - docker-compose push
