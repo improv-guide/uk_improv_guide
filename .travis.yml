@@ -7,9 +7,9 @@ stages:
 python:
 - '3.6'
 before_install:
+  - echo $DOCKERHUB_PSSWORD | docker login docker -u ${DOCKERHUB_USERNAME} --password-stdin
   - pip install docker-compose
 install:
   - docker-compose build
 script:
-  - docker login docker -u ${DOCKERHUB_USERNAME} -p ${DOCKERHUB_PASSWORD}
-#  - docker-compose push
+  - docker-compose push
