@@ -28,6 +28,8 @@ services:
       target: uk-improv-guide
     volumes:
       - media:/src/uk_improv_guide/static/media
+      - backup:/backup
+      - ssh:/root/.ssh
     working_dir: "/src/uk_improv_guide"
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
@@ -38,11 +40,14 @@ services:
       SLACK_WEB_HOOK: ${SLACK_WEB_HOOK}
       PRODUCTION_SECRET: ${PRODUCTION_SECRET}
       SITE_PORT: ${SITE_PORT}
+      BACKUP_DIR: /backup
     networks:
       - internal
 
 volumes:
   media:
+  ssh:
+  backup:
 
 networks:
   internal:
