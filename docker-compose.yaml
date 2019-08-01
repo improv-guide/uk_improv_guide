@@ -16,7 +16,6 @@ services:
     depends_on:
       - site
     deploy:
-      replicas: 2
       placement:
         constraints:
           - node.role == manager
@@ -27,7 +26,7 @@ services:
       context: .
       target: uk-improv-guide
     volumes:
-      - media:/src/uk_improv_guide/static/media
+      - media:/media
       - backup:/backup
       - ssh:/root/.ssh
     working_dir: "/src/uk_improv_guide"
