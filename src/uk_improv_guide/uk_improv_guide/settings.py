@@ -36,6 +36,11 @@ SECRET_KEY:str = os.environ.get("PRODUCTION_SECRET") or "secret_key!"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG: bool = True if os.environ.get("DEBUG", None) else False
 
+if DEBUG:
+    log.info("Running in DEBUG mode!")
+else:
+    log.info("Running in PRODUCTION mode!")
+
 COUNTRIES_FIRST = ["GB"]
 
 ALLOWED_HOSTS = ["improv.guide", "impro.guide", "localhost"]
@@ -89,6 +94,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                'django.template.context_processors.media',
             ]
         },
     },
@@ -154,15 +160,15 @@ AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
 ]
 
-MEDIA_URL = "media/"
-
-_static_dir = os.path.join(BASE_DIR, "static")
+_static_dir = os.path.join(BASE_DIR, "_static")
 
 STATICFILES_DIRS = (_static_dir,)
 
-STATIC_ROOT = "/static_content"
+STATIC_ROOT = "/static/"
 
-MEDIA_ROOT = os.path.join(_static_dir, "media")
+MEDIA_ROOT = "/media/"
+
+MEDIA_URL = "/media/"
 
 SOCIAL_AUTH_FACEBOOK_SCOPE = ["email"]
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
@@ -188,3 +194,4 @@ ROLLBAR = {
     "root": BASE_DIR,
 }
 rollbar.init(**ROLLBAR)
+

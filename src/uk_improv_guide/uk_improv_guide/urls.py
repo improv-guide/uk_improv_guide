@@ -13,13 +13,17 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
-from uk_improv_guide.models import Event, Performer, Team, Venue
+
+
+from uk_improv_guide import settings
+from uk_improv_guide.models import Performer
 from uk_improv_guide.views.event import event
 from uk_improv_guide.views.events import events
 from uk_improv_guide.views.home import home
-from uk_improv_guide.views.misc import contribute, contribute_item, privacy, terms
+from uk_improv_guide.views.misc import privacy, terms
 from uk_improv_guide.views.performer import performer
 from uk_improv_guide.views.performers import performers
 from uk_improv_guide.views.register import register
@@ -55,4 +59,4 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("django.contrib.auth.urls")),
     path("register/", register, name="register"),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT, show_indexes=True)
