@@ -11,7 +11,7 @@ ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
 #    server_name example.org;
 #
 #    location / {
-#        proxy_pass http://dev; #for demo purposes
+#        proxy_pass http://site; #for demo purposes
 #    }
 #
 #    location /.well-known/acme-challenge/ {
