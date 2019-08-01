@@ -9,4 +9,5 @@ python:
 install:
   - docker-compose build
 deploy:
+  - docker login docker -u ${DOCKERHUB_USERNAME} -p ${DOCKERHUB_PASSWORD}
   - docker-compose push
