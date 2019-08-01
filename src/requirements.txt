@@ -2,7 +2,7 @@ jinja2==2.10.1
 psycopg2==2.8.3
 django==2.2.4
 django-reversion
-pytz
+pytz==2019.2
 django-recaptcha
 social-auth-app-django
 pyyaml==5.1.2
