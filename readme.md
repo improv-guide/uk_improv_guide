@@ -9,6 +9,7 @@
 * [WhatsApp Group](https://chat.whatsapp.com/La3ctCUSo6SFzStqH3dSht)
 * [GitHub Project](https://github.com/improv-guide/uk_improv_guide)
 * [Slack Workspace](https://improvguide.slack.com/messages/CKVGVGBL2)
+* [Travis CI](https://travis-ci.org/improv-guide/uk_improv_guide)
 
 ## Developer Guide
 
