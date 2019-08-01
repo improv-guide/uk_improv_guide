@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 echo "Generating migrations..."
-python manage.py makemigrations
+manage makemigrations
 echo "Running database migrations..."
-python manage.py migrate
+manage migrate
 echo "Creating revisions..."
-python manage.py createinitialrevisions
+manage createinitialrevisions
 echo "Setting permissions on migrations"
-chmod o+rw uk_improv_guide/migrations/*.py
+chmod --recursive o+rw uk_improv_guide/migrations

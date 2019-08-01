@@ -17,7 +17,7 @@ def home(request, event_days: int = 7):
         request,
         "home.html",
         {
-            "title": "World Improv Guide",
+            "title": "Improv Guide",
             "event_days": event_days,
             "events": events,
             "teams": get_featured_teams(),

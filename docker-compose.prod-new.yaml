@@ -10,30 +10,32 @@ services:
       context: .
       target: uk-improv-guide-nginx
     volumes:
-      - media:/usr/share/nginx/html/media:ro
+      - static:/usr/share/nginx/html/static:ro
     ports:
       - 80:80
       - 443:443
     networks:
       - internal
     depends_on:
-      - site
+      - prod
     deploy:
       replicas: 2
       placement:
         constraints:
           - node.role == manager
 
-  site:
+  prod:
     image: "salimfadhley/uk-improv-guide:${IMPROV_GUIDE_VERSION}"
     build:
       context: .
       target: uk-improv-guide
     volumes:
-      - media:/src/uk_improv_guide/static/media
+      - static:/src/uk_improv_guide/static
     working_dir: "/src/uk_improv_guide"
     ports:
       - "80:80"
+    depends_on:
+      - db
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_DB: ${POSTGRES_DB}
@@ -46,8 +48,42 @@ services:
     networks:
       - internal
 
+  db:
+    image: postgres:10.9
+    volumes:
+      - "postgres_data:/var/lib/postgresql/data"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_PORT: ${POSTGRES_PORT}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    networks:
+      - internal
+
+
+  syncthing:
+    image: linuxserver/syncthing
+    environment:
+      - TZ=Europe/London
+    volumes:
+      - syncthing_config:/config
+      - static:/data1
+    ports:
+      - 8384:8384
+      - 22000:22000
+      - 21027:21027/udp
+    restart: unless-stopped
+    deploy:
+      replicas: 2
+      placement:
+        constraints:
+          - node.role == worker
+
+
 volumes:
-  media:
+  syncthing_config:
+  static:
+  postgres_data:
 
 networks:
   internal:

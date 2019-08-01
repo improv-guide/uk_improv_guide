@@ -9,13 +9,18 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
+import logging
 import os
+from typing import Mapping, Union
 
 import pkg_resources
 
 import rollbar
 
-SITE_NAME: str = "European Improv Gude"
+log = logging.getLogger(__name__)
+
+
+SITE_NAME: str = "Improv Gude"
 SITE_CANONICAL_URL = "http://improv.guide"
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -26,10 +31,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("PRODUCTION_SECRET")
+SECRET_KEY:str = os.environ.get("PRODUCTION_SECRET") or "secret_key!"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG: bool = True if os.environ.get("DEBUG", None) else False
+
+if DEBUG:
+    log.info("Running in DEBUG mode!")
+else:
+    log.info("Running in PRODUCTION mode!")
 
 COUNTRIES_FIRST = ["GB"]
 
@@ -84,6 +94,7 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                'django.template.context_processors.media',
             ]
         },
     },
@@ -92,19 +103,23 @@ TEMPLATES = [
 WSGI_APPLICATION = "uk_improv_guide.wsgi.application"
 
 
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ["POSTGRES_DB"],
-        "USER": os.environ["POSTGRES_USER"],
-        "PASSWORD": os.environ["POSTGRES_PASSWORD"],
-        "HOST": os.environ["POSTGRES_HOST"],
-        "PORT": os.environ["POSTGRES_PORT"],
+def get_database_settings()->Mapping[str,Union[str,Mapping[str,str]]]:
+    result = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": os.environ["POSTGRES_DB"],
+            "USER": os.environ["POSTGRES_USER"],
+            "PASSWORD": os.environ["POSTGRES_PASSWORD"],
+            "HOST": os.environ["POSTGRES_HOST"],
+            "PORT": os.environ["POSTGRES_PORT"],
+            "OPTIONS": {'sslmode': "allow"},
+        }
     }
-}
+    return result
+
+DATABASES = get_database_settings()
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -145,18 +160,15 @@ AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
 ]
 
-
-MEDIA_URL = "media/"
-#
-# print(f"Media Root: {MEDIA_ROOT}")
-
-_static_dir = os.path.join(BASE_DIR, "static")
+_static_dir = os.path.join(BASE_DIR, "_static")
 
 STATICFILES_DIRS = (_static_dir,)
 
-STATIC_ROOT = "/static_content"
+STATIC_ROOT = "/static/"
 
-MEDIA_ROOT = os.path.join(_static_dir, "media")
+MEDIA_ROOT = "/media/"
+
+MEDIA_URL = "/media/"
 
 SOCIAL_AUTH_FACEBOOK_SCOPE = ["email"]
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
@@ -182,3 +194,4 @@ ROLLBAR = {
     "root": BASE_DIR,
 }
 rollbar.init(**ROLLBAR)
+

@@ -5,7 +5,7 @@
 
 
     {% if performer.image %}
-        <img class="featured_image" src="{% static "" %}{{ performer.image.url }}" />
+        <img class="featured_image" src="{{ performer.image.url }}" />
     {% endif %}
 
     {% with social_thing=performer %}

@@ -1,7 +1,15 @@
 language: python
 services:
   - docker
+stages:
+  - name: docker_push
+    if: branch = master
 python:
 - '3.6'
+before_install:
+  - pip install docker-compose
 install:
-  - docker build . -t salimfadhley/dockerized_python_playground:latest
+  - docker-compose build
+docker_push:
+  - echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+  - docker-compose push

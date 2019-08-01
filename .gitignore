@@ -4,3 +4,5 @@ __pycache__
 migrations
 !/secret.env
 /production/.env
+*.egg-info
+venv
