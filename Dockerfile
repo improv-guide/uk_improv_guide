@@ -22,7 +22,7 @@ ENV POSTGRES_PORT=5432
 ENV SLACK_WEB_HOOK=http://www.example.com
 RUN manage compilescss
 RUN manage collectstatic
-ENTRYPOINT ["gunicorn", "--bind=0.0.0.0:80", "uk_improv_guide.wsgi"]
+ENTRYPOINT ["./start_prod.sh"]
 
 FROM nginx:latest AS uk-improv-guide-nginx
 COPY ./nginx/config/default.conf /etc/nginx/conf.d/default.conf

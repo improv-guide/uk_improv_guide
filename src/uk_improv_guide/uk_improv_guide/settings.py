@@ -195,3 +195,6 @@ ROLLBAR = {
 }
 rollbar.init(**ROLLBAR)
 
+import pprint
+log.info(f"All settings: {pprint.pformat(locals())}")
+
