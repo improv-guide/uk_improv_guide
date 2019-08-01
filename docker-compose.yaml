@@ -1,9 +1,6 @@
 version: '3.7'
 
-#  ./static:/src/uk-improv-guide/static
-
 services:
-
   nginx:
     image: "salimfadhley/uk-improv-guide-nginx:${IMPROV_GUIDE_VERSION}"
     build:
@@ -32,8 +29,6 @@ services:
     volumes:
       - media:/src/uk_improv_guide/static/media
     working_dir: "/src/uk_improv_guide"
-    ports:
-      - "80:80"
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_DB: ${POSTGRES_DB}
