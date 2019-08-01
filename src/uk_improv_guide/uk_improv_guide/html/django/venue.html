@@ -7,7 +7,7 @@
     {% endwith %}
 
     {% if venue.image %}
-    <img class="featured_image" src="{% static "" %}{{ venue.image.url }}" />
+    <img class="featured_image" src="{{ venue.image.url }}" />
     {%  endif %}
 
 

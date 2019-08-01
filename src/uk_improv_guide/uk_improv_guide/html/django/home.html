@@ -24,7 +24,7 @@
 <div class="home_page_teams">
     {% for team in teams %}
     <div class="team">
-        <img class="team_image" src="{% get_static_prefix %}{{team.image.url}}"/>
+        <img class="team_image" src="{{team.image.url}}"/>
         <a href="/teams/{{team.id}}">{{team.name}}</a>
     </div>
     {% endfor %}
@@ -37,7 +37,7 @@
 <div class="home_page_teachers">
     {% for teacher in teachers %}
         <div class="teacher">
-            <img class="teacher_image" src="{% get_static_prefix %}{{teacher.image.url}}"/>
+            <img class="teacher_image" src="{{teacher.image.url}}"/>
             <a href="/performers/{{teacher.id}}">{{teacher.full_name}}</a>
         </div>
     {% endfor %}
