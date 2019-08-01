@@ -4,27 +4,27 @@ version: '3.7'
 
 services:
 
-#  nginx:
-#    image: "salimfadhley/uk-improv-guide-nginx:${IMPROV_GUIDE_VERSION}"
-#    build:
-#      context: .
-#      target: uk-improv-guide-nginx
-#    volumes:
-#      - static:/usr/share/nginx/html/static:ro
-#    ports:
-#      - 80:80
-#      - 443:443
-#    networks:
-#      - internal
-#    depends_on:
-#      - prod
-#    deploy:
-#      replicas: 2
-#      placement:
-#        constraints:
-#          - node.role == manager
+  nginx:
+    image: "salimfadhley/uk-improv-guide-nginx:${IMPROV_GUIDE_VERSION}"
+    build:
+      context: .
+      target: uk-improv-guide-nginx
+    volumes:
+      - media:/usr/share/nginx/html/media:ro
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - internal
+    depends_on:
+      - site
+    deploy:
+      replicas: 2
+      placement:
+        constraints:
+          - node.role == manager
 
-  prod:
+  site:
     image: "salimfadhley/uk-improv-guide:${IMPROV_GUIDE_VERSION}"
     build:
       context: .
@@ -34,8 +34,6 @@ services:
     working_dir: "/src/uk_improv_guide"
     ports:
       - "80:80"
-    depends_on:
-      - db
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_DB: ${POSTGRES_DB}
@@ -48,46 +46,8 @@ services:
     networks:
       - internal
 
-#  db:
-#    image: postgres:10.9
-#    volumes:
-#      - "postgres_data:/var/lib/postgresql/data"
-#    environment:
-#      POSTGRES_USER: improv
-#      POSTGRES_DB: improv
-#      POSTGRES_PORT: 5432
-#      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-#    networks:
-#      - interna
-#    deploy:
-#      replicas: 1
-#      placement:
-#        constraints:
-#          - node.role == worker
-
-
-#  syncthing:
-#    image: linuxserver/syncthing
-#    environment:
-#      - TZ=Europe/London
-#    volumes:
-#      - syncthing_config:/config
-#      - static:/data1
-#    ports:
-#      - 8384:8384
-#      - 22000:22000
-#      - 21027:21027/udp
-#    deploy:
-#      replicas: 2
-#      placement:
-#        constraints:
-#          - node.role == worker
-
-
 volumes:
-  syncthing_config:
   media:
-  postgres_data:
 
 networks:
   internal:
