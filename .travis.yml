@@ -17,4 +17,5 @@ notifications:
     rooms:
     - improvguide:WGB9wPwKNlQkDP4nwB4FfYbq#general
 #    - improvguide:WGB9wPwKNlQkDP4nwB4FfYbq#random
-
+git:
+  submodules: false
