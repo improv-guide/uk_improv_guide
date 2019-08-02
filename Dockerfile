@@ -28,9 +28,12 @@ ENTRYPOINT ["./start_prod.sh"]
 FROM nginx:latest AS uk-improv-guide-nginx
 RUN apt-get update && apt-get install -y curl \
     && rm -rf /var/lib/apt/lists/*
-COPY ./nginx/config/default.conf /etc/nginx/conf.d/default.conf
+COPY nginx/config/no_ssl.conf /etc/nginx/no_ssl.conf
+COPY nginx/config/ssl.conf /etc/nginx/ssl.conf
+RUN nginx -t -c /etc/nginx/no_ssl.conf
+RUN nginx -t -c /etc/nginx/ssl.conf
 COPY --from=uk-improv-guide ./static /usr/share/nginx/html/static/
 COPY ./nginx/start.sh /bin/
-#ENTRYPOINT ["/bin/start.sh"]
+ENTRYPOINT ["/bin/start.sh"]
 HEALTHCHECK --interval=1m --timeout=10s CMD curl --fail http://localhost || exit 1
 
