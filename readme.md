@@ -4,14 +4,12 @@
 
 ## Important URLs
 
-* [Production Site](http://improv.guide)
-* [Dev site](http://localhost:8080)
-* [Dev adminer](http://localhost:8080)
-* [Trello Board](https://trello.com/b/aZ48umXI/general)
-* [WhatsApp Group](https://chat.whatsapp.com/La3ctCUSo6SFzStqH3dSht)
-* [GitHub Project](https://github.com/improv-guide/uk_improv_guide)
-* [Slack Workspace](https://improvguide.slack.com/messages/CKVGVGBL2)
-* [Travis CI](https://travis-ci.org/improv-guide/uk_improv_guide)
+* [Production Site](https://improv.guide)
+* [Dev site](http://localhost:8080), when you run it locally
+* [Trello Board](https://trello.com/b/aZ48umXI/general), for project management
+* [GitHub Project](https://github.com/improv-guide/uk_improv_guide), for source code
+* [Slack Workspace](https://improvguide.slack.com/messages/CKVGVGBL2), for technical discussions of this system,
+* [Travis CI](https://travis-ci.org/improv-guide/uk_improv_guide), production builds & tests.
 
 ## Developer Guide
 
