@@ -16,7 +16,7 @@ jobs:
       script:
         - docker-compose push
         - export IMPROV_GUIDE_VERSION=latest && docker-compose build
-        - export IMPROV_GUIDE_VERSION=lates && docker-compose push
+        - export IMPROV_GUIDE_VERSION=latest && docker-compose push
 notifications:
   slack:
     rooms:
