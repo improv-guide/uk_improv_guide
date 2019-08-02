@@ -30,5 +30,7 @@ RUN apt-get update && apt-get install -y curl \
     && rm -rf /var/lib/apt/lists/*
 COPY ./nginx/config/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=uk-improv-guide ./static /usr/share/nginx/html/static/
+COPY ./nginx/start.sh /bin/
+ENTRYPOINT ["/bin/start.sh"]
 HEALTHCHECK --interval=1m --timeout=10s CMD curl --fail http://localhost || exit 1
 
