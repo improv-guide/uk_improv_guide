@@ -30,7 +30,7 @@ class School(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model
     country = CountryField(blank_label="(select country)", default="GB")
 
     class Meta:
-        ordering = ['name']
+        ordering = ["name"]
 
     def __str__(self):
         return self.name

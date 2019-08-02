@@ -37,7 +37,7 @@ class Event(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
     teams = models.ManyToManyField(Team, verbose_name="teams playing", blank=True)
 
     class Meta:
-        ordering = ['-start_time']
+        ordering = ["-start_time"]
 
     def __str__(self):
         return f"{self.name} - @ {self.start_time} - {self.venue.name}"

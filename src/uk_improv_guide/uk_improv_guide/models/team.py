@@ -30,13 +30,14 @@ class Team(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     )
 
     class Meta:
-        ordering = ['name']
+        ordering = ["name"]
 
     def __str__(self):
         return self.name
 
     def get_absolute_url(self) -> str:
         return f"/teams/{self.id}"
+
 
 def get_featured_teams(order: str = "?", limit: int = 5) -> Sequence[Performer]:
     teams = Team.objects.exclude(image="")
