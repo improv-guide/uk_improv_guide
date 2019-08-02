@@ -1,0 +1,35 @@
+server {
+    listen 443 ssl;
+    server_name improv.guide;
+
+    server_tokens off;
+
+    ssl_certificate /etc/letsencrypt/live/improv.guide/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/improv.guide/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+    location /static/ {
+        autoindex on;
+        root /usr/share/nginx/html/;
+        index index.html;
+    }
+
+    location /media/ {
+        autoindex on;
+        root /usr/share/nginx/html/;
+        index index.html;
+    }
+
+    location / {
+        proxy_pass http://uk_improv_guide;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Host $host;
+        proxy_redirect off;
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
