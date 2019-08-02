@@ -24,7 +24,7 @@ if [ ! -e "$key_dir/privkey.pem" ] || [ ! -e "$key_dir/fullchain.pem" ]; then
 
       echo "Making directory $key_dir"
       mkdir -p $key_dir
-      openssl req -x509 -nodes -newkey rsa:1024 -days 1\
+      openssl req -x509 -nodes -newkey rsa:2048 -days 1\
         -keyout "$key_dir/privkey.pem" \
         -out "$key_dir/fullchain.pem" \
         -subj '/CN=localhost'
