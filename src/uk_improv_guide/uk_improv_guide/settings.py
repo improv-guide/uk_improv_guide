@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 import logging
 import os
-import pprint
 from typing import Mapping, Union
 
 import pkg_resources
