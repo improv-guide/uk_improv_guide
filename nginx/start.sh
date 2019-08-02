@@ -35,9 +35,9 @@ fi
 
 
 if [ ! -d "$data_path/live" ]; then
-    export NGINX_CONFIG=/etc/nginx/conf.d/no_ssl.conf
+    export NGINX_CONFIG=/etc/nginx/no_ssl.conf
 else
-    export NGINX_CONFIG=/etc/nginx/conf.d/ssl.conf
+    export NGINX_CONFIG=/etc/nginx/ssl.conf
 fi
 
 
