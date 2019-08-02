@@ -7,16 +7,12 @@ from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.sitemaps import register_model_for_site_map
 from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
-from uk_improv_guide.models import School
-from uk_improv_guide.models.event_series import EventSeries
+from uk_improv_guide.models.school import School
+from uk_improv_guide.models.performer import Performer
 from uk_improv_guide.models.fields.fields import (
-    EVENTBRITE_LINK,
-    FACEBOOK_LINK,
     WEBSITE_LINK,
 )
-from uk_improv_guide.models.team import Team
 from uk_improv_guide.models.venue import Venue
-from uk_improv_guide.uk_improv_guide.models import Performer
 
 
 @reversion.register

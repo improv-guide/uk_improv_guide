@@ -9,5 +9,6 @@ from .school import School
 from .signals import create_user_profile
 from .team import Team
 from .venue import Venue
+from .course import Course
 
-ALL_MODELS: Set[models.Model] = {Event, Performer, Team, Venue, EventSeries, School}
+ALL_MODELS: Set[models.Model] = {Event, Performer, Team, Venue, EventSeries, School, Course}
