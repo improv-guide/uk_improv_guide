@@ -15,7 +15,7 @@ jobs:
     - stage: docker_push
       script:
         - docker-compose push
-        - IMPROV_GUIDE_VERSION=latest docker-compose push
+        - IMPROV_GUIDE_VERSION=latest docker-compose build && docker-compose push
 notifications:
   slack:
     rooms:
