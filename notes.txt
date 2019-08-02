@@ -3,7 +3,7 @@ https://dzone.com/articles/introduction-to-docker-secrets
 https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71
 
 
-certbot certonly --webroot -w /var/www/certbot --email salimfadhley@gmail.com -d improv.guide --email salimfadhley@gmail.com --rsa-key-size 4096 --agree-tos --force-renewal
+certbot certonly --webroot /certbot -w /var/www/certbot --email salimfadhley@gmail.com -d improv.guide --email salimfadhley@gmail.com --rsa-key-size 4096 --agree-tos --force-renewal
 
 List all containers (only IDs)
 
