@@ -16,3 +16,4 @@ libsass==0.19.2
 django-sass-processor==0.7.3
 django-compressor==2.3
 rollbar==0.14.7
+newrelic==4.20.1.121
