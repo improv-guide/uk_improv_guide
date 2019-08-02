@@ -1,5 +1,7 @@
 ## Improv Guide
 
+[![Updates](https://pyup.io/repos/github/improv-guide/uk_improv_guide/shield.svg)](https://pyup.io/repos/github/improv-guide/uk_improv_guide/)
+
 ## Important URLs
 
 * [Production Site](http://improv.guide)

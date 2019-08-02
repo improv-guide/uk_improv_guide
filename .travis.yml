@@ -2,20 +2,17 @@ language: python
 services:
   - docker
 stages:
-  - name: docker_build
   - name: docker_push
     if: branch = master
-python:
-- '3.6'
 before_install:
   - pip install docker-compose
+install:
+  - echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+  - docker-compose build
 jobs:
   include:
-    - stage: docker_build
-      script: docker-compose build
     - stage: docker_push
       script:
-        - echo "$DOCKERHUB_PASSWORD" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
         - docker-compose push
 notifications:
   slack:
