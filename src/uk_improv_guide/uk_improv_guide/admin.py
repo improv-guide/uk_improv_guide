@@ -7,6 +7,7 @@ from uk_improv_guide.models import ALL_MODELS
 
 log = logging.getLogger(__name__)
 
+
 def get_standard_admin_class(m):
     admin_name = f"{m.__name__}Admin"
     log.debug(f"No custom admin found for {m}")
@@ -24,6 +25,7 @@ def get_admin_class_for_model(m) -> Type:
         ac = get_standard_admin_class(m)
 
     return ac
+
 
 for m in ALL_MODELS:
     admin.register(m)(get_admin_class_for_model(m))

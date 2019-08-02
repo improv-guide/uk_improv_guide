@@ -43,10 +43,23 @@ class CourseAdmin(VersionAdmin):
 @register_model_for_site_map
 class Course(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     url_base: str = "courses"
-    name = models.CharField(max_length=100, help_text="The name of your course, but without the school name or any branding.",)
+    name = models.CharField(
+        max_length=100,
+        help_text="The name of your course, but without the school name or any branding.",
+    )
     image = models.ImageField(upload_to="course/", blank=True)
-    venue = models.ForeignKey(Venue, on_delete=models.SET_NULL, null=True, help_text="Where will this clas be taught?",)
-    school = models.ForeignKey(School, on_delete=models.SET_NULL, null=True, help_text="Which school is offering this course?",)
+    venue = models.ForeignKey(
+        Venue,
+        on_delete=models.SET_NULL,
+        null=True,
+        help_text="Where will this clas be taught?",
+    )
+    school = models.ForeignKey(
+        School,
+        on_delete=models.SET_NULL,
+        null=True,
+        help_text="Which school is offering this course?",
+    )
     teacher = models.ForeignKey(
         Performer,
         on_delete=models.SET_NULL,
@@ -55,11 +68,20 @@ class Course(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model
         help_text="This selection box includes performers who teach at at least one school.",
     )
     start_time = models.DateTimeField(verbose_name="First class start time")
-    lesson_duration = models.FloatField(verbose_name="Lesson duration in hours", help_text="How long is each lesson? Write the answer in decimal, for example two and a half hours should be written as 2.5.",)
-    number_of_lessons = models.IntegerField(verbose_name="Total number of lessons", help_text="The total mumber of lessons in this course.",)
+    lesson_duration = models.FloatField(
+        verbose_name="Lesson duration in hours",
+        help_text="How long is each lesson? Write the answer in decimal, for example two and a half hours should be written as 2.5.",
+    )
+    number_of_lessons = models.IntegerField(
+        verbose_name="Total number of lessons",
+        help_text="The total mumber of lessons in this course.",
+    )
     class_show = models.BooleanField(verbose_name="Includes a class show")
     course_link = models.URLField(
-        max_length=256, blank=True, verbose_name="Course Booking URL", help_text="A web page where students can find out more about this course, and book.",
+        max_length=256,
+        blank=True,
+        verbose_name="Course Booking URL",
+        help_text="A web page where students can find out more about this course, and book.",
     )
 
     @staticmethod

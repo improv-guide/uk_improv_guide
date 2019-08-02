@@ -6,7 +6,7 @@ import reversion
 from django.contrib import admin
 from django.contrib.admin.widgets import FilteredSelectMultiple
 from django.db import models
-from django.forms import forms, ModelForm
+from django.forms import ModelForm, forms
 from reversion.admin import VersionAdmin
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
@@ -21,8 +21,6 @@ from uk_improv_guide.models.fields.fields import (
 from uk_improv_guide.models.school import School
 
 log = logging.getLogger(__name__)
-
-
 
 
 @reversion.register
@@ -74,16 +72,14 @@ class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mo
     def __str__(self) -> str:
         return self.name_in_list_order()
 
+
 class PerformerAdminForm(ModelForm):
     excludes = []
-
 
     class Meta:
         model = Performer
         fields = "__all__"
-        widgets = {
-            'teaches_for': FilteredSelectMultiple("Teaches For", False),
-        }
+        widgets = {"teaches_for": FilteredSelectMultiple("Teaches For", False)}
 
 
 class PerformerAdmin(VersionAdmin):
@@ -103,7 +99,6 @@ class PerformerAdmin(VersionAdmin):
     save_as = True
     search_fields = ["first_name", "family_name"]
     view_on_site = True
-
 
 
 def get_all_performers(teachers_only=False) -> Sequence[Performer]:

@@ -5,7 +5,6 @@ from django.contrib.admin.widgets import FilteredSelectMultiple
 from django.db import models
 from django.forms import ModelForm
 from reversion.admin import VersionAdmin
-
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
@@ -50,13 +49,10 @@ class Team(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
 class PerformerAdminForm(ModelForm):
     excludes = []
 
-
     class Meta:
         model = Team
         fields = "__all__"
-        widgets = {
-            'players': FilteredSelectMultiple("Team members", False),
-        }
+        widgets = {"players": FilteredSelectMultiple("Team members", False)}
 
 
 class TeamAdmin(VersionAdmin):
@@ -64,6 +60,7 @@ class TeamAdmin(VersionAdmin):
     save_as = True
     search_fields = ["name"]
     view_on_site = True
+
 
 def get_featured_teams(order: str = "?", limit: int = 5) -> Sequence[Performer]:
     teams = Team.objects.exclude(image="")
