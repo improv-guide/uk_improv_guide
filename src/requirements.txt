@@ -1,10 +1,10 @@
 jinja2==2.10.1
 psycopg2==2.8.3
 django==2.2.4
-django-reversion
+django-reversion==3.0.4
 pytz==2019.2
-django-recaptcha
-social-auth-app-django
+django-recaptcha==2.0.4
+social-auth-app-django==3.1.0
 pyyaml==5.1.2
 django-countries==5.3.3
 Pillow==6.1.0
