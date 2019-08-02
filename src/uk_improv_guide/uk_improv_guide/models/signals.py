@@ -14,7 +14,7 @@ def create_user_profile(sender, instance: User, created, default_group_name:str=
 
         try:
             group: Group = Group.objects.get(name=default_group_name)
-        except Group.model.DoesNotExist:
+        except Group.DoesNotExist:
             log.warning(f"Set permissions for {default_group_name}")
             group = Group(name=default_group_name)
             group.save()
