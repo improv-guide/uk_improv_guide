@@ -17,12 +17,14 @@ services:
       - internal
     depends_on:
       - site
+    restart: always
     deploy:
       placement:
         constraints:
           - node.role == manager
 
   site:
+    restart: always
     image: "salimfadhley/uk-improv-guide:${IMPROV_GUIDE_VERSION}"
     build:
       context: .

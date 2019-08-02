@@ -196,4 +196,4 @@ ROLLBAR = {
 }
 rollbar.init(**ROLLBAR)
 
-log.info(f"All settings: {pprint.pformat(locals())}")
+# log.info(f"All settings: {pprint.pformat(locals())}")
