@@ -20,6 +20,6 @@ jobs:
 notifications:
   slack:
     rooms:
-    - improvguide:WGB9wPwKNlQkDP4nwB4FfYbq#general
+    - improvguide:WGB9wPwKNlQkDP4nwB4FfYbq#alerts
 git:
   submodules: false
