@@ -4,4 +4,3 @@ from uk_improv_guide.manage import main
 
 if __name__ == "__main__":
     main()
-

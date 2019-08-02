@@ -11,6 +11,7 @@ services:
     volumes:
       - ./static:/static
       - ./media:/media
+      - ./backup:/backup
       - ./src/uk_improv_guide:/src/uk_improv_guide
     working_dir: "/src/uk_improv_guide"
     entrypoint: ["./start_dev.sh"]
@@ -27,6 +28,7 @@ services:
       PRODUCTION_SECRET: ${PRODUCTION_SECRET}
       SITE_PORT: ${SITE_PORT}
       DEBUG: "True"
+      BACKUP_DIR: /backup
     depends_on:
       - db
 

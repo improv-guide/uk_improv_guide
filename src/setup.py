@@ -26,7 +26,7 @@ setup(
     version=REVISION,
     author=PROJECT_AUTHORS,
     author_email=PROJECT_EMAILS,
-    package_dir={"":"uk_improv_guide"},
+    package_dir={"": "uk_improv_guide"},
     packages=["uk_improv_guide"],
     zip_safe=True,
     include_package_data=False,
@@ -35,7 +35,5 @@ setup(
     description=SHORT_DESCRIPTION,
     long_description=DESCRIPTION,
     license="MIT",
-    entry_points={
-        "console_scripts": ["manage = uk_improv_guide.manage:main"]
-    },
+    entry_points={"console_scripts": ["manage = uk_improv_guide.manage:main"]},
 )

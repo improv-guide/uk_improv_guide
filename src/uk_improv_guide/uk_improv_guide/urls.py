@@ -16,8 +16,6 @@ Including another URLconf
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
-
-
 from uk_improv_guide import settings
 from uk_improv_guide.models import Performer
 from uk_improv_guide.views.event import event

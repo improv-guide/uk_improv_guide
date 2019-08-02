@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-python manage.py loaddata --format=yaml ./test_data/uk_improv_guide.yaml
+python manage.py loaddata --format=yaml /backup/uk_improv_guide.yaml

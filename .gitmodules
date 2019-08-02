@@ -1,0 +1,6 @@
+[submodule "media"]
+	path = media
+	url = git@github.com:improv-guide/media.git
+[submodule "backup"]
+	path = backup
+	url = git@github.com:improv-guide/data.git

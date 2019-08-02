@@ -22,9 +22,13 @@ ENV POSTGRES_PORT=5432
 ENV SLACK_WEB_HOOK=http://www.example.com
 RUN manage compilescss
 RUN manage collectstatic
+HEALTHCHECK --interval=1m --timeout=10s CMD curl --fail http://localhost || exit 1
 ENTRYPOINT ["./start_prod.sh"]
 
 FROM nginx:latest AS uk-improv-guide-nginx
+RUN apt-get update && apt-get install -y curl \
+    && rm -rf /var/lib/apt/lists/*
 COPY ./nginx/config/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=uk-improv-guide ./static /usr/share/nginx/html/static/
+HEALTHCHECK --interval=1m --timeout=10s CMD curl --fail http://localhost || exit 1
 

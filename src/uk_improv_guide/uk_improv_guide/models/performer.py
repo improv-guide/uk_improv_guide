@@ -3,11 +3,10 @@ import pprint
 from typing import Sequence
 
 import reversion
-from django.db import models
 from django.contrib import admin
+from django.db import models
 from django.forms import forms
 from reversion.admin import VersionAdmin
-
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
@@ -21,10 +20,6 @@ from uk_improv_guide.models.fields.fields import (
 from uk_improv_guide.models.school import School
 
 log = logging.getLogger(__name__)
-
-
-
-
 
 
 class PerformerAdmin(VersionAdmin):
@@ -45,6 +40,7 @@ class PerformerAdmin(VersionAdmin):
         "website_link",
         "imdb_link",
     )
+
 
 @reversion.register
 class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
@@ -78,7 +74,7 @@ class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mo
     model_admin = PerformerAdmin
 
     class Meta:
-        ordering = ['family_name','first_name']
+        ordering = ["family_name", "first_name"]
 
     def full_name(self) -> str:
         middle_names: str = self.middle_names or ""
