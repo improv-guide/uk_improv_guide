@@ -18,6 +18,8 @@ from django.contrib import admin
 from django.urls import include, path
 from uk_improv_guide import settings
 from uk_improv_guide.models import Performer
+from uk_improv_guide.views.course import course
+from uk_improv_guide.views.courses import courses
 from uk_improv_guide.views.event import event
 from uk_improv_guide.views.events import events
 from uk_improv_guide.views.home import home
@@ -48,6 +50,8 @@ urlpatterns = [
     path("performers/<int:id>", performer, name="Performer"),
     path("teachers/", teachers, name="teachers"),
     path("teachers/<int:id>", performer, name="teacher"),
+    path("courses/", courses, name="courses"),
+    path("courses/<int:id>", course, name="course"),
     path("schools/", schools),
     path("schools/<str:id>", school),
     path("privacy/", privacy),
