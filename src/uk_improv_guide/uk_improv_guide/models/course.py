@@ -1,5 +1,5 @@
 import datetime
-from typing import Sequence
+from typing import Sequence, Optional
 
 import reversion
 from django import forms

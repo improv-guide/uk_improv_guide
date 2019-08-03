@@ -24,13 +24,20 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_HOST: ${POSTGRES_HOST}
       POSTGRES_SSLMODE: ${POSTGRES_SSLMODE}
-      SLACK_WEB_HOOK: ${SLACK_WEB_HOOK}
+      SLACK_WEB_HOOK: http://dummy_slack:8123/
       PRODUCTION_SECRET: ${PRODUCTION_SECRET}
       SITE_PORT: ${SITE_PORT}
       DEBUG: "True"
       BACKUP_DIR: /backup
     depends_on:
       - db
+
+  dummy_slack:
+    restart: always
+    image: "salimfadhley/uk-improv-guide:${IMPROV_GUIDE_VERSION}"
+    entrypoint: ["python", "-m", "http.server", "--bind", "0.0.0.0", "8123"]
+    ports:
+      - "8123:8123"
 
   db:
     image: "postgres:10.9"
@@ -54,7 +61,7 @@ services:
     ports:
       - "8080:80"
     environment:
-      - PHP_PG_ADMIN_SERVER_DESC=local
+      - PHP_PG_ADM2IN_SERVER_DESC=local
       - PHP_PG_ADMIN_SERVER_HOST=db
       - PHP_PG_ADMIN_SERVER_PORT=5432
       - PHP_PG_ADMIN_SERVER_SSL_MODE=allow

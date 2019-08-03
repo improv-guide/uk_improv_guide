@@ -12,13 +12,14 @@
         {% include "content/social.html" %}
     {% endwith %}
 
-    <h3>{{performer.first_name}} will be teaching these courses...</h3>
-
-    <ul>
-        {% for course in courses %}
-        <li><a href="{% url 'course' id=course.id%}">{{ course.name }}</a></li>
-        {%  endfor %}
-    </ul>
+    {% if courses %}
+        <h3>{{performer.first_name}} will be teaching these courses...</h3>
+        <ul>
+            {% for course in courses %}
+            <li><a href="{% url 'course' id=course.id%}">{{ course.name }}</a></li>
+            {%  endfor %}
+        </ul>
+    {% endif %}
 
 
     {% if performer.teaches_for.all.exists %}
@@ -32,22 +33,27 @@
 
     {% endif %}
 
-    {% if teams %}
     <h3>{{performer.first_name}} plays in these teams...</h3>
+    {% if teams %}
     <ul>
         {% for team in teams %}
         <li><a href="/teams/{{team.id}}">{{ team.name }}</a></li>
         {%  endfor %}
     </ul>
+    {% else %}
+    <p>We don't know what teams {{performer.first_name}} plays for. You can add this information.</p>
     {% endif %}
 
     <h3>Shows</h3>
-
+    {% if events %}
     <ul>
         {% for event in events %}
         <li><a href="/event/{{event.id}}">{{ event.name }} @ {{ event.start_time }}</a></li>
         {%  endfor %}
     </ul>
+    {% else %}
+    <p>We don't have any listings for {{performer.first_name}}, please add some.</p>
+    {% endif %}
 
     {% with obj=performer %}
         {% include "content/admin.html" %}
