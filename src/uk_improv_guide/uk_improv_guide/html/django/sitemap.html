@@ -6,9 +6,9 @@
     <url>
 
         <loc>{{ object.loc }}</loc>
-
+        {% if object.lastmod %}
         <lastmod>{{ object.lastmod }}</lastmod>
-
+        {% endif %}
         <changefreq>{{ object.changefreq }}</changefreq>
 
         <priority>{{ object.priority }}</priority>
