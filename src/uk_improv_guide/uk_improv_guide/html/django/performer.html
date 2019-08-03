@@ -12,6 +12,15 @@
         {% include "content/social.html" %}
     {% endwith %}
 
+    <h3>{{performer.first_name}} will be teaching these courses...</h3>
+
+    <ul>
+        {% for course in courses %}
+        <li><a href="{% url 'course' id=course.id%}">{{ course.name }}</a></li>
+        {%  endfor %}
+    </ul>
+
+
     {% if performer.teaches_for.all.exists %}
     <h3>{{performer.first_name}} teaches at these schools...</h3>
 

@@ -67,6 +67,7 @@ class Course(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model
         blank=True,
         null=True,
         help_text="This selection box includes performers who teach at at least one school.",
+        related_name="courses",
     )
     start_time = models.DateTimeField(verbose_name="First class start time")
     lesson_duration = models.FloatField(

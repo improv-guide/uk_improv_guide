@@ -23,9 +23,7 @@ def school(request, id: int):
     )
 
     courses: Sequence[Course] = this_school.courses.filter(start_time__gt=now)
-
     log.warning(f"Courses: {courses}")
-
     venues: Sequence[Venue] = this_school.venue_set.order_by("name")
 
     return render(
