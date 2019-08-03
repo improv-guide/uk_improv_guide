@@ -4,7 +4,6 @@ from typing import Sequence
 
 from django.shortcuts import render
 from pytz import timezone
-
 from uk_improv_guide.lib.opengraph import opengraph_website
 from uk_improv_guide.models.course import Course
 from uk_improv_guide.models.performer import Performer
