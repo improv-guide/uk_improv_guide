@@ -1,5 +1,14 @@
 {% extends "base.html" %}
-{%  block title %}{{ full_name }}{% endblock %}
+{% block content_inner %}
+<div class="course_info">
+    <h3>About {{course.name}}</h3>
+    <div class="course_link"><a href="{{course.course_link}}">Book this course</div>.
+    <div class="course_address"><a href="{% url venue id=course.venue.id">{{course.venue.name}}</a>, {{course.venue.address}}, {{course.venue.city}}</div>
+    <div class="course_teacher">Taught by <a href="{% url "teacher" id=course.teacher.id %}">{{course.teacher.full_name}}</div>
+
+</div>
+{% endblock %}
+
 
 
 

@@ -1,1 +1,17 @@
 {% extends "base.html" %}
+<div class="course_list" id="course_list">
+{% block content_inner %}
+    {% for course in courses %}
+    <div class="course" id="course_{{course.id}}">
+        <span class="course_school"><a href="{% url 'school' id=course.school.id %}">{{course.school.name}}</a></span>
+        <span class="course_name"><a href="{% url 'course' id=course.id %}">{{course.name}}</span>
+
+        {% if course.teacher %}
+        Teacher:
+        <span class="course_teacher">{{course.teacher.full_name}}</span>
+        {% endif %}
+
+    </div>
+    {% endfor %}
+{% endblock %}
+</div>
