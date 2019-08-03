@@ -59,6 +59,7 @@ class Course(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model
         on_delete=models.SET_NULL,
         null=True,
         help_text="Which school is offering this course?",
+        related_name="courses",
     )
     teacher = models.ForeignKey(
         Performer,
