@@ -8,7 +8,9 @@ log = logging.getLogger(__name__)
 
 
 @receiver(post_save, sender=User)
-def create_user_profile(sender, instance: User, created, default_group_name:str="site_users", **kwargs):
+def create_user_profile(
+    sender, instance: User, created, default_group_name: str = "site_users", **kwargs
+):
     if created:
         instance.is_staff = True
 

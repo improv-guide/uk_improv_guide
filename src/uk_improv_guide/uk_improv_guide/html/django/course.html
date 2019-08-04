@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content_inner %}
+<div class="course_info">
+    <h3>About {{course.name}}</h3>
+    {% if has_started %}
+        <p>This course has already started</p>
+    {% else %}
+        <p>This course starts on {{course.start_time}} - that's {{days_until_start}} days from now.</p>
+    {% endif %}
+    <div class="course_link"><a href="{{course.course_link}}">Book this course</div>.
+    <div class="course_address"><a href="{% url venue id=course.venue.id">{{course.venue.name}}</a>, {{course.venue.address}}, {{course.venue.city}}</div>
+
+    {% if course.teacher.exists %}
+    <div class="course_teacher">Taught by <a href="{% url "teacher" id=course.teacher.id %}">{{course.teacher.full_name}}</div>
+    {% else %}
+    <div class="course_teacher">The teacher for this class has not yet been published.</div>
+    {% endif %}
+
+</div>
+{% endblock %}
+
+
+
+

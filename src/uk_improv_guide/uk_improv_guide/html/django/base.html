@@ -32,6 +32,7 @@
 {% block content %}
     <h1 class="display-4">{{title}}</h1>
     {% block content_inner %}
+    <pre> {% filter force_escape %} {% debug %} {% endfilter %} </pre>
     {% endblock %}
 
 {% endblock %}

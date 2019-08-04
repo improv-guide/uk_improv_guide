@@ -11,6 +11,12 @@
 {%  endif %}
 
 
+<h2>Courses</h2>
+<ul>
+    {% for course in courses %}
+    <li><a href="{% url 'course' id=course.id%}">{{course.name}}</a></li>
+    {% endfor %}
+</ul>
 
 <h2>Venues</h2>
 

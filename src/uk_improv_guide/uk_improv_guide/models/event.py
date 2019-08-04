@@ -2,7 +2,10 @@ import datetime
 from typing import Sequence
 
 import reversion
+from django.contrib.admin.widgets import FilteredSelectMultiple
 from django.db import models
+from django.forms import ModelForm
+from reversion.admin import VersionAdmin
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.sitemaps import register_model_for_site_map
@@ -36,6 +39,10 @@ class Event(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
     )
     teams = models.ManyToManyField(Team, verbose_name="teams playing", blank=True)
 
+    @staticmethod
+    def model_admin():
+        return EventAdmin
+
     class Meta:
         ordering = ["-start_time"]
 
@@ -44,6 +51,24 @@ class Event(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
 
     def get_absolute_url(self) -> str:
         return f"/events/{self.id}"
+
+
+class EventAdminForm(ModelForm):
+    excludes = []
+
+    class Meta:
+        model = Event
+        fields = "__all__"
+        widgets = {
+            "teams": FilteredSelectMultiple("Teams performing in this event", False)
+        }
+
+
+class EventAdmin(VersionAdmin):
+    form = EventAdminForm
+    save_as = True
+    search_fields = ["name"]
+    view_on_site = True
 
 
 def get_events_after_datetime(dt: datetime.datetime) -> Sequence[Event]:
