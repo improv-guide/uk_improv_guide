@@ -12,11 +12,15 @@
 
 
 <h2>Courses</h2>
+{% if courses %}
 <ul>
     {% for course in courses %}
     <li><a href="{% url 'course' id=course.id%}">{{course.name}}</a></li>
     {% endfor %}
 </ul>
+{% else %}
+<p>We don't have any courses listed for this school. You can add this information.</p>
+{% endif %}
 
 <h2>Venues</h2>
 
