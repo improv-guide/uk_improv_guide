@@ -26,7 +26,7 @@
 
 <ul>
     {% for venue in venues %}
-    <li><a href="venues/{{venue.id}}">{{venue.name}}</a></li>
+    <li><a href="{% url venue id=venue.id%}">{{venue.name}}</a></li>
     {% endfor %}
 </ul>
 
@@ -35,7 +35,7 @@
 
 <ul>
     {% for teacher in teachers %}
-    <li><a href="performers/{{teacher.id}}">{{teacher.full_name}}</a></li>
+    <li><a href="{% url 'performer' id=teacher.id %}">{{teacher.full_name}}</a></li>
     {% endfor %}
 </ul>
 
