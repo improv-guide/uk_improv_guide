@@ -15,7 +15,7 @@
 
     <div class="course_link"><a href="{{course.course_link}}">Book this course</a>.</div>
 
-    {% if course.teacher.exists %}
+    {% if course.teacher %}
     <div class="course_teacher">Taught by <a href="{% url "teacher" id=course.teacher.id %}">{{course.teacher.full_name}}</div>
     {% else %}
     <div class="course_teacher">The teacher for this class has not yet been published.</div>
