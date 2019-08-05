@@ -12,26 +12,33 @@
 
 
 <h2>Courses</h2>
+{% if courses %}
 <ul>
     {% for course in courses %}
     <li><a href="{% url 'course' id=course.id%}">{{course.name}}</a></li>
     {% endfor %}
 </ul>
+{% else %}
+<p>We don't have any courses listed for this school. You can add this information.</p>
+{% endif %}
 
 <h2>Venues</h2>
 
+{% if venues %}
 <ul>
     {% for venue in venues %}
-    <li><a href="venues/{{venue.id}}">{{venue.name}}</a></li>
+    <li><a href="{% url venue id=venue.id%}">{{venue.name}}</a></li>
     {% endfor %}
 </ul>
-
+{% else %}
+<p>We don't have any venues listed for {{school.name}}, please help us by adding this information.</p>
+{% endif %}
 
 <h2>Teachers</h2>
 
 <ul>
     {% for teacher in teachers %}
-    <li><a href="performers/{{teacher.id}}">{{teacher.full_name}}</a></li>
+    <li><a href="{% url 'performer' id=teacher.id %}">{{teacher.full_name}}</a></li>
     {% endfor %}
 </ul>
 

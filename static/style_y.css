@@ -46,15 +46,9 @@ h1 {
   display: block; }
 
 .home_page_teams {
-  color: greenyellow;
-  border-bottom-style: dot-dot-dash;
-  border-width: 2px;
   border-color: #003366; }
 
 .home_page_teachers {
-  color: greenyellow;
-  border-bottom-style: dot-dot-dash;
-  border-width: 2px;
   border-color: blue; }
 
 .team_image {
@@ -88,3 +82,8 @@ h1 {
   columns: 3;
   -webkit-columns: 3;
   -moz-columns: 3; }
+
+.gsc-control-cse.gsc-control-cse-en {
+  border-width: 0px;
+  padding: 0;
+  background-color: #007bff; }

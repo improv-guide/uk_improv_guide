@@ -2,15 +2,20 @@
 {% block content_inner %}
 <div class="course_info">
     <h3>About {{course.name}}</h3>
+    <div class="course school">School: <a href="/schools/{{school.id}}">{{course.school.name}}</a></div>
     {% if has_started %}
         <p>This course has already started</p>
     {% else %}
         <p>This course starts on {{course.start_time}} - that's {{days_until_start}} days from now.</p>
     {% endif %}
-    <div class="course_link"><a href="{{course.course_link}}">Book this course</div>.
-    <div class="course_address"><a href="{% url venue id=course.venue.id">{{course.venue.name}}</a>, {{course.venue.address}}, {{course.venue.city}}</div>
 
-    {% if course.teacher.exists %}
+    <p>This course consists of {{course.number_of_lessons}} sessions, each {{course.lesson_duration}} hours long.</p>
+
+    <div class="course_address">Venue: <a href="{% url venue id=course.venue.id">{{course.venue.name}}</a>, {{course.venue.address}}, {{course.venue.city}}</div>
+
+    <div class="course_link"><a href="{{course.course_link}}">Book this course</a>.</div>
+
+    {% if course.teacher %}
     <div class="course_teacher">Taught by <a href="{% url "teacher" id=course.teacher.id %}">{{course.teacher.full_name}}</div>
     {% else %}
     <div class="course_teacher">The teacher for this class has not yet been published.</div>

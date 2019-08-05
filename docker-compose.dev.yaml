@@ -12,7 +12,7 @@ services:
       - ./static:/static
       - ./media:/media
       - ./backup:/backup
-      - ./src/uk_improv_guide:/src/uk_improv_guide
+      - ./src:/src
     working_dir: "/src/uk_improv_guide"
     entrypoint: ["./start_dev.sh"]
     ports:

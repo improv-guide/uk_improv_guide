@@ -6,7 +6,7 @@
 
 
     <div class="box">
-        <a href="/schools/{{ school.id }}"><img class="boximage" src="{% static "" %}{{ school.image.url }}" alt="{{ school.name }}"></a>
+        <a href="{% url 'school' id=school.id %}"><img class="team_image" src="{{ school.image.url }}" alt="{{ school.name }}"></a>
         <div class="box_social">
             {% with social_thing=school %}
             {% include "content/social.html" %}
@@ -14,9 +14,7 @@
         </div>
 
         <span class="box_text">
-                    <p><a href="/school/{{ school.id }}">{{school.name}}</a></p>
-
-
+                    <p><a href="{% url 'school' id=school.id %}">{{school.name}}</a></p>
                 </span>
 
     </div>
