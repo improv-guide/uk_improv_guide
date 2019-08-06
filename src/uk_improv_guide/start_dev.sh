@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 set -e
+cd ..
+python setup.py develop
+cd uk_improv_guide
 ls -l
 python ../setup.py develop || true
 ./migrate.sh
