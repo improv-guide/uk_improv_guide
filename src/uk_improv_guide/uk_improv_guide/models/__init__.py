@@ -2,6 +2,7 @@ from typing import Set
 
 from django.db import models
 
+from uk_improv_guide.models.festival import Festival
 from .course import Course
 from .event import Event
 from .event_series import EventSeries
@@ -19,4 +20,5 @@ ALL_MODELS: Set[models.Model] = {
     EventSeries,
     School,
     Course,
+    Festival,
 }
