@@ -75,8 +75,9 @@ class FestivalAdmin(VersionAdmin):
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
 
 
-# def get_events_after_datetime(dt: datetime.datetime) -> Sequence[Event]:
-#     return Event.objects.filter(start_time__gte=dt).order_by("start_time")
+def get_festivals_after_datetime(dt: datetime.datetime) -> Sequence[Festival]:
+    return Festival.objects.filter(start_time__gte=dt).order_by("start_time")
+
 #
 #
 # def get_events_between_dates(
@@ -87,7 +88,7 @@ class FestivalAdmin(VersionAdmin):
 #     )
 #
 
-def get_all_events() -> Sequence[Festival]:
+def get_all_festivals() -> Sequence[Festival]:
     return Festival.objects.all()
 
 #
@@ -99,6 +100,6 @@ def get_all_events() -> Sequence[Festival]:
 #     ).order_by("start_time")
 #
 #
-# def get_event_by_id(id: int) -> Event:
-#     e: Event = Event.objects.get(id=id)
-#     return e
+def get_festival_by_id(id: int) -> Festival:
+    f: Festival = Festival.objects.get(id=id)
+    return f

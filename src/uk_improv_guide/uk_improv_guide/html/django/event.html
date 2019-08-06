@@ -3,14 +3,14 @@
 
 {% block content_inner %}
     <div class="event_info">
-        <p>{{event.name}} @ <a href="/venues/{{venue.id}}">{{venue.name}}</a>, {{event.start_time}}</p>
+        <p>{{event.name}} @ <a href="{% url 'venue' id=venue.id %}">{{venue.name}}</a>, {{event.start_time}}</p>
     </div>
 
     {% if teams %}
     <h3>Teams playing</h3>
     <ul>
         {% for team in teams %}
-        <li><a href="/teams/{{team.id}}">{{ team.name }}</a></li>
+        <li><a href="{% url 'team' id=team.id %}">{{ team.name }}</a></li>
         {%  endfor %}
     </ul>
     {% endif %}
