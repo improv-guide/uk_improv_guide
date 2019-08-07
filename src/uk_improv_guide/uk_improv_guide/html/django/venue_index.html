@@ -5,7 +5,7 @@
     {% for venue in venues %}
 
     <li class="venue">
-        <span class="venue_name"><a href="/venues/{{venue.id}}">{{venue.name}}</a></span><span class="city">,{{venue.city}}</span><span class="country">, {{venue.country.name}}</span>
+        <span class="venue_name"><a href="{% url 'venue' id=venue.id %}">{{venue.name}}</a></span><span class="city">,{{venue.city}}</span><span class="country">, {{venue.country.name}}</span>
     </li>
 
     {% endfor %}
