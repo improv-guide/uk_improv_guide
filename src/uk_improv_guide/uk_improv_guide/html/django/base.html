@@ -1,7 +1,7 @@
-{% load static %}
-{% load sass_tags %}
+{% load static %} {% load sass_tags %}
 
 <html>
+
 <head>
     <link rel="apple-touch-icon" sizes="180x180" href="{% get_static_prefix %}/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{% get_static_prefix %}/favicon-32x32.png">
@@ -27,24 +27,21 @@
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>{% block title %}{{  title }}{% endblock %}</title>
-    {% include "og.html" %}
-    {% include "adsense.html" %}
+    <title>{% block title %}{{ title }}{% endblock %}</title>
+    {% include "og.html" %} {% include "adsense.html" %}
 </head>
-<body style="padding-top:56px">
-{% include "nav.html" %}
 
-<div class="container">
-{% block content %}
-    <h1 class="display-4">{{title}}</h1>
-    {% block content_inner %}
-    <pre> {% filter force_escape %} {% debug %} {% endfilter %} </pre>
-    {% endblock %}
+<body class="mt-5 pt-5">
+    {% include "nav.html" %}
 
-{% endblock %}
-</div>
+    <div class="container">
+        {% block content %}
+        <h1 class="display-4">{{title}}</h1>
+        {% block content_inner %}
+        <pre> {% filter force_escape %} {% debug %} {% endfilter %} </pre> {% endblock %} {% endblock %}
+    </div>
 
-{% include "footer.html" %}
-{% include "google_analyitcs.html" %}
+    {% include "footer.html" %} {% include "google_analyitcs.html" %}
 </body>
+
 </html>

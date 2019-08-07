@@ -1,4 +1,4 @@
-<img class="card-img-top" src="{{event.venue.image.url}}" alt="{{ event.venue.name }}">
+<img class="card-img-top img-fuild" style="height: 120px; object-fit: cover;" src="{{event.venue.image.url}}" alt="{{ event.venue.name }}">
 <div class="card-body">
 
     <h3 class="card-title h5"><a href="/events/{{event.id}}">{{event.name}}</a></h3>
@@ -7,9 +7,9 @@
 
     <p class="card-text"> <a href="/venues/{{ event.venue.id }}">{{ event.venue.name }}</a></p>
 </div>
-<ul class="list-group list-group-flush">
+<!-- <ul class="list-group list-group-flush mb-auto">
     {% for team in event.teams.all %}
     <li class="list-group-item"><a href="/teams/{{ team.id }}">{{ team.name }}</a></li>
     {% endfor %}
-</ul>
+</ul> -->
 <a class="btn btn-primary btn-sm" href="/events/{{event.id}}">View event</a>
