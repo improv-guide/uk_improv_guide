@@ -27,7 +27,7 @@
 
     <ul>
         {% for school in performer.teaches_for.all %}
-        <li><a href="/schools/{{school.id}}">{{ school.name }}</a></li>
+        <li><a href="{% url 'school' id=school.id %}">{{ school.name }}</a></li>
         {%  endfor %}
     </ul>
 
@@ -37,7 +37,7 @@
     {% if teams %}
     <ul>
         {% for team in teams %}
-        <li><a href="/teams/{{team.id}}">{{ team.name }}</a></li>
+        <li><a href="{% url 'team' id=team.id %}">{{ team.name }}</a></li>
         {%  endfor %}
     </ul>
     {% else %}
@@ -48,7 +48,7 @@
     {% if events %}
     <ul>
         {% for event in events %}
-        <li><a href="/event/{{event.id}}">{{ event.name }} @ {{ event.start_time }}</a></li>
+        <li><a href="{% url 'event' id=event.id %}">{{ event.name }} @ {{ event.start_time }}</a></li>
         {%  endfor %}
     </ul>
     {% else %}
