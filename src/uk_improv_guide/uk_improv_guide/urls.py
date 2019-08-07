@@ -22,6 +22,8 @@ from uk_improv_guide.views.course import course
 from uk_improv_guide.views.courses import courses
 from uk_improv_guide.views.event import event
 from uk_improv_guide.views.events import events
+from uk_improv_guide.views.festival import festival
+from uk_improv_guide.views.festivals import festivals
 from uk_improv_guide.views.home import home
 from uk_improv_guide.views.misc import privacy, terms
 from uk_improv_guide.views.performer import performer
@@ -42,6 +44,8 @@ urlpatterns = [
     path("", home, name="home"),
     path("events/", events, name="events"),
     path("events/<int:id>", event, name="event"),
+    path("festivals/", festivals, name="festivals"),
+    path("festival/<int:id>", festival, name="festival"),
     path("venues/", venues, name="venues"),
     path("venues/<int:id>", venue, name="venue"),
     path("teams/", teams, name="teams"),

@@ -35,6 +35,9 @@ services:
   dummy_slack:
     restart: always
     image: "salimfadhley/uk-improv-guide:${IMPROV_GUIDE_VERSION}"
+    build:
+      context: .
+      target: uk-improv-guide
     entrypoint: ["python", "-m", "http.server", "--bind", "0.0.0.0", "8123"]
     ports:
       - "8123:8123"

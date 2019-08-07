@@ -28,4 +28,6 @@ def get_admin_class_for_model(m) -> Type:
 
 
 for m in ALL_MODELS:
+    # admin.site.register(m, MarkdownxModelAdmin)
+
     admin.register(m)(get_admin_class_for_model(m))

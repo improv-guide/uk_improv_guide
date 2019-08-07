@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content_inner %}
+    <div class="festivals">
+        <ul>
+        {% for festival in festivals %}
+        <li>
+            <li>{{festival.start_time}} <a href="{% url 'festival' id=festival.id %}">{{festival.name}}</a>, @ <a href="{% url 'venue' id=festival.venue.id %}">{{festival.venue.name}}</a>, {{festival.venue.city}}</li>
+        </li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endblock %}S
