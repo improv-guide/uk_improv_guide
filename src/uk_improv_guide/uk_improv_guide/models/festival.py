@@ -11,18 +11,19 @@ from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.sitemaps import register_model_for_site_map
 from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
-from uk_improv_guide.models.school import School
-from uk_improv_guide.models.performer import Performer
 from uk_improv_guide.models.fields.fields import (
+    DESCRIPTION,
     EVENTBRITE_LINK,
     FACEBOOK_LINK,
     WEBSITE_LINK,
-    DESCRIPTION,
 )
+from uk_improv_guide.models.performer import Performer
+from uk_improv_guide.models.school import School
 from uk_improv_guide.models.team import Team
 from uk_improv_guide.models.venue import Venue
 
 log = logging.getLogger(__name__)
+
 
 @reversion.register
 @register_model_for_site_map
@@ -31,7 +32,7 @@ class Festival(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mod
 
     FESTIVAL_TYPES = (("F", "Festival"), ("R", "Retreat"))
     name = models.CharField(max_length=100)
-    long_description = DESCRIPTION,
+    long_description = (DESCRIPTION,)
     image = models.ImageField(upload_to="event/", blank=True)
     festival_type = models.CharField(max_length=1, choices=FESTIVAL_TYPES)
     start_time = models.DateTimeField(verbose_name="Festival start time")
@@ -41,7 +42,9 @@ class Festival(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mod
     website_link = WEBSITE_LINK
     venue = models.ForeignKey(Venue, on_delete=models.SET_NULL, null=True)
     teams = models.ManyToManyField(Team, verbose_name="teams playing", blank=True)
-    teachers = models.ManyToManyField(Performer, verbose_name="teachers teaching", blank=True)
+    teachers = models.ManyToManyField(
+        Performer, verbose_name="teachers teaching", blank=True
+    )
     school = models.ForeignKey(School, on_delete=models.SET_NULL, null=True)
 
     @staticmethod
@@ -66,8 +69,9 @@ class FestivalAdminForm(ModelForm):
         fields = "__all__"
         widgets = {
             "teams": FilteredSelectMultiple("Teams", False),
-            "teachers": FilteredSelectMultiple("Teachers", False)
+            "teachers": FilteredSelectMultiple("Teachers", False),
         }
+
 
 class FestivalAdmin(VersionAdmin):
     form = FestivalAdminForm
@@ -85,6 +89,7 @@ class FestivalAdmin(VersionAdmin):
 def get_festivals_after_datetime(dt: datetime.datetime) -> Sequence[Festival]:
     return Festival.objects.filter(start_time__gte=dt).order_by("start_time")
 
+
 #
 #
 # def get_events_between_dates(
@@ -95,8 +100,10 @@ def get_festivals_after_datetime(dt: datetime.datetime) -> Sequence[Festival]:
 #     )
 #
 
+
 def get_all_festivals() -> Sequence[Festival]:
     return Festival.objects.all()
+
 
 #
 # def get_events_after_datetime_for_performer_id(

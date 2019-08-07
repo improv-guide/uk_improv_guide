@@ -1,7 +1,10 @@
 from django.shortcuts import render
-from uk_improv_guide.models.festival import Festival, get_festival_by_id, get_festivals_after_datetime
 from uk_improv_guide.lib.opengraph import opengraph_website
-
+from uk_improv_guide.models.festival import (
+    Festival,
+    get_festival_by_id,
+    get_festivals_after_datetime,
+)
 from uk_improv_guide.models.venue import Venue
 
 
