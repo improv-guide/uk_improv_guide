@@ -32,3 +32,7 @@ INSTAGRAM_LINK = models.URLField(
 IMDB_LINK = models.URLField(
     max_length=100, blank=True, default="", verbose_name="IMDB Link"
 )
+
+DESCRIPTION = models.CharField(
+    max_length=1000, blank=True, default="", verbose_name="Long description"
+)

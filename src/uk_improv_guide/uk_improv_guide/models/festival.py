@@ -1,4 +1,5 @@
 import datetime
+import logging
 from typing import Sequence
 
 import reversion
@@ -10,15 +11,18 @@ from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.sitemaps import register_model_for_site_map
 from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
+from uk_improv_guide.models.school import School
 from uk_improv_guide.models.performer import Performer
 from uk_improv_guide.models.fields.fields import (
     EVENTBRITE_LINK,
     FACEBOOK_LINK,
     WEBSITE_LINK,
+    DESCRIPTION,
 )
 from uk_improv_guide.models.team import Team
 from uk_improv_guide.models.venue import Venue
 
+log = logging.getLogger(__name__)
 
 @reversion.register
 @register_model_for_site_map
@@ -27,6 +31,7 @@ class Festival(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mod
 
     FESTIVAL_TYPES = (("F", "Festival"), ("R", "Retreat"))
     name = models.CharField(max_length=100)
+    long_description = DESCRIPTION,
     image = models.ImageField(upload_to="event/", blank=True)
     festival_type = models.CharField(max_length=1, choices=FESTIVAL_TYPES)
     start_time = models.DateTimeField(verbose_name="Festival start time")
@@ -37,6 +42,7 @@ class Festival(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mod
     venue = models.ForeignKey(Venue, on_delete=models.SET_NULL, null=True)
     teams = models.ManyToManyField(Team, verbose_name="teams playing", blank=True)
     teachers = models.ManyToManyField(Performer, verbose_name="teachers teaching", blank=True)
+    school = models.ForeignKey(School, on_delete=models.SET_NULL, null=True)
 
     @staticmethod
     def model_admin():
@@ -71,6 +77,7 @@ class FestivalAdmin(VersionAdmin):
 
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
         if db_field.name == "teachers":
+            log.warning("XXXX TEACHERS!")
             kwargs["queryset"] = Performer.objects.exclude(teaches_for=None)
         return super().formfield_for_foreignkey(db_field, request, **kwargs)
 

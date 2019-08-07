@@ -16,6 +16,7 @@ def festival(request, id: int):
         {
             "title": title,
             "festival": this_festival,
+            "teachers": this_festival.teachers.all(),
             "venue": venue,
             "teams": this_festival.teams.all(),
             "teachers": this_festival.teachers.all(),

@@ -26,8 +26,15 @@
 
     <ul>
         {% for event in events %}
-        <li><a href="/events/{{event.id}}">{{ event.name }} @ {{ event.start_time }}</a></li>
+        <li><a href="/events/{{event.id}}">{{ event.name }}</a> @ {{ event.start_time }}, <a href="{% url 'venue' id=event.venue.id %}">{{event.venue.name}}</a>, {{event.venue.country.name}}</li>
         {%  endfor %}
+    </ul>
+
+    <h3>Festivals</h3>
+    <ul>
+        {% for festival in team.festival_set.all %}
+        <li><a href="{% url 'festival' id=festival.id %}">{{festival.name}}</a>, {{festival.start_time.year}}, <a href="{% url 'venue' id=festival.venue.id %}">{{festival.venue.name}}</a></li>
+        {% endfor %}
     </ul>
 
     {% with obj=team %}

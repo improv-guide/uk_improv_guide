@@ -2,9 +2,39 @@
 {%  block title %}{{ full_name }}{% endblock %}
 
 {% block content_inner %}
+<h2>About this {{festival.name}}...</h2>
+<p>Venue: <a href="{% url 'festival' id=festival.id %}">{{festival.venue.name}}</a>, {{festival.venue.city}}, {{festival.venue.country.name}}</p>
+<p>Starts: {{festival.start_time}}, Finishes: {{festival.end_time}}.</p>
 
-<p>Festival stuff.</p>
+{% if festival.school %}
+<p>Hosted by: <a href="{% url 'school' id=festival.school.id %}">{{festival.school.name}}</a></p>
+{% endif %}
 
+{% if festival.website_link %}
+<p>You can find out more at the <a href="{{festival.website_link}}">organizer's web-page</a>.</p>
+{% endif %}
+
+{% if festival.teams.all.exists %}
+<h3>Teams Performing at {{festival.name}}...</h3>
+<ul>
+{% for team in teams %}
+    <li><a href="{% url 'team' id=team.id %}">{{team.name}}</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+
+
+<h3>Teachers teaching at {{festival.name}}...</h3>
+<ul>
+    {% for teacher in festival.teachers.all %}
+    <li><a href="{% url 'performer' id=teacher.id %}">{{teacher.full_name}}</a></li>
+    {% endfor %}
+</ul>
+
+
+{% with obj=festival %}
+    {% include "content/admin.html" %}
+{% endwith %}
 {% endblock %}
 
 
