@@ -1,63 +1,81 @@
+/* $main-color: dodgerblue;
+$background-color: #f5f5f5;
+
 body {
-  background: #f5f5f5; }
+  background: $background-color;
+}
 
 * {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 body {
   font-family: sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 nav {
-  background: dodgerblue;
+  background: $main-color;
   display: flex;
-  justify-content: center; }
-  nav a {
+  justify-content: center;
+  a {
     padding: 20px 10px;
-    color: white; }
-  nav div {
-    color: white; }
+    color: white;
+    //font-weight: 700;
+  }
+  div {
+    //padding: 20px 10px;
+    color: white;
+    //font-weight: 700;
+  }
+}
 
 h1 {
   font-size: 50px;
   display: block;
-  text-align: center; }
+  text-align: center;
+}
 
 .listings > ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center; }
-
+  justify-content: center;
+}
 .listings > ul > li {
   width: 25%;
   padding: 10px;
   margin: 10px;
   background: lightblue;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .listings ul > li > ul {
-  display: block; }
-
+  display: block;
+}
 .listings ul > li > a {
-  display: block; }
+  display: block;
+}
 
 .home_page_teams {
-  border-color: #003366; }
+  border-color: #003366;
+}
 
 .home_page_teachers {
-  border-color: blue; }
+  border-color: blue;
+}
 
 .team_image {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  width: 150px;
-  height: 150px;
-  object-fit: cover; }
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
 
 .teacher_image {
   -webkit-border-radius: 8px;
@@ -65,10 +83,12 @@ h1 {
   border-radius: 8px;
   width: 150px;
   height: 150px;
-  object-fit: cover; }
+  object-fit: cover;
+}
 
 .footer {
-  padding-top: 20px; }
+  padding-top: 20px;
+}
 
 .featured_image {
   -webkit-border-radius: 8px;
@@ -76,14 +96,18 @@ h1 {
   border-radius: 8px;
   width: 250px;
   height: 250px;
-  object-fit: cover; }
+  object-fit: cover;
+}
 
 .performers_list {
   columns: 3;
   -webkit-columns: 3;
-  -moz-columns: 3; }
+  -moz-columns: 3;
+}
 
 .gsc-control-cse.gsc-control-cse-en {
   border-width: 0px;
   padding: 0;
-  background-color: #007bff; }
+  background-color: rgb(0, 123, 255);
+} */
+/*# sourceMappingURL=style_y.css.map */

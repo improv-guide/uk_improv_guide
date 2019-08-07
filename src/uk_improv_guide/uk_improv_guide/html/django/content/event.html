@@ -1,6 +1,15 @@
-<a href="/events/{{event.id}}">{{event.name}}</a> {{ event.start_time }} @ <a href="/venues/{{ event.venue.id }}">{{ event.venue.name }}</a> with:
-<ul>
+<img class="card-img-top" src="{{event.venue.image.url}}" alt="{{ event.venue.name }}">
+<div class="card-body">
+
+    <h3 class="card-title h5"><a href="/events/{{event.id}}">{{event.name}}</a></h3>
+
+    <h3 class="card-subtitle h6">{{ event.start_time }}</h3>
+
+    <p class="card-text"> <a href="/venues/{{ event.venue.id }}">{{ event.venue.name }}</a></p>
+</div>
+<ul class="list-group list-group-flush">
     {% for team in event.teams.all %}
-    <li><a href="/teams/{{ team.id }}">{{ team.name }}</a></li>
+    <li class="list-group-item"><a href="/teams/{{ team.id }}">{{ team.name }}</a></li>
     {% endfor %}
 </ul>
+<a class="btn btn-primary btn-sm" href="/events/{{event.id}}">View event</a>

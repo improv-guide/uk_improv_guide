@@ -1,34 +1,34 @@
-{% extends "base.html" %}
-{% block content_inner %}
-{% load static %}
+{% extends "base.html" %} {% block content_inner %} {% load static %}
 
-<h2 class="display-5">Events starting in the next {{event_days}} days.</h2>
+<!-- col-xs-12 col-sm-12 col-md-4 col-lg-3 -->
 
+<section id="listings" class="container-fluid">
+    <h2 class="display-5">Events starting in the next {{event_days}} days.</h2>
+    <div class="d-flex flex-wrap justify-content-start align-items-stretch">
 
-
-<div class="listings">
-    <ul>
         {% for event in events %}
-        <li>
-            {% include "content/event.html" %}
-        </li>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <div class="card my-2">
+                {% include "content/event.html" %}
+            </div>
+        </div>
         {% endfor %}
-    </ul>
-    </ul>
-    <a href="/events/">More events...</a>
-</div>
+
+    </div>
+    <a class="btn btn-primary" role="button" href="/events/">More events...</a>
+</section>
 
 <h2 class="display-5">Featured <a href="/teams/">Teams</a></h2>
 
 
-<div class="home_page_teams">
+<section id="home-page-teams">
     {% for team in teams %}
     <div class="team">
-        <img class="team_image" src="{{team.image.url}}"/>
+        <img class="team_image" src="{{team.image.url}}" />
         <a href="/teams/{{team.id}}">{{team.name}}</a>
     </div>
     {% endfor %}
-</div>
+</section>
 
 
 
@@ -36,10 +36,10 @@
 
 <div class="home_page_teachers">
     {% for teacher in teachers %}
-        <div class="teacher">
-            <img class="teacher_image" src="{{teacher.image.url}}"/>
-            <a href="/performers/{{teacher.id}}">{{teacher.full_name}}</a>
-        </div>
+    <div class="teacher">
+        <img class="teacher_image" src="{{teacher.image.url}}" />
+        <a href="/performers/{{teacher.id}}">{{teacher.full_name}}</a>
+    </div>
     {% endfor %}
 </div>
 
