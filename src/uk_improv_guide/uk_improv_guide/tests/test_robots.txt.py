@@ -11,5 +11,5 @@ class YourTestClass(TestCase):
         pass
 
     def test_sitemap_can_be_loaded(self):
-        response = self.client.get('/robots.txt')
+        response = self.client.get("/robots.txt")
         self.assertEqual(response.status_code, 200)
