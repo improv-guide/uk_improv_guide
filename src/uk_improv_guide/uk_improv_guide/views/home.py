@@ -2,6 +2,8 @@ import datetime
 from typing import Sequence
 
 from django.shortcuts import render
+
+import uk_improv_guide
 from uk_improv_guide.lib.opengraph import opengraph_website
 from uk_improv_guide.models.event import Event, get_events_between_dates
 from uk_improv_guide.models.performer import get_featured_performers
@@ -23,5 +25,6 @@ def home(request, event_days: int = 7):
             "teams": get_featured_teams(),
             "teachers": get_featured_performers(teachers=True),
             "og": opengraph_website(title=title, request=request, image=None),
+            "version": uk_improv_guide.__version__
         },
     )

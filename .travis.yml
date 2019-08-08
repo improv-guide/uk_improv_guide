@@ -15,6 +15,7 @@ install:
 jobs:
   include:
     - stage: docker_push
+      name: "Docker Push"
       script:
         - docker-compose push
         - export IMPROV_GUIDE_VERSION=latest && docker-compose build

@@ -95,7 +95,12 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
                 "django.template.context_processors.media",
-            ]
+            ],
+            # "loaders": [
+            #     "django.template.loaders.filesystem.Loader",
+            #     "django.template.loaders.app_directories.Loader",
+            #     "apptemplates.Loader",
+            # ],
         },
     },
 ]
