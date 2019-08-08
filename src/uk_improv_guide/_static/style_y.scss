@@ -1,6 +1,57 @@
-/* $main-color: dodgerblue;
-$background-color: #f5f5f5;
+// ==============
+// Global Colours
+// ==============
+$main-color: #007BFF;
+$main-dark: #0069D9;
+$main-white: #ffffff;
+// ==============
+// Google custom search
+// ==============
+#___gcse_0 {
+    flex-grow: 1;
+    .gsc-control-cse {
+        border: none !important;
+        padding: 0 !important;
+        background-color: #007BFF !important;
+    }
+    button.gsc-search-button {
+        background: $main-white;
+        height: 1.8rem;
+        border: none;
+        border-radius: 0 .25rem .25rem 0;
+        svg {
+            fill: $main-color;
+            transition: fill 150ms ease-in-out;
+        }
+        transition: background-color 150ms ease-in-out;
+    }
+    button.gsc-search-button:hover {
+        background: $main-dark;
+        svg {
+            fill: $main-white;
+        }
+    }
+    .gsc-input-box {
+        height: 1.8rem;
+        border: none;
+        border-radius: .25rem 0 0 .25rem;
+    }
+    td.gsc-input {
+        padding: 0;
+    }
+    input#gsc-i-id1 {
+        background: none !important
+    }
+    input#gsc-i-id1::placeholder {
+        color: transparent;
+    }
+}
 
+
+/* 
+
+$main-color: dodgerblue;
+$background-color: red;
 body {
   background: $background-color;
 }
@@ -22,14 +73,14 @@ nav {
   display: flex;
   justify-content: center;
   a {
-    padding: 20px 10px;
-    color: white;
-    //font-weight: 700;
+      padding: 20px 10px;
+      color: white;
+      //font-weight: 700;
   }
   div {
-    //padding: 20px 10px;
-    color: white;
-    //font-weight: 700;
+      //padding: 20px 10px;
+      color: white;
+      //font-weight: 700;
   }
 }
 
@@ -39,13 +90,14 @@ h1 {
   text-align: center;
 }
 
-.listings > ul {
+.listings>ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-.listings > ul > li {
+
+.listings>ul>li {
   width: 25%;
   padding: 10px;
   margin: 10px;
@@ -53,10 +105,11 @@ h1 {
   border-radius: 10px;
 }
 
-.listings ul > li > ul {
+.listings ul>li>ul {
   display: block;
 }
-.listings ul > li > a {
+
+.listings ul>li>a {
   display: block;
 }
 
@@ -69,12 +122,12 @@ h1 {
 }
 
 .team_image {
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .teacher_image {
@@ -109,4 +162,6 @@ h1 {
   border-width: 0px;
   padding: 0;
   background-color: rgb(0, 123, 255);
-} */
+} 
+
+*/

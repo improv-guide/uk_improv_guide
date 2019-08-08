@@ -1,6 +1,72 @@
-/* $main-color: dodgerblue;
-$background-color: #f5f5f5;
+#___gcse_0 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
 
+#___gcse_0 .gsc-control-cse {
+  border: none !important;
+  padding: 0 !important;
+  background-color: #007BFF !important;
+}
+
+#___gcse_0 button.gsc-search-button {
+  background: #ffffff;
+  height: 1.8rem;
+  border: none;
+  border-radius: 0 .25rem .25rem 0;
+  -webkit-transition: background-color 150ms ease-in-out;
+  transition: background-color 150ms ease-in-out;
+}
+
+#___gcse_0 button.gsc-search-button svg {
+  fill: #007BFF;
+  -webkit-transition: fill 150ms ease-in-out;
+  transition: fill 150ms ease-in-out;
+}
+
+#___gcse_0 button.gsc-search-button:hover {
+  background: #0069D9;
+}
+
+#___gcse_0 button.gsc-search-button:hover svg {
+  fill: #ffffff;
+}
+
+#___gcse_0 .gsc-input-box {
+  height: 1.8rem;
+  border: none;
+  border-radius: .25rem 0 0 .25rem;
+}
+
+#___gcse_0 td.gsc-input {
+  padding: 0;
+}
+
+#___gcse_0 input#gsc-i-id1 {
+  background: none !important;
+}
+
+#___gcse_0 input#gsc-i-id1::-webkit-input-placeholder {
+  color: transparent;
+}
+
+#___gcse_0 input#gsc-i-id1:-ms-input-placeholder {
+  color: transparent;
+}
+
+#___gcse_0 input#gsc-i-id1::-ms-input-placeholder {
+  color: transparent;
+}
+
+#___gcse_0 input#gsc-i-id1::placeholder {
+  color: transparent;
+}
+
+/* 
+
+$main-color: dodgerblue;
+$background-color: red;
 body {
   background: $background-color;
 }
@@ -22,14 +88,14 @@ nav {
   display: flex;
   justify-content: center;
   a {
-    padding: 20px 10px;
-    color: white;
-    //font-weight: 700;
+      padding: 20px 10px;
+      color: white;
+      //font-weight: 700;
   }
   div {
-    //padding: 20px 10px;
-    color: white;
-    //font-weight: 700;
+      //padding: 20px 10px;
+      color: white;
+      //font-weight: 700;
   }
 }
 
@@ -39,13 +105,14 @@ h1 {
   text-align: center;
 }
 
-.listings > ul {
+.listings>ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
-.listings > ul > li {
+
+.listings>ul>li {
   width: 25%;
   padding: 10px;
   margin: 10px;
@@ -53,10 +120,11 @@ h1 {
   border-radius: 10px;
 }
 
-.listings ul > li > ul {
+.listings ul>li>ul {
   display: block;
 }
-.listings ul > li > a {
+
+.listings ul>li>a {
   display: block;
 }
 
@@ -69,12 +137,12 @@ h1 {
 }
 
 .team_image {
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .teacher_image {
@@ -109,5 +177,7 @@ h1 {
   border-width: 0px;
   padding: 0;
   background-color: rgb(0, 123, 255);
-} */
+} 
+
+*/
 /*# sourceMappingURL=style_y.css.map */
