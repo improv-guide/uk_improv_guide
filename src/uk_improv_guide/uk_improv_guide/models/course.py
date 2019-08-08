@@ -117,7 +117,7 @@ def get_courses_for_school(id: str) -> Sequence[Course]:
 
 
 def get_all_courses() -> Sequence[Course]:
-    return Course.objects.objects.all()
+    return Course.objects.all()
 
 
 def get_course_by_id(id: int) -> Course:

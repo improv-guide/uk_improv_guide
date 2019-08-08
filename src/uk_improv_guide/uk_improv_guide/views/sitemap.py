@@ -1,6 +1,8 @@
 import itertools
 
 from django.shortcuts import render
+from uk_improv_guide.models.festival import get_all_festivals
+
 from uk_improv_guide.models.course import get_all_courses
 from uk_improv_guide.models.event import get_all_events
 from uk_improv_guide.models.performer import get_all_performers

@@ -3,4 +3,5 @@ from django.test import TestCase
 
 class TestSettings(TestCase):
     def testOne(self):
-        pass
+        from uk_improv_guide import settings
+
