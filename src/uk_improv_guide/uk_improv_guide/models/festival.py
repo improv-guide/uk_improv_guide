@@ -20,6 +20,7 @@ from uk_improv_guide.models.fields.fields import (
 from uk_improv_guide.models.performer import Performer
 from uk_improv_guide.models.school import School
 from uk_improv_guide.models.team import Team
+from uk_improv_guide.models.utils import link_model_form_and_admin
 from uk_improv_guide.models.venue import Venue
 
 log = logging.getLogger(__name__)
@@ -40,16 +41,12 @@ class Festival(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mod
     facebook_link = FACEBOOK_LINK
     eventbrite_link = EVENTBRITE_LINK
     website_link = WEBSITE_LINK
-    venue = models.ForeignKey(Venue, on_delete=models.SET_NULL, null=True)
+    venues = models.ManyToManyField(Venue, blank=True)
     teams = models.ManyToManyField(Team, verbose_name="teams playing", blank=True)
     teachers = models.ManyToManyField(
         Performer, verbose_name="teachers teaching", blank=True
     )
-    school = models.ForeignKey(School, on_delete=models.SET_NULL, null=True)
-
-    @staticmethod
-    def model_admin():
-        return FestivalAdmin
+    school = models.ForeignKey(School, on_delete=models.SET_NULL, blank=True, null=True)
 
     class Meta:
         ordering = ["-start_time"]
@@ -65,16 +62,15 @@ class FestivalAdminForm(ModelForm):
     excludes = []
 
     class Meta:
-        model = Festival
         fields = "__all__"
         widgets = {
             "teams": FilteredSelectMultiple("Teams", False),
             "teachers": FilteredSelectMultiple("Teachers", False),
+            "venues": FilteredSelectMultiple("Venues", False),
         }
 
 
 class FestivalAdmin(VersionAdmin):
-    form = FestivalAdminForm
     save_as = True
     search_fields = ["name"]
     view_on_site = True
@@ -90,30 +86,13 @@ def get_festivals_after_datetime(dt: datetime.datetime) -> Sequence[Festival]:
     return Festival.objects.filter(start_time__gte=dt).order_by("start_time")
 
 
-#
-#
-# def get_events_between_dates(
-#         dt0: datetime.datetime, dt1: datetime.datetime
-# ) -> Sequence[Event]:
-#     return Event.objects.filter(start_time__gte=dt0, start_time__lte=dt1).order_by(
-#         "start_time"
-#     )
-#
-
-
 def get_all_festivals() -> Sequence[Festival]:
     return Festival.objects.all()
 
 
-#
-# def get_events_after_datetime_for_performer_id(
-#         dt: datetime.datetime, performer_id: int
-# ) -> Sequence[Event]:
-#     return Event.objects.filter(
-#         start_time__gte=dt, teams__players__id=performer_id
-#     ).order_by("start_time")
-#
-#
 def get_festival_by_id(id: int) -> Festival:
     f: Festival = Festival.objects.get(id=id)
     return f
+
+
+link_model_form_and_admin(model=Festival, form=FestivalAdminForm, admin=FestivalAdmin)
