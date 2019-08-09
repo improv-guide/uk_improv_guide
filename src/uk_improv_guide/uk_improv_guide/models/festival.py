@@ -52,7 +52,7 @@ class Festival(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mod
         ordering = ["-start_time"]
 
     def __str__(self):
-        return f"{self.name} - @ {self.start_time} - {self.venue.name}"
+        return f"{self.name} - @ {self.start_time}"
 
     def get_absolute_url(self) -> str:
         return f"/festivals/{self.id}"
