@@ -19,3 +19,4 @@ rollbar==0.14.7
 newrelic==5.0.0.124
 django-markdownx==2.0.28
 django-apptemplates==1.4
+django-ical==1.5
