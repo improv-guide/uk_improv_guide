@@ -3,7 +3,13 @@
 
 {% block content_inner %}
 <h2>About this {{festival.name}}...</h2>
-<p>Venue: <a href="{% url 'festival' id=festival.id %}">{{festival.venue.name}}</a>, {{festival.venue.city}}, {{festival.venue.country.name}}</p>
+
+<ul>
+    {% for venue in festival.venues.all %}
+    <li><a href="{% url 'venue' id=venue.id %}">{{venue.name}}</a>, {{venue.city}}, {{venue.country.name}}</li>
+    {% endfor %}
+</ul>
+
 <p>Starts: {{festival.start_time}}, Finishes: {{festival.end_time}}.</p>
 
 {% if festival.school %}
