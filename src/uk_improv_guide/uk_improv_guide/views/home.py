@@ -1,4 +1,5 @@
 import datetime
+import logging
 from typing import Sequence
 
 import uk_improv_guide
@@ -8,8 +9,10 @@ from uk_improv_guide.models.event import Event, get_events_between_dates
 from uk_improv_guide.models.performer import get_featured_performers
 from uk_improv_guide.models.team import get_featured_teams
 
+log = logging.getLogger(__name__)
 
 def home(request, event_days: int = 7):
+    log.warning("This is the HOME view!")
     now: datetime.datetime = datetime.datetime.now()
     later: datetime = now + datetime.timedelta(hours=24 * event_days)
     events: Sequence[Event] = get_events_between_dates(now, later)
