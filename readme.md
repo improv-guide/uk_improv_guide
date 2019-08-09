@@ -147,6 +147,12 @@ python manage.py createsuperuser
 
 If you see an error like this: `django.db.utils.ProgrammingError: relation "auth_user" does not exist` the chances are that your superuser account was created. Just try to login.
 
+### When running the restore script you get an error: "CommandError: No fixture named 'uk_improv_guide' found."
+
+This means the backup submodule was not pulled. Did you check out the original repo using the SSH Git URL? If not the submodules will not update.
+
+Solution: Trash your local repo, and re-clone it using the SSH URL.
+
 ### The data does not restore
 
 it's possible that the database is in a state incompatible with the restore data. The simplest way to fix this is to wipe the database
