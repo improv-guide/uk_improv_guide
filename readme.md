@@ -21,17 +21,48 @@ These instructions will get you started as a developer.
 * [Git](https://git-scm.com/)
 * An IDE of your choice (I use [IntelliJ Ultimate](https://www.jetbrains.com/idea/), but Visual Studio Code, Sublime Text is all good!)
 
+You will also need:
+* A GitHub account
+* An RSA public/private key pair on your workstation
+* Your public key must be installed on GitHub.
+
+### Pull the code for the first time.
+
+First, clone the whole repository:
+
+```$bash
+git clone git@github.com:improv-guide/uk_improv_guide.git
+```
+
+Database snapshots and media files (photos, logos, etc) are stored in two
+separate repos to the source code. They have been included into the source
+repo as Git Submodules. These need to be pulled separately:
+
+If you have only just cloned the repository, do:
+```bash
+git submodule update --init --recursive
+```
+
+If you have pulled the submodules once before, the syntax to use is:
+
+```bash
+git pull && git submodule update --recursive
+```
+
 ### How to install
 
 Create a file at `~/.secret/uk_improv_guide.sh`. It should contain the following content, but change the paaswords as appropriate for you:
 
 ```
 #! /bin/bash
-export POSTGRES_PASSWORD=abc1aa
-export SLACK_WEB_HOOK=http://example.com
-export PRODUCTION_SECRET="dsfdsdffsdfsf" 
+export POSTGRES_PASSWORD=abc1234
+export POSTGRES_SSLMODE=allow
+export POSTGRES_HOST=db
+export POSTGRES_DB=improv
+export POSTGRES_PORT=5432
+export PRODUCTION_SECRET=dfsdsjdsjdsjkds
 ```
-The password and production secrets can be any random text.
+`PRODUCTION_SECRET` should be a random string. `POSTGRES_PASSWORD` should be a memorable password. It will be used to set the defaullt password on the postgres datgabase when it is first set up.
 
 Run the development "up" script:
 

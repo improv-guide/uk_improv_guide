@@ -1,13 +1,13 @@
 {% block navigation %}
 <div class="container">
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="/"><i class="fas fa-theater-masks mr-2"></i>Improv Guide</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-5">
 
                 {% if user.is_authenticated %}
                 <li class="nav-item">
@@ -56,4 +56,3 @@
 
 
 {% endblock %}
-
