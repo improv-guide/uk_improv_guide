@@ -27,11 +27,14 @@ Create a file at `~/.secret/uk_improv_guide.sh`. It should contain the following
 
 ```
 #! /bin/bash
-export POSTGRES_PASSWORD=abc1aa
-export SLACK_WEB_HOOK=http://example.com
-export PRODUCTION_SECRET="dsfdsdffsdfsf" 
+export POSTGRES_PASSWORD=abc1234
+export POSTGRES_SSLMODE=allow
+export POSTGRES_HOST=db
+export POSTGRES_DB=improv
+export POSTGRES_PORT=5432
+export PRODUCTION_SECRET=dfsdsjdsjdsjkds
 ```
-The password and production secrets can be any random text.
+`PRODUCTION_SECRET` should be a random string. `POSTGRES_PASSWORD` should be a memorable password. It will be used to set the defaullt password on the postgres datgabase when it is first set up.
 
 Run the development "up" script:
 
