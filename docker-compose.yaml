@@ -29,19 +29,15 @@ services:
     build:
       context: .
       target: uk-improv-guide
-      args:
-        IMPROV_GUIDE_VERSION: ${IMPROV_GUIDE_VERSION}
-        FOO: xyz
     volumes:
       - media:/media
       - backup:/backup
+      - root_user:/root/
       - ssh:/root/.ssh
       - certbot_www:/certbot/www
       - certbot_conf:/certbot/conf
     working_dir: "/src/uk_improv_guide"
     environment:
-      BAR: yyy
-      IMPROV_GUIDE_VERSION: ${IMPROV_GUIDE_VERSION}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_PORT: ${POSTGRES_PORT}
@@ -51,7 +47,6 @@ services:
       PRODUCTION_SECRET: ${PRODUCTION_SECRET}
       SITE_PORT: ${SITE_PORT}
       BACKUP_DIR: /backup
-    env_file: .env
     networks:
       - internal
 
@@ -70,6 +65,7 @@ volumes:
   certbot_www:
   media:
   ssh:
+  root_user:
   backup:
 
 networks:
