@@ -41,17 +41,12 @@ class Festival(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mod
     facebook_link = FACEBOOK_LINK
     eventbrite_link = EVENTBRITE_LINK
     website_link = WEBSITE_LINK
-
-    venues = models.ManyToManyField(
-        Venue, blank=True,
-        related_name = "venues"
-    )
-
+    venues = models.ManyToManyField(Venue, blank=True)
     teams = models.ManyToManyField(Team, verbose_name="teams playing", blank=True)
     teachers = models.ManyToManyField(
         Performer, verbose_name="teachers teaching", blank=True
     )
-    school = models.ForeignKey(School, on_delete=models.SET_NULL, null=True)
+    school = models.ForeignKey(School, on_delete=models.SET_NULL, blank=True, null=True)
 
     class Meta:
         ordering = ["-start_time"]
@@ -71,6 +66,7 @@ class FestivalAdminForm(ModelForm):
         widgets = {
             "teams": FilteredSelectMultiple("Teams", False),
             "teachers": FilteredSelectMultiple("Teachers", False),
+            "venues": FilteredSelectMultiple("Venues", False),
         }
 
 
