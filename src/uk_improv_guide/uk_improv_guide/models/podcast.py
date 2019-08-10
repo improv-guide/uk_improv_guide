@@ -31,7 +31,7 @@ class Podcast(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mode
     contact_email_address = EMAIL_ADDRESS
     website_link = WEBSITE_LINK
     hosts = models.ManyToManyField(
-        Performer, verbose_name="Team members", blank=True, related_name="plays_for"
+        Performer, verbose_name="Team members", blank=True, related_name="hosts_podcasts"
     )
 
     @staticmethod
@@ -74,8 +74,5 @@ class PodcastAdmin(VersionAdmin):
 def get_all_podcasts() -> Sequence[Podcast]:
     return Podcast.objects.all().order_by("name")
 
-
-#
-#
-# def get_team_by_id(id: int) -> Team:
-#     return Team.objects.get(id=id)
+def get_podcast_by_id(id: int) -> Podcast:
+    return Podcast.objects.get(id=id)
