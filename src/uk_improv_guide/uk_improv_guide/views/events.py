@@ -15,7 +15,7 @@ def events(request):
         request,
         "events_index.html",
         {
-            "title": "World Improv Guide",
+            "title": "Improv Guide",
             "events": events,
             "og": opengraph_website(title=title, request=request, image=None),
         },
