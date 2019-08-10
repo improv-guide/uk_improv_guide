@@ -3,7 +3,7 @@ from typing import Type
 
 from django.contrib import admin
 from reversion.admin import VersionAdmin
-from uk_improv_guide.models import ALL_MODELS
+from uk_improv_guide.models import get_all_models
 
 log = logging.getLogger(__name__)
 
@@ -27,7 +27,7 @@ def get_admin_class_for_model(m) -> Type:
     return ac
 
 
-for m in ALL_MODELS:
+for m in get_all_models():
     # admin.site.register(m, MarkdownxModelAdmin)
 
     admin.register(m)(get_admin_class_for_model(m))
