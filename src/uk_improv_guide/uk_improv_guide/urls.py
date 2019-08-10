@@ -38,6 +38,7 @@ from uk_improv_guide.views.team_event_calendar import team_event_calendar
 from uk_improv_guide.views.teams import teams
 from uk_improv_guide.views.venue import venue
 from uk_improv_guide.views.venues import venues
+from django.contrib.auth import views as auth_views
 
 info_dict = {"queryset": Performer.objects.all(), "date_field": "pub_date"}
 
@@ -67,4 +68,6 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("accounts/", include("django.contrib.auth.urls")),
     path("register/", register, name="register"),
+    path('social-auth/', include('social_django.urls', namespace="social")),
+    path("logout/", auth_views.LogoutView.as_view(), name="logout"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT, show_indexes=True)

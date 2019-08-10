@@ -34,6 +34,8 @@ First, clone the whole repository:
 git clone git@github.com:improv-guide/uk_improv_guide.git
 ```
 
+Don't use the HTTPS URL that github provides. It will only work if you pull it via the SSH URL given above.
+
 Database snapshots and media files (photos, logos, etc) are stored in two
 separate repos to the source code. They have been included into the source
 repo as Git Submodules. These need to be pulled separately:
@@ -146,6 +148,12 @@ python manage.py createsuperuser
 
 
 If you see an error like this: `django.db.utils.ProgrammingError: relation "auth_user" does not exist` the chances are that your superuser account was created. Just try to login.
+
+### When running the restore script you get an error: "CommandError: No fixture named 'uk_improv_guide' found."
+
+This means the backup submodule was not pulled. Did you check out the original repo using the SSH Git URL? If not the submodules will not update.
+
+Solution: Trash your local repo, and re-clone it using the SSH URL.
 
 ### The data does not restore
 
