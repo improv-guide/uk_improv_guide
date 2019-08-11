@@ -21,6 +21,10 @@
         <p>We don't have an RSS feed for this item. Please consider adding one.</p>
     {% endif %}
 
+    {% with obj=performer %}
+        {% include "content/admin.html" %}
+    {% endwith %}
+
 </div>
 
 
