@@ -4,6 +4,16 @@
 $main-color: #007BFF;
 $main-dark: #0069D9;
 $main-white: #ffffff;
+
+// ==============
+// Base styling
+// ==============
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
 // ==============
 // Google custom search
 // ==============
@@ -47,70 +57,71 @@ $main-white: #ffffff;
     }
 }
 
+
 // ==============
 // Old code
 // ==============
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+// * {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+// }
 
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-}
+// body {
+//     font-family: sans-serif;
+//     margin: 0;
+//     padding: 0;
+// }
 
-nav {
-    background: $main-color;
-    display: flex;
-    justify-content: center;
-    a {
-        padding: 20px 10px;
-        color: white;
-        //font-weight: 700;
-    }
-    div {
-        //padding: 20px 10px;
-        color: white;
-        //font-weight: 700;
-    }
-}
+// nav {
+//     background: $main-color;
+//     display: flex;
+//     justify-content: center;
+//     a {
+//         padding: 20px 10px;
+//         color: white;
+//         //font-weight: 700;
+//     }
+//     div {
+//         //padding: 20px 10px;
+//         color: white;
+//         //font-weight: 700;
+//     }
+// }
 
-.team_image {
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
+// .team_image {
+//     -webkit-border-radius: 8px;
+//     -moz-border-radius: 8px;
+//     border-radius: 8px;
+//     width: 150px;
+//     height: 150px;
+//     object-fit: cover;
+// }
 
-.teacher_image {
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
+// .teacher_image {
+//     -webkit-border-radius: 8px;
+//     -moz-border-radius: 8px;
+//     border-radius: 8px;
+//     width: 150px;
+//     height: 150px;
+//     object-fit: cover;
+// }
 
-.footer {
-    padding-top: 20px;
-}
+// .footer {
+//     padding-top: 20px;
+// }
 
-.featured_image {
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-}
+// .featured_image {
+//     -webkit-border-radius: 8px;
+//     -moz-border-radius: 8px;
+//     border-radius: 8px;
+//     width: 250px;
+//     height: 250px;
+//     object-fit: cover;
+// }
 
-.performers_list {
-    columns: 3;
-    -webkit-columns: 3;
-    -moz-columns: 3;
-}
+// .performers_list {
+//     columns: 3;
+//     -webkit-columns: 3;
+//     -moz-columns: 3;
+// }
