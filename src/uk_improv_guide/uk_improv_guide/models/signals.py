@@ -11,16 +11,17 @@ log = logging.getLogger(__name__)
 def create_user_profile(
     sender, instance: User, created, default_group_name: str = "site_users", **kwargs
 ):
-    if created:
-        instance.is_staff = True
+    instance.is_staff = True
+    log.warning(f"Set permissions for {default_group_name}")
 
-        try:
-            group: Group = Group.objects.get(name=default_group_name)
-        except Group.DoesNotExist:
-            log.warning(f"Set permissions for {default_group_name}")
-            group = Group(name=default_group_name)
-            group.save()
+    try:
+        group: Group = Group.objects.get(name=default_group_name)
+    except Group.DoesNotExist:
+        log.warning(f"Creating new group: {default_group_name}")
+        group = Group(name=default_group_name)
+        group.save()
 
+    if group not in instance.groups.all():
         log.info(f"Adding group {group} to user: {instance}")
         instance.groups.add(group)
         instance.save()
