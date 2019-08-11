@@ -39,6 +39,7 @@ class Podcast(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mode
         return PodcastAdmin
 
     class Meta:
+        verbose_name="Blogs & Podcasts"
         ordering = ["name"]
 
     def __str__(self):
