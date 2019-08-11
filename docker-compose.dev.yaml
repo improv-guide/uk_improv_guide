@@ -30,9 +30,10 @@ services:
       POSTGRES_SSLMODE: allow
       SLACK_WEB_HOOK: http://dummy_slack:8123/
       PRODUCTION_SECRET: ${PRODUCTION_SECRET}
-      SITE_PORT: ${SITE_PORT}
-      DEBUG: "True"
       BACKUP_DIR: /backup
+      FACEBOOK_APP_KEY: ${FACEBOOK_APP_KEY}
+      FACEBOOK_SECRET: ${FACEBOOK_SECRET}
+      DEBUG: "True"
     env_file: .env
     depends_on:
       - db

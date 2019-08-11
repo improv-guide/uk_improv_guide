@@ -4,9 +4,11 @@ from typing import Type
 from django.contrib import admin
 from reversion.admin import VersionAdmin
 from uk_improv_guide.models import get_all_models
+from django.contrib.auth.decorators import login_required
 
 log = logging.getLogger(__name__)
 
+admin.site.login = login_required(admin.site.login)
 
 def get_standard_admin_class(m):
     admin_name = f"{m.__name__}Admin"

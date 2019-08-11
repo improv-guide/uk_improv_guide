@@ -9,10 +9,12 @@
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav mr-5">
 
-                {% if user.is_authenticated %}
+
                 <li class="nav-item">
                     <a class="nav-link" href="/admin/">Edit Content</a>
                 </li>
+
+                {% if user.is_authenticated %}
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'logout' %}">Logout</a>
                 </li>
@@ -27,6 +29,13 @@
                 {% endif %}
 
 
+                {% if not user.is_authenticated %}
+                <!-- FACEBOOK SOCIAL LOGIN -->
+                    {% include "content/facebook_login_button.html" %}
+                {% endif %}
+
+
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -38,7 +47,7 @@
                         <a class="dropdown-item" href="{% url 'performers' %}">Players</a>
                         <a class="dropdown-item" href="{% url 'schools' %}">Schools</a>
                         <a class="dropdown-item" href="{% url 'festivals' %}">Festivals</a>
-                        <a class="dropdown-item" href="{% url 'podcasts' %}">Podcasts</a>
+                        <a class="dropdown-item" href="{% url 'resources' %}">Podcasts & Blogs</a>
                     </div>
                 </li>
                 <li class="nav-item">

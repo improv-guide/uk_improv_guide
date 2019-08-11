@@ -63,6 +63,8 @@ export POSTGRES_HOST=db
 export POSTGRES_DB=improv
 export POSTGRES_PORT=5432
 export PRODUCTION_SECRET=dfsdsjdsjdsjkds
+export FACEBOOK_APP_KEY=xxx
+export FACEBOOK_SECRET=xxx
 ```
 `PRODUCTION_SECRET` should be a random string. `POSTGRES_PASSWORD` should be a memorable password. It will be used to set the defaullt password on the postgres datgabase when it is first set up.
 

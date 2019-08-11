@@ -5,7 +5,6 @@ import reversion
 from django.contrib.admin.widgets import FilteredSelectMultiple
 from django.db import models
 from django.forms import ModelForm
-from markdownx.fields import MarkdownxFormField
 from reversion.admin import VersionAdmin
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing

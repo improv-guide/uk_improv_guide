@@ -198,8 +198,8 @@ ROLLBAR = {
 }
 rollbar.init(**ROLLBAR)
 
-SOCIAL_AUTH_FACEBOOK_KEY = os.environ.get("FACEBOOK_APP_KEY", "")
-SOCIAL_AUTH_FACEBOOK_SECRET = os.environ.get("FACEBOOK_SECRET", "")
+SOCIAL_AUTH_FACEBOOK_KEY = os.environ["FACEBOOK_APP_KEY"]
+SOCIAL_AUTH_FACEBOOK_SECRET = os.environ["FACEBOOK_SECRET"]
 
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'home'
@@ -207,4 +207,3 @@ LOGOUT_URL = 'logout'
 LOGOUT_REDIRECT_URL = 'login'
 
 
-# log.info(f"All settings: {pprint.pformat(locals())}")

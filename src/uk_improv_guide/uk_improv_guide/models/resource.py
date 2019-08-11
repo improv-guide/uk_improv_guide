@@ -18,19 +18,21 @@ from uk_improv_guide.models.fields.fields import (
 )
 from uk_improv_guide.models.performer import Performer
 
+RESOURCE_TYPES = {
+    "B": "Blog",
+    "P": "Podcast",
+    "R": "Reference"
+}
 
 @reversion.register
-class Podcast(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
-    url_base: str = "podcast"
+class Resource(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
+    url_base: str = "resource"
     name = models.CharField(max_length=100)
+    resource_type = models.CharField(max_length=1, choices=[a for a in RESOURCE_TYPES.items()])
     image = models.ImageField(upload_to="team/", blank=True)
-    facebook_link = FACEBOOK_LINK
-    instagram_link = INSTAGRAM_LINK
-    twitter_handle = TWITTER_HANDLE
     rss_feed_link = RSS_FEED_LINK
-    contact_email_address = EMAIL_ADDRESS
     website_link = WEBSITE_LINK
-    hosts = models.ManyToManyField(
+    contributors = models.ManyToManyField(
         Performer, verbose_name="Team members", blank=True, related_name="hosts_podcasts"
     )
 
@@ -39,7 +41,7 @@ class Podcast(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mode
         return PodcastAdmin
 
     class Meta:
-        verbose_name="Blogs & Podcasts"
+        verbose_name="Blog/Podcast"
         ordering = ["name"]
 
     def __str__(self):
@@ -53,9 +55,9 @@ class PodcastAdminForm(ModelForm):
     excludes = []
 
     class Meta:
-        model = Podcast
+        model = Resource
         fields = "__all__"
-        widgets = {"players": FilteredSelectMultiple("Team members", False)}
+        widgets = {"contributors": FilteredSelectMultiple("Team members", False)}
 
 
 class PodcastAdmin(VersionAdmin):
@@ -72,8 +74,8 @@ class PodcastAdmin(VersionAdmin):
 #     return teams.order_by(order)[:limit]
 #
 #
-def get_all_podcasts() -> Sequence[Podcast]:
-    return Podcast.objects.all().order_by("name")
+def get_all_resources() -> Sequence[Resource]:
+    return Resource.objects.all().order_by("name")
 
-def get_podcast_by_id(id: int) -> Podcast:
-    return Podcast.objects.get(id=id)
+def get_podcast_by_id(id: int) -> Resource:
+    return Resource.objects.get(id=id)

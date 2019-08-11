@@ -6,7 +6,7 @@ from uk_improv_guide.models.event import Event
 from uk_improv_guide.models.event_series import EventSeries
 from uk_improv_guide.models.festival import Festival
 from uk_improv_guide.models.performer import Performer
-from uk_improv_guide.models.podcast import Podcast
+from uk_improv_guide.models.resource import Resource
 from uk_improv_guide.models.school import School
 from uk_improv_guide.models.signals import create_user_profile
 from uk_improv_guide.models.team import Team
@@ -23,5 +23,5 @@ def get_all_models() -> Set[models.Model]:
         School,
         Course,
         Festival,
-        Podcast,
+        Resource,
     }
