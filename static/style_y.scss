@@ -1,71 +1,81 @@
-$main-color: dodgerblue;
-$background-color: #f5f5f5;
-
-body {
-  background: $background-color;
+// ==============
+// Global Colours
+// ==============
+$main-color: #007BFF;
+$main-dark: #0069D9;
+$main-white: #ffffff;
+// ==============
+// Google custom search
+// ==============
+#___gcse_0 {
+    flex-grow: 1;
+    .gsc-control-cse {
+        border: none !important;
+        padding: 0 !important;
+        background-color: #007BFF !important;
+    }
+    button.gsc-search-button {
+        background: $main-white;
+        height: 1.8rem;
+        border: none;
+        border-radius: 0 .25rem .25rem 0;
+        svg {
+            fill: $main-color;
+            transition: fill 150ms ease-in-out;
+        }
+        transition: background-color 150ms ease-in-out;
+    }
+    button.gsc-search-button:hover {
+        background: $main-dark;
+        svg {
+            fill: $main-white;
+        }
+    }
+    .gsc-input-box {
+        height: 1.8rem;
+        border: none;
+        border-radius: .25rem 0 0 .25rem;
+    }
+    td.gsc-input {
+        padding: 0;
+    }
+    input#gsc-i-id1 {
+        background: none !important
+    }
+    input#gsc-i-id1::placeholder {
+        color: transparent;
+    }
 }
 
+// ==============
+// Old code
+// ==============
 * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
-  background: $main-color;
-  display: flex;
-  justify-content: center;
-  a {
-    padding: 20px 10px;
-    color: white;
-    //font-weight: 700;
-  }
-  div {
-    //padding: 20px 10px;
-    color: white;
-    //font-weight: 700;
-  }
-}
-
-h1 {
-  font-size: 50px;
-  display: block;
-  text-align: center;
-}
-
-.listings > ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.listings > ul > li {
-  width: 25%;
-  padding: 10px;
-  margin: 10px;
-  background: lightblue;
-  border-radius: 10px;
-}
-
-.listings ul > li > ul {
-  display: block;
-}
-.listings ul > li > a {
-  display: block;
-}
-
-.home_page_teams {
-  border-color: #003366;
-}
-
-.home_page_teachers {
-  border-color: blue;
+    background: $main-color;
+    display: flex;
+    justify-content: center;
+    a {
+        padding: 20px 10px;
+        color: white;
+        //font-weight: 700;
+    }
+    div {
+        //padding: 20px 10px;
+        color: white;
+        //font-weight: 700;
+    }
 }
 
 .team_image {
@@ -78,35 +88,29 @@ h1 {
 }
 
 .teacher_image {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 .footer {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 .featured_image {
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
 .performers_list {
-  columns: 3;
-  -webkit-columns: 3;
-  -moz-columns: 3;
-}
-
-.gsc-control-cse.gsc-control-cse-en {
-  border-width: 0px;
-  padding: 0;
-  background-color: rgb(0, 123, 255);
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
 }

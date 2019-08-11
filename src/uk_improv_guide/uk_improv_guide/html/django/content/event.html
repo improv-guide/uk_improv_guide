@@ -1,4 +1,7 @@
-<img class="card-img-top img-fuild" style="height: 120px; object-fit: cover;" src="{{event.venue.image.url}}" alt="{{ event.venue.name }}">
+<a href="/events/{{event.id}}">
+    <img class="card-img-top img-fuild" style="height: 150px; object-fit: cover;" src="{{event.venue.image.url}}"
+        alt="{{ event.venue.name }}">
+</a>
 <div class="card-body">
 
     <h3 class="card-title h5"><a href="/events/{{event.id}}">{{event.name}}</a></h3>
