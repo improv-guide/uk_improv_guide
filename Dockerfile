@@ -28,7 +28,7 @@ RUN python setup.py develop
 
 RUN manage compilescss
 RUN manage collectstatic
-HEALTHCHECK --interval=1m --timeout=10s CMD curl --fail http://localhost || exit 1
+HEALTHCHECK --interval=30s --timeout=10s CMD curl --fail http://localhost || exit 1
 ENTRYPOINT ["./start_prod.sh"]
 
 FROM nginx:latest AS uk-improv-guide-nginx
@@ -42,5 +42,5 @@ COPY --from=uk-improv-guide ./static /usr/share/nginx/html/static/
 COPY ./nginx/start.sh /bin/
 ENTRYPOINT ["/bin/start.sh"]
 WORKDIR /src/uk_improv_guide
-HEALTHCHECK --interval=1m --timeout=10s CMD curl --fail http://localhost || exit 1
+HEALTHCHECK --interval=30s --timeout=10s CMD curl --fail http://localhost || exit 1
 

@@ -77,7 +77,6 @@ services:
       - PHP_PG_ADMIN_SERVER_DEFAULT_DB=improv
       - PHP_PG_ADMIN_SERVER_PG_DUMP_PATH=/usr/bin/pg_dump
       - PHP_PG_ADMIN_SERVER_PG_DUMPALL_PATH=/usr/bin/pg_dumpall
-
       - PHP_PG_ADMIN_DEFAULT_LANG=auto
       - PHP_PG_ADMIN_AUTO_COMPLETE=default on
       - PHP_PG_ADMIN_EXTRA_LOGIN_SECURITY=false

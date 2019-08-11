@@ -200,6 +200,7 @@ rollbar.init(**ROLLBAR)
 
 SOCIAL_AUTH_FACEBOOK_KEY = os.environ.get("FACEBOOK_APP_KEY")
 SOCIAL_AUTH_FACEBOOK_SECRET = os.environ.get("FACEBOOK_SECRET")
+OCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link']
 
 if not all([SOCIAL_AUTH_FACEBOOK_KEY, SOCIAL_AUTH_FACEBOOK_SECRET]):
     log.warning("Facebook keys are not set!")
