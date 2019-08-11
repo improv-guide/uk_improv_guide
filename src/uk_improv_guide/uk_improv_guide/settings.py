@@ -185,8 +185,6 @@ SITE_ID = 1
 
 SLACK_WEB_HOOK = os.environ["SLACK_WEB_HOOK"]
 
-LOGIN_REDIRECT_URL: str = "/"
-
 SASS_PROCESSOR_ROOT = _static_dir
 
 SASS_PROCESSOR_ENABLED: bool = True
@@ -199,5 +197,14 @@ ROLLBAR = {
     "root": BASE_DIR,
 }
 rollbar.init(**ROLLBAR)
+
+SOCIAL_AUTH_FACEBOOK_KEY = os.environ.get("FACEBOOK_APP_KEY", "")
+SOCIAL_AUTH_FACEBOOK_SECRET = os.environ.get("FACEBOOK_SECRET", "")
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_URL = 'logout'
+LOGOUT_REDIRECT_URL = 'login'
+
 
 # log.info(f"All settings: {pprint.pformat(locals())}")
