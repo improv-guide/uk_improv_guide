@@ -13,32 +13,51 @@
         {% endfor %}
 
     </div>
-    <a class="btn btn-primary" role="button" href="/events/">More events...</a>
+    <a class="btn btn-primary btn-lg my-5" role="button" href="/events/">More events</a>
 </section>
 
-
-
-<section id="home-page-teams">
+<section id="teams">
     <h2 class="display-5">Featured <a href="/teams/">Teams</a></h2>
-    {% for team in teams %}
-    <div class="team">
-        <img class="team_image" src="{{team.image.url}}" />
-        <a href="/teams/{{team.id}}">{{team.name}}</a>
+    <div class="d-flex flex-wrap justify-content-start align-items-stretch">
+
+        {% for team in teams %}
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
+            <div class="card w-100">
+                <a href="/teams/{{team.id}}">
+                    <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"
+                        src="{{team.image.url}}" alt="{{ team.name }}">
+                </a>
+                <div class="card-body">
+                    <a href="/teams/{{team.id}}" class="cart-title h5">{{team.name}}</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
+    <a class="btn btn-primary btn-lg my-5" role="button" href="/teams/">More teams</a>
+
 </section>
 
-
-
+<section id="teachers">
 <h2 class="display-5">Featured <a href="/teachers/">Teachers</a></h2>
+        <div class="d-flex flex-wrap justify-content-start align-items-stretch">
+    
+                {% for teacher in teachers %}
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
+                <div class="card w-100">
+                    <a href="/performers/{{teacher.id}}">
+                        <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"
+                        src="{{teacher.image.url}}" alt="{{ teacher.full_name }}">
+                    </a>
+                    <div class="card-body">
+                        <a href="/performers/{{teacher.id}}" class="cart-title h5">{{teacher.full_name}}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <a class="btn btn-primary btn-lg my-5" role="button" href="/teachers/">More teachers</a>
 
-<div class="home_page_teachers">
-    {% for teacher in teachers %}
-    <div class="teacher">
-        <img class="teacher_image" src="{{teacher.image.url}}" />
-        <a href="/performers/{{teacher.id}}">{{teacher.full_name}}</a>
-    </div>
-    {% endfor %}
-</div>
+    </section>
 
 {% endblock %}
