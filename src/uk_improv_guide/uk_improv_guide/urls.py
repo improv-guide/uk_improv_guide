@@ -34,10 +34,12 @@ from uk_improv_guide.views.schools import schools
 from uk_improv_guide.views.sitemap import robots_txt, sitemap
 from uk_improv_guide.views.teachers import teachers
 from uk_improv_guide.views.team import team
-from uk_improv_guide.views.team_event_calendar import team_event_calendar
 from uk_improv_guide.views.teams import teams
+from uk_improv_guide.views.team_event_calendar import team_event_calendar
 from uk_improv_guide.views.venue import venue
 from uk_improv_guide.views.venues import venues
+from uk_improv_guide.views.podcast import podcast
+from uk_improv_guide.views.podcasts import podcasts
 from django.contrib.auth import views as auth_views
 
 info_dict = {"queryset": Performer.objects.all(), "date_field": "pub_date"}
@@ -53,6 +55,8 @@ urlpatterns = [
     path("teams/", teams, name="teams"),
     path("teams/<int:id>", team, name="team"),
     path("teams/<int:id>/events", team_event_calendar, name="team_event_calendar"),
+    path("podcasts/", podcasts, name="podcasts"),
+    path("podcasts/<int:id>", podcast, name="podcasts"),
     path("performers/", performers, name="performers"),
     path("performers/<int:id>", performer, name="performer"),
     path("teachers/", teachers, name="teachers"),

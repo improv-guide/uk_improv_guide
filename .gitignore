@@ -1,7 +1,8 @@
-.idea/**/*.xml
 data
 __pycache__
 !/secret.env
 /production/.env
 *.egg-info
 venv
+.idea
+*.iml
