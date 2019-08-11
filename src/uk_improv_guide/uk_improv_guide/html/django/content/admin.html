@@ -1,11 +1,11 @@
-{% if obj.is_adminable %}
-[
-{% if user.is_authenticated %}
-    <a href="{{ obj.get_admin_info.admin_change_url }}">Edit</a> |
-    <a href="{{ obj.get_admin_info.admin_history_url }}">History</a>
-{% else %}
-    <a href="{% url 'login' %}">Login</a> |
-    <a href="{% url 'register' %}">Register</a>
-{% endif %}
-]
-{% endif %}
+<div class="admin_links">
+    [
+    {% if user.is_authenticated %}
+        <a href="{{ obj.get_admin_info.admin_change_url }}">Edit</a> |
+        <a href="{{ obj.get_admin_info.admin_history_url }}">History</a>
+    {% else %}
+        <a href="{% url 'login' %}">Login</a> |
+        <a href="{% url 'register' %}">Register</a>
+    {% endif %}
+    ]
+</div>

@@ -5,21 +5,19 @@
 
 <h1>Login</h1>
 
-{% if False %}
-<div class="row">
-    <div class="col-md-8 mx-auto social-container my-2 order-md-1">
-        <button class="btn btn-primary mb-2">
-            <a href="{% url 'social:begin' 'facebook' %}">Login with Facebook
-            </a>
-        </button>
-    </div>
-</div>
-{% endif %}
+    {% if not user.is_authenticated %}
 
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Login</button>
-</form>
+        {% include "content/facebook_login_button.html" %}
+
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+
+    {% else %}
+        <p>You are logged in!</p>
+    {% endif %}
+
 
 {% endblock %}

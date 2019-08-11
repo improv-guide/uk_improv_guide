@@ -1,3 +1,5 @@
-{% for og_item in og %}
-    <meta property="og:{{ og_item.name }}" content="{{ og_item.content }}" />
-{% endfor %}
+{%  if og %}
+    {% for og_item in og %}
+        <meta property="og:{{ og_item.name }}" content="{{ og_item.content }}" />
+    {% endfor %}
+{%  endif %}
