@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{%  block title %}{{ team.name }}{% endblock %}
+{% block content_inner %}
+
+<div class="resource">
+
+    {% if performer.image %}
+        <img class="featured_image" src="{{ resource.image.url }}" />
+    {% endif %}
+
+    {% if performer.website_link %}
+        <p>Subscribe: <a href="{{ resource.website_link }}"><i class="fas fa-web"></i></a></p>
+    {%  else %}
+        <p>We don't have web page for this item. Please consider adding one.</p>
+    {% endif %}
+
+    {% if performer.rss_feed_link %}
+        <p>Subscribe: <a href="{{ resource.rss_feed_link }}"><i class="fas fa-rss"></i></a></p>
+    {%  else %}
+        <p>We don't have an RSS feed for this item. Please consider adding one.</p>
+    {% endif %}
+
+</div>
+
+
+{% endblock %}

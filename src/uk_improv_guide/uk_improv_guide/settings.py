@@ -95,7 +95,12 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
                 "django.template.context_processors.media",
-            ]
+            ],
+            # "loaders": [
+            #     "django.template.loaders.filesystem.Loader",
+            #     "django.template.loaders.app_directories.Loader",
+            #     "apptemplates.Loader",
+            # ],
         },
     },
 ]
@@ -180,8 +185,6 @@ SITE_ID = 1
 
 SLACK_WEB_HOOK = os.environ["SLACK_WEB_HOOK"]
 
-LOGIN_REDIRECT_URL: str = "/"
-
 SASS_PROCESSOR_ROOT = _static_dir
 
 SASS_PROCESSOR_ENABLED: bool = True
@@ -195,4 +198,12 @@ ROLLBAR = {
 }
 rollbar.init(**ROLLBAR)
 
-# log.info(f"All settings: {pprint.pformat(locals())}")
+SOCIAL_AUTH_FACEBOOK_KEY = os.environ["FACEBOOK_APP_KEY"]
+SOCIAL_AUTH_FACEBOOK_SECRET = os.environ["FACEBOOK_SECRET"]
+
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_URL = 'logout'
+LOGOUT_REDIRECT_URL = 'login'
+
+

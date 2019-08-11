@@ -32,6 +32,7 @@ services:
     volumes:
       - media:/media
       - backup:/backup
+      - root_user:/root/
       - ssh:/root/.ssh
       - certbot_www:/certbot/www
       - certbot_conf:/certbot/conf
@@ -46,6 +47,8 @@ services:
       PRODUCTION_SECRET: ${PRODUCTION_SECRET}
       SITE_PORT: ${SITE_PORT}
       BACKUP_DIR: /backup
+      FACEBOOK_APP_KEY: ${FACEBOOK_APP_KEY}
+      FACEBOOK_SECRET: ${FACEBOOK_SECRET}
     networks:
       - internal
 
@@ -64,6 +67,7 @@ volumes:
   certbot_www:
   media:
   ssh:
+  root_user:
   backup:
 
 networks:

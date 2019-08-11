@@ -2,10 +2,7 @@
 {% block content_inner %}
     <div class="three_column_list">
         {% for item in items %}
-            <li><a href="/teams/{{ item.id }}">{{ item }}</a>
-            {% with social_thing=item %}
-                {% include "content/social.html" %}
-            {% endwith %}
+            <li><a href="{% url 'team' id=item.id%}">{{ item }}</a>
             </li>
         {% endfor %}
     </div>

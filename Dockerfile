@@ -10,16 +10,22 @@ RUN useradd python
 
 FROM uk-improv-guide-python-base AS uk-improv-guide
 COPY /src /src
-WORKDIR /src/uk_improv_guide
-RUN chmod +x *.sh
-RUN chmod +x manage.py
-RUN python -m pip install -e /src
+
+ARG IMPROV_GUIDE_VERSION
+ARG FOO
+ARG DEBUG=True
 ENV POSTGRES_PASSWORD=changeme
 ENV POSTGRES_USER=improv
 ENV POSTGRES_DB=improv
 ENV POSTGRES_HOST=db
 ENV POSTGRES_PORT=5432
 ENV SLACK_WEB_HOOK=http://www.example.com
+
+RUN printenv | sort
+
+WORKDIR /src/
+RUN python setup.py develop
+
 RUN manage compilescss
 RUN manage collectstatic
 HEALTHCHECK --interval=1m --timeout=10s CMD curl --fail http://localhost || exit 1
@@ -35,5 +41,6 @@ COPY nginx/config/ssl.conf /etc/nginx/ssl.conf
 COPY --from=uk-improv-guide ./static /usr/share/nginx/html/static/
 COPY ./nginx/start.sh /bin/
 ENTRYPOINT ["/bin/start.sh"]
+WORKDIR /src/uk_improv_guide
 HEALTHCHECK --interval=1m --timeout=10s CMD curl --fail http://localhost || exit 1
 

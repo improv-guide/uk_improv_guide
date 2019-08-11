@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content_inner %}
+
+    <div class="resources">
+        {% for resource in resources %}
+            <li><a href="{% url 'resource' id=resource.id %}">{{ resource.name }}</a>
+            </li>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}
