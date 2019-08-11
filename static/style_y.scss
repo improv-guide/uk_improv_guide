@@ -4,6 +4,16 @@
 $main-color: #007BFF;
 $main-dark: #0069D9;
 $main-white: #ffffff;
+
+// ==============
+// Base styling
+// ==============
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
 // ==============
 // Google custom search
 // ==============
@@ -47,6 +57,10 @@ $main-white: #ffffff;
     }
 }
 
+/*
+
+// Sal: I'm not sure if this bit is yours or mine!
+
 .img-square-wrapper {
     position: relative;
     overflow: hidden;
@@ -61,6 +75,7 @@ $main-white: #ffffff;
     transform: translateX(-50%) translateY(-50%);
 }
 
+*/
 
 // ==============
 // Old code
