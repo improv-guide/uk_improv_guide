@@ -22,7 +22,7 @@
 
         {% for team in teams %}
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
-            <div class="card">
+            <div class="card w-100">
                 <a href="/teams/{{team.id}}">
                     <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"
                         src="{{team.image.url}}" alt="{{ team.name }}">
@@ -44,7 +44,7 @@
     
                 {% for teacher in teachers %}
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
-                <div class="card">
+                <div class="card w-100">
                     <a href="/performers/{{teacher.id}}">
                         <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"
                         src="{{teacher.image.url}}" alt="{{ teacher.full_name }}">
