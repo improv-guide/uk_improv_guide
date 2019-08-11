@@ -63,7 +63,13 @@ class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mo
         middle_names: str = self.middle_names or ""
         return " ".join([self.first_name] + middle_names.split() + [self.family_name])
 
+    def middle_initials(self):
+        return [n[0] for n in self.middle_names if n]
+
     def name_in_list_order(self):
+        if self.middle_names:
+            initials = " ".join(self.middle_initials())
+            return f"{self.family_name}, {self.first_name} {initials}"
         return f"{self.family_name}, {self.first_name}"
 
     def get_absolute_url(self):

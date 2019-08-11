@@ -21,6 +21,7 @@ TWITTER_HANDLE = models.CharField(
 
 FACEBOOK_LINK = models.URLField(max_length=256, blank=True)
 WEBSITE_LINK = models.URLField(max_length=256, blank=True)
+RSS_FEED_LINK = models.URLField(max_length=256, blank=True)
 GOOGLE_MAPS_LINK = models.URLField(max_length=256, blank=True)
 EMAIL_ADDRESS = models.EmailField(
     max_length=100, verbose_name="Email Address", blank=True
@@ -31,4 +32,8 @@ INSTAGRAM_LINK = models.URLField(
 )
 IMDB_LINK = models.URLField(
     max_length=100, blank=True, default="", verbose_name="IMDB Link"
+)
+
+DESCRIPTION = models.CharField(
+    max_length=1000, blank=True, default="", verbose_name="Long description"
 )

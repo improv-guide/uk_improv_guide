@@ -10,8 +10,6 @@ class YourTestClass(TestCase):
         # Clean up run after every test method.
         pass
 
-    # def test_something_that_will_pass(self):
-    #     self.assertFalse(False)
-    #
-    # def test_something_that_will_fail(self):
-    #     self.assertTrue(False)
+    def test_sitemap_can_be_loaded(self):
+        response = self.client.get("/robots.txt")
+        self.assertEqual(response.status_code, 200)

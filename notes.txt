@@ -1,3 +1,6 @@
+Improv festivals:
+https://www.facebook.com/groups/improvmgmt/?tn-str=*F&fref=gs&dti=255938204527179&hc_location=group_dialog
+
 
 https://dzone.com/articles/introduction-to-docker-secrets
 https://medium.com/@pentacent/nginx-and-lets-encrypt-with-docker-in-less-than-5-minutes-b4b8a60d3a71

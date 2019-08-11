@@ -30,6 +30,11 @@ class Event(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
     image = models.ImageField(upload_to="event/", blank=True)
     event_type = models.CharField(max_length=1, choices=EVENT_TYPES)
     start_time = models.DateTimeField(verbose_name="Show start time")
+    duration = models.FloatField(
+        verbose_name="Show duration in hours",
+        help_text="What is the expected run time of this show?",
+        default=2.0,
+    )
     facebook_link = FACEBOOK_LINK
     eventbrite_link = EVENTBRITE_LINK
     website_link = WEBSITE_LINK

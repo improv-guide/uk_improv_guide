@@ -10,12 +10,12 @@ from uk_improv_guide.models.event import Event, get_events_after_datetime
 def events(request):
     now: datetime.datetime = datetime.datetime.now(tz=timezone("Europe/London"))
     events: Sequence[Event] = get_events_after_datetime(now)
-    title: str = "World Improv Guide"
+    title: str = "Events"
     return render(
         request,
         "events_index.html",
         {
-            "title": "World Improv Guide",
+            "title": "Improv Guide",
             "events": events,
             "og": opengraph_website(title=title, request=request, image=None),
         },

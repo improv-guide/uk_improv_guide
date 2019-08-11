@@ -5,10 +5,7 @@
     <ul class="performer_list">
         {% for performer in performers %}
             <li>
-                <a href="/performers/{{ performer.id }}">{{ performer.full_name }}</a>
-                {% with social_thing=performer %}
-                    {% include "content/social.html" %}
-                {% endwith %}
+                <a href="{% url 'performer' id=performer.id %}">{{ performer.full_name }}</a>
             </li>
         {%  endfor %}
     </ul>
