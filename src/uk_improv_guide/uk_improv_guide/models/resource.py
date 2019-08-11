@@ -48,7 +48,7 @@ class Resource(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mod
         return self.name
 
     def get_absolute_url(self) -> str:
-        return f"/podcasts/{self.id}"
+        return f"/resources/{self.id}"
 
 
 class PodcastAdminForm(ModelForm):
