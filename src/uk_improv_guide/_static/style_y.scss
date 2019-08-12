@@ -5,8 +5,24 @@ $main-color: #007BFF;
 $main-dark: #0069D9;
 $main-white: #ffffff;
 // ==============
+// Base custom styling
+// ==============
+
+.break-out {
+    width: 100vw;
+    position: relative;
+    left: calc(-1* (100vw - 100%) / 2);
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+// ==============
 // Google custom search
 // ==============
+
+
 #___gcse_0 {
     flex-grow: 1;
     .gsc-control-cse {
