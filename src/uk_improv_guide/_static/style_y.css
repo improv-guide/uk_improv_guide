@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .break-out {
   width: 100vw;
   position: relative;
@@ -25,7 +29,7 @@ a, a:hover {
 #___gcse_0 .gsc-control-cse {
   border: none !important;
   padding: 0 !important;
-  background-color: #007BFF !important;
+  background-color: transparent !important;
 }
 
 #___gcse_0 button.gsc-search-button {

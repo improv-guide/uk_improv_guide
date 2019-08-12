@@ -8,6 +8,10 @@ $main-white: #ffffff;
 // Base custom styling
 // ==============
 
+body {
+    overflow-x: hidden;
+}
+
 .break-out {
     width: 100vw;
     position: relative;
@@ -36,7 +40,7 @@ a, a:hover {
     .gsc-control-cse {
         border: none !important;
         padding: 0 !important;
-        background-color: #007BFF !important;
+        background-color: transparent !important;
     }
     button.gsc-search-button {
         background: $main-white;
