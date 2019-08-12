@@ -32,13 +32,17 @@
     {% include "og.html" %} {% include "adsense.html" %}
 </head>
 
-<body class="mt-5 pt-5">
+<body style="padding-top: 56px;">
     {% include "content/fb_chat.html" %}
     {% include "nav.html" %}
 
     <div class="container p-0">
         {% block content %}
-        <h1 class="display-4">{{title}}</h1>
+        <div id="title" class="jumbotron break-out bg-svg">
+                <div class="container">
+                          <h1 class="display-5 text-light">{{title}}</h1>
+                </div>
+              </div>
         {% block content_inner %}
         <pre> {% filter force_escape %} {% debug %} {% endfilter %} </pre> {% endblock %} {% endblock %}
     </div>
