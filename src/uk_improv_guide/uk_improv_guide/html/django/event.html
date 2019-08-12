@@ -2,22 +2,37 @@
 {%  block title %}{{ full_name }}{% endblock %}
 
 {% block content_inner %}
-    <h5 class="card-title">{{event.name}}</h5>
-         @ <a href="/venues/{{venue.id}}">{{venue.name}}</a>, {{event.start_time}}</p>
+@ <a href="/venues/{{venue.id}}">{{venue.name}}</a>, {{event.start_time}}</p>
 
 
-    {% if teams %}
-    <h3>Teams playing</h3>
-    <ul class="list-group">
+{% if teams %}
+<section id="teams">
+    <h2 class="display-5">Teams performing at this event</h2>
+    <div class="d-flex flex-wrap justify-content-start align-items-stretch">
+
         {% for team in teams %}
-        <li class="list-group-item"><a href="/teams/{{team.id}}">{{ team.name }}</a></li>
-        {%  endfor %}
-    </ul>
-    {% endif %}
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
+            <div class="card w-100">
+                <a href="/teams/{{team.id}}">
+                    <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"
+                        src="{{team.image.url}}" alt="{{ team.name }}">
+                </a>
+                <div class="card-body">
+                    <a href="/teams/{{team.id}}" class="cart-title h5">{{team.name}}</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        
+    </div>
+</section>
+{% endif %}
 
-    {% with obj=event %}
-        {% include "content/admin.html" %}
-    {% endwith %}
+
+
+
+
+{% with obj=event %}
+{% include "content/admin.html" %}
+{% endwith %}
 {% endblock %}
-
-
