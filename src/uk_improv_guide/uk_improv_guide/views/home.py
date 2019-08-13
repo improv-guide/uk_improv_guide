@@ -2,6 +2,8 @@ import datetime
 import logging
 from typing import Sequence
 
+from uk_improv_guide import settings
+
 import uk_improv_guide
 from django.shortcuts import render
 from uk_improv_guide.lib.opengraph import opengraph_website
@@ -27,5 +29,6 @@ def home(request, event_days: int = 7):
             "teachers": get_featured_performers(teachers=True),
             "og": opengraph_website(title=title, request=request, image=None),
             "version": uk_improv_guide.__version__,
+            "environment": settings.ENIRONMENT_NAME
         },
     )

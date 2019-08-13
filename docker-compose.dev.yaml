@@ -33,6 +33,7 @@ services:
       BACKUP_DIR: /backup
       FACEBOOK_APP_KEY: ${FACEBOOK_APP_KEY}
       FACEBOOK_SECRET: ${FACEBOOK_SECRET}
+      ENVIRONMENT_NAME: ${ENVIRONMENT_NAME}
       DEBUG: "True"
     env_file: .env
     depends_on:

@@ -4,6 +4,7 @@ set -e
 . ./.env
 . ~/.secret/uk_improv_guide.sh
 export IMPROV_GUIDE_VERSIION
+export ENVIRONMENT_NAME=dev_`hostname`
 echo "Launching ${IMPROV_GUIDE_VERSION}"
 echo ${IMPROV_GUIDE_VERSION} > ./src/version.txt
 

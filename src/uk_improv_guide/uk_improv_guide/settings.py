@@ -191,9 +191,11 @@ SASS_PROCESSOR_ENABLED: bool = True
 
 USE_TZ = True
 
+ENIRONMENT_NAME:str = os.environ.get("ENVIRONMENT_NAME", "development" if DEBUG else "production")
+
 ROLLBAR = {
     "access_token": "9227e96158a8446c8a6eed836a6aa681",
-    "environment": "development" if DEBUG else "production",
+    "environment": ENIRONMENT_NAME,
     "root": BASE_DIR,
 }
 rollbar.init(**ROLLBAR)

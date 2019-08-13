@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e
 cd ..
+echo "This is environment ${ENVIRONMENT_NAME}..."
 python setup.py develop
 cd uk_improv_guide
 ./migrate.sh
