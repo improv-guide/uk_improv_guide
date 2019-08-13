@@ -2,13 +2,22 @@
 {%  block title %}{{ full_name }}{% endblock %}
 {% block content_inner %}
 
-    <ul class="performer_list">
-        {% for performer in performers %}
-            <li>
-                <a href="{% url 'performer' id=performer.id %}">{{ performer.full_name }}</a>
-            </li>
-        {%  endfor %}
-    </ul>
+
+    <section id="performers">
+            <div class="d-flex flex-wrap justify-content-start align-items-stretch">
+        
+                {% for performer in performers %}
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
+                    <div class="card w-100 shadow">
+                        <div class="card-body">
+                            <a href="{% url 'performer' id=performer.id %}" class="card-title h6">{{performer.full_name}}</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+        
+            </div>
+        </section>
 
 
 {% endblock %}
