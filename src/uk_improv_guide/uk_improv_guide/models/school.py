@@ -19,6 +19,7 @@ from uk_improv_guide.models.fields.fields import (
 @reversion.register
 class School(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     url_base: str = "school"
+
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to="school/", blank=True)

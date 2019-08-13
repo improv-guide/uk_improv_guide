@@ -3,7 +3,6 @@ from typing import Optional
 
 from django.shortcuts import render
 from pytz import timezone
-from uk_improv_guide.lib.opengraph import opengraph_website
 from uk_improv_guide.models.course import Course, get_course_by_id
 from uk_improv_guide.models.venue import Venue
 
@@ -30,8 +29,6 @@ def course(request, id: int):
             "has_started": _days_until_start < 0,
             "days_until_start": _days_until_start,
             "venue": venue,
-            "og": opengraph_website(
-                title=title, request=request, image=this_course.image
-            ),
+            "og_subject": this_course
         },
     )

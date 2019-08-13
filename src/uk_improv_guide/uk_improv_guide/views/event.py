@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from uk_improv_guide.lib.opengraph import opengraph_website
 from uk_improv_guide.models.event import (
     Event,
     get_event_by_id,
@@ -21,8 +20,6 @@ def event(request, id: int):
             "event": this_event,
             "venue": venue,
             "teams": this_event.teams.all(),
-            "og": opengraph_website(
-                title=title, request=request, image=this_event.image
-            ),
+            "og_subject": this_event
         },
     )

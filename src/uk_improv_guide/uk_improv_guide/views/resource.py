@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from uk_improv_guide.models.resource import Resource, get_podcast_by_id
-from uk_improv_guide.lib.opengraph import opengraph_website
 
 
 def resource(request, id: int):
@@ -13,6 +12,6 @@ def resource(request, id: int):
         {
             "title": title,
             "resource": this_resource,
-            "og": opengraph_website(title=title, request=request, image=None),
+            "og_subject": this_resource
         },
     )

@@ -1,8 +1,13 @@
-<div class="container">
-    <div class="footer">
-        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-        {% if version %}
-        <div class="version">This is version {{version}}</div>
-        {% endif %}
+<footer id="footer" class="mt-auto container-fluid bg-svg d-flex flex-column flex-sm-row justify-content-between p-5">
+    <div id="license" class="d-flex flex-column flex-sm-row align-items-start mr-3 my-2" style="max-width: 440px">
+        <a class="mr-3 my-1" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence"
+                src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>
+        <div class="text-light"><small>The Improv Guide is licensed under a
+                <a class="text-light" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                    Commons Attribution-ShareAlike 4.0 International License</a>
+            </small></div>
     </div>
-</div>
+    {% if version %}
+    <div class="text-light my-2"><small>Improv Guide v{{version}}</small></div>
+    {% endif %}
+</footer>
