@@ -2,7 +2,6 @@ import logging
 from typing import Sequence
 
 from django.shortcuts import render
-from uk_improv_guide.lib.opengraph import opengraph_website
 from uk_improv_guide.models import Event
 from uk_improv_guide.models.venue import Venue, get_venue_by_id
 
@@ -22,8 +21,6 @@ def venue(request, id: int):
             "title": title,
             "venue": this_venue,
             "events": events,
-            "og": opengraph_website(
-                title=title, request=request, image=this_venue.image
-            ),
+            "og_subject": this_venue
         },
     )

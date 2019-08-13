@@ -1,12 +1,14 @@
 {% extends "base.html" %}
 {% block content_inner %}
-    <div class="listings">
-        <ul>
+<section id="listings">
+    <div class="d-flex flex-wrap justify-content-start align-items-stretch">
         {% for event in events %}
-        <li>
-            {% include "content/event.html" %}
-        </li>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
+            <div class="card w-100">
+                {% include "content/event.html" %}
+            </div>
+        </div>
         {% endfor %}
-        </ul>
     </div>
+</section>
 {% endblock %}

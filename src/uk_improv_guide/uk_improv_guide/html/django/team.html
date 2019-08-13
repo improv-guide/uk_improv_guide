@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-{%  block title %}{{ team.name }}{% endblock %}
 {% block content_inner %}
 
 
@@ -38,6 +37,7 @@
     <p>We have no events listed for {{team.name}}. Please add some.</p>
     {% endif %}
 
+    {% if team.festival_set.all %}
     <h3>Festivals</h3>
     <ul>
         {% for festival in team.festival_set.all %}
@@ -46,6 +46,9 @@
             {% endfor %}
         {% endfor %}
     </ul>
+    {% else %}
+        <p>We don't have any festivals listed for {{ team.name }}. </p>
+    {%  endif %}
 
     {% with obj=team %}
         {% include "content/admin.html" %}

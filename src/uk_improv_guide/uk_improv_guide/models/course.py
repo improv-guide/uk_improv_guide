@@ -43,6 +43,7 @@ class CourseAdmin(VersionAdmin):
 @register_model_for_site_map
 class Course(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     url_base: str = "courses"
+
     name = models.CharField(
         max_length=100,
         help_text="The name of your course, but without the school name or any branding.",
