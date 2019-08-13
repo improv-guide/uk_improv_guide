@@ -2,61 +2,61 @@
 
 <section id="listings">
     <h2 class="display-5">Events starting in the next {{event_days}} days</h2>
-    <div class="d-flex flex-wrap justify-content-start align-items-stretch">
-
+    <div class="d-flex flex-sm-wrap mobile-scroll justify-content-start align-items-stretch mx-n3 pb-5">
+            <!-- flex-nowrap flex-sm-wrap -->
         {% for event in events %}
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
-            <div class="card w-100">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between mobile-scroll-item">
+            <div class="card w-100 shadow">
                 {% include "content/event.html" %}
             </div>
         </div>
         {% endfor %}
 
     </div>
-    <a class="btn btn-primary btn-lg my-5" role="button" href="/events/">More events</a>
+    <a class="btn btn-primary btn-lg mb-5" role="button" href="/events/">More events</a>
 </section>
 
 <section id="teams">
     <h2 class="display-5">Featured <a href="/teams/">Teams</a></h2>
-    <div class="d-flex flex-wrap justify-content-start align-items-stretch">
+    <div class="d-flex flex-sm-wrap mobile-scroll justify-content-start align-items-stretch mx-n3 pb-5">
 
         {% for team in teams %}
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
-            <div class="card w-100">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between mobile-scroll-item">
+            <div class="card w-100 shadow">
                 <a href="/teams/{{team.id}}">
                     <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"
                         src="{{team.image.url}}" alt="{{ team.name }}">
                 </a>
                 <div class="card-body">
-                    <a href="/teams/{{team.id}}" class="cart-title h5">{{team.name}}</a>
+                    <a href="/teams/{{team.id}}" class="card-title h6">{{team.name}}</a>
                 </div>
             </div>
         </div>
         {% endfor %}
     </div>
-    <a class="btn btn-primary btn-lg my-5" role="button" href="/teams/">More teams</a>
+    <a class="btn btn-primary btn-lg mb-5" role="button" href="/teams/">More teams</a>
 
 </section>
 
 <section id="teachers">
 <h2 class="display-5">Featured <a href="/teachers/">Teachers</a></h2>
-        <div class="d-flex flex-wrap justify-content-start align-items-stretch">
+        <div class="d-flex flex-sm-wrap mobile-scroll justify-content-start align-items-stretch mx-n3 pb-3">
     
                 {% for teacher in teachers %}
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
-                <div class="card w-100">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between mobile-scroll-item">
+                <div class="card w-100 shadow">
                     <a href="/performers/{{teacher.id}}">
                         <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"
                         src="{{teacher.image.url}}" alt="{{ teacher.full_name }}">
                     </a>
                     <div class="card-body">
-                        <a href="/performers/{{teacher.id}}" class="cart-title h5">{{teacher.full_name}}</a>
+                        <a href="/performers/{{teacher.id}}" class="card-title h6">{{teacher.full_name}}</a>
                     </div>
                 </div>
             </div>
             {% endfor %}
         </div>
-        <a class="btn btn-primary btn-lg my-5" role="button" href="/teachers/">More teachers</a>
+        <a class="btn btn-primary btn-lg mb-5" role="button" href="/teachers/">More teachers</a>
 
     </section>
 
