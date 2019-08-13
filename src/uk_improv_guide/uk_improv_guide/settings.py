@@ -191,7 +191,9 @@ SASS_PROCESSOR_ENABLED: bool = True
 
 USE_TZ = True
 
-ENIRONMENT_NAME:str = os.environ.get("ENVIRONMENT_NAME", "development" if DEBUG else "production")
+ENIRONMENT_NAME: str = os.environ.get(
+    "ENVIRONMENT_NAME", "development" if DEBUG else "production"
+)
 
 ROLLBAR = {
     "access_token": "9227e96158a8446c8a6eed836a6aa681",
@@ -202,14 +204,12 @@ rollbar.init(**ROLLBAR)
 
 SOCIAL_AUTH_FACEBOOK_KEY = os.environ.get("FACEBOOK_APP_KEY")
 SOCIAL_AUTH_FACEBOOK_SECRET = os.environ.get("FACEBOOK_SECRET")
-OCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link']
+OCIAL_AUTH_FACEBOOK_SCOPE = ["email", "user_link"]
 
 if not all([SOCIAL_AUTH_FACEBOOK_KEY, SOCIAL_AUTH_FACEBOOK_SECRET]):
     log.warning("Facebook keys are not set!")
 
-LOGIN_URL = 'login'
-LOGIN_REDIRECT_URL = 'home'
-LOGOUT_URL = 'logout'
-LOGOUT_REDIRECT_URL = 'login'
-
-
+LOGIN_URL = "login"
+LOGIN_REDIRECT_URL = "home"
+LOGOUT_URL = "logout"
+LOGOUT_REDIRECT_URL = "login"

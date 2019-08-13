@@ -21,6 +21,6 @@ def venue(request, id: int):
             "title": title,
             "venue": this_venue,
             "events": events,
-            "og_subject": this_venue
+            "og_subject": this_venue,
         },
     )

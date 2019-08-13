@@ -15,7 +15,7 @@
         <h3>{{performer.first_name}} will be teaching these courses...</h3>
         <ul>
             {% for course in courses %}
-            <li><a href="{% url 'course' id=course.id%}">{{ course.name }}</a></li>
+                <li><a href="{% url 'course' id=course.id%}">{{ course.name }}</a> for <a href="">{{ course.school.name }}</a></li>
             {%  endfor %}
         </ul>
     {% endif %}

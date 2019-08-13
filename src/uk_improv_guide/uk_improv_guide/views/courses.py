@@ -11,10 +11,5 @@ def courses(request):
     courses: Sequence[Course] = get_courses_after_datetime(now)
     title: str = "Courses"
     return render(
-        request,
-        "courses_index.html",
-        {
-            "title": "Improv Courses",
-            "courses": courses,
-        },
+        request, "courses_index.html", {"title": "Improv Courses", "courses": courses}
     )

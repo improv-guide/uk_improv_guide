@@ -8,10 +8,5 @@ def teachers(request):
     all_performers: Sequence[Performer] = get_all_performers(teachers_only=True)
     title = "Teachers"
     return render(
-        request,
-        "performer_index.html",
-        {
-            "title": title,
-            "performers": all_performers
-        },
+        request, "performer_index.html", {"title": title, "performers": all_performers}
     )

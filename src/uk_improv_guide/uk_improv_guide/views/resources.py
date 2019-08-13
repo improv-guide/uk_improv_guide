@@ -8,10 +8,5 @@ def resources(request):
     all_podcasts: Sequence[Resource] = get_all_resources().filter(resource_type="P")
     title: str = "Podcasts"
     return render(
-        request,
-        "resource_index.html",
-        {
-            "title": title,
-            "resources": all_podcasts,
-        },
+        request, "resource_index.html", {"title": title, "resources": all_podcasts}
     )
