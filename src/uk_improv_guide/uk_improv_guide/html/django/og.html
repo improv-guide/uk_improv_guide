@@ -3,8 +3,9 @@
     <meta property="og:title" content="{{title}}" />
 
     <meta property="og:url" content="{{ request.scheme }}://{{ request.META.HTTP_HOST }}{{ og_subject.get_absolute_url }}" />
+    {% if og_subject.image %}
     <meta property="og:image" content="{{ request.scheme }}://{{ request.META.HTTP_HOST }}{{ og_subject.image.url }}" />
-
+    {% endif %}
     {% if og_subject.first_name %}
         <meta property="profile:first" content="{{og_subject.first_name}}" />
     {% endif %}
