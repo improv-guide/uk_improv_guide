@@ -35,6 +35,25 @@ a, a:hover {
 // Google custom search
 // ==============
 
+.mobile-scroll {
+    @media (pointer:coarse) {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    }
+    @media (pointer:fine) {
+        flex-wrap: wrap;
+    }
+}
+
+.mobile-scroll-item {
+    @media screen and (max-width: 575px) {
+        min-width: 70vw;
+      }
+}
+// ==============
+// Google custom search
+// ==============
+
 
 #___gcse_0 {
     flex-grow: 1;

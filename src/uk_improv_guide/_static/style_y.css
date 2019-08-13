@@ -21,6 +21,27 @@ a, a:hover {
   /* background by SVGBackgrounds.com */
 }
 
+@media (pointer: coarse) {
+  .mobile-scroll {
+    overflow-x: scroll;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media (pointer: fine) {
+  .mobile-scroll {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .mobile-scroll-item {
+    min-width: 70vw;
+  }
+}
+
 #___gcse_0 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
