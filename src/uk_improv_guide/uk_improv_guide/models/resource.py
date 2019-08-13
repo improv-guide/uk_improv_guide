@@ -27,6 +27,7 @@ RESOURCE_TYPES = {
 @reversion.register
 class Resource(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     url_base: str = "resource"
+
     name = models.CharField(max_length=100)
     resource_type = models.CharField(max_length=1, choices=[a for a in RESOURCE_TYPES.items()])
     image = models.ImageField(upload_to="team/", blank=True)

@@ -1,5 +1,19 @@
-{%  if og %}
-    {% for og_item in og %}
-        <meta property="og:{{ og_item.name }}" content="{{ og_item.content }}" />
-    {% endfor %}
+{%  if og_subject %}
+    <meta property="og:site_name" content="Improv Guide" />
+    <meta property="og:title" content="{{title}}" />
+
+    <meta property="og:url" content="{{ request.scheme }}://{{ request.META.HTTP_HOST }}{{ og_subject.get_absolute_url }}" />
+    <meta property="og:image" content="{{ request.scheme }}://{{ request.META.HTTP_HOST }}{{ og_subject.image.url }}" />
+
+    {% if og_subject.first_name %}
+        <meta property="profile:first" content="{{og_subject.first_name}}" />
+    {% endif %}
+    {% if og_subject.family_name %}
+        <meta property="profile:last" content="{{og_subject.family_name}}" />
+    {% endif %}
+    {% if og_subject.first_name %}
+    <meta property="og:type" content="profile" />
+    {%  else %}
+        <meta property="og:type" content="website" />
+    {%  endif %}
 {%  endif %}
