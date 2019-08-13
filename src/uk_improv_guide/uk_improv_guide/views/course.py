@@ -29,6 +29,6 @@ def course(request, id: int):
             "has_started": _days_until_start < 0,
             "days_until_start": _days_until_start,
             "venue": venue,
-            "og_subject": this_course
+            "og_subject": this_course,
         },
     )

@@ -20,6 +20,6 @@ def event(request, id: int):
             "event": this_event,
             "venue": venue,
             "teams": this_event.teams.all(),
-            "og_subject": this_event
+            "og_subject": this_event,
         },
     )

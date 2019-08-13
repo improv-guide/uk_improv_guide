@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.contrib.auth import views as auth_views
 from django.urls import include, path
 from uk_improv_guide import settings
 from uk_improv_guide.models import Performer
@@ -29,64 +30,48 @@ from uk_improv_guide.views.misc import privacy, terms
 from uk_improv_guide.views.performer import performer
 from uk_improv_guide.views.performers import performers
 from uk_improv_guide.views.register import register
+from uk_improv_guide.views.resource import resource
+from uk_improv_guide.views.resources import resources
 from uk_improv_guide.views.school import school
 from uk_improv_guide.views.schools import schools
 from uk_improv_guide.views.sitemap import robots_txt, sitemap
 from uk_improv_guide.views.teachers import teachers
 from uk_improv_guide.views.team import team
-from uk_improv_guide.views.teams import teams
 from uk_improv_guide.views.team_event_calendar import team_event_calendar
+from uk_improv_guide.views.teams import teams
 from uk_improv_guide.views.venue import venue
 from uk_improv_guide.views.venues import venues
-from uk_improv_guide.views.resource import resource
-from uk_improv_guide.views.resources import resources
-from django.contrib.auth import views as auth_views
 
 info_dict = {"queryset": Performer.objects.all(), "date_field": "pub_date"}
 
 urlpatterns = [
     path("", home, name="home"),
-
     path("sitemap.xml", sitemap, name="sitemap"),
-
     path("events/", events, name="events"),
     path("events/<int:id>", event, name="event"),
-
     path("festivals/", festivals, name="festivals"),
     path("festival/<int:id>", festival, name="festival"),
-
     path("venues/", venues, name="venues"),
     path("venues/<int:id>", venue, name="venue"),
-
     path("teams/", teams, name="teams"),
     path("teams/<int:id>", team, name="team"),
     path("teams/<int:id>/events", team_event_calendar, name="team_event_calendar"),
-
     path("performers/", performers, name="performers"),
     path("performers/<int:id>", performer, name="performer"),
-
     path("teachers/", teachers, name="teachers"),
     path("teachers/<int:id>", performer, name="teacher"),
-
     path("courses/", courses, name="courses"),
     path("courses/<int:id>", course, name="course"),
-
     path("schools/", schools, name="schools"),
     path("schools/<str:id>", school, name="school"),
-
     path("privacy/", privacy, name="privacy"),
     path("terms/", terms, name="terms"),
-
-
     path("robots.txt", robots_txt, name="robots"),
-
     path("admin/", admin.site.urls),
-
     path("accounts/", include("django.contrib.auth.urls")),
     path("register/", register, name="register"),
-    path('social-auth/', include('social_django.urls', namespace="social")),
+    path("social-auth/", include("social_django.urls", namespace="social")),
     path("logout/", auth_views.LogoutView.as_view(), name="logout"),
-
     path("resources/", resources, name="resources"),
     path("resources/<int:id>", resource, name="resource"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT, show_indexes=True)

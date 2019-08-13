@@ -52,8 +52,6 @@ class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mo
         related_name="teachers",
     )
 
-
-
     @staticmethod
     def model_admin():
         return PerformerAdmin

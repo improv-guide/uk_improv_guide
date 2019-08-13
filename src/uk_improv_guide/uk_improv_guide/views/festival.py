@@ -20,6 +20,6 @@ def festival(request, id: int):
             "teachers": this_festival.teachers.all(),
             "teams": this_festival.teams.all(),
             "teachers": this_festival.teachers.all(),
-            "og_subject": this_festival
+            "og_subject": this_festival,
         },
     )

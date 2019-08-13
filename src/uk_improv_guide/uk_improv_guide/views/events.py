@@ -11,10 +11,5 @@ def events(request):
     events: Sequence[Event] = get_events_after_datetime(now)
     title: str = "Events"
     return render(
-        request,
-        "events_index.html",
-        {
-            "title": "Improv Guide",
-            "events": events,
-        },
+        request, "events_index.html", {"title": "Improv Guide", "events": events}
     )

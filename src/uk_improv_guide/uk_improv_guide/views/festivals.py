@@ -13,8 +13,5 @@ def festivals(request):
     return render(
         request,
         "festivals_index.html",
-        {
-            "title": "Improv Festivals",
-            "festivals": festivals,
-        },
+        {"title": "Improv Festivals", "festivals": festivals},
     )

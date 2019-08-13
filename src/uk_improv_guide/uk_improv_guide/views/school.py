@@ -34,6 +34,6 @@ def school(request, id: int):
             "teachers": teachers,
             "venues": venues,
             "courses": courses,
-            "og_subject": this_school
+            "og_subject": this_school,
         },
     )

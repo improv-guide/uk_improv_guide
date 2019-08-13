@@ -31,6 +31,6 @@ def performer(request, id: int):
             "teams": teams,
             "events": events,
             "courses": courses,
-            "og_subject": this_performer
+            "og_subject": this_performer,
         },
     )

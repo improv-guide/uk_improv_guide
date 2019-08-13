@@ -5,14 +5,15 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('uk_improv_guide', '0007_resource'),
-    ]
+    dependencies = [("uk_improv_guide", "0007_resource")]
 
     operations = [
         migrations.AlterField(
-            model_name='resource',
-            name='resource_type',
-            field=models.CharField(choices=[('B', 'Blog'), ('P', 'Podcast'), ('R', 'Reference')], max_length=1),
-        ),
+            model_name="resource",
+            name="resource_type",
+            field=models.CharField(
+                choices=[("B", "Blog"), ("P", "Podcast"), ("R", "Reference")],
+                max_length=1,
+            ),
+        )
     ]

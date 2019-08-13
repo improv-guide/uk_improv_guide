@@ -9,9 +9,5 @@ def resource(request, id: int):
     return render(
         request,
         "resource.html",
-        {
-            "title": title,
-            "resource": this_resource,
-            "og_subject": this_resource
-        },
+        {"title": title, "resource": this_resource, "og_subject": this_resource},
     )
