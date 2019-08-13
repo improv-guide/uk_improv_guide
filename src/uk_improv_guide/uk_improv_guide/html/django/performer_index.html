@@ -2,13 +2,36 @@
 {%  block title %}{{ full_name }}{% endblock %}
 {% block content_inner %}
 
-    <ul class="performer_list">
+
+<section id="performers">
+    <div class="d-flex flex-wrap justify-content-start align-items-stretch">
+
         {% for performer in performers %}
-            <li>
-                <a href="{% url 'performer' id=performer.id %}">{{ performer.full_name }}</a>
-            </li>
-        {%  endfor %}
-    </ul>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
+            <div class="card w-100 shadow">
+
+                <!-- {% if performer.image %}
+                <a href="{% url 'performer' id=performer.id %}">
+                    <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"
+                        src="{{performer.image.url}}" alt="{{ performer.full_name }}">
+                </a>
+                {% else %}
+                <a href="{% url 'performer' id=performer.id %}">
+                    <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"
+                        src="https://www.axiumradonmitigations.com/wp-content/uploads/2015/01/icon-user-default.png"
+                        alt="">
+                </a>
+                {% endif %} -->
+
+                <div class="card-body">
+                    <a href="{% url 'performer' id=performer.id %}" class="card-title h6">{{performer.full_name}}</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</section>
 
 
 {% endblock %}

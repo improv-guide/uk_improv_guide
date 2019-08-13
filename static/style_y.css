@@ -1,3 +1,8 @@
+a,
+a:hover {
+  text-decoration: none;
+}
+
 #___gcse_0 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -63,68 +68,23 @@
   color: transparent;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+/*
+
+// Sal: I'm not sure if this bit is yours or mine!
+
+.img-square-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+}
+.img-square-wrapper img{
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-nav {
-  background: #007BFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-nav a {
-  padding: 20px 10px;
-  color: white;
-}
-
-nav div {
-  color: white;
-}
-
-.team_image {
-  border-radius: 8px;
-  width: 150px;
-  height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.teacher_image {
-  border-radius: 8px;
-  width: 150px;
-  height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.footer {
-  padding-top: 20px;
-}
-
-.featured_image {
-  border-radius: 8px;
-  width: 250px;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.performers_list {
-  columns: 3;
-  -webkit-columns: 3;
-  -moz-columns: 3;
-}
+*/
 /*# sourceMappingURL=style_y.css.map */

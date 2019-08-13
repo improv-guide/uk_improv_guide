@@ -1,32 +1,35 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content_inner %}
-<div class="boxes">
-    {% for school in schools %}
 
+<section id="schools">
+        <div class="d-flex flex-wrap justify-content-start align-items-stretch">
+    
+            {% for school in schools %}
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
+                <div class="card w-100 shadow">
+                    <a href="{% url 'school' id=school.id %}">
+                        <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"
+                            src="{{school.image.url}}" alt="{{ school.name }}">
+                    </a>
+                    <div class="card-body">
+                        <a href="{% url 'school' id=school.id %}" class="card-title h6">{{school.name}}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+    
+            {% for school in schools_without_image %}
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
+                <div class="card w-100 shadow">
+                    <div class="card-body">
+                        <a href="{% url 'school' id=school.id %}" class="card-title h6">{{school.name}}</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
 
-    <div class="box">
-        <a href="{% url 'school' id=school.id %}"><img class="team_image" src="{{ school.image.url }}" alt="{{ school.name }}"></a>
-        <div class="box_social">
-            {% with social_thing=school %}
-            {% include "content/social.html" %}
-            {% endwith %}
         </div>
-
-        <span class="box_text">
-                    <p><a href="{% url 'school' id=school.id %}">{{school.name}}</a></p>
-                </span>
-
-    </div>
-
-    {% endfor %}
-
-    <ul>
-        {% for school in schools_without_image %}
-        <li><a href="/schools/{{ school.id }}">{{school.name}}</a>, {{school.country.name}}</li>
-        {% endfor %}
-    </ul>
-
-</div>
-
+    </section>
+    
 {% endblock %}
