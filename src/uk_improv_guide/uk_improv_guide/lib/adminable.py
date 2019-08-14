@@ -23,5 +23,4 @@ class AdminableObject:
 
     def get_absolute_url(self):
         from django.urls import reverse
-
-        return reverse(f"uk_improv_guide.views.{self.url_base}", args=[str(self.id)])
+        return reverse(self.url_base, args=[str(self.id)])
