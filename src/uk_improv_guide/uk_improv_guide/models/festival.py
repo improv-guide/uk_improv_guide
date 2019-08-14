@@ -54,9 +54,6 @@ class Festival(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mod
     def __str__(self):
         return f"{self.name} - @ {self.start_time}"
 
-    def get_absolute_url(self) -> str:
-        return f"/festivals/{self.id}"
-
 
 class FestivalAdminForm(ModelForm):
     excludes = []

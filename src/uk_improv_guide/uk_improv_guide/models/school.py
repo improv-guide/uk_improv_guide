@@ -36,9 +36,6 @@ class School(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model
     def __str__(self):
         return self.name
 
-    def get_absolute_url(self) -> str:
-        return f"/schools/{self.id}"
-
 
 def get_school_by_id(id: int) -> School:
     return School.objects.get(id=id)

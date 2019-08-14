@@ -20,3 +20,8 @@ class AdminableObject:
 
     def is_adminable(self) -> bool:
         return True
+
+    def get_absolute_url(self):
+        from django.urls import reverse
+
+        return reverse(f"uk_improv_guide.views.{self.url_base}", args=[str(self.id)])
