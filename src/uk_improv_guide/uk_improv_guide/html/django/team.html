@@ -42,7 +42,7 @@
         {% if past_events %}
             <h3>Previous events</h3>
             <ul>
-                {% for event in events %}
+                {% for event in past_events %}
                     <li><a href="/events/{{event.id}}">{{ event.name }}</a> @ {{ event.start_time }}, <a href="{% url 'venue' id=event.venue.id %}">{{event.venue.name}}</a>, {{event.venue.country.name}}</li>
                 {%  endfor %}
             </ul>

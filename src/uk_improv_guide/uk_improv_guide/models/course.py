@@ -97,9 +97,6 @@ class Course(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model
     def __str__(self):
         return f"{self.school}/{self.name} @ {self.start_time}"
 
-    def get_absolute_url(self) -> str:
-        return f"/courses/{self.id}"
-
 
 def get_courses_after_datetime(dt: datetime.datetime) -> Sequence[Course]:
     return Course.objects.filter(start_time__gte=dt).order_by("start_time")

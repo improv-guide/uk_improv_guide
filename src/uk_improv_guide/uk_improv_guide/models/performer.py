@@ -3,7 +3,6 @@ import pprint
 from typing import Sequence
 
 import reversion
-from django.contrib import admin
 from django.contrib.admin.widgets import FilteredSelectMultiple
 from django.db import models
 from django.forms import ModelForm, forms

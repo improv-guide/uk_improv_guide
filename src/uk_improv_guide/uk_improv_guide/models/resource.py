@@ -50,9 +50,6 @@ class Resource(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mod
     def __str__(self):
         return self.name
 
-    def get_absolute_url(self) -> str:
-        return f"/resources/{self.id}"
-
 
 class PodcastAdminForm(ModelForm):
     excludes = []
