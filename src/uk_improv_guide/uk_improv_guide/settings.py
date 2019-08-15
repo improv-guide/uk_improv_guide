@@ -15,10 +15,24 @@ from typing import Mapping, Union
 
 import pkg_resources
 
-import rollbar
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 
 log = logging.getLogger(__name__)
 
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG: bool = True if os.environ.get("DEBUG", None) else False
+
+ENIRONMENT_NAME: str = os.environ.get(
+    "ENVIRONMENT_NAME", "development" if DEBUG else "production"
+)
+
+sentry_sdk.init(
+    dsn="https://74a9130b6e564cce944b3fdf39c11b9d@sentry.io/1531137",
+    integrations=[DjangoIntegration()],
+    environment=ENIRONMENT_NAME,
+    release=pkg_resources.get_distribution("uk_improv_guide").version,
+)
 
 SITE_NAME: str = "Improv Gude"
 SITE_CANONICAL_URL = "http://improv.guide"
@@ -33,8 +47,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY: str = os.environ.get("PRODUCTION_SECRET") or "secret_key!"
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG: bool = True if os.environ.get("DEBUG", None) else False
+
 
 if DEBUG:
     log.info("Running in DEBUG mode!")
@@ -190,17 +203,6 @@ SASS_PROCESSOR_ROOT = _static_dir
 SASS_PROCESSOR_ENABLED: bool = True
 
 USE_TZ = True
-
-ENIRONMENT_NAME: str = os.environ.get(
-    "ENVIRONMENT_NAME", "development" if DEBUG else "production"
-)
-
-ROLLBAR = {
-    "access_token": "9227e96158a8446c8a6eed836a6aa681",
-    "environment": ENIRONMENT_NAME,
-    "root": BASE_DIR,
-}
-rollbar.init(**ROLLBAR)
 
 SOCIAL_AUTH_FACEBOOK_KEY = os.environ.get("FACEBOOK_APP_KEY")
 SOCIAL_AUTH_FACEBOOK_SECRET = os.environ.get("FACEBOOK_SECRET")
