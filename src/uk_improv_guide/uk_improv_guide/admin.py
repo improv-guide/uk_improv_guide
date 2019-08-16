@@ -2,17 +2,18 @@ import logging
 from typing import Type
 
 from django.contrib import admin
+from django.contrib.auth.decorators import login_required
 from reversion.admin import VersionAdmin
 from uk_improv_guide.models import get_all_models
-from django.contrib.auth.decorators import login_required
 
 log = logging.getLogger(__name__)
 
 admin.site.login = login_required(admin.site.login)
 
+
 def get_standard_admin_class(m):
     admin_name = f"{m.__name__}Admin"
-    log.debug(f"No custom admin found for {m}")
+    # log.debug(f"No custom admin found for {m}")
     ac = type(admin_name, (VersionAdmin,), {"save_as": True})
     globals()[admin_name] = ac
     return ac
@@ -21,9 +22,9 @@ def get_standard_admin_class(m):
 def get_admin_class_for_model(m) -> Type:
     try:
         ac = m.model_admin()
-        log.info(f"Using custom admin class for {m}.")
+        # log.info(f"Using custom admin class for {m}.")
     except AttributeError:
-        log.info(f"Using standard admin class for {m}.")
+        # log.info(f"Using standard admin class for {m}.")
         ac = get_standard_admin_class(m)
 
     return ac

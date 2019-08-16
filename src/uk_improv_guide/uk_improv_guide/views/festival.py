@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from uk_improv_guide.lib.opengraph import opengraph_website
 from uk_improv_guide.models.festival import (
     Festival,
     get_festival_by_id,
@@ -21,8 +20,6 @@ def festival(request, id: int):
             "teachers": this_festival.teachers.all(),
             "teams": this_festival.teams.all(),
             "teachers": this_festival.teachers.all(),
-            "og": opengraph_website(
-                title=title, request=request, image=this_festival.image
-            ),
+            "og_subject": this_festival,
         },
     )

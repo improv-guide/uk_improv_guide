@@ -25,7 +25,7 @@
             <div class="card w-100">
                 <a href="/teams/{{team.id}}">
                     <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"
-                        src="{{team.image.url}}" alt="{{ team.name }}">
+                        src="{% if team.image %}{{team.image.url}}{% else %}/static/default_team.png{% endif %}" alt="{{ team.name }}">
                 </a>
                 <div class="card-body">
                     <a href="/teams/{{team.id}}" class="cart-title h5">{{team.name}}</a>

@@ -29,7 +29,7 @@ log = logging.getLogger(__name__)
 @reversion.register
 @register_model_for_site_map
 class Festival(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
-    url_base: str = "event"
+    url_base: str = "festival"
 
     FESTIVAL_TYPES = (("F", "Festival"), ("R", "Retreat"))
     name = models.CharField(max_length=100)
@@ -53,9 +53,6 @@ class Festival(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mod
 
     def __str__(self):
         return f"{self.name} - @ {self.start_time}"
-
-    def get_absolute_url(self) -> str:
-        return f"/festivals/{self.id}"
 
 
 class FestivalAdminForm(ModelForm):

@@ -43,6 +43,7 @@ class CourseAdmin(VersionAdmin):
 @register_model_for_site_map
 class Course(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     url_base: str = "courses"
+
     name = models.CharField(
         max_length=100,
         help_text="The name of your course, but without the school name or any branding.",
@@ -95,9 +96,6 @@ class Course(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model
 
     def __str__(self):
         return f"{self.school}/{self.name} @ {self.start_time}"
-
-    def get_absolute_url(self) -> str:
-        return f"/courses/{self.id}"
 
 
 def get_courses_after_datetime(dt: datetime.datetime) -> Sequence[Course]:

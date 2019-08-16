@@ -1,24 +1,29 @@
+import datetime
+
+import pytz
 from django.shortcuts import render
-from pytz import timezone
-from uk_improv_guide.lib.opengraph import opengraph_website
 from uk_improv_guide.models.team import Team, get_team_by_id
 
 
 def team(request, id: int):
-    team: Team = get_team_by_id(id)
-    title = f"Team: {team.name}"
+    now = pytz.utc.localize(datetime.datetime.now())
+    this_team: Team = get_team_by_id(id)
+    title = f"Team: {this_team.name}"
+    events = this_team.event_set.all()
+    players = this_team.players.all()
 
-    events = team.event_set.all()
-    players = team.players.all()
+    future_events = [e for e in events if e.start_time > now]
+    past_events = [e for e in events if e.start_time <= now]
 
     return render(
         request,
         "team.html",
         {
             "title": title,
-            "team": team,
-            "events": events,
+            "team": this_team,
+            "events": future_events,
+            "past_events": past_events,
             "players": players,
-            "og": opengraph_website(title=title, request=request, image=None),
+            "og_subject": this_team,
         },
     )

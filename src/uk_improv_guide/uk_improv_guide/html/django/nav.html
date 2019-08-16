@@ -19,6 +19,7 @@
                     <a class="nav-link" href="{% url 'logout' %}">Logout</a>
                 </li>
                 {% else %}
+
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'login' %}">Login</a>
                 </li>
@@ -33,7 +34,6 @@
                 <!-- FACEBOOK SOCIAL LOGIN -->
                     {% include "content/facebook_login_button.html" %}
                 {% endif %}
-
 
 
                 <li class="nav-item dropdown">
