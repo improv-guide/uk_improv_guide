@@ -13,6 +13,7 @@ from uk_improv_guide.models.school import School
 @reversion.register
 class Venue(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     url_base: str = "venue"
+
     name = models.CharField(max_length=100)
     facebook_link = models.CharField(max_length=256, blank=True)
     website_link = models.CharField(max_length=256, blank=True)
@@ -40,9 +41,6 @@ class Venue(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
 
     def __str__(self) -> str:
         return f"{self.name}, {self.city}, {self.country}"
-
-    def get_absolute_url(self) -> str:
-        return f"/venues/{self.id}"
 
 
 def get_all_venues() -> List[Venue]:

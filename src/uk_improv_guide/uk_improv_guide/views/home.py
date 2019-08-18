@@ -4,15 +4,15 @@ from typing import Sequence
 
 import uk_improv_guide
 from django.shortcuts import render
-from uk_improv_guide.lib.opengraph import opengraph_website
+from uk_improv_guide import settings
 from uk_improv_guide.models.event import Event, get_events_between_dates
 from uk_improv_guide.models.performer import get_featured_performers
 from uk_improv_guide.models.team import get_featured_teams
 
 log = logging.getLogger(__name__)
 
+
 def home(request, event_days: int = 7):
-    log.warning("This is the HOME view!")
     now: datetime.datetime = datetime.datetime.now()
     later: datetime = now + datetime.timedelta(hours=24 * event_days)
     events: Sequence[Event] = get_events_between_dates(now, later)
@@ -26,7 +26,7 @@ def home(request, event_days: int = 7):
             "events": events,
             "teams": get_featured_teams(),
             "teachers": get_featured_performers(teachers=True),
-            "og": opengraph_website(title=title, request=request, image=None),
             "version": uk_improv_guide.__version__,
+            "environment": settings.ENIRONMENT_NAME,
         },
     )

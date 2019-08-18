@@ -3,7 +3,6 @@ import pprint
 from typing import Sequence
 
 import reversion
-from django.contrib import admin
 from django.contrib.admin.widgets import FilteredSelectMultiple
 from django.db import models
 from django.forms import ModelForm, forms
@@ -25,6 +24,8 @@ log = logging.getLogger(__name__)
 
 @reversion.register
 class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
+    url_base: str = "performer"
+
     first_name = models.CharField(max_length=50, default="")
     middle_names = models.CharField(max_length=60, blank=True, default="")
     family_name = models.CharField(max_length=50, default="")
@@ -49,8 +50,6 @@ class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mo
         blank=True,
         related_name="teachers",
     )
-
-    url_base: str = "performer"
 
     @staticmethod
     def model_admin():

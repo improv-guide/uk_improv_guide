@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 {% load static %}
-{%  block title %}{{ team.name }}{% endblock %}
 {% block content_inner %}
 
 
@@ -25,19 +24,35 @@
     </ul>
 
 
-    <h3>Events</h3>
+    <h3>Upcoming events</h3>
     {% if events %}
 
-    <div class="team_calendar"><a href="{% url 'team_event_calendar' id=team.id %}"><i class="far fa-calendar"></i></a></div>
-    <ul>
-        {% for event in events %}
-        <li><a href="/events/{{event.id}}">{{ event.name }}</a> @ {{ event.start_time }}, <a href="{% url 'venue' id=event.venue.id %}">{{event.venue.name}}</a>, {{event.venue.country.name}}</li>
-        {%  endfor %}
-    </ul>
+        <div class="team_calendar"><a href="{% url 'team_event_calendar' id=team.id %}"><i class="far fa-calendar"></i></a></div>
+        {% if events %}
+            <ul>
+                {% for event in events %}
+                <li><a href="/events/{{event.id}}">{{ event.name }}</a> @ {{ event.start_time }}, <a href="{% url 'venue' id=event.venue.id %}">{{event.venue.name}}</a>, {{event.venue.country.name}}</li>
+                {%  endfor %}
+            </ul>
+        {% else %}
+            <p>We do not have any upcoming events listed for this team. Please add some.</p>
+        {% endif %}
+
+
+        {% if past_events %}
+            <h3>Previous events</h3>
+            <ul>
+                {% for event in past_events %}
+                    <li><a href="/events/{{event.id}}">{{ event.name }}</a> @ {{ event.start_time }}, <a href="{% url 'venue' id=event.venue.id %}">{{event.venue.name}}</a>, {{event.venue.country.name}}</li>
+                {%  endfor %}
+            </ul>
+        {% endif %}
+
     {% else %}
     <p>We have no events listed for {{team.name}}. Please add some.</p>
     {% endif %}
 
+    {% if team.festival_set.all %}
     <h3>Festivals</h3>
     <ul>
         {% for festival in team.festival_set.all %}
@@ -46,6 +61,9 @@
             {% endfor %}
         {% endfor %}
     </ul>
+    {% else %}
+        <p>We don't have any festivals listed for {{ team.name }}. </p>
+    {%  endif %}
 
     {% with obj=team %}
         {% include "content/admin.html" %}

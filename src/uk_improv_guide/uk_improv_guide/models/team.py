@@ -21,6 +21,7 @@ from uk_improv_guide.models.performer import Performer
 @reversion.register
 class Team(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     url_base: str = "team"
+
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to="team/", blank=True)
     facebook_link = FACEBOOK_LINK
@@ -41,9 +42,6 @@ class Team(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
 
     def __str__(self):
         return self.name
-
-    def get_absolute_url(self) -> str:
-        return f"/teams/{self.id}"
 
 
 class PerformerAdminForm(ModelForm):
