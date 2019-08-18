@@ -20,7 +20,8 @@ a, a:hover {
 @media (pointer: coarse) {
   .mobile-scroll {
     overflow-x: scroll;
-    flex-wrap: nowrap; } }
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch; } }
 
 @media (pointer: fine) {
   .mobile-scroll {
@@ -72,3 +73,5 @@ a, a:hover {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%); }
+
+/*# sourceMappingURL=style_y.css.map */

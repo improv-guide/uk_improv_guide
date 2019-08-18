@@ -39,6 +39,7 @@ a, a:hover {
     @media (pointer:coarse) {
     overflow-x: scroll;
     flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
     }
     @media (pointer:fine) {
         flex-wrap: wrap;
