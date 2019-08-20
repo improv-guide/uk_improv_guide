@@ -2,14 +2,12 @@ import datetime
 from typing import Sequence
 
 import reversion
-from django import forms
 from django.db import models
 from reversion.admin import VersionAdmin
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.sitemaps import register_model_for_site_map
 from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
-from uk_improv_guide.models.fields.fields import WEBSITE_LINK
 from uk_improv_guide.models.performer import Performer
 from uk_improv_guide.models.school import School
 from uk_improv_guide.models.venue import Venue
@@ -42,7 +40,7 @@ class CourseAdmin(VersionAdmin):
 @reversion.register
 @register_model_for_site_map
 class Course(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
-    url_base: str = "courses"
+    url_base: str = "course"
 
     name = models.CharField(
         max_length=100,
