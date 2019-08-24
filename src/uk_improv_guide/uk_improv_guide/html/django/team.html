@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load improv_guide_extras %}
 {% block content_inner %}
 
 
@@ -26,8 +27,6 @@
 
     <h3>Upcoming events</h3>
     {% if events %}
-        <!-- https://www.google.com/calendar/render?cid=http%3a%2f%2fcalendar.daypilot.com%2fmycalendar%2f -->
-        <div class="team_calendar"><a href="{% with url 'team_event_calendar' id=team.id as myURL %}{{ myURL|urlencode }}{% endwith %}"><i class="far fa-calendar"></i>Add the {{ team.name }} to Google Calendar</a></div>
         {% if events %}
             <ul>
                 {% for event in events %}
