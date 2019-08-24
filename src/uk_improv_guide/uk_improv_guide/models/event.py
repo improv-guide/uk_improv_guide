@@ -43,6 +43,7 @@ class Event(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
         EventSeries, on_delete=models.SET_NULL, blank=True, null=True
     )
     teams = models.ManyToManyField(Team, verbose_name="teams playing", blank=True)
+    special_guests = models.ManyToManyField("Performer", blank=True, related_name="guesting")
 
     @staticmethod
     def model_admin():
@@ -62,7 +63,8 @@ class EventAdminForm(ModelForm):
         model = Event
         fields = "__all__"
         widgets = {
-            "teams": FilteredSelectMultiple("Teams performing in this event", False)
+            "teams": FilteredSelectMultiple("Teams performing in this event", False),
+            "special_guests": FilteredSelectMultiple("Guest performers", False)
         }
 
 
