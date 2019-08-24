@@ -44,5 +44,10 @@ def team_event_calendar(request, id: int):
     c.events
 
     content: str = "".join(c)
+    response = HttpResponse(content, "text/calendar", 200)
 
-    return HttpResponse(content, "text/calendar", 200)
+    response[
+        "Content-Disposition"
+    ] = f"attachment; filename=improv_guide_team_{team.id}.ics"
+
+    return response
