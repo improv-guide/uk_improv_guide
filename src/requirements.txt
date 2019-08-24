@@ -6,7 +6,7 @@ pytz==2019.2
 django-recaptcha==2.0.4
 social-auth-app-django==3.1.0
 pyyaml==5.1.2
-django-countries==5.3.3
+django-countries==5.4
 Pillow==6.1.0
 requests==2.22.0
 gunicorn==19.9.0
@@ -16,9 +16,9 @@ libsass==0.19.2
 django-sass-processor==0.7.3
 django-compressor==2.3
 rollbar==0.14.7
-newrelic==4.20.1.121
+newrelic==5.0.2.126
 django-markdownx==2.0.28
 django-apptemplates==1.4
 ics==0.5
-sentry-sdk==0.10.2
+sentry-sdk==0.11.1
 
