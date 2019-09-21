@@ -20,5 +20,5 @@ newrelic==5.0.2.126
 django-markdownx==2.0.28
 django-apptemplates==1.4
 ics==0.5
-sentry-sdk==0.11.1
+sentry-sdk==0.12.2
 
