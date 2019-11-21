@@ -40,7 +40,8 @@ ENTRYPOINT ["./start_prod.sh"]
 
 FROM nginx:latest AS uk-improv-guide-nginx
 RUN apt-get update && apt-get install -y curl \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get install certbot python-certbot-nginx -y
 COPY nginx/config/no_ssl.conf /etc/nginx/no_ssl.conf
 COPY nginx/config/ssl.conf /etc/nginx/ssl.conf
 #RUN nginx -t -c /etc/nginx/no_ssl.conf
