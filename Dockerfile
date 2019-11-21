@@ -1,14 +1,21 @@
-FROM salimfadhley/testpython AS uk-improv-guide-python-base
+# Base Image, Python Interpreter
+FROM python:3.8-buster AS uk-improv-guide-python-base0
+RUN apt-get update
+RUN mkdir /tmp/install
+COPY /src/requirements_dev.txt /tmp/install/requirements_dev.txt
+RUN python -m pip install -r /tmp/install/requirements_dev.txt
+RUN apt-get install git
+RUN rm -rf /tmp/install
+
+FROM uk-improv-guide-python-base0 AS uk-improv-guide-python-base1
 RUN apt-get update && apt-get install -y postgresql-client bash \
     && rm -rf /var/lib/apt/lists/*
-COPY /src/requirements_dev.txt /src/
-RUN python -m pip install -r /src/requirements_dev.txt
 COPY /src/requirements.txt /src/
 RUN python -m pip install -r /src/requirements.txt
 RUN useradd python
 
 
-FROM uk-improv-guide-python-base AS uk-improv-guide
+FROM uk-improv-guide-python-base1 AS uk-improv-guide
 COPY /src /src
 
 ARG IMPROV_GUIDE_VERSION
