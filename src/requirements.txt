@@ -1,4 +1,4 @@
-jinja2==2.10.1
+jinja2==2.10.3
 psycopg2==2.8.3
 django==2.2.4
 django-reversion==3.0.4
