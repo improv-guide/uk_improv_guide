@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load improv_guide_extras %}
 {% block content_inner %}
 
 
@@ -26,8 +27,6 @@
 
     <h3>Upcoming events</h3>
     {% if events %}
-
-        <div class="team_calendar"><a href="{% url 'team_event_calendar' id=team.id %}"><i class="far fa-calendar"></i></a></div>
         {% if events %}
             <ul>
                 {% for event in events %}

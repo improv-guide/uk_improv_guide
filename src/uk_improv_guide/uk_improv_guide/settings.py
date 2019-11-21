@@ -96,6 +96,9 @@ TEMPLATES = [
                 "django.contrib.messages.context_processors.messages",
                 "django.template.context_processors.media",
             ],
+            "libraries": {
+                "improv_guide_extras": "uk_improv_guide.templatetags.improv_guide_extras"
+            },
             # "loaders": [
             #     "django.template.loaders.filesystem.Loader",
             #     "django.template.loaders.app_directories.Loader",
