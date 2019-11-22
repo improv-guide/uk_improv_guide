@@ -35,10 +35,12 @@ fi
 
 
 if [ ! -d "$data_path/live" ]; then
+    echo "Starting with SSL"
     export NGINX_CONFIG=/etc/nginx/no_ssl.conf
 else
+    echo "Starting without SSL"
     export NGINX_CONFIG=/etc/nginx/ssl.conf
 fi
 
-
+echo "Booting Nginx"
 nginx -c $NGINX_CONFIG -g 'daemon off;'

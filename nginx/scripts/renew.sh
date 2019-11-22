@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+certbot --dry-run --text --agree-tos --email salimfadhley+improvguide@gmail.com -d improv.guide --manual --preferred-challenges dns --expand --renew-by-default  --manual-public-ip-logging-ok certonly
