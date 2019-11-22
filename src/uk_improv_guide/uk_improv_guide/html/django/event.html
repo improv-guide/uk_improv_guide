@@ -5,14 +5,24 @@
 
 <section id="event-details">
     <h2 class="display-5">Details</h2>
+
     <div id="date-time" class="d-flex align-items-center my-3">
         <i class="far fa-calendar text-primary h2 mr-3 mb-0"></i>
         <div>{{event.start_time}}</div>
     </div>
+
     <div id="venue" class="d-flex align-items-center my-3">
         <i class="fas fa-map-marker-alt text-primary h2 mr-3 mb-0"></i>
         <div><a href="/venues/{{venue.id}}">{{venue.name}}</a>, {{venue.city}}</div>
     </div>
+
+    {% if event.eventbrite_link %}
+    <div id="ticket" class="d-flex align-items-center my-3">
+        <i class="fas fa-ticket-alt text-primary h2 mr-3 mb-0"></i>
+        <div><a href="{{event.eventbrite_link}}">Buy tickets</a></div>
+    </div>
+    {% endif %}
+
 </section>
 
 {% if teams %}
@@ -41,6 +51,7 @@
 
 
     {% endif %}
+
     <div class="d-flex flex-wrap justify-content-start align-items-stretch">
         {% for guest in event.special_guests.all %}
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
