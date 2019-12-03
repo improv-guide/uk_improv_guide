@@ -49,7 +49,6 @@ ALLOWED_HOSTS = ["improv.guide", "impro.guide", "localhost"]
 # Application definition
 
 INSTALLED_APPS = [
-    # 'captcha',
     "imagekit",
     "reversion",
     "django.contrib.admin",
