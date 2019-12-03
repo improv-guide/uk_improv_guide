@@ -20,19 +20,17 @@ if [ ! -e "$data_path/options-ssl-nginx.conf" ] || [ ! -e "$data_path/ssl-dhpara
 fi
 
 
-#
-#if [ ! -e "$key_dir/privkey.pem" ] || [ ! -e "$key_dir/fullchain.pem" ]; then
-#      echo "### Creating dummy certificate for $domains ..."
-#
-#      echo "Making directory $key_dir"
-#      mkdir -p $key_dir
-#      openssl req -x509 -nodes -newkey rsa:2048 -days 1\
-#        -keyout "$key_dir/privkey.pem" \
-#        -out "$key_dir/fullchain.pem" \
-#        -subj '/CN=localhost'
-#    echo
-#fi
+if [ ! -e "$key_dir/privkey.pem" ] || [ ! -e "$key_dir/fullchain.pem" ]; then
+      echo "### Creating dummy certificate for $domains ..."
 
+      echo "Making directory $key_dir"
+      mkdir -p $key_dir
+      openssl req -x509 -nodes -newkey rsa:2048 -days 1\
+        -keyout "$key_dir/privkey.pem" \
+        -out "$key_dir/fullchain.pem" \
+        -subj '/CN=localhost'
+    echo
+fi
 
 if [ ! -d "$data_path/live" ]; then
     echo "Starting with SSL"
