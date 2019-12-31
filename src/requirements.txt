@@ -13,7 +13,7 @@ django-imagekit==4.0.2
 libsass==0.19.4
 eventlet==0.25.1
 django-sass-processor==0.7.5
-django-compressor==2.3
+django-compressor==2.4
 rollbar==0.14.7
 newrelic==5.4.0.132
 django-markdownx==2.0.28
