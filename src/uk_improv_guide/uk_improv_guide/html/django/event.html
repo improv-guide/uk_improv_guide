@@ -45,28 +45,27 @@
         {% endfor %}
     </div>
 
-    <h2 class="display-5">Special Guests</h2>
-
     {% if event.special_guests.all %}
 
+        <h2 class="display-5">Special Guests</h2>
 
-    {% endif %}
-
-    <div class="d-flex flex-wrap justify-content-start align-items-stretch">
-        {% for guest in event.special_guests.all %}
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
-                <div class="card w-100">
-                    <a href="{% url "performer" id=guest.id %}">
-                        <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"
-                             src="{% if guest.image %}{{guest.image.url}}{% else %}/static/default_performer.png{% endif %}" alt="{{ guest.name }}">
-                    </a>
-                    <div class="card-body">
-                        <a href="{% url "performer" id=guest.id %}" class="cart-title h5">{{guest.full_name}}</a>
+        <div class="d-flex flex-wrap justify-content-start align-items-stretch">
+            {% for guest in event.special_guests.all %}
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
+                    <div class="card w-100">
+                        <a href="{% url "performer" id=guest.id %}">
+                            <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"
+                                 src="{% if guest.image %}{{guest.image.url}}{% else %}/static/default_performer.png{% endif %}" alt="{{ guest.name }}">
+                        </a>
+                        <div class="card-body">
+                            <a href="{% url "performer" id=guest.id %}" class="cart-title h5">{{guest.full_name}}</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        {% endfor %}
-    </div>
+            {% endfor %}
+        </div>
+
+    {% endif %}
 
 </section>
 {% endif %}
