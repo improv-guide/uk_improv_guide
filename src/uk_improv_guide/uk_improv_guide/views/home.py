@@ -13,7 +13,7 @@ log = logging.getLogger(__name__)
 
 
 def home(request, event_days: int = 7):
-    events: Sequence[Event] = get_events_after_datetime(dt=datetime.datetime.now())[:10]
+    events: Sequence[Event] = get_events_after_datetime(dt=datetime.datetime.now())[:8]
     return render(
         request,
         "home.html",
