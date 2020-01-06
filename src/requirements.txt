@@ -20,4 +20,4 @@ django-markdownx==2.0.28
 django-apptemplates==1.4
 sentry-sdk==0.13.4
 ics==0.6
-six
+six==1.13.0
