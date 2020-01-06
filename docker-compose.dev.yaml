@@ -19,7 +19,7 @@ services:
     working_dir: "/src/uk_improv_guide"
     entrypoint: ["./start_dev.sh"]
     ports:
-      - "8000:8000"
+      - "8023:8023"
     environment:
       IMPROV_GUIDE_VERSION: ${IMPROV_GUIDE_VERSION}
       POSTGRES_USER: ${POSTGRES_USER}

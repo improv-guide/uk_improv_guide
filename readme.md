@@ -45,11 +45,13 @@ If you have only just cloned the repository, do:
 git submodule update --init --recursive
 ```
 
-If you have pulled the submodules once before, the syntax to use is:
+Next, do:
 
 ```bash
 git pull && git submodule update --recursive
 ```
+
+This 2nd step can be repeated any time you want to update the backed-up content.
 
 ### How to install
 

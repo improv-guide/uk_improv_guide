@@ -9,4 +9,4 @@ cd uk_improv_guide
 echo "Collecting static files..."
 yes yes | manage collectstatic
 echo "Starting development server..."
-manage runserver 0.0.0.0:8000
+manage runserver 0.0.0.0:8023
