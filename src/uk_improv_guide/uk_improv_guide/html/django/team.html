@@ -18,11 +18,15 @@
 
     <h3>Players</h3>
 
+    {% if players %}
     <ul>
         {% for player in players %}
         <li><a href="/performers/{{player.id}}">{{ player.full_name }}</a></li>
         {%  endfor %}
     </ul>
+    {% else %}
+        <p>We don't have any players listed for {{ team.name }}, please edit this page and add some!</p>
+    {% endif %}
 
 
     <h3>Upcoming events</h3>
