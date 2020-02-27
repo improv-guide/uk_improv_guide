@@ -12,6 +12,8 @@ from uk_improv_guide.models.signals import create_user_profile
 from uk_improv_guide.models.team import Team
 from uk_improv_guide.models.venue import Venue
 
+from uk_improv_guide.models.city import City
+
 
 def get_all_models() -> Set[models.Model]:
     return {
@@ -24,4 +26,5 @@ def get_all_models() -> Set[models.Model]:
         Course,
         Festival,
         Resource,
+        City,
     }
