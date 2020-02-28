@@ -19,7 +19,7 @@ class City(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
         verbose_name_plural = "Cities"
 
     def __str__(self) -> str:
-        return f"{self.name}, {self.country}"
+        return f"{self.name}, {self.country.name}"
 
 
 def get_all_cities() -> List[City]:
