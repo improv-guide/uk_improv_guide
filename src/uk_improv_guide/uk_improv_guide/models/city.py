@@ -16,6 +16,7 @@ class City(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
 
     class Meta:
         ordering = ["name"]
+        verbose_name_plural = "Cities"
 
     def __str__(self) -> str:
         return f"{self.name}, {self.country}"
