@@ -136,6 +136,8 @@ Dropping tables is not extreme enough for you? This is the nuclear option:
 * Delete the database volume: `docker volume rm uk_improv_guide_postgres_data`
 * Restart the dev environment: `./up_dev.sh`
 
+By default, a newly created Postgres database does not include an admin account. You will not be able to login until you execute the next step:
+
 ### You want to create a super-user account
 
 If you are starting from a brand-new database, run the `./up_dev.sh` script to create the tables and authentication data.
