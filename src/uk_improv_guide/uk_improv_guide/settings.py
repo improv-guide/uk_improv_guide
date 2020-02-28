@@ -15,6 +15,9 @@ from typing import Mapping, Union
 
 import pkg_resources
 
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
 # import rollbar
 
 log = logging.getLogger(__name__)
@@ -205,8 +208,6 @@ ENIRONMENT_NAME: str = os.environ.get(
 # rollbar.init(**ROLLBAR)
 
 
-import sentry_sdk
-from sentry_sdk.integrations.django import DjangoIntegration
 sentry_sdk.init(
     dsn="https://74a9130b6e564cce944b3fdf39c11b9d@sentry.io/1531137",
     integrations=[DjangoIntegration()],
