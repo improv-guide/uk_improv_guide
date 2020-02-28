@@ -7,7 +7,7 @@ from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
 from uk_improv_guide.models.fields.fields import TWITTER_HANDLE
-from uk_improv_guide.models.improv_city import ImprovCity
+from uk_improv_guide.models.city import City
 from uk_improv_guide.models.school import School
 
 
@@ -28,7 +28,7 @@ class Venue(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
     )
     country = CountryField(blank_label="(select country)", default="GB")
 
-    city_obj = models.ForeignKey(ImprovCity,
+    city_obj = models.ForeignKey(City,
                                  on_delete=models.SET_DEFAULT,
                                  blank=True,
                                  null=True,
