@@ -16,8 +16,6 @@ from uk_improv_guide.models.fields.fields import (
     TWITTER_HANDLE,
     WEBSITE_LINK,
 )
-
-
 from uk_improv_guide.models.performer import Performer
 
 RESOURCE_TYPES = {"B": "Blog", "P": "Podcast", "R": "Reference"}

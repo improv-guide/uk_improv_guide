@@ -12,10 +12,10 @@ from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
 class City(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     name = models.CharField(max_length=100)
     country = CountryField(blank_label="(select country)", default="GB")
-    image =  models.ImageField(upload_to="city/", blank=True)
+    image = models.ImageField(upload_to="city/", blank=True)
 
     class Meta:
-        ordering = ["name"]
+        ordering = ["country", "name"]
         verbose_name_plural = "Cities"
 
     def __str__(self) -> str:

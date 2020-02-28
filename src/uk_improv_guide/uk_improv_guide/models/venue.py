@@ -6,8 +6,8 @@ from django_countries.fields import CountryField
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
-from uk_improv_guide.models.fields.fields import TWITTER_HANDLE
 from uk_improv_guide.models.city import City
+from uk_improv_guide.models.fields.fields import TWITTER_HANDLE
 from uk_improv_guide.models.school import School
 
 
@@ -28,13 +28,14 @@ class Venue(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
     )
     country = CountryField(blank_label="(select country)", default="GB")
 
-    city_obj = models.ForeignKey(City,
-                                 on_delete=models.SET_DEFAULT,
-                                 blank=True,
-                                 null=True,
-                                 default=None,
-                                 verbose_name="City",
-                                 )
+    city_obj = models.ForeignKey(
+        City,
+        on_delete=models.SET_DEFAULT,
+        blank=True,
+        null=True,
+        default=None,
+        verbose_name="City",
+    )
 
     school = models.ForeignKey(
         School,
@@ -50,7 +51,7 @@ class Venue(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
         ordering = ["name"]
 
     def __str__(self) -> str:
-        return f"{self.name}, {self.city}, {self.country}"
+        return f"{self.name}, {self.city_obj or 'City not set'}"
 
 
 def get_all_venues() -> List[Venue]:

@@ -2,6 +2,7 @@ from django import template
 
 register = template.Library()
 
+
 @register.simple_tag
 def urlencodedurl(*args, **kwargs):
     # url_tag:URLNode = url(parser, token)
