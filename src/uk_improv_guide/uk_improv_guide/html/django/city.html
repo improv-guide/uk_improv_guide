@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content_inner %}
+
+    {% with social_thing=city %}
+        {% include "content/social.html" %}
+    {% endwith %}
+
+
+    <div class="card w-500 shadow">
+
+{#        <img class="card-img-top img-fuild" style="max-height: 500px"#}
+{#             src="{{city.image.url}}" alt="{{ city.name }}">#}
+
+{#        <div class="card-body">#}
+{#        <a href="{% url 'venue' id=venue.id %}" class="card-title h6">{{city.name}}</a>#}
+
+{#            <div class="address_info">#}
+{#                <ul class="address">#}
+{#                    <li>{{ venue.address }},</li>#}
+{#                    <li>{{ venue.city }},</li>#}
+{#                    <li>{{ venue.postcode }},</li>#}
+{#                    <li>{{ venue.country.name }}</li>#}
+{#                </ul>#}
+{##}
+{#            </div>#}
+
+    </div>
+
+
+    </div>
+
+    <div class="card w-500 shadow">
+        <div class="card-header"><h2>Events</h2></div>
+        <div class="card-body">
+
+{#            <ul>#}
+{#                {% for event in events %}#}
+{#                    <li><a href="{% url 'event' id=event.id %}">{{ event.name }}</a>, {{event.start_time}}</li>#}
+{#                {% endfor %}#}
+{#            </ul>#}
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    {% if venue.festival_set.exists %}
+    <h2>Festivals</h2>
+    {% for festival in venue.festival_set.all %}
+    <li><a href="{% url 'festival' id=festival.id %}">{{ festival.name }}</a>, {{festival.start_time.year}}</li>
+    {% endfor %}
+    {% endif %}
+
+
+    {% with obj=venue %}
+        {% include "content/admin.html" %}
+    {% endwith %}
+
+
+
+{% endblock %}

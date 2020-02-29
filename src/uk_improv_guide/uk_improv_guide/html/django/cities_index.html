@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content_inner %}
+
+<section id="cities">
+    <div class="d-flex flex-wrap justify-content-start align-items-stretch">
+
+        {% for city in cities %}
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
+            <div class="card w-100 shadow">
+                <a href="{% url 'city' id=city.id %}">
+                    {{ city.name }} {{ city.country }}
+{#                    <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"#}
+{#                        src="{{city.image.url}}" alt="{{ venue.name }}">#}
+                </a>
+                <div class="card-body">
+                    <a href="{% url 'city' id=city.id %}" class="card-title h6">{{city.name}}, {{ city.country.name }}</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</section>
+
+{% endblock %}
