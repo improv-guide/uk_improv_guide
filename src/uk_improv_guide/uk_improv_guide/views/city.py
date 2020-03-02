@@ -7,8 +7,8 @@ from uk_improv_guide.models.city import get_city_by_id
 log = logging.getLogger(__name__)
 
 
-def city(request, id: int):
-    this_city: City = get_city_by_id(id)
+def city(request, id_: int):
+    this_city: City = get_city_by_id(id_)
     title = this_city.name
 
     # events: Sequence[Event] = this_city.event_set.order_by("-start_time")
