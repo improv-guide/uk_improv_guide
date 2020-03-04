@@ -1,20 +1,21 @@
 import logging
+from typing import Sequence
 
 from django.shortcuts import render
 from uk_improv_guide.models import City
 from uk_improv_guide.models.city import get_city_by_id
+from uk_improv_guide.models.event import Event, get_events_for_city
 
 log = logging.getLogger(__name__)
 
 
-def city(request, id_: int):
-    this_city: City = get_city_by_id(id_)
+def city(request, city_id: int):
+    this_city: City = get_city_by_id(city_id)
     title = this_city.name
-
-    # events: Sequence[Event] = this_city.event_set.order_by("-start_time")
+    events: Sequence[Event] = get_events_for_city(city_id=city_id)
 
     return render(
         request,
         "city.html",
-        {"title": title, "city": this_city, "og_subject": this_city,},
+        {"title": title, "city": this_city, "og_subject": this_city, "events": events},
     )

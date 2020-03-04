@@ -9,21 +9,10 @@
 
     <div class="card w-500 shadow">
 
-{#        <img class="card-img-top img-fuild" style="max-height: 500px"#}
-{#             src="{{city.image.url}}" alt="{{ city.name }}">#}
-
-{#        <div class="card-body">#}
-{#        <a href="{% url 'venue' id=venue.id %}" class="card-titlegit st h6">{{city.name}}</a>#}
-
-{#            <div class="address_info">#}
-{#                <ul class="address">#}
-{#                    <li>{{ venue.address }},</li>#}
-{#                    <li>{{ venue.city }},</li>#}
-{#                    <li>{{ venue.postcode }},</li>#}
-{#                    <li>{{ venue.country.name }}</li>#}
-{#                </ul>#}
-{##}
-{#            </div>#}
+        {%  if city.image.exists %}
+        <img class="card-img-top img-fuild" style="max-height: 500px"
+             src="{{city.image.url}}" alt="{{ city.name }}">
+        {% endif %}
 
     </div>
 
@@ -34,11 +23,34 @@
         <div class="card-header"><h2>Events</h2></div>
         <div class="card-body">
 
-{#            <ul>#}
-{#                {% for event in events %}#}
-{#                    <li><a href="{% url 'event' id=event.id %}">{{ event.name }}</a>, {{event.start_time}}</li>#}
-{#                {% endfor %}#}
-{#            </ul>#}
+        {% if events %}
+            <ul>
+                {% for event in events %}
+                    <li><a href="{% url 'event' id=event.id %}">{{event.name}}</a></li>
+                {%  endfor %}
+            </ul>
+        {% else %}
+            <p>We don't have any events for {{ city.name }}</p>
+        {% endif %}
+
+
+        </div>
+    </div>
+
+
+    <div class="card w-500 shadow">
+        <div class="card-header"><h2>Venues</h2></div>
+        <div class="card-body">
+
+            {% if venues %}
+                <ul>
+                    {% for venue in venues %}
+                        <li><a href="{% url 'venue' id=id %}">{{venue.name}}</a></li>
+                    {%  endfor %}
+                </ul>
+            {% else %}
+                <p>We don't have any venues for {{ city.name }}</p>
+            {% endif %}
 
 
         </div>
@@ -50,12 +62,12 @@
 
 
 
-    {% if venue.festival_set.exists %}
-    <h2>Festivals</h2>
-    {% for festival in venue.festival_set.all %}
-    <li><a href="{% url 'festival' id=festival.id %}">{{ festival.name }}</a>, {{festival.start_time.year}}</li>
-    {% endfor %}
-    {% endif %}
+{#    {% if venue.festival_set.exists %}#}
+{#    <h2>Festivals</h2>#}
+{#    {% for festival in venue.festival_set.all %}#}
+{#    <li><a href="{% url 'festival' id=festival.id %}">{{ festival.name }}</a>, {{festival.start_time.year}}</li>#}
+{#    {% endfor %}#}
+{#    {% endif %}#}
 
 
     {% with obj=venue %}

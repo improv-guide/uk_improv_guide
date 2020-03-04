@@ -21,12 +21,12 @@ class Venue(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
     twitter_handle = TWITTER_HANDLE
     google_maps_link = models.CharField(max_length=256, blank=True)
     address = models.CharField(max_length=256, verbose_name="Street Address")
-    city = models.CharField(max_length=256, default="London")
+    city = models.CharField(max_length=256, default="London", editable=False )
     postcode = models.CharField(max_length=10, verbose_name="Postal Code")
     email_address = models.CharField(
         max_length=100, verbose_name="Email Address", blank=True
     )
-    country = CountryField(blank_label="(select country)", default="GB")
+    country = CountryField(blank_label="(select country)", default="GB", editable=False )
 
     city_obj = models.ForeignKey(
         City,
