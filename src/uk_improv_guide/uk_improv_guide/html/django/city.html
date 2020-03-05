@@ -38,19 +38,26 @@
     </div>
 
 
-    <div class="card w-500 shadow">
-        <div class="card-header"><h2>Venues</h2></div>
-        <div class="card-body">
+    <section id="venues">
+        <div class="d-flex flex-wrap justify-content-start align-items-stretch">
 
-            {% if venues %}
-                <ul>
-                    {% for venue in venues %}
-                        <li><a href="{% url 'venue' id=id %}">{{venue.name}}</a></li>
-                    {%  endfor %}
-                </ul>
-            {% else %}
-                <p>We don't have any venues for {{ city.name }}</p>
-            {% endif %}
+            {% for venue in venues %}
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 my-2 d-flex justify-content-between">
+                    <div class="card w-100 shadow">
+                        <a href="{% url 'venue' id=venue.id %}">
+                            <img class="card-img-top img-fuild" style="height: 220px; object-fit: cover;"
+                                 src="{{venue.image.url}}" alt="{{ venue.name }}">
+                        </a>
+                        <div class="card-body">
+                            <a href="{% url 'venue' id=venue.id %}" class="card-title h6">{{venue.name}}</a>
+                            <div>{{venue.city}}, {{venue.country}}</div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </section>
 
 
         </div>

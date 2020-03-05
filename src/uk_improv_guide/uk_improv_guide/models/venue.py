@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Sequence
 
 import reversion
 from django.db import models
@@ -60,3 +60,9 @@ def get_all_venues() -> List[Venue]:
 
 def get_venue_by_id(id: int) -> Venue:
     return Venue.objects.get(id=id)
+
+def get_venues_for_city(city_id: int)-> Sequence[Venue]:
+    return Venue.objects.filter(
+        city_obj__id=city_id
+    ).order_by("name")
+
