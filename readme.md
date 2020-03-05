@@ -189,4 +189,4 @@ Creating uk_improv_guide_python_1 ... done
 
 ### The production certificate has expired
 
-*  Login to the certbot container (it doesn't havd Bash, only Sh)
+  * Login to the certbot container (it doesn't havd Bash, only Sh)
