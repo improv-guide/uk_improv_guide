@@ -19,5 +19,11 @@ def city(request, city_id: int):
     return render(
         request,
         "city.html",
-        {"title": title, "city": this_city, "og_subject": this_city, "events": events, "venues": venues},
+        {
+            "title": title,
+            "city": this_city,
+            "og_subject": this_city,
+            "events": events,
+            "venues": venues,
+        },
     )
