@@ -10,6 +10,8 @@ from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
 
 @reversion.register
 class City(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
+    url_base: str = "city"
+
     name = models.CharField(max_length=100)
     country = CountryField(blank_label="(select country)", default="GB")
     image = models.ImageField(upload_to="city/", blank=True)
@@ -26,5 +28,5 @@ def get_all_cities() -> List[City]:
     return City.objects.all()
 
 
-def get_venue_by_id(id: int) -> City:
-    return City.objects.get(id=id)
+def get_city_by_id(city_id: int) -> City:
+    return City.objects.get(id=city_id)

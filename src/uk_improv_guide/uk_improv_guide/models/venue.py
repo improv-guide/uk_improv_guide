@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Sequence
 
 import reversion
 from django.db import models
@@ -21,12 +21,12 @@ class Venue(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
     twitter_handle = TWITTER_HANDLE
     google_maps_link = models.CharField(max_length=256, blank=True)
     address = models.CharField(max_length=256, verbose_name="Street Address")
-    city = models.CharField(max_length=256, default="London")
+    city = models.CharField(max_length=256, default="London", editable=False)
     postcode = models.CharField(max_length=10, verbose_name="Postal Code")
     email_address = models.CharField(
         max_length=100, verbose_name="Email Address", blank=True
     )
-    country = CountryField(blank_label="(select country)", default="GB")
+    country = CountryField(blank_label="(select country)", default="GB", editable=False)
 
     city_obj = models.ForeignKey(
         City,
@@ -60,3 +60,7 @@ def get_all_venues() -> List[Venue]:
 
 def get_venue_by_id(id: int) -> Venue:
     return Venue.objects.get(id=id)
+
+
+def get_venues_for_city(city_id: int) -> Sequence[Venue]:
+    return Venue.objects.filter(city_obj__id=city_id).order_by("name")

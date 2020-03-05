@@ -1,5 +1,5 @@
 import datetime
-from typing import Sequence
+from typing import Optional, Sequence
 
 import reversion
 from django.contrib.admin.widgets import FilteredSelectMultiple
@@ -55,7 +55,7 @@ class Event(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
         ordering = ["-start_time"]
 
     def __str__(self):
-        return f"{self.name} - @ {self.start_time} - {self.venue.name}"
+        return f"{self.name } - @ {self.start_time} - {self.venue.name if self.venue else 'VENUE NOT SET'}"
 
 
 class EventAdminForm(ModelForm):
@@ -75,6 +75,15 @@ class EventAdmin(VersionAdmin):
     save_as = True
     search_fields = ["name"]
     view_on_site = True
+
+
+def get_events_for_city(
+    city_id: int, dt: Optional[datetime.datetime] = None
+) -> Sequence[Event]:
+    dt = dt or datetime.datetime.now()
+    return Event.objects.filter(
+        venue__city_obj__id=city_id, start_time__gte=dt
+    ).order_by("start_time")
 
 
 def get_events_after_datetime(dt: datetime.datetime) -> Sequence[Event]:

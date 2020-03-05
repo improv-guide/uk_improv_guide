@@ -19,6 +19,8 @@ from django.contrib.auth import views as auth_views
 from django.urls import include, path
 from uk_improv_guide import settings
 from uk_improv_guide.models import Performer
+from uk_improv_guide.views.cities import cities
+from uk_improv_guide.views.city import city
 from uk_improv_guide.views.course import course
 from uk_improv_guide.views.courses import courses
 from uk_improv_guide.views.event import event
@@ -53,6 +55,8 @@ urlpatterns = [
     path("festival/<int:id>", festival, name="festival"),
     path("venues/", venues, name="venues"),
     path("venues/<int:id>", venue, name="venue"),
+    path("cities/", cities, name="cities"),
+    path("cities/<int:city_id>", city, name="city"),
     path("teams/", teams, name="teams"),
     path("teams/<int:id>", team, name="team"),
     path("teams/<int:id>/events", team_event_calendar, name="team_event_calendar"),

@@ -1,6 +1,7 @@
 import itertools
 
 from django.shortcuts import render
+from uk_improv_guide.models.city import get_all_cities
 from uk_improv_guide.models.course import get_all_courses
 from uk_improv_guide.models.event import get_all_events
 from uk_improv_guide.models.festival import get_all_festivals
@@ -24,6 +25,7 @@ def sitemap(request):
         get_all_courses(),
         get_all_festivals(),
         get_all_resources(),
+        get_all_cities(),
     )
 
     objects = [o.sitemap_url_data(request) for o in everything]

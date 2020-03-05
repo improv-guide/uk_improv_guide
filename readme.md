@@ -186,3 +186,7 @@ Creating dev_adminer              ... done
 Creating uk_improv_guide_python_1 ... done
 ```
 * In another shell, load the data:
+
+### The production certificate has expired
+
+  * Login to the certbot container (it doesn't havd Bash, only Sh)

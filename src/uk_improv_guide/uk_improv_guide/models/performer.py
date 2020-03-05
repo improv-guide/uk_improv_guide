@@ -63,7 +63,7 @@ class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mo
         return " ".join([self.first_name] + middle_names.split() + [self.family_name])
 
     def middle_initials(self):
-        return [n[0] for n in self.middle_names if n]
+        return [n[0] for n in self.middle_names.split(" ") if n]
 
     def name_in_list_order(self):
         if self.middle_names:

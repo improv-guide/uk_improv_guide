@@ -32,6 +32,15 @@ class Team(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     players = models.ManyToManyField(
         Performer, verbose_name="Team members", blank=True, related_name="plays_for"
     )
+    # home_city = models.ForeignKey(
+    #     City,
+    #     on_delete=models.SET_DEFAULT,
+    #     blank=True,
+    #     null=True,
+    #     default=None,
+    #     verbose_name="City",
+    #     help_text="If your team has a city you usually perform in, please let us know."
+    # )
 
     @staticmethod
     def model_admin():
