@@ -8,6 +8,7 @@ from reversion.admin import VersionAdmin
 from uk_improv_guide.lib.adminable import AdminableObject
 from uk_improv_guide.lib.site_mappable import SiteMapThing
 from uk_improv_guide.lib.slack_notification_mixin import SlackNotificationMixin
+from uk_improv_guide.models import City
 from uk_improv_guide.models.fields.fields import (
     EMAIL_ADDRESS,
     FACEBOOK_LINK,
@@ -32,6 +33,15 @@ class Team(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model):
     players = models.ManyToManyField(
         Performer, verbose_name="Team members", blank=True, related_name="plays_for"
     )
+    # home_city = models.ForeignKey(
+    #     City,
+    #     on_delete=models.SET_DEFAULT,
+    #     blank=True,
+    #     null=True,
+    #     default=None,
+    #     verbose_name="City",
+    #     help_text="If your team has a city you usually perform in, please let us know."
+    # )
 
     @staticmethod
     def model_admin():

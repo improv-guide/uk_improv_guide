@@ -55,7 +55,7 @@ class Event(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Model)
         ordering = ["-start_time"]
 
     def __str__(self):
-        return f"{self.name} - @ {self.start_time} - {self.venue.name}"
+        return f"{self.name } - @ {self.start_time} - {self.venue.name if self.venue else 'VENUE NOT SET'}"
 
 
 class EventAdminForm(ModelForm):
