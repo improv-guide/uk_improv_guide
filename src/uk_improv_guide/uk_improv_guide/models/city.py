@@ -28,5 +28,5 @@ def get_all_cities() -> List[City]:
     return City.objects.all()
 
 
-def get_city_by_id(id: int) -> City:
-    return City.objects.get(id=id)
+def get_city_by_id(city_id: int) -> City:
+    return City.objects.get(id=city_id)

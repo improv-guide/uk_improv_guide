@@ -78,7 +78,6 @@ class Performer(SlackNotificationMixin, SiteMapThing, AdminableObject, models.Mo
         return self.name_in_list_order()
 
 
-
 class PerformerAdminForm(ModelForm):
     excludes = []
 
