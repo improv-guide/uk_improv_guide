@@ -92,9 +92,9 @@ Just do all of the above in a Git Bash session.
 
 ## Common problems
 
-### The port Docker wants to use (8000 or 8080) is in use!
+### The port Docker wants to use (8023) is in use!
 
-Get rid of your firewall. Most Windows firewalls are incompatible with Docker.
+Get rid of your firewall. Some Windows firewalls are incompatible with Docker.
 
 ### You want to look at the database?
 

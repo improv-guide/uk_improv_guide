@@ -22,6 +22,7 @@ from sentry_sdk.integrations.django import DjangoIntegration
 
 log = logging.getLogger(__name__)
 
+FILE_CHARSET:str = "utf-8"
 
 SITE_NAME: str = "Improv Gude"
 SITE_CANONICAL_URL = "http://improv.guide"
