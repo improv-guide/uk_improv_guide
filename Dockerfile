@@ -1,7 +1,9 @@
 # Base Image, Python Interpreter
 FROM python:3.8-buster AS uk-improv-guide-python-base0
 RUN apt-get update
+RUN apt-get install python3-certbot-dns-digitalocean -y
 RUN mkdir /tmp/install
+RUN python -m pip install --upgrade pip
 COPY /src/requirements_dev.txt /tmp/install/requirements_dev.txt
 RUN python -m pip install -r /tmp/install/requirements_dev.txt
 RUN apt-get install git

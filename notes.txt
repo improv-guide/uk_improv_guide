@@ -10,8 +10,10 @@ certbot certonly --webroot -w /var/www/certbot --email salimfadhley@gmail.com -d
 --force-renewal
 
 
-certbot certonly --preferred-challenges dns --email salimfadhley@gmail.com -d improv.guide --email salimfadhley@gmail.com --rsa-key-size 4096 --agree-tos
---force-renewal --manual --preferred-challenges dns
+certbot certonly --dns-digitalocean --dns-digitalocean-credentials /tmp/do.ini --email salimfadhley@gmail.com -d improv.guide --email salimfadhley@gmail.com --rsa-key-size 4096 --agree-tos
+--force-renewal --manual
+
+--dns-digitalocean --dns-digitalocean-credentials ~/.secrets/certbot/digitalocean.ini \
 
 
 certbot -d improv.guide,impro.guide --manual --preferred-challenges dns certonly
