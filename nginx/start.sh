@@ -2,8 +2,11 @@
 
 export data_path=/etc/letsencrypt
 export domains=improv.guide
-export key_dir="$data_path/live/$domains"
+export cert_dir="$data_path/live/$domains"
+export key_dir="$cert_dir/$domains"
 
+echo "Certificate dir: $cert_dir"
+echo "Key Dir: $key_dir"
 
 if [ ! -e "$data_path/options-ssl-nginx.conf" ] || [ ! -e "$data_path/ssl-dhparams.pem" ]; then
   echo "### Downloading recommended TLS parameters ..."
@@ -32,11 +35,11 @@ if [ ! -e "$key_dir/privkey.pem" ] || [ ! -e "$key_dir/fullchain.pem" ]; then
     echo
 fi
 
-if [ ! -d "$data_path/live" ]; then
-    echo "Starting with SSL"
+if [ ! -d "$cert_dir" ]; then
+    echo "Starting without SSL"
     export NGINX_CONFIG=/etc/nginx/no_ssl.conf
 else
-    echo "Starting without SSL"
+    echo "Starting with SSL."
     export NGINX_CONFIG=/etc/nginx/ssl.conf
 fi
 
