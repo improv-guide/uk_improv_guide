@@ -47,7 +47,7 @@ else:
 
 COUNTRIES_FIRST = ["GB"]
 
-ALLOWED_HOSTS = ["improv.guide", "impro.guide", "localhost"]
+ALLOWED_HOSTS = ["improv.guide", "impro.guide", "localhost", "improvguide.uk"]
 
 
 # Application definition
