@@ -22,7 +22,7 @@ from sentry_sdk.integrations.django import DjangoIntegration
 
 log = logging.getLogger(__name__)
 
-FILE_CHARSET:str = "utf-8"
+FILE_CHARSET: str = "utf-8"
 
 SITE_NAME: str = "Improv Gude"
 SITE_CANONICAL_URL = "http://improv.guide"
@@ -155,9 +155,6 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_L10N = True
-
-USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
