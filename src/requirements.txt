@@ -2,7 +2,7 @@ django==3.1
 psycopg2==2.8.5
 jinja2==2.11.1
 django-reversion==3.0.7
-pytz==2020.1
+pytz==2022.2.1
 social-auth-app-django==4.0.0
 pyyaml==5.3.1
 Pillow==7.0.0
